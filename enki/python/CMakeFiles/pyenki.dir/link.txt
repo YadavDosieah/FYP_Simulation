@@ -1,0 +1,1 @@
+/usr/bin/c++ -fPIC   -shared  -o pyenki.so CMakeFiles/pyenki.dir/enki.cpp.o ../enki/libenki.a ../viewer/libenkiviewer.a /usr/lib/x86_64-linux-gnu/libQt5OpenGL.so.5.9.5 /usr/lib/x86_64-linux-gnu/libQt5Widgets.so.5.9.5 -lGL -lboost_python -lpython3.6m ../enki/libenki.a /usr/lib/x86_64-linux-gnu/libQt5Gui.so.5.9.5 /usr/lib/x86_64-linux-gnu/libQt5Core.so.5.9.5 -lGLU 

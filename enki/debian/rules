@@ -1,0 +1,31 @@
+#!/usr/bin/make -f
+
+build:
+	mkdir -p debian/build
+	cd debian/build && cmake -DCMAKE_BUILD_TYPE=Release -DPYTHON_DEB_INSTALL_TARGET=true -DCMAKE_INSTALL_PREFIX=../tmp/usr ../..
+	cd debian/build && $(MAKE)
+
+clean:
+	rm -rf debian/files debian/substvars debian/tmp debian/build
+
+binary: binary-arch binary-indep
+
+binary-indep:
+
+binary-arch: build
+	install -d debian/tmp/DEBIAN
+	install -d debian/tmp/usr/share/doc/libenki
+	cd debian/build && $(MAKE) install
+	strip --strip-unneeded debian/tmp/usr/lib/*.a
+	strip --strip-unneeded debian/tmp/usr/lib/python2.7/dist-packages/*.so
+	cp changelog debian/tmp/usr/share/doc/libenki/changelog
+	cp AUTHORS debian/tmp/usr/share/doc/libenki/AUTHORS
+	cp debian/changelog debian/tmp/usr/share/doc/libenki/changelog.debian
+	cp debian/copyright debian/tmp/usr/share/doc/libenki
+	gzip -n9 debian/tmp/usr/share/doc/libenki/changelog.debian
+	gzip -n9 debian/tmp/usr/share/doc/libenki/changelog
+	dpkg-shlibdeps debian/tmp/usr/lib/python2.7/dist-packages/*.so
+	chown -R root.root debian/tmp
+	chmod -R o-s,go=u,go-ws debian/tmp
+	dpkg-gencontrol
+	dpkg --build debian/tmp ..
