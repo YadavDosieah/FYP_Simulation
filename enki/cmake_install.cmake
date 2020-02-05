@@ -1,4 +1,4 @@
-# Install script for directory: /home/yadav/Downloads/enki
+# Install script for directory: /home/yadav/Documents/Final-Year-Project/enki
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -37,17 +37,21 @@ if(NOT DEFINED CMAKE_CROSSCOMPILING)
   set(CMAKE_CROSSCOMPILING "FALSE")
 endif()
 
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/doc" TYPE DIRECTORY OPTIONAL FILES "/home/yadav/Documents/Final-Year-Project/enki/html")
+endif()
+
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xdevx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/enki/CMake" TYPE FILE FILES "/home/yadav/Downloads/enki/enkiConfig.cmake")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/enki/CMake" TYPE FILE FILES "/home/yadav/Documents/Final-Year-Project/enki/enkiConfig.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/home/yadav/Downloads/enki/enki/cmake_install.cmake")
-  include("/home/yadav/Downloads/enki/viewer/cmake_install.cmake")
-  include("/home/yadav/Downloads/enki/python/cmake_install.cmake")
-  include("/home/yadav/Downloads/enki/tests/cmake_install.cmake")
-  include("/home/yadav/Downloads/enki/examples/cmake_install.cmake")
+  include("/home/yadav/Documents/Final-Year-Project/enki/enki/cmake_install.cmake")
+  include("/home/yadav/Documents/Final-Year-Project/enki/viewer/cmake_install.cmake")
+  include("/home/yadav/Documents/Final-Year-Project/enki/python/cmake_install.cmake")
+  include("/home/yadav/Documents/Final-Year-Project/enki/tests/cmake_install.cmake")
+  include("/home/yadav/Documents/Final-Year-Project/enki/examples/cmake_install.cmake")
 
 endif()
 
@@ -59,5 +63,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/yadav/Downloads/enki/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/yadav/Documents/Final-Year-Project/enki/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

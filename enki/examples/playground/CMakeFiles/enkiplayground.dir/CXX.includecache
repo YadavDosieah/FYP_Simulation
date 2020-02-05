@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/home/yadav/Downloads/enki/examples/playground/Playground.cpp
+/home/yadav/Documents/Final-Year-Project/enki/examples/playground/Playground.cpp
 viewer/Viewer.h
 -
 enki/PhysicalEngine.h
@@ -20,17 +20,17 @@ QtGui
 iostream
 -
 stdio.h
-/home/yadav/Downloads/enki/examples/playground/stdio.h
+/home/yadav/Documents/Final-Year-Project/enki/examples/playground/stdio.h
 cstdlib
 -
 time.h
-/home/yadav/Downloads/enki/examples/playground/time.h
+/home/yadav/Documents/Final-Year-Project/enki/examples/playground/time.h
 math.h
-/home/yadav/Downloads/enki/examples/playground/math.h
+/home/yadav/Documents/Final-Year-Project/enki/examples/playground/math.h
 /usr/include/SDL2/SDL.h
 -
 
-/home/yadav/Downloads/enki/examples/playground/enkiplayground_autogen/mocs_compilation.cpp
+/home/yadav/Documents/Final-Year-Project/enki/examples/playground/enkiplayground_autogen/mocs_compilation.cpp
 
 /usr/include/SDL2/SDL.h
 SDL_main.h

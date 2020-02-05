@@ -1,4 +1,4 @@
-# Install script for directory: /home/yadav/Downloads/enki/examples/playground
+# Install script for directory: /home/yadav/Documents/Final-Year-Project/enki/examples/playground
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

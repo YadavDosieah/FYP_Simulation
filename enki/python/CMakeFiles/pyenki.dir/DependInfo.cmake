@@ -4,7 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/yadav/Downloads/enki/python/enki.cpp" "/home/yadav/Downloads/enki/python/CMakeFiles/pyenki.dir/enki.cpp.o"
+  "/home/yadav/Documents/Final-Year-Project/enki/python/enki.cpp" "/home/yadav/Documents/Final-Year-Project/enki/python/CMakeFiles/pyenki.dir/enki.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 
@@ -20,7 +20,7 @@ set(CMAKE_TARGET_DEFINITIONS_CXX
 # The include file search paths:
 set(CMAKE_CXX_TARGET_INCLUDE_PATH
   "."
-  "/usr/include/python3.6m"
+  "/usr/include/python2.7"
   "/usr/include/x86_64-linux-gnu/qt5"
   "/usr/include/x86_64-linux-gnu/qt5/QtWidgets"
   "/usr/include/x86_64-linux-gnu/qt5/QtGui"
@@ -31,8 +31,8 @@ set(CMAKE_CXX_TARGET_INCLUDE_PATH
 
 # Targets to which this target links.
 set(CMAKE_TARGET_LINKED_INFO_FILES
-  "/home/yadav/Downloads/enki/enki/CMakeFiles/enki.dir/DependInfo.cmake"
-  "/home/yadav/Downloads/enki/viewer/CMakeFiles/enkiviewer.dir/DependInfo.cmake"
+  "/home/yadav/Documents/Final-Year-Project/enki/enki/CMakeFiles/enki.dir/DependInfo.cmake"
+  "/home/yadav/Documents/Final-Year-Project/enki/viewer/CMakeFiles/enkiviewer.dir/DependInfo.cmake"
   )
 
 # Fortran module output directory.

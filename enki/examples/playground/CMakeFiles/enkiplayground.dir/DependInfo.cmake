@@ -4,8 +4,8 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/yadav/Downloads/enki/examples/playground/Playground.cpp" "/home/yadav/Downloads/enki/examples/playground/CMakeFiles/enkiplayground.dir/Playground.cpp.o"
-  "/home/yadav/Downloads/enki/examples/playground/enkiplayground_autogen/mocs_compilation.cpp" "/home/yadav/Downloads/enki/examples/playground/CMakeFiles/enkiplayground.dir/enkiplayground_autogen/mocs_compilation.cpp.o"
+  "/home/yadav/Documents/Final-Year-Project/enki/examples/playground/Playground.cpp" "/home/yadav/Documents/Final-Year-Project/enki/examples/playground/CMakeFiles/enkiplayground.dir/Playground.cpp.o"
+  "/home/yadav/Documents/Final-Year-Project/enki/examples/playground/enkiplayground_autogen/mocs_compilation.cpp" "/home/yadav/Documents/Final-Year-Project/enki/examples/playground/CMakeFiles/enkiplayground.dir/enkiplayground_autogen/mocs_compilation.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 
@@ -34,8 +34,8 @@ set(CMAKE_CXX_TARGET_INCLUDE_PATH
 
 # Targets to which this target links.
 set(CMAKE_TARGET_LINKED_INFO_FILES
-  "/home/yadav/Downloads/enki/viewer/CMakeFiles/enkiviewer.dir/DependInfo.cmake"
-  "/home/yadav/Downloads/enki/enki/CMakeFiles/enki.dir/DependInfo.cmake"
+  "/home/yadav/Documents/Final-Year-Project/enki/viewer/CMakeFiles/enkiviewer.dir/DependInfo.cmake"
+  "/home/yadav/Documents/Final-Year-Project/enki/enki/CMakeFiles/enki.dir/DependInfo.cmake"
   )
 
 # Fortran module output directory.

@@ -6,5 +6,5 @@ CXX_FLAGS =
 
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/home/yadav/Downloads/enki 
+CXX_INCLUDES = -I/home/yadav/Documents/Final-Year-Project/enki 
 
