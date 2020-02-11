@@ -92,6 +92,7 @@ namespace Enki
 		infraredSensor6(this, Vector(2.3, 2.6),   2.5, deg2rad(45),    12, 3731, 0.3, 0.7, 10),
 		infraredSensor7(this, Vector(3.35, 1.05),   2.5, deg2rad(18),  12, 3731, 0.3, 0.7, 10),
 		camera(this, Vector(3.7, 0.0), 2.2, 0.0, M_PI/6.0, 60),
+		camera2(this, Vector(3.7, 0.0), 4.8, 0.0, M_PI/6.0, 60),
 		scannerTurret(this, 7.2, 32),
 		bluetooth(NULL)
 	{
@@ -110,7 +111,8 @@ namespace Enki
 		if (capabilities & CAPABILITY_CAMERA)
 		{
 			addLocalInteraction(&camera);
-			cout << "Camera Initialised\n";
+			addLocalInteraction(&camera2);
+			// cout << "Camera Initialised\n";
 		}
 
 		if (capabilities & CAPABILITY_SCANNER_TURRET)

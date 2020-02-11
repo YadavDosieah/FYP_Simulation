@@ -18,7 +18,7 @@ set(AM_QT_RCC_EXECUTABLE )
 # MOC settings
 set(AM_MOC_SKIP "/home/yadav/Documents/Final-Year-Project/enki/examples/playground/enkiplayground_autogen/mocs_compilation.cpp")
 set(AM_MOC_DEFINITIONS "QT_CORE_LIB;QT_GUI_LIB;QT_NO_DEBUG;QT_OPENGL_LIB;QT_WIDGETS_LIB;USE_SDL")
-set(AM_MOC_INCLUDES "/home/yadav/Documents/Final-Year-Project/enki/examples/playground/enkiplayground_autogen/include;/usr/include/SDL2;/home/yadav/Documents/Final-Year-Project/enki;/usr/include/x86_64-linux-gnu/qt5;/usr/include/x86_64-linux-gnu/qt5/QtWidgets;/usr/include/x86_64-linux-gnu/qt5/QtGui;/usr/include/x86_64-linux-gnu/qt5/QtCore;/usr/lib/x86_64-linux-gnu/qt5/mkspecs/linux-g++;/usr/include/x86_64-linux-gnu/qt5/QtOpenGL;/usr/include")
+set(AM_MOC_INCLUDES "/home/yadav/Documents/Final-Year-Project/enki/examples/playground/enkiplayground_autogen/include;/usr/include/SDL2;/home/yadav/Documents/Final-Year-Project/enki;/usr/local/include/libcmaes;/usr/local/lib;/usr/include/x86_64-linux-gnu/qt5;/usr/include/x86_64-linux-gnu/qt5/QtWidgets;/usr/include/x86_64-linux-gnu/qt5/QtGui;/usr/include/x86_64-linux-gnu/qt5/QtCore;/usr/lib/x86_64-linux-gnu/qt5/mkspecs/linux-g++;/usr/include/x86_64-linux-gnu/qt5/QtOpenGL;/usr/include/eigen3;/usr/include")
 set(AM_MOC_OPTIONS "")
 set(AM_MOC_RELAXED_MODE "FALSE")
 set(AM_MOC_MACRO_NAMES "Q_OBJECT;Q_GADGET;Q_NAMESPACE")
