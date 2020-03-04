@@ -24,6 +24,7 @@ class Shepherding
 		float Ksheep;
 		float K1;
 		float K2;
+		float KWall;
 		int Goalx;
 		int Goaly;
     const double *y;
@@ -32,14 +33,15 @@ class Shepherding
 
 	public:
 	Shepherding(World *world, int noOfSheep, int noOfShepherd,	int Csheep,
-								int Cshepherd, float Ksheep, float K1,	float K2,	int Goalx,
-								int Goaly, const double *y): noOfSheep(noOfSheep),
+								int Cshepherd, float Ksheep, float K1,	float K2, float KWall,
+								int Goalx, int Goaly, const double *y): noOfSheep(noOfSheep),
 								noOfShepherd(noOfShepherd), Csheep(Csheep), Cshepherd(Cshepherd),
-								Ksheep(Ksheep), K1(K1), K2(K2), Goalx(Goalx),	Goaly(Goaly), y(y)
+								Ksheep(Ksheep), K1(K1), K2(K2),KWall(KWall), Goalx(Goalx),	Goaly(Goaly), y(y)
 	{
 		for(int i=0; i<12; i++)
 		{
 			x[i] = (1-exp(y[i]))/(1+exp(y[i]));
+			//cout << x[i] << endl;
 		}
 		srand(time(0));
 		for(int i = 0; i < noOfSheep; i++)
@@ -90,17 +92,17 @@ class Shepherding
 		{
 			valarray<Color> image = shepherds[i]->camera.image;
 			valarray<Color> image2 = shepherds[i]->camera2.image;
-			bool red = false;
-			bool green = false;
-			bool blue = false;
 
-			for (size_t i = 0; i < image.size(); i++)
-			{
-				//std::cout << image[i] << std::endl;
-					red 	= red 	|| (image[i].components[0] == 1 ? 1 : 0);
-					green = green || (image[i].components[1] == 1 ? 1 : 0);
-					blue 	= blue 	|| (image[i].components[2] == 1 ? 1 : 0) || (image2[i].components[2] == 1 ? 1 : 0);
-			}
+			bool red = image[30].components[0];
+			bool green = image[30].components[1];
+			bool blue = image2[30].components[2];
+			// for (size_t i = 0; i < image.size(); i++)
+			// {
+			// 	//std::cout << image[i] << std::endl;
+			// 		red 	= red 	|| (image[i].components[0] == 1 ? 1 : 0);
+			// 		green = green || (image[i].components[1] == 1 ? 1 : 0);
+			// 		blue 	= blue 	|| (image[i].components[2] == 1 ? 1 : 0) || (image2[i].components[2] == 1 ? 1 : 0);
+			// }
 			// std::cout << "Colour Observed - (r:" << red << ",g:" << green << ",b:" <<
 			// blue << ")\n";
 			if((red||blue||green) == false) //No objects seen			STATE 0
@@ -193,28 +195,54 @@ class Shepherding
 				Force_x = Force_x + Force_Sheep_x;
 				Force_y = Force_y + Force_Sheep_y;
 			}
+
+			int margin = 15;
+			if(flock[i]->pos.x < margin)
+			{
+				Force_x = Force_x - KWall*(0-flock[i]->pos.x);
+			}
+			else if(flock[i]->pos.x > (300-margin))
+			{
+				Force_x = Force_x - KWall*(300-flock[i]->pos.x);
+			}
+
+			if(flock[i]->pos.y < margin)
+			{
+				Force_y = Force_y - KWall*(0-flock[i]->pos.y);
+			}
+			else if(flock[i]->pos.y > (300-margin))
+			{
+				Force_y = Force_y - KWall*(300-flock[i]->pos.y);
+			}
+
 			Force_x = cos(-Angle) * Force_x - sin(-Angle) * Force_y;
    		Force_y = cos(-Angle) * Force_y + sin(-Angle) * Force_x;
 			flock[i]->leftSpeed = K1*Force_x + K2*Force_y;
 			flock[i]->rightSpeed = K1*Force_x - K2*Force_y;
-			if(abs(flock[i]->leftSpeed) > abs(flock[i]->rightSpeed))
-			{
-				if(abs(flock[i]->leftSpeed) >  SPEED_MAX/2)
-				{
-					float ratio = abs(flock[i]->leftSpeed)/(SPEED_MAX/2);
-					flock[i]->leftSpeed = flock[i]->leftSpeed/ratio;
-					flock[i]->rightSpeed = flock[i]->rightSpeed/ratio;
-				}
-			}
-			else if(abs(flock[i]->rightSpeed) > abs(flock[i]->leftSpeed))
-			{
-				if(abs(flock[i]->rightSpeed) >  SPEED_MAX/2)
-				{
-					float ratio = abs(flock[i]->rightSpeed)/(SPEED_MAX/2);
-					flock[i]->leftSpeed = flock[i]->leftSpeed/ratio;
-					flock[i]->rightSpeed = flock[i]->rightSpeed/ratio;
-				}
-			}
+
+			flock[i]->leftSpeed = flock[i]->leftSpeed > SPEED_MAX/2 ? SPEED_MAX/2 : flock[i]->leftSpeed;
+			flock[i]->rightSpeed = flock[i]->rightSpeed > SPEED_MAX/2 ? SPEED_MAX/2 : flock[i]->rightSpeed;
+			flock[i]->leftSpeed = flock[i]->leftSpeed < -SPEED_MAX/2 ? -SPEED_MAX/2 : flock[i]->leftSpeed;
+			flock[i]->rightSpeed = flock[i]->rightSpeed < -SPEED_MAX/2 ? -SPEED_MAX/2 : flock[i]->rightSpeed;
+
+			// if(abs(flock[i]->leftSpeed) > abs(flock[i]->rightSpeed))
+			// {
+			// 	if(abs(flock[i]->leftSpeed) >  SPEED_MAX/2)
+			// 	{
+			// 		float ratio = abs(flock[i]->leftSpeed)/(SPEED_MAX/2);
+			// 		flock[i]->leftSpeed = flock[i]->leftSpeed/ratio;
+			// 		flock[i]->rightSpeed = flock[i]->rightSpeed/ratio;
+			// 	}
+			// }
+			// else if(abs(flock[i]->rightSpeed) > abs(flock[i]->leftSpeed))
+			// {
+			// 	if(abs(flock[i]->rightSpeed) >  SPEED_MAX/2)
+			// 	{
+			// 		float ratio = abs(flock[i]->rightSpeed)/(SPEED_MAX/2);
+			// 		flock[i]->leftSpeed = flock[i]->leftSpeed/ratio;
+			// 		flock[i]->rightSpeed = flock[i]->rightSpeed/ratio;
+			// 	}
+			// }
 
 			if(Force_x == 0 && Force_y == 0)
 			{
