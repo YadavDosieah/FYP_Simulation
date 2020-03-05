@@ -1,6 +1,6 @@
 # CMake generated Testfile for 
-# Source directory: /home/yadav/Documents/Final-Year-Project/enki
-# Build directory: /home/yadav/Documents/Final-Year-Project/enki
+# Source directory: /home/uos/Downloads/FYP_Simulation/enki
+# Build directory: /home/uos/Downloads/FYP_Simulation/enki
 # 
 # This file includes the relevant testing commands required for 
 # testing this directory and lists subdirectories to be tested as well.

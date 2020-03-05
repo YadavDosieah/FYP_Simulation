@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/yadav/Documents/Final-Year-Project/enki
+CMAKE_SOURCE_DIR = /home/uos/Downloads/FYP_Simulation/enki
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/yadav/Documents/Final-Year-Project/enki
+CMAKE_BINARY_DIR = /home/uos/Downloads/FYP_Simulation/enki
 
 # Utility rule file for doc.
 
@@ -54,8 +54,8 @@ CMAKE_BINARY_DIR = /home/yadav/Documents/Final-Year-Project/enki
 include CMakeFiles/doc.dir/progress.make
 
 CMakeFiles/doc:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/yadav/Documents/Final-Year-Project/enki/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating API documentation with Doxygen"
-	/usr/bin/doxygen /home/yadav/Documents/Final-Year-Project/enki/Doxyfile
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/uos/Downloads/FYP_Simulation/enki/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating API documentation with Doxygen"
+	/usr/bin/doxygen /home/uos/Downloads/FYP_Simulation/enki/Doxyfile
 
 doc: CMakeFiles/doc
 doc: CMakeFiles/doc.dir/build.make
@@ -72,6 +72,6 @@ CMakeFiles/doc.dir/clean:
 .PHONY : CMakeFiles/doc.dir/clean
 
 CMakeFiles/doc.dir/depend:
-	cd /home/yadav/Documents/Final-Year-Project/enki && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/yadav/Documents/Final-Year-Project/enki /home/yadav/Documents/Final-Year-Project/enki /home/yadav/Documents/Final-Year-Project/enki /home/yadav/Documents/Final-Year-Project/enki /home/yadav/Documents/Final-Year-Project/enki/CMakeFiles/doc.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/uos/Downloads/FYP_Simulation/enki && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/uos/Downloads/FYP_Simulation/enki /home/uos/Downloads/FYP_Simulation/enki /home/uos/Downloads/FYP_Simulation/enki /home/uos/Downloads/FYP_Simulation/enki /home/uos/Downloads/FYP_Simulation/enki/CMakeFiles/doc.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/doc.dir/depend
 

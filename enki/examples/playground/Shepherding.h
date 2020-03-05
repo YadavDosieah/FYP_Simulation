@@ -30,6 +30,8 @@ class Shepherding
     const double *y;
 		double x[12];
 		double fitness_val = 0;
+		int TimeStep = 0;
+		int multiplier = 1;
 
 	public:
 	Shepherding(World *world, int noOfSheep, int noOfShepherd,	int Csheep,
@@ -65,6 +67,7 @@ class Shepherding
 
 	virtual void doPerTick()
 	{
+		TimeStep++;
 		double centroid_x = 0;
 		double centroid_y = 0;
 		for(int i = 0; i < noOfSheep; i++)
@@ -84,9 +87,16 @@ class Shepherding
 			Distance_x2 = Distance_x2 < 50? Distance_x2 : 0;
 			Distance_y2 = Distance_y2 < 50? Distance_y2 : 0;
 
-			double Distances_sq = pow(Distance_x1,2) + pow(Distance_y1,2) +
-			 										 pow(Distance_x2,2) + pow(Distance_y2,2);
-			fitness_val = fitness_val + Distances_sq/(4*noOfSheep*3.7*3.7);
+			if(TimeStep > 500)
+			{
+				multiplier = 3;
+			}
+			if(TimeStep > 1000)
+			{
+				multiplier = 5;
+			}
+			double Distances_sq = (pow(Distance_x1,2) + pow(Distance_y1,2))*(pow(Distance_x2,2) + pow(Distance_y2,2));
+			fitness_val = fitness_val + (Distances_sq/(4*noOfSheep*3.7*3.7))*multiplier;
 		}
 		for(int i = 0; i < noOfShepherd; i++)
 		{

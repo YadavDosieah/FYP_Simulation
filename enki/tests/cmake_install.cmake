@@ -1,4 +1,4 @@
-# Install script for directory: /home/yadav/Documents/Final-Year-Project/enki/tests
+# Install script for directory: /home/uos/Downloads/FYP_Simulation/enki/tests
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

@@ -12,7 +12,7 @@ if (PYTHONLIBS_FOUND AND PYTHONINTERP_FOUND AND Qt5Widgets_FOUND AND Qt5OpenGL_F
 		message(STATUS "boost::python found, generating python bindings")
 		include_directories(${PROJECT_SOURCE_DIR} ${PYTHON_INCLUDE_DIRS} ${Boost_INCLUDE_DIR})
 		python_add_module(pyenki enki.cpp)
-		target_link_libraries(pyenki enki enkiviewer Qt5::OpenGL Qt5::Widgets ${OPENGL_gl_LIBRARY} ${Boost_LIBRARIES} ${PYTHON_LIBRARIES})
+		target_link_libraries(pyenki enki enkiviewer Qt5::OpenGL Qt5::Widgets ${Boost_LIBRARIES} ${PYTHON_LIBRARIES})
 		# fix for old python_add_module
 		set_target_properties(pyenki PROPERTIES PREFIX "")
 		if (PYTHON_CUSTOM_TARGET)

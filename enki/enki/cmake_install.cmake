@@ -1,4 +1,4 @@
-# Install script for directory: /home/yadav/Documents/Final-Year-Project/enki/enki
+# Install script for directory: /home/uos/Downloads/FYP_Simulation/enki/enki
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -38,10 +38,10 @@ if(NOT DEFINED CMAKE_CROSSCOMPILING)
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/enki/" TYPE DIRECTORY FILES "/home/yadav/Documents/Final-Year-Project/enki/enki/." FILES_MATCHING REGEX "/[^/]*\\.h$")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/enki/" TYPE DIRECTORY FILES "/home/uos/Downloads/FYP_Simulation/enki/enki/." FILES_MATCHING REGEX "/[^/]*\\.h$")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE STATIC_LIBRARY FILES "/home/yadav/Documents/Final-Year-Project/enki/enki/libenki.a")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE STATIC_LIBRARY FILES "/home/uos/Downloads/FYP_Simulation/enki/enki/libenki.a")
 endif()
 

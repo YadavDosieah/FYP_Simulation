@@ -1,1 +1,1 @@
-/usr/bin/c++    -rdynamic CMakeFiles/enkiMinimal.dir/enkiMinimal.cpp.o  -o enkiMinimal  -L/home/yadav/Documents/Final-Year-Project/enki -Wl,-rpath,/home/yadav/Documents/Final-Year-Project/enki ../../enki/libenki.a 
+/usr/bin/c++    -rdynamic CMakeFiles/enkiMinimal.dir/enkiMinimal.cpp.o  -o enkiMinimal  -L/home/uos/Downloads/FYP_Simulation/enki -Wl,-rpath,/home/uos/Downloads/FYP_Simulation/enki ../../enki/libenki.a 

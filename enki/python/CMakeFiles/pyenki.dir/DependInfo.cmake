@@ -4,7 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/yadav/Documents/Final-Year-Project/enki/python/enki.cpp" "/home/yadav/Documents/Final-Year-Project/enki/python/CMakeFiles/pyenki.dir/enki.cpp.o"
+  "/home/uos/Downloads/FYP_Simulation/enki/python/enki.cpp" "/home/uos/Downloads/FYP_Simulation/enki/python/CMakeFiles/pyenki.dir/enki.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 
@@ -31,8 +31,8 @@ set(CMAKE_CXX_TARGET_INCLUDE_PATH
 
 # Targets to which this target links.
 set(CMAKE_TARGET_LINKED_INFO_FILES
-  "/home/yadav/Documents/Final-Year-Project/enki/enki/CMakeFiles/enki.dir/DependInfo.cmake"
-  "/home/yadav/Documents/Final-Year-Project/enki/viewer/CMakeFiles/enkiviewer.dir/DependInfo.cmake"
+  "/home/uos/Downloads/FYP_Simulation/enki/enki/CMakeFiles/enki.dir/DependInfo.cmake"
+  "/home/uos/Downloads/FYP_Simulation/enki/viewer/CMakeFiles/enkiviewer.dir/DependInfo.cmake"
   )
 
 # Fortran module output directory.
