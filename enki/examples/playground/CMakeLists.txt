@@ -13,7 +13,7 @@ if (Qt5Widgets_FOUND AND Qt5OpenGL_FOUND)
 
 	add_executable(enkiplayground ${viewer_playground_SRCS})
 
-	target_link_libraries(enkiplayground enkiviewer enki ${OPENGL_gl_LIBRARY} ${EXTRA_LIBS} Qt5::OpenGL Qt5::Widgets)
+	target_link_libraries(enkiplayground enkiviewer enki ${EXTRA_LIBS} Qt5::OpenGL Qt5::Widgets)
 endif ()
 
 find_package (Eigen3 3.3 REQUIRED NO_MODULE)

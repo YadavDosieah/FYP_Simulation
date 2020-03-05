@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/yadav/Documents/Final-Year-Project/enki
+CMAKE_SOURCE_DIR = /home/uos/Downloads/FYP_Simulation/enki
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/yadav/Documents/Final-Year-Project/enki
+CMAKE_BINARY_DIR = /home/uos/Downloads/FYP_Simulation/enki
 
 # Utility rule file for enkiplayground_autogen.
 
@@ -54,8 +54,8 @@ CMAKE_BINARY_DIR = /home/yadav/Documents/Final-Year-Project/enki
 include examples/playground/CMakeFiles/enkiplayground_autogen.dir/progress.make
 
 examples/playground/CMakeFiles/enkiplayground_autogen:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/yadav/Documents/Final-Year-Project/enki/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Automatic MOC for target enkiplayground"
-	cd /home/yadav/Documents/Final-Year-Project/enki/examples/playground && /usr/bin/cmake -E cmake_autogen /home/yadav/Documents/Final-Year-Project/enki/examples/playground/CMakeFiles/enkiplayground_autogen.dir ""
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/uos/Downloads/FYP_Simulation/enki/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Automatic MOC for target enkiplayground"
+	cd /home/uos/Downloads/FYP_Simulation/enki/examples/playground && /usr/bin/cmake -E cmake_autogen /home/uos/Downloads/FYP_Simulation/enki/examples/playground/CMakeFiles/enkiplayground_autogen.dir ""
 
 enkiplayground_autogen: examples/playground/CMakeFiles/enkiplayground_autogen
 enkiplayground_autogen: examples/playground/CMakeFiles/enkiplayground_autogen.dir/build.make
@@ -68,10 +68,10 @@ examples/playground/CMakeFiles/enkiplayground_autogen.dir/build: enkiplayground_
 .PHONY : examples/playground/CMakeFiles/enkiplayground_autogen.dir/build
 
 examples/playground/CMakeFiles/enkiplayground_autogen.dir/clean:
-	cd /home/yadav/Documents/Final-Year-Project/enki/examples/playground && $(CMAKE_COMMAND) -P CMakeFiles/enkiplayground_autogen.dir/cmake_clean.cmake
+	cd /home/uos/Downloads/FYP_Simulation/enki/examples/playground && $(CMAKE_COMMAND) -P CMakeFiles/enkiplayground_autogen.dir/cmake_clean.cmake
 .PHONY : examples/playground/CMakeFiles/enkiplayground_autogen.dir/clean
 
 examples/playground/CMakeFiles/enkiplayground_autogen.dir/depend:
-	cd /home/yadav/Documents/Final-Year-Project/enki && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/yadav/Documents/Final-Year-Project/enki /home/yadav/Documents/Final-Year-Project/enki/examples/playground /home/yadav/Documents/Final-Year-Project/enki /home/yadav/Documents/Final-Year-Project/enki/examples/playground /home/yadav/Documents/Final-Year-Project/enki/examples/playground/CMakeFiles/enkiplayground_autogen.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/uos/Downloads/FYP_Simulation/enki && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/uos/Downloads/FYP_Simulation/enki /home/uos/Downloads/FYP_Simulation/enki/examples/playground /home/uos/Downloads/FYP_Simulation/enki /home/uos/Downloads/FYP_Simulation/enki/examples/playground /home/uos/Downloads/FYP_Simulation/enki/examples/playground/CMakeFiles/enkiplayground_autogen.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : examples/playground/CMakeFiles/enkiplayground_autogen.dir/depend
 

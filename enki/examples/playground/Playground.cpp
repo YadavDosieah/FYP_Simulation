@@ -50,7 +50,10 @@ FitFunc ControllerFitness = [](const double *x, const int N)
         simulation.doPerTick();
       }
       pthread_mutex_lock(&mtx);
-      out << generation << "," << iter << "," << trial << "," << simulation.getFitness() << endl;
+      out << generation << "," << iter << "," << trial << "," << x[0]
+                << "," << x[1] << ","  << x[2] << "," << x[3] << "," << x[4]
+                << "," << x[5] << ","  << x[6] << "," << x[7] << "," << x[8]
+                << "," << x[9] << ","  << x[10] << "," << x[11] << ","  << simulation.getFitness() << endl;
       pthread_mutex_unlock(&mtx);
       fitness = fitness + simulation.getFitness();
   }
@@ -118,7 +121,7 @@ int main(int argc, char *argv[])
   else if(Optimise)
   {
     out.open("Optimisation_Logfile.csv");
-  	out << "Generation, Iteration, Trial, Fitness Value" << endl;
+  	out << "Generation, Iteration, Trial, Vl_1, Vr_1, Vl_2, Vr_2, Vl_3, Vr_3, Vl_4, Vr_4,Vl_5, Vr_5,Vl_6, Vr_6, Fitness Value" << endl;
     int dim = 12; // problem dimensions.
     std::vector<double> x0(dim,0);
     double sigma = 0.72;
