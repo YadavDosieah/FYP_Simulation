@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/uos/Downloads/FYP_Simulation/enki
+CMAKE_SOURCE_DIR = /home/yadav/Documents/Final-Year-Project/FYP_Simulation/enki
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/uos/Downloads/FYP_Simulation/enki
+CMAKE_BINARY_DIR = /home/yadav/Documents/Final-Year-Project/FYP_Simulation/enki
 
 # Utility rule file for enkiviewer_autogen.
 
@@ -68,8 +68,8 @@ viewer/CMakeFiles/enkiviewer_autogen: viewer/textures/wall.png
 viewer/CMakeFiles/enkiviewer_autogen: viewer/textures/world.png
 viewer/CMakeFiles/enkiviewer_autogen: viewer/widgets/center.png
 viewer/CMakeFiles/enkiviewer_autogen: viewer/widgets/help.png
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/uos/Downloads/FYP_Simulation/enki/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Automatic MOC and RCC for target enkiviewer"
-	cd /home/uos/Downloads/FYP_Simulation/enki/viewer && /usr/bin/cmake -E cmake_autogen /home/uos/Downloads/FYP_Simulation/enki/viewer/CMakeFiles/enkiviewer_autogen.dir ""
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/yadav/Documents/Final-Year-Project/FYP_Simulation/enki/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Automatic MOC and RCC for target enkiviewer"
+	cd /home/yadav/Documents/Final-Year-Project/FYP_Simulation/enki/viewer && /usr/bin/cmake -E cmake_autogen /home/yadav/Documents/Final-Year-Project/FYP_Simulation/enki/viewer/CMakeFiles/enkiviewer_autogen.dir ""
 
 enkiviewer_autogen: viewer/CMakeFiles/enkiviewer_autogen
 enkiviewer_autogen: viewer/CMakeFiles/enkiviewer_autogen.dir/build.make
@@ -82,10 +82,10 @@ viewer/CMakeFiles/enkiviewer_autogen.dir/build: enkiviewer_autogen
 .PHONY : viewer/CMakeFiles/enkiviewer_autogen.dir/build
 
 viewer/CMakeFiles/enkiviewer_autogen.dir/clean:
-	cd /home/uos/Downloads/FYP_Simulation/enki/viewer && $(CMAKE_COMMAND) -P CMakeFiles/enkiviewer_autogen.dir/cmake_clean.cmake
+	cd /home/yadav/Documents/Final-Year-Project/FYP_Simulation/enki/viewer && $(CMAKE_COMMAND) -P CMakeFiles/enkiviewer_autogen.dir/cmake_clean.cmake
 .PHONY : viewer/CMakeFiles/enkiviewer_autogen.dir/clean
 
 viewer/CMakeFiles/enkiviewer_autogen.dir/depend:
-	cd /home/uos/Downloads/FYP_Simulation/enki && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/uos/Downloads/FYP_Simulation/enki /home/uos/Downloads/FYP_Simulation/enki/viewer /home/uos/Downloads/FYP_Simulation/enki /home/uos/Downloads/FYP_Simulation/enki/viewer /home/uos/Downloads/FYP_Simulation/enki/viewer/CMakeFiles/enkiviewer_autogen.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/yadav/Documents/Final-Year-Project/FYP_Simulation/enki && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/yadav/Documents/Final-Year-Project/FYP_Simulation/enki /home/yadav/Documents/Final-Year-Project/FYP_Simulation/enki/viewer /home/yadav/Documents/Final-Year-Project/FYP_Simulation/enki /home/yadav/Documents/Final-Year-Project/FYP_Simulation/enki/viewer /home/yadav/Documents/Final-Year-Project/FYP_Simulation/enki/viewer/CMakeFiles/enkiviewer_autogen.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : viewer/CMakeFiles/enkiviewer_autogen.dir/depend
 

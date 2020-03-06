@@ -7,8 +7,8 @@
 include(FindPackageHandleStandardArgs)
 
 # core
-find_path(enki_INCLUDE_DIR enki/PhysicalEngine.h /home/uos/Downloads/FYP_Simulation/enki CMAKE_FIND_ROOT_PATH_BOTH)
-find_library(enki_LIBRARY enki /home/uos/Downloads/FYP_Simulation/enki/enki CMAKE_FIND_ROOT_PATH_BOTH)
+find_path(enki_INCLUDE_DIR enki/PhysicalEngine.h /home/yadav/Documents/Final-Year-Project/FYP_Simulation/enki CMAKE_FIND_ROOT_PATH_BOTH)
+find_library(enki_LIBRARY enki /home/yadav/Documents/Final-Year-Project/FYP_Simulation/enki/enki CMAKE_FIND_ROOT_PATH_BOTH)
 find_package_handle_standard_args(enki DEFAULT_MSG enki_INCLUDE_DIR enki_LIBRARY)
 
 # viewer
@@ -21,7 +21,7 @@ if (Qt5Widgets_FOUND AND Qt5OpenGL_FOUND)
 		add_definitions("-fPIC")
 	endif (CMAKE_HOST_UNIX)
 
-	find_library(enki_VIEWER_LIBRARY enkiviewer /home/uos/Downloads/FYP_Simulation/enki/viewer CMAKE_FIND_ROOT_PATH_BOTH)
+	find_library(enki_VIEWER_LIBRARY enkiviewer /home/yadav/Documents/Final-Year-Project/FYP_Simulation/enki/viewer CMAKE_FIND_ROOT_PATH_BOTH)
 	set(enki_VIEWER_LIBRARIES ${enki_VIEWER_LIBRARY} Qt5::OpenGL Qt5::Widgets CACHE STRING "All libraries necessary to link Enki viewer")
 	find_package_handle_standard_args(enki_VIEWER DEFAULT_MSG enki_VIEWER_LIBRARIES)
 endif ()

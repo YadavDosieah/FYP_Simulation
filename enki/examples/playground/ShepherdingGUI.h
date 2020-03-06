@@ -82,17 +82,16 @@ class ShepherdingGUI: public ViewerWidget
 			valarray<Color> image = shepherds[i]->camera.image;
 			valarray<Color> image2 = shepherds[i]->camera2.image;
 
-			bool red = image[30].components[0];
-			bool green = image[30].components[1];
-			bool blue = image2[30].components[2];
-
-			// for (size_t i = 0; i < image.size(); i++)
-			// {
-			// 	//std::cout << image[i] << std::endl;
-			// 		red 	= red 	|| (image[i].components[0] == 1 ? 1 : 0);
-			// 		green = green || (image[i].components[1] == 1 ? 1 : 0);
-			// 		blue 	= blue 	|| (image[i].components[2] == 1 ? 1 : 0) || (image2[i].components[2] == 1 ? 1 : 0);
-			// }
+			bool red = false;
+			bool green = false;
+			bool blue = false;
+			for (size_t i = 0; i < image.size(); i++)
+			{
+				//std::cout << image[i] << std::endl;
+					red 	= red 	|| (image[i].components[0] == 1 ? 1 : 0);
+					green = green || (image[i].components[1] == 1 ? 1 : 0);
+					blue 	= blue 	|| (image2[i].components[2] == 1 ? 1 : 0);
+			}
 			// std::cout << "Colour Observed - (r:" << red << ",g:" << green << ",b:" <<
 			// blue << ")\n";
 			if((red||blue||green) == false) //No objects seen			STATE 0
@@ -259,7 +258,7 @@ class ShepherdingGUI: public ViewerWidget
 			EPuck *epuck = new EPuck(0x2);
 			epuck->camera.init(0.01,world);
 			epuck->setColor(Color(0, 1, 0)); // Green for shepherd
-			epuck->pos = Point(rand()%300, rand()%300);
+			epuck->pos = Point(rand()%300, rand()%200);
 			epuck->leftSpeed = 0;
 			epuck->rightSpeed = 0;
 			V->push_back(epuck);
@@ -269,7 +268,7 @@ class ShepherdingGUI: public ViewerWidget
 		{
 			EPuck *epuck = new EPuck;
 			epuck->setColor(Color(1, 0, 0)); // Red for Sheep
-			epuck->pos = Point(rand()%300, rand()%300);
+			epuck->pos = Point(rand()%300, rand()%200);
 			epuck->leftSpeed = 0;
 			epuck->rightSpeed = 0;
 			V->push_back(epuck);
