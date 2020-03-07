@@ -84,8 +84,8 @@ class Shepherding
 			double Distance_y1 = centroid_y - flock[i]->pos.y;
 			double Distance_x2 = Goalx - centroid_x;
 			double Distance_y2 = Goaly - centroid_y;
-			Distance_x2 = Distance_x2 < 50? Distance_x2 : 0;
-			Distance_y2 = Distance_y2 < 50? Distance_y2 : 0;
+			Distance_x2 = abs(Distance_x2) < 50? 0 : Distance_x2;
+			Distance_y2 = abs(Distance_y2) < 50? 0 : Distance_y2;
 
 			if(TimeStep > 500)
 			{
