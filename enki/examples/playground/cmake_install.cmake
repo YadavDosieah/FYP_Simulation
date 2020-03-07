@@ -1,4 +1,4 @@
-# Install script for directory: /home/uos/Downloads/FYP_Simulation/enki/examples/playground
+# Install script for directory: /home/yadav/Documents/Final-Year-Project/FYP_Simulation/enki/examples/playground
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

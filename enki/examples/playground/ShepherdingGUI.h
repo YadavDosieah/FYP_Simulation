@@ -45,7 +45,7 @@ class ShepherdingGUI: public ViewerWidget
 	{
 		for(int i=0; i<12; i++)
 		{
-			x[i] = (1-exp(y[i]))/(1+exp(y[i]));
+			x[i] = (1-exp(-y[i]))/(1+exp(-y[i]));
 			cout << x[i] << endl;
 		}
 

@@ -80,7 +80,7 @@ int main(int argc, char *argv[])
 	K1 = configfile.lookup("K1");
 	K2 = configfile.lookup("K2");
   KWall = configfile.lookup("KWall");
-  cout << KWall;
+  //cout << KWall;
 	Goalx = configfile.lookup("Goalx");
 	Goaly = configfile.lookup("Goaly");
   bool GUI = configfile.lookup("GUI");
@@ -103,12 +103,12 @@ int main(int argc, char *argv[])
     #endif
     //Size of world (arena)
     World world(300,300, Color(0.5,0.5,0.5), igt ? World::GroundTexture(gt.width(), gt.height(), bits) : World::GroundTexture());
-    const double x[12] = {-6.43980708462284,  0.576466767765778,
-         -1.8810524152711,   2.98009936453572,
-           -1.63347232478478, -0.124896014799857,
-             -1.92213438883735,  0.552347564823169,
-                2.22079257007194,   3.85723554472416,
-                   3.92769542655077, -0.382887960200218};
+    const double x[12] = {-0.747120997715685,  -5.05060174105995,
+        -21.8517336707031,  -10.6471478982427,
+          -20.5772052447751,   3.37521229231428,
+            -15.9217454297743,  -21.2222123225913,
+              -15.4113627234049,  -3.56226669173889,
+                -7.08448943761407,  -20.9737938021531};
     // const double x[12] =  {0,0,0,0,0,0,0,0,0,0,0,0} ;
     ShepherdingGUI viewer(&world,noOfSheep,noOfShepherd,Csheep,Cshepherd,Ksheep,
       K1, K2, KWall, Goalx, Goaly, x);
@@ -131,7 +131,7 @@ int main(int argc, char *argv[])
     cmaparams.set_mt_feval(true); //Paralell eval
     cmaparams.set_quiet(false);
     cmaparams.set_fplot("youroutput.dat");
-    cmaparams.set_max_iter(80);
+    //cmaparams.set_max_iter(80);
     /*{AUTOMAXITER,"The automatically set maximal number of iterations per run has been reached"},
       {TOLHISTFUN,"[Success] The optimization has converged"},
       {EQUALFUNVALS,"[Partial Success] The objective function values are the same over too many iterations, check the formulation of your objective function"},
@@ -144,7 +144,7 @@ int main(int argc, char *argv[])
       {MAXFEVALS,"The maximum number of function evaluations allowed for optimization has been reached"},
       {MAXITER,"The maximum number of iterations specified for optimization has been reached"},
       {FTARGET,"[Success] The objective function target value has been reached"}};*/
-    cmaparams.set_stopping_criteria(TOLHISTFUN,false);
+    cmaparams.set_stopping_criteria(TOLHISTFUN,true);
     cmaparams.set_stopping_criteria(AUTOMAXITER,false);
     cmaparams.set_stopping_criteria(EQUALFUNVALS,false);
     cmaparams.set_stopping_criteria(FTARGET,false);
