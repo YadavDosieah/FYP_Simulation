@@ -131,7 +131,7 @@ int main(int argc, char *argv[])
     cmaparams.set_mt_feval(true); //Paralell eval
     cmaparams.set_quiet(false);
     cmaparams.set_fplot("youroutput.dat");
-    //cmaparams.set_max_iter(80);
+    cmaparams.set_max_iter(80);
     /*{AUTOMAXITER,"The automatically set maximal number of iterations per run has been reached"},
       {TOLHISTFUN,"[Success] The optimization has converged"},
       {EQUALFUNVALS,"[Partial Success] The objective function values are the same over too many iterations, check the formulation of your objective function"},
@@ -144,7 +144,7 @@ int main(int argc, char *argv[])
       {MAXFEVALS,"The maximum number of function evaluations allowed for optimization has been reached"},
       {MAXITER,"The maximum number of iterations specified for optimization has been reached"},
       {FTARGET,"[Success] The objective function target value has been reached"}};*/
-    cmaparams.set_stopping_criteria(TOLHISTFUN,true);
+    cmaparams.set_stopping_criteria(TOLHISTFUN,false);
     cmaparams.set_stopping_criteria(AUTOMAXITER,false);
     cmaparams.set_stopping_criteria(EQUALFUNVALS,false);
     cmaparams.set_stopping_criteria(FTARGET,false);
