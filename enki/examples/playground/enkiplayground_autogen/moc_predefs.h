@@ -292,7 +292,6 @@
 #define __FLT64X_MAX_EXP__ 16384
 #define __UINT_FAST64_TYPE__ long unsigned int
 #define __INT_MAX__ 0x7fffffff
-#define USE_SDL 1
 #define __amd64__ 1
 #define __INT64_TYPE__ long int
 #define __FLT_MAX_EXP__ 128
