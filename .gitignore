@@ -7,4 +7,20 @@
 *.o
 *.so
 
+# Logs and databases #
+######################
+*.log
+*.sql
+*.sqlite
+
 CMakeCache.txt
+
+# OS generated files #
+######################
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
