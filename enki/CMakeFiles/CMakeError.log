@@ -218,3 +218,113 @@ Makefile:126: recipe for target 'cmTC_584f5/fast' failed
 make: *** [cmTC_584f5/fast] Error 2
 
 
+Determining if the pthread_create exist failed with the following output:
+Change Dir: /home/yadav/Documents/Final-Year-Project/FYP_Simulation/enki/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_57cef/fast"
+/usr/bin/make -f CMakeFiles/cmTC_57cef.dir/build.make CMakeFiles/cmTC_57cef.dir/build
+make[1]: Entering directory '/home/yadav/Documents/Final-Year-Project/FYP_Simulation/enki/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_57cef.dir/CheckSymbolExists.c.o
+/usr/bin/cc    -o CMakeFiles/cmTC_57cef.dir/CheckSymbolExists.c.o   -c /home/yadav/Documents/Final-Year-Project/FYP_Simulation/enki/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Linking C executable cmTC_57cef
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_57cef.dir/link.txt --verbose=1
+/usr/bin/cc      -rdynamic CMakeFiles/cmTC_57cef.dir/CheckSymbolExists.c.o  -o cmTC_57cef 
+CMakeFiles/cmTC_57cef.dir/CheckSymbolExists.c.o: In function `main':
+CheckSymbolExists.c:(.text+0x1b): undefined reference to `pthread_create'
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_57cef.dir/build.make:97: recipe for target 'cmTC_57cef' failed
+make[1]: *** [cmTC_57cef] Error 1
+make[1]: Leaving directory '/home/yadav/Documents/Final-Year-Project/FYP_Simulation/enki/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_57cef/fast' failed
+make: *** [cmTC_57cef/fast] Error 2
+
+File /home/yadav/Documents/Final-Year-Project/FYP_Simulation/enki/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <pthread.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef pthread_create
+  return ((int*)(&pthread_create))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the function pthread_create exists in the pthreads failed with the following output:
+Change Dir: /home/yadav/Documents/Final-Year-Project/FYP_Simulation/enki/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_e90db/fast"
+/usr/bin/make -f CMakeFiles/cmTC_e90db.dir/build.make CMakeFiles/cmTC_e90db.dir/build
+make[1]: Entering directory '/home/yadav/Documents/Final-Year-Project/FYP_Simulation/enki/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_e90db.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTC_e90db.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.10/Modules/CheckFunctionExists.c
+Linking C executable cmTC_e90db
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_e90db.dir/link.txt --verbose=1
+/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=pthread_create    -rdynamic CMakeFiles/cmTC_e90db.dir/CheckFunctionExists.c.o  -o cmTC_e90db -lpthreads 
+/usr/bin/ld: cannot find -lpthreads
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_e90db.dir/build.make:97: recipe for target 'cmTC_e90db' failed
+make[1]: *** [cmTC_e90db] Error 1
+make[1]: Leaving directory '/home/yadav/Documents/Final-Year-Project/FYP_Simulation/enki/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_e90db/fast' failed
+make: *** [cmTC_e90db/fast] Error 2
+
+
+Determining if the pthread_create exist failed with the following output:
+Change Dir: /home/yadav/Documents/Final-Year-Project/FYP_Simulation/enki/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_dbb3a/fast"
+/usr/bin/make -f CMakeFiles/cmTC_dbb3a.dir/build.make CMakeFiles/cmTC_dbb3a.dir/build
+make[1]: Entering directory '/home/yadav/Documents/Final-Year-Project/FYP_Simulation/enki/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_dbb3a.dir/CheckSymbolExists.c.o
+/usr/bin/cc    -o CMakeFiles/cmTC_dbb3a.dir/CheckSymbolExists.c.o   -c /home/yadav/Documents/Final-Year-Project/FYP_Simulation/enki/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Linking C executable cmTC_dbb3a
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_dbb3a.dir/link.txt --verbose=1
+/usr/bin/cc      -rdynamic CMakeFiles/cmTC_dbb3a.dir/CheckSymbolExists.c.o  -o cmTC_dbb3a 
+CMakeFiles/cmTC_dbb3a.dir/CheckSymbolExists.c.o: In function `main':
+CheckSymbolExists.c:(.text+0x1b): undefined reference to `pthread_create'
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_dbb3a.dir/build.make:97: recipe for target 'cmTC_dbb3a' failed
+make[1]: *** [cmTC_dbb3a] Error 1
+make[1]: Leaving directory '/home/yadav/Documents/Final-Year-Project/FYP_Simulation/enki/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_dbb3a/fast' failed
+make: *** [cmTC_dbb3a/fast] Error 2
+
+File /home/yadav/Documents/Final-Year-Project/FYP_Simulation/enki/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <pthread.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef pthread_create
+  return ((int*)(&pthread_create))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the function pthread_create exists in the pthreads failed with the following output:
+Change Dir: /home/yadav/Documents/Final-Year-Project/FYP_Simulation/enki/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_3e95c/fast"
+/usr/bin/make -f CMakeFiles/cmTC_3e95c.dir/build.make CMakeFiles/cmTC_3e95c.dir/build
+make[1]: Entering directory '/home/yadav/Documents/Final-Year-Project/FYP_Simulation/enki/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_3e95c.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTC_3e95c.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.10/Modules/CheckFunctionExists.c
+Linking C executable cmTC_3e95c
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_3e95c.dir/link.txt --verbose=1
+/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=pthread_create    -rdynamic CMakeFiles/cmTC_3e95c.dir/CheckFunctionExists.c.o  -o cmTC_3e95c -lpthreads 
+/usr/bin/ld: cannot find -lpthreads
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_3e95c.dir/build.make:97: recipe for target 'cmTC_3e95c' failed
+make[1]: *** [cmTC_3e95c] Error 1
+make[1]: Leaving directory '/home/yadav/Documents/Final-Year-Project/FYP_Simulation/enki/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_3e95c/fast' failed
+make: *** [cmTC_3e95c/fast] Error 2
+
+
