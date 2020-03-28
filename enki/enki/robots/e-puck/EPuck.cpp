@@ -91,8 +91,8 @@ namespace Enki
 		infraredSensor5(this, Vector(0, 3.3),     2.5, deg2rad(90),    12, 3731, 0.3, 0.7, 10),
 		infraredSensor6(this, Vector(2.3, 2.6),   2.5, deg2rad(45),    12, 3731, 0.3, 0.7, 10),
 		infraredSensor7(this, Vector(3.35, 1.05),   2.5, deg2rad(18),  12, 3731, 0.3, 0.7, 10),
-		camera(this, Vector(3.7, 0.0), 2.2, 0.0, M_PI/6.0, 60),
-		camera2(this, Vector(3.7, 0.0), 4.8, 0.0, M_PI/6.0, 60),
+		camera(this, Vector(3.7, 0.0), 2.2, 0.0, 0.1, 2),
+		camera2(this, Vector(3.7, 0.0), 4.8, 0.0, 0.1, 2),
 		scannerTurret(this, 7.2, 32),
 		bluetooth(NULL)
 	{
@@ -127,7 +127,7 @@ namespace Enki
 		}
 
 		//staticFrictionThreshold = 0.5;
-		dryFrictionCoefficient = 0.25;
+		//dryFrictionCoefficient = 0.25;
 		dryFrictionCoefficient = 2.5;
 
 		setCylindric(3.7, 4.7, 152);

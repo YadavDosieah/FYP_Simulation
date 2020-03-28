@@ -17,8 +17,11 @@ class Shepherding
 	protected:
 		QVector<EPuck*> shepherds;
 		QVector<EPuck*> flock;
+		QVector<PhysicalObject*> objects;
+		int mode;
 		int noOfSheep;
 		int noOfShepherd;
+		int noOfObjects;
 		int Csheep;
 		int Cshepherd;
 		float Ksheep;
@@ -27,23 +30,26 @@ class Shepherding
 		float KWall;
 		int Goalx;
 		int Goaly;
+		int dim;
     const double *y;
-		double x[12];
+		double x[16];
 		double fitness_val = 0;
 		int TimeStep = 0;
-		int multiplier = 1;
 
 	public:
-	Shepherding(World *world, int noOfSheep, int noOfShepherd,	int Csheep,
-								int Cshepherd, float Ksheep, float K1,	float K2, float KWall,
-								int Goalx, int Goaly, const double *y): noOfSheep(noOfSheep),
-								noOfShepherd(noOfShepherd), Csheep(Csheep), Cshepherd(Cshepherd),
-								Ksheep(Ksheep), K1(K1), K2(K2),KWall(KWall), Goalx(Goalx),	Goaly(Goaly), y(y)
+	Shepherding(World *world, int mode, int noOfSheep, int noOfShepherd, int noOfObjects,
+							int Csheep, int Cshepherd, float Ksheep, float K1,	float K2,
+							float KWall, int Goalx, int Goaly, const double *y, int dim):
+							mode(mode), noOfSheep(noOfSheep), noOfShepherd(noOfShepherd),
+							noOfObjects(noOfObjects), Csheep(Csheep), Cshepherd(Cshepherd),
+							Ksheep(Ksheep), K1(K1), K2(K2),KWall(KWall), Goalx(Goalx), Goaly(Goaly),
+							y(y), dim(dim)
 	{
-		for(int i=0; i<12; i++)
+		//cout << sizeof(y)/sizeof(*y) << endl;
+		for(int i=0; i<dim; i++)
 		{
 			x[i] = (1-exp(-y[i]))/(1+exp(-y[i]));
-			//cout << x[i] << endl;
+			//cout << y[i] << endl;
 		}
 		srand(time(0));
 		for(int i = 0; i < noOfSheep; i++)
@@ -54,6 +60,11 @@ class Shepherding
 		for(int i = 0; i < noOfShepherd; i++)
 		{
 			addRobots(world, &shepherds, true);
+		}
+
+		for(int i = 0; i < noOfObjects; i++)
+		{
+			addCylinders(world, &objects);
 		}
 
 		PhysicalObject* Goal = new PhysicalObject;
@@ -68,97 +79,289 @@ class Shepherding
 	virtual void doPerTick()
 	{
 		TimeStep++;
-		double centroid_x = 0;
-		double centroid_y = 0;
-		for(int i = 0; i < noOfSheep; i++)
-		{
-			centroid_x = centroid_x + flock[i]->pos.x;
-			centroid_y = centroid_y + flock[i]->pos.y;
-		}
-		centroid_x = centroid_x/noOfSheep;
-		centroid_y = centroid_y/noOfSheep;
 
-		for(int i = 0; i < noOfSheep; i++)
+		/*************************************************************************/
+		/********************* Shepherd Speed Calculation *************************/
+		/*************************************************************************/
+		if(mode == 0) //Shepherding
 		{
-			double Distance_x1 = centroid_x - flock[i]->pos.x;
-			double Distance_y1 = centroid_y - flock[i]->pos.y;
-			double Distance_x2 = Goalx - centroid_x;
-			double Distance_y2 = Goaly - centroid_y;
-			Distance_x2 = abs(Distance_x2) < 50? 0 : Distance_x2;
-			Distance_y2 = abs(Distance_y2) < 50? 0 : Distance_y2;
+			double centroid_x = 0;
+			double centroid_y = 0;
+			for(int i = 0; i < noOfSheep; i++)
+			{
+				centroid_x = centroid_x + flock[i]->pos.x;
+				centroid_y = centroid_y + flock[i]->pos.y;
+			}
+			centroid_x = centroid_x/noOfSheep;
+			centroid_y = centroid_y/noOfSheep;
 
-			if(TimeStep > 500)
+			for(int i = 0; i < noOfSheep; i++)
 			{
-				multiplier = 3;
-			}
-			if(TimeStep > 1000)
-			{
-				multiplier = 5;
-			}
-			double Distances_sq = (pow(Distance_x1,2) + pow(Distance_y1,2))*(pow(Distance_x2,2) + pow(Distance_y2,2));
-			fitness_val = fitness_val + (Distances_sq/(4*noOfSheep*3.7*3.7))*multiplier;
-		}
-		for(int i = 0; i < noOfShepherd; i++)
-		{
-			valarray<Color> image = shepherds[i]->camera.image;
-			valarray<Color> image2 = shepherds[i]->camera2.image;
+				double Distance_x1 = centroid_x - flock[i]->pos.x;
+				double Distance_y1 = centroid_y - flock[i]->pos.y;
+				double Distance_x2 = Goalx - centroid_x;
+				double Distance_y2 = Goaly - centroid_y;
+				Distance_x2 = abs(Distance_x2) < 50? 0 : Distance_x2;
+				Distance_y2 = abs(Distance_y2) < 50? 0 : Distance_y2;
 
-			bool red = false;
-			bool green = false;
-			bool blue = false;
-			for (size_t i = 0; i < image.size(); i++)
-			{
-				//std::cout << image[i] << std::endl;
-					red 	= red 	|| (image[i].components[0] == 1 ? 1 : 0);
-					green = green || (image[i].components[1] == 1 ? 1 : 0);
-					blue 	= blue 	|| (image2[i].components[2] == 1 ? 1 : 0);
+				double Distances_sq = (pow(Distance_x1,2) + pow(Distance_y1,2))*(pow(Distance_x2,2) + pow(Distance_y2,2));
+				fitness_val = fitness_val + (Distances_sq/(4*noOfSheep*3.7*3.7))*TimeStep*0.1;
 			}
-			// std::cout << "Colour Observed - (r:" << red << ",g:" << green << ",b:" <<
-			// blue << ")\n";
-			if((red||blue||green) == false) //No objects seen			STATE 0
+			for(int i = 0; i < noOfShepherd; i++)
 			{
-        // cout << "State 0\n";
-        shepherds[i]->leftSpeed 	= x[0] * SPEED_MAX;
-				shepherds[i]->rightSpeed	= x[1] * SPEED_MAX;
-			}
-			else if((red&&blue) == true) //Sheep + goal						STATE 4
-			{
-        // cout << "State 4\n";
-        shepherds[i]->leftSpeed 	= x[8] * SPEED_MAX;
-				shepherds[i]->rightSpeed	= x[9] * SPEED_MAX;
-			}
-			else if((green&&blue) == true) //Shepherd + goal			STATE 5
-			{
-        // cout << "State 5\n";
-        shepherds[i]->leftSpeed 	= x[10] * SPEED_MAX;
-				shepherds[i]->rightSpeed	= x[11] * SPEED_MAX;
-			}
-			else if(blue) //Only goal														STATE 3
-			{
-        // cout << "State 3\n";
-        shepherds[i]->leftSpeed 	= x[6] * SPEED_MAX;
-				shepherds[i]->rightSpeed	= x[7] * SPEED_MAX;
-			}
-			else if(red)// sheep																STATE 1
-			{
-        // cout << "State 1\n";
-        shepherds[i]->leftSpeed 	= x[2] * SPEED_MAX;
-				shepherds[i]->rightSpeed	= x[3] * SPEED_MAX;
-			}
-			else if(green)//shepherd														STATE 2
-			{
-        // cout << "State 2\n";
-        shepherds[i]->leftSpeed 	= x[4] * SPEED_MAX;
-				shepherds[i]->rightSpeed	= x[5] * SPEED_MAX;
-			}
-			else
-			{
-				std::cout << "Error\n";
+				valarray<Color> image = shepherds[i]->camera.image;
+				valarray<Color> image2 = shepherds[i]->camera2.image;
+
+				bool sheepDetected = false;
+				bool shepherdDetected = false;
+				bool goalDetected = false;
+
+				sheepDetected 	= image[0].components[0] == 1 ? 1 : 0;
+				shepherdDetected = image[0].components[1] == 1 ? 1 : 0;
+				goalDetected 	= image2[0].components[2] == 1 ? 1 : 0;
+
+				if((sheepDetected||shepherdDetected||goalDetected) == false) //No objects seen			STATE 0
+				{
+					// cout << "State 0\n";
+					shepherds[i]->leftSpeed 	= x[0] * SPEED_MAX;
+					shepherds[i]->rightSpeed	= x[1] * SPEED_MAX;
+				}
+				else if((sheepDetected&&goalDetected) == true) //Sheep + goal						STATE 4
+				{
+					// cout << "State 4\n";
+					shepherds[i]->leftSpeed 	= x[8] * SPEED_MAX;
+					shepherds[i]->rightSpeed	= x[9] * SPEED_MAX;
+				}
+				else if((shepherdDetected&&goalDetected) == true) //Shepherd + goal			STATE 5
+				{
+					// cout << "State 5\n";
+					shepherds[i]->leftSpeed 	= x[10] * SPEED_MAX;
+					shepherds[i]->rightSpeed	= x[11] * SPEED_MAX;
+				}
+				else if(goalDetected) //Only goal														STATE 3
+				{
+					// cout << "State 3\n";
+					shepherds[i]->leftSpeed 	= x[6] * SPEED_MAX;
+					shepherds[i]->rightSpeed	= x[7] * SPEED_MAX;
+				}
+				else if(sheepDetected)// sheep																STATE 1
+				{
+					// cout << "State 1\n";
+					shepherds[i]->leftSpeed 	= x[2] * SPEED_MAX;
+					shepherds[i]->rightSpeed	= x[3] * SPEED_MAX;
+				}
+				else if(shepherdDetected)//shepherd														STATE 2
+				{
+					// cout << "State 2\n";
+					shepherds[i]->leftSpeed 	= x[4] * SPEED_MAX;
+					shepherds[i]->rightSpeed	= x[5] * SPEED_MAX;
+				}
+				else
+				{
+					std::cout << "Error\n";
+				}
 			}
 		}
 
-		// Point P = shepherds[0]->camera.getAbsolutePosition();
-		// cout << P << "\t" << shepherds[0]->pos.x << "," << shepherds[0]->pos.y << endl;
+		else if(mode == 1)//Object Clustering
+		{
+			double centroid_x = 0;
+			double centroid_y = 0;
+			for(int i = 0; i < noOfObjects; i++)
+			{
+				centroid_x = centroid_x + objects[i]->pos.x;
+				centroid_y = centroid_y + objects[i]->pos.y;
+			}
+			centroid_x = centroid_x/noOfObjects;
+			centroid_y = centroid_y/noOfObjects;
+
+			for(int i = 0; i < noOfObjects; i++)
+			{
+				double Distance_x1 = centroid_x - objects[i]->pos.x;
+				double Distance_y1 = centroid_y - objects[i]->pos.y;
+				double Distance_x2 = Goalx - centroid_x;
+				double Distance_y2 = Goaly - centroid_y;
+				Distance_x2 = abs(Distance_x2) < 50? 0 : Distance_x2;
+				Distance_y2 = abs(Distance_y2) < 50? 0 : Distance_y2;
+
+				double Distances_sq = (pow(Distance_x1,2) + pow(Distance_y1,2))*(pow(Distance_x2,2) + pow(Distance_y2,2));
+				fitness_val = fitness_val + (Distances_sq/(4*noOfObjects*3.7*3.7))*TimeStep*0.1;
+			}
+			for(int i = 0; i < noOfShepherd; i++)
+			{
+				valarray<Color> image = shepherds[i]->camera.image;
+				valarray<Color> image2 = shepherds[i]->camera2.image;
+				bool shepherdDetected = false;
+				bool goalDetected = false;
+				bool objectDetected = false;
+
+				shepherdDetected = image[0].components[1] == 1 ? 1 : 0;
+				goalDetected 	= image2[0].components[2] == 1 ? 1 : 0;
+				objectDetected = image[0].components[0] == 0.9 ? 1 : 0;
+
+				if((objectDetected||shepherdDetected||goalDetected) == false) //No objects seen			STATE 0
+				{
+					// cout << "State 0\n";
+					shepherds[i]->leftSpeed 	= x[0] * SPEED_MAX;
+					shepherds[i]->rightSpeed	= x[1] * SPEED_MAX;
+				}
+				else if((objectDetected&&goalDetected) == true) //Sheep + goal						STATE 4
+				{
+					// cout << "State 4\n";
+					shepherds[i]->leftSpeed 	= x[8] * SPEED_MAX;
+					shepherds[i]->rightSpeed	= x[9] * SPEED_MAX;
+				}
+				else if((shepherdDetected&&goalDetected) == true) //Shepherd + goal			STATE 5
+				{
+					// cout << "State 5\n";
+					shepherds[i]->leftSpeed 	= x[10] * SPEED_MAX;
+					shepherds[i]->rightSpeed	= x[11] * SPEED_MAX;
+				}
+				else if(goalDetected) //Only goal														STATE 3
+				{
+					// cout << "State 3\n";
+					shepherds[i]->leftSpeed 	= x[6] * SPEED_MAX;
+					shepherds[i]->rightSpeed	= x[7] * SPEED_MAX;
+				}
+				else if(objectDetected)// sheep																STATE 1
+				{
+					// cout << "State 1\n";
+					shepherds[i]->leftSpeed 	= x[2] * SPEED_MAX;
+					shepherds[i]->rightSpeed	= x[3] * SPEED_MAX;
+				}
+				else if(shepherdDetected)//shepherd														STATE 2
+				{
+					// cout << "State 2\n";
+					shepherds[i]->leftSpeed 	= x[4] * SPEED_MAX;
+					shepherds[i]->rightSpeed	= x[5] * SPEED_MAX;
+				}
+				else
+				{
+					std::cout << "Error\n";
+				}
+			}
+		}
+
+		else if(mode == 2)//Both
+		{
+			double centroid_x = 0;
+			double centroid_y = 0;
+			for(int i = 0; i < noOfObjects; i++)
+			{
+				centroid_x = centroid_x + objects[i]->pos.x;
+				centroid_y = centroid_y + objects[i]->pos.y;
+			}
+			centroid_x = centroid_x/noOfObjects;
+			centroid_y = centroid_y/noOfObjects;
+
+			for(int i = 0; i < noOfObjects; i++)
+			{
+				double Distance_x1 = centroid_x - objects[i]->pos.x;
+				double Distance_y1 = centroid_y - objects[i]->pos.y;
+				double Distance_x2 = Goalx - centroid_x;
+				double Distance_y2 = Goaly - centroid_y;
+				Distance_x2 = abs(Distance_x2) < 50? 0 : Distance_x2;
+				Distance_y2 = abs(Distance_y2) < 50? 0 : Distance_y2;
+
+				double Distances_sq = (pow(Distance_x1,2) + pow(Distance_y1,2))*(pow(Distance_x2,2) + pow(Distance_y2,2));
+				fitness_val = fitness_val + (Distances_sq/(4*noOfObjects*3.7*3.7))*TimeStep*0.1;
+			}
+
+			centroid_x = 0;
+			centroid_y = 0;
+			for(int i = 0; i < noOfSheep; i++)
+			{
+				centroid_x = centroid_x + flock[i]->pos.x;
+				centroid_y = centroid_y + flock[i]->pos.y;
+			}
+			centroid_x = centroid_x/noOfSheep;
+			centroid_y = centroid_y/noOfSheep;
+
+			for(int i = 0; i < noOfSheep; i++)
+			{
+				double Distance_x1 = centroid_x - flock[i]->pos.x;
+				double Distance_y1 = centroid_y - flock[i]->pos.y;
+				double Distance_x2 = Goalx - centroid_x;
+				double Distance_y2 = Goaly - centroid_y;
+				Distance_x2 = abs(Distance_x2) < 50? 0 : Distance_x2;
+				Distance_y2 = abs(Distance_y2) < 50? 0 : Distance_y2;
+
+				double Distances_sq = (pow(Distance_x1,2) + pow(Distance_y1,2))*(pow(Distance_x2,2) + pow(Distance_y2,2));
+				fitness_val = fitness_val + (Distances_sq/(4*noOfSheep*3.7*3.7))*TimeStep*0.1;
+			}
+			for(int i = 0; i < noOfShepherd; i++)
+			{
+				valarray<Color> image = shepherds[i]->camera.image;
+				valarray<Color> image2 = shepherds[i]->camera2.image;
+
+				bool sheepDetected = false;
+				bool shepherdDetected = false;
+				bool goalDetected = false;
+				bool objectDetected = false;
+
+				sheepDetected 	= image[0].components[0] == 1 ? 1 : 0;
+				shepherdDetected = image[0].components[1] == 1 ? 1 : 0;
+				goalDetected 	= image2[0].components[2] == 1 ? 1 : 0;
+				objectDetected = image[0].components[0] == 0.9 ? 1 : 0;
+
+				if((objectDetected||shepherdDetected||goalDetected||sheepDetected) == false) //No objects seen			STATE 0
+				{
+					// cout << "State 0\n";
+					shepherds[i]->leftSpeed 	= x[0] * SPEED_MAX;
+					shepherds[i]->rightSpeed	= x[1] * SPEED_MAX;
+				}
+				else if((objectDetected&&goalDetected) == true) //Object + goal						STATE 5
+				{
+					// cout << "State 4\n";
+					shepherds[i]->leftSpeed 	= x[10] * SPEED_MAX;
+					shepherds[i]->rightSpeed	= x[11] * SPEED_MAX;
+				}
+				else if((shepherdDetected&&goalDetected) == true) //Shepherd + goal			STATE 6
+				{
+					// cout << "State 5\n";
+					shepherds[i]->leftSpeed 	= x[12] * SPEED_MAX;
+					shepherds[i]->rightSpeed	= x[13] * SPEED_MAX;
+				}
+				else if((sheepDetected&&goalDetected) == true) //Sheep + goal			STATE 7
+				{
+					// cout << "State 5\n";
+					shepherds[i]->leftSpeed 	= x[14] * SPEED_MAX;
+					shepherds[i]->rightSpeed	= x[15] * SPEED_MAX;
+				}
+				else if(goalDetected) //Only goal														STATE 4
+				{
+					// cout << "State 3\n";
+					shepherds[i]->leftSpeed 	= x[8] * SPEED_MAX;
+					shepherds[i]->rightSpeed	= x[9] * SPEED_MAX;
+				}
+				else if(objectDetected)// object																STATE 1
+				{
+					// cout << "State 1\n";
+					shepherds[i]->leftSpeed 	= x[2] * SPEED_MAX;
+					shepherds[i]->rightSpeed	= x[3] * SPEED_MAX;
+				}
+				else if(shepherdDetected)//shepherd														STATE 2
+				{
+					// cout << "State 2\n";
+					shepherds[i]->leftSpeed 	= x[4] * SPEED_MAX;
+					shepherds[i]->rightSpeed	= x[5] * SPEED_MAX;
+				}
+				else if(sheepDetected)//sheep														STATE 3
+				{
+					// cout << "State 2\n";
+					shepherds[i]->leftSpeed 	= x[6] * SPEED_MAX;
+					shepherds[i]->rightSpeed	= x[7] * SPEED_MAX;
+				}
+				else
+				{
+					std::cout << "Error\n";
+				}
+			}
+		}
+
+		/*************************************************************************/
+		/*********************** Sheep Speed Calculation *************************/
+		/*************************************************************************/
 		for(int i=0; i < int(flock.size()); i++)
 		{
 			double Force_x = 0;
@@ -235,25 +438,6 @@ class Shepherding
 			flock[i]->leftSpeed = flock[i]->leftSpeed < -SPEED_MAX/2 ? -SPEED_MAX/2 : flock[i]->leftSpeed;
 			flock[i]->rightSpeed = flock[i]->rightSpeed < -SPEED_MAX/2 ? -SPEED_MAX/2 : flock[i]->rightSpeed;
 
-			// if(abs(flock[i]->leftSpeed) > abs(flock[i]->rightSpeed))
-			// {
-			// 	if(abs(flock[i]->leftSpeed) >  SPEED_MAX/2)
-			// 	{
-			// 		float ratio = abs(flock[i]->leftSpeed)/(SPEED_MAX/2);
-			// 		flock[i]->leftSpeed = flock[i]->leftSpeed/ratio;
-			// 		flock[i]->rightSpeed = flock[i]->rightSpeed/ratio;
-			// 	}
-			// }
-			// else if(abs(flock[i]->rightSpeed) > abs(flock[i]->leftSpeed))
-			// {
-			// 	if(abs(flock[i]->rightSpeed) >  SPEED_MAX/2)
-			// 	{
-			// 		float ratio = abs(flock[i]->rightSpeed)/(SPEED_MAX/2);
-			// 		flock[i]->leftSpeed = flock[i]->leftSpeed/ratio;
-			// 		flock[i]->rightSpeed = flock[i]->rightSpeed/ratio;
-			// 	}
-			// }
-
 			if(Force_x == 0 && Force_y == 0)
 			{
 				flock[i]->leftSpeed = (rand()%int(SPEED_MAX)) - SPEED_MAX/2;
@@ -268,6 +452,18 @@ class Shepherding
 	}
 	~Shepherding()
 	{
+	}
+
+	void addCylinders(World *world, QVector<PhysicalObject*> *V)
+	{
+		PhysicalObject* Obj = new PhysicalObject;
+		Obj->pos = Point(rand()%300, rand()%200);;
+		Obj->setCylindric(3.7, 4.7, 152);
+		Obj->dryFrictionCoefficient = 2.5;
+		Obj->setColor(Color(0.9, 0.9, 0));
+		Obj->collisionElasticity = 0;
+		V->push_back(Obj);
+		world->addObject(Obj);
 	}
 
 	void addRobots(World *world, QVector<EPuck*> *V, bool shepherd)
