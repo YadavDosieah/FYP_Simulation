@@ -12,7 +12,6 @@ From: ubuntu:latest
 
       #Install the packages you
           apt-get update
-          apt-get install -y singularity-container
 	        apt-get install -y wget git vim cmake
           apt-get install -y libboost-all-dev doxygen
           apt-get install -y qt5-default

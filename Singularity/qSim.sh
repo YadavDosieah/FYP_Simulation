@@ -1,9 +1,12 @@
 #!/bin/bash
-#$ -l rmem=8G
+#$ -l rmem=16G
 #$ -l h_rt=48:00:00
 #$ -pe smp 20
 #$ -m bea
 #$ -M gydosieah1@sheffield.ac.uk
+#$ -o output.txt
+#$ -e error.txt
+#$ -j y
 # 8GB memory, 48hrs max, 20 processors
 
 #Have Singularity call a custom script from your home or other mounted directories
