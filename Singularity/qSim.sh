@@ -1,5 +1,7 @@
 #!/bin/bash
-#$ -l rmem=16G
+#$ -P acsehpc
+#$ -q acsehpc.q
+#$ -l rmem=8G
 #$ -l h_rt=48:00:00
 #$ -pe smp 20
 #$ -m bea
