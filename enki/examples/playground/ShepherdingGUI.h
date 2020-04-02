@@ -294,12 +294,12 @@ class ShepherdingGUI: public ViewerWidget
 					double Distance_x = flock[i]->pos.x - flock[j]->pos.x;
 					double Distance_y = flock[i]->pos.y - flock[j]->pos.y;
 					double Distance_sq = pow(Distance_x,2) + pow(Distance_y,2);
-					if(Distance_sq < 100)
+					if(Distance_sq < 225)
 					{
 						Force_x = Force_x + (Csheep/Distance_sq)*(Distance_x/sqrt(Distance_sq));
 						Force_y = Force_y + (Csheep/Distance_sq)*(Distance_y/sqrt(Distance_sq));
 					}
-					if(Distance_sq > 500 && Distance_sq < 1000)
+					if(Distance_sq > 625 && Distance_sq < 1225)
 					{
 						Force_x = Force_x - Ksheep*Distance_sq*(Distance_x/sqrt(Distance_sq));
 						Force_y = Force_y - Ksheep*Distance_sq*(Distance_y/sqrt(Distance_sq));
@@ -316,54 +316,54 @@ class ShepherdingGUI: public ViewerWidget
 					double Distance_x = flock[i]->pos.x - shepherds[j]->pos.x;
 					double Distance_y = flock[i]->pos.y - shepherds[j]->pos.y;
 					double Distance_sq = pow(Distance_x,2) + pow(Distance_y,2);
-					if(Distance_sq < 1500)
+					if(Distance_sq < 2500)
 					{
 						ShepherdDetected = true;
 						Force_x = Force_x + (Cshepherd/Distance_sq)*(Distance_x/sqrt(Distance_sq));
 						Force_y = Force_y + (Cshepherd/Distance_sq)*(Distance_y/sqrt(Distance_sq));
 					}
 			}
-			double Angle = flock[i]->angle;
 			if (ShepherdDetected != true)
 			{
 				Force_x = Force_x + Force_Sheep_x;
 				Force_y = Force_y + Force_Sheep_y;
 			}
 
-			int margin = 15;
+			int margin = 25;
 			if(flock[i]->pos.x < margin)
 			{
-				Force_x = Force_x - KWall*(margin-flock[i]->pos.x);
+				Force_x = Force_x - KWall*(0-flock[i]->pos.x);
 			}
 			else if(flock[i]->pos.x > (300-margin))
 			{
-				Force_x = Force_x - KWall*(300-margin-flock[i]->pos.x);
+				Force_x = Force_x - KWall*(300-flock[i]->pos.x);
 			}
 
 			if(flock[i]->pos.y < margin)
 			{
-				Force_y = Force_y - KWall*(margin-flock[i]->pos.y);
+				Force_y = Force_y - KWall*(0-flock[i]->pos.y);
 			}
 			else if(flock[i]->pos.y > (300-margin))
 			{
-				Force_y = Force_y - KWall*(300-margin-flock[i]->pos.y);
+				Force_y = Force_y - KWall*(300-flock[i]->pos.y);
 			}
 
-
+			double Angle = flock[i]->angle;
 			Force_x = cos(-Angle) * Force_x - sin(-Angle) * Force_y;
-   		Force_y = cos(-Angle) * Force_y + sin(-Angle) * Force_x;
-			flock[i]->leftSpeed = K1*Force_x + K2*Force_y;
-			flock[i]->rightSpeed = K1*Force_x - K2*Force_y;
+			Force_y = cos(-Angle) * Force_y + sin(-Angle) * Force_x;
+
+			flock[i]->leftSpeed = (K1*Force_x + K2*Force_y) + 2;
+			flock[i]->rightSpeed = (K1*Force_x - K2*Force_y) + 2;
 			flock[i]->leftSpeed = flock[i]->leftSpeed > SPEED_MAX/2 ? SPEED_MAX/2 : flock[i]->leftSpeed;
 			flock[i]->rightSpeed = flock[i]->rightSpeed > SPEED_MAX/2 ? SPEED_MAX/2 : flock[i]->rightSpeed;
 			flock[i]->leftSpeed = flock[i]->leftSpeed < -SPEED_MAX/2 ? -SPEED_MAX/2 : flock[i]->leftSpeed;
 			flock[i]->rightSpeed = flock[i]->rightSpeed < -SPEED_MAX/2 ? -SPEED_MAX/2 : flock[i]->rightSpeed;
 
-			if(Force_x == 0 && Force_y == 0)
-			{
-				flock[i]->leftSpeed = (rand()%int(SPEED_MAX)) - SPEED_MAX/2;
-				flock[i]->rightSpeed = (rand()%int(SPEED_MAX)) - SPEED_MAX/2;
-			}
+			// if(Force_x == 0 && Force_y == 0)
+			// {
+			// 	flock[i]->leftSpeed = (rand()%int(SPEED_MAX)) - SPEED_MAX/2;
+			// 	flock[i]->rightSpeed = (rand()%int(SPEED_MAX)) - SPEED_MAX/2;
+			// }
 			outputFile << flock[i]->pos.x << "," << flock[i]->pos.y << ",";
 		}
 

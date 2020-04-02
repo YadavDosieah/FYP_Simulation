@@ -9,7 +9,7 @@
 #$ -o output.txt
 #$ -e error.txt
 #$ -j y
-# 8GB memory, 48hrs max, 10 processors
+# 4GB memory, 48hrs max, 10 processors
 
 #Have Singularity call a custom script from your home or other mounted directories
 #Don't forget to make the script executable before running by using chmod

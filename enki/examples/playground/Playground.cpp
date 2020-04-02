@@ -4,7 +4,8 @@
 #include <libconfig.h++>
 #include <mutex>
 #include <fstream>
-
+#include <algorithm>
+#include <omp.h>
 // #ifdef USE_SDL
 // #include </usr/include/SDL2/SDL.h>
 // #endif
@@ -48,7 +49,7 @@ FitFunc ControllerFitness = [](const double *x, const int N)
     Shepherding simulation(&world,mode,noOfSheep,noOfShepherd,noOfObjects,Csheep,
       Cshepherd,Ksheep,K1, K2, KWall, Goalx, Goaly, x, dim);
 
-      for (unsigned i=0; i < NoOfSteps; i++)
+      for (unsigned j=0; j < NoOfSteps; j++)
       {
         world.step(0.1);
         simulation.doPerTick();
@@ -58,9 +59,9 @@ FitFunc ControllerFitness = [](const double *x, const int N)
                 << "," << x[1] << ","  << x[2] << "," << x[3] << "," << x[4]
                 << "," << x[5] << ","  << x[6] << "," << x[7] << "," << x[8]
                 << "," << x[9] << ","  << x[10] << "," << x[11] << "," << x[12]
-                << "," << x[13] << "," << x[14]<< "," << x[15] << "," << simulation.getFitness() << endl;
+                << "," << x[13] << "," << x[14]<< "," << x[15] << "," << simulation.getTotalFitness() << endl;
       pthread_mutex_unlock(&mtx);
-      fitness = fitness + simulation.getFitness();
+      fitness = fitness + simulation.getTotalFitness();
   }
   return fitness/No_Of_Trials;
 };
@@ -85,13 +86,14 @@ int main(int argc, char *argv[])
 	Goalx = configfile.lookup("Goalx");
 	Goaly = configfile.lookup("Goaly");
   bool GUI = configfile.lookup("GUI");
+  bool Analysis = configfile.lookup("Analysis");
   bool Optimise = configfile.lookup("Optimise");
   No_Of_Trials = configfile.lookup("No_Of_Trials");
   NoOfSteps = configfile.lookup("NoOfSteps");
   int NoOfEvolutions = configfile.lookup("NoOfEvolutions");
   int MaxIter = configfile.lookup("MaxIter");
   int lambda = configfile.lookup("lambda"); // offsprings at each generation.
-
+  int No_Of_Threads = configfile.lookup("No_Of_Threads");
   //Run simulation with GUI
   if(GUI)
   {
@@ -111,31 +113,87 @@ int main(int argc, char *argv[])
 
     //Size of world (arena)
     World world(300,300, Color(0.5,0.5,0.5), igt ? World::GroundTexture(gt.width(), gt.height(), bits) : World::GroundTexture());
-    // const double x[12] = {5.8792811016959, 0.937458314923512,
-    //     3.23699466373748,  9.33541504487862,
-    //      -3.23087087629488, -2.85720601467614,
-    //        4.95596152661405,  7.41440286408736,
-    //         -1.13582576290321,  2.64006177785208,
-    //          -5.79119505942567,  4.34649544727908};
 
-
-      // -0.747120997715685,  -5.05060174105995,
-      //   -21.8517336707031,  -10.6471478982427,
-      //     -20.5772052447751,   3.37521229231428,
-      //       -15.9217454297743,  -21.2222123225913,
-      //         -15.4113627234049,  -3.56226669173889,
-      //           -7.08448943761407,  -20.9737938021531};
-    const double x[16] =  {0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0} ;
+    double x[16] = {0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0};
+    if(mode == 0)
+    {
+      double x1[16] =  {7.62906,  2.12052,
+                        -0.208291, 4.76392,
+                        -12.4398,  2.2009,
+                        8.03278,  8.97639,
+                        10.9182,  6.82779,
+                        9.40439,  2.39981,
+                        0,0,0,0};
+      std::copy ( x1, x1+16, x);
+      dim = 12;
+    }
+    else
+    {
+      double x2[16] = {0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0};
+      std::copy ( x2, x2+16, x);
+      dim = 16;
+    }
+    cout << "Mode = " << mode << endl;
     ShepherdingGUI viewer(&world, mode, noOfSheep,noOfShepherd,noOfObjects,Csheep,
       Cshepherd,Ksheep, K1, K2, KWall, Goalx, Goaly, x, dim);
 
       viewer.show();
       return app.exec();
   }
+  //Analysis
+  else if(Analysis)
+  {
+    double x[16] = {0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0};
+    if(mode == 0)
+    {double x1[16] =  {7.62906,  2.12052,
+                        -0.208291, 4.76392,
+                        -12.4398,  2.2009,
+                        8.03278,  8.97639,
+                        10.9182,  6.82779,
+                        9.40439,  2.39981,
+                        0,0,0,0};
+      std::copy ( x1, x1+16, x);
+      dim = 12;
+    }
+    else
+    {
+      double x2[16] = {0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0};
+      std::copy ( x2, x2+16, x);
+      dim = 16;
+    }
+
+    int No_Of_Success = 0;
+    omp_set_num_threads(No_Of_Threads);
+    omp_set_dynamic(false);
+    #pragma omp parallel for reduction(+:No_Of_Success)
+    for(int i=0;i<No_Of_Trials;i++)
+    {
+      cout << "Trial " << i << endl;
+      World world(300,300, Color(0.5,0.5,0.5));
+      Shepherding simulation(&world,mode,noOfSheep,noOfShepherd,noOfObjects,Csheep,
+        Cshepherd,Ksheep,K1, K2, KWall, Goalx, Goaly, x, dim);
+
+        for (unsigned j=0; j < NoOfSteps; j++)
+        {
+          world.step(0.1);
+          simulation.doPerTick();
+          if(simulation.getFitness() == 0)
+          {
+            cout << "Success" << endl;
+            j = NoOfSteps;
+            No_Of_Success ++;
+          }
+        }
+    }
+    cout << No_Of_Success << endl;
+    cout << "Success rate = " << float(No_Of_Success)/float(No_Of_Trials) << endl;
+  }
 
   //Run optimization algorithm
   else if(Optimise)
   {
+    omp_set_num_threads(No_Of_Threads);
+    omp_set_dynamic(false);
     std::ofstream Parameters_Outfile;
     Parameters_Outfile.open("Results/mode" + std::to_string(mode) + "/Parameters_File.csv");
     for(int i = 0; i < NoOfEvolutions; i++)

@@ -34,6 +34,7 @@ class Shepherding
     const double *y;
 		double x[16];
 		double fitness_val = 0;
+		double total_fitness_val = 0;
 		int TimeStep = 0;
 
 	public:
@@ -95,6 +96,7 @@ class Shepherding
 			centroid_x = centroid_x/noOfSheep;
 			centroid_y = centroid_y/noOfSheep;
 
+			fitness_val = 0;
 			for(int i = 0; i < noOfSheep; i++)
 			{
 				double Distance_x1 = centroid_x - flock[i]->pos.x;
@@ -107,6 +109,7 @@ class Shepherding
 				double Distances_sq = (pow(Distance_x1,2) + pow(Distance_y1,2))*(pow(Distance_x2,2) + pow(Distance_y2,2));
 				fitness_val = fitness_val + (Distances_sq/(4*noOfSheep*3.7*3.7))*TimeStep*0.1;
 			}
+			total_fitness_val = total_fitness_val + fitness_val;
 			for(int i = 0; i < noOfShepherd; i++)
 			{
 				valarray<Color> image = shepherds[i]->camera.image;
@@ -175,6 +178,7 @@ class Shepherding
 			centroid_x = centroid_x/noOfObjects;
 			centroid_y = centroid_y/noOfObjects;
 
+			fitness_val = 0;
 			for(int i = 0; i < noOfObjects; i++)
 			{
 				double Distance_x1 = centroid_x - objects[i]->pos.x;
@@ -187,6 +191,8 @@ class Shepherding
 				double Distances_sq = (pow(Distance_x1,2) + pow(Distance_y1,2))*(pow(Distance_x2,2) + pow(Distance_y2,2));
 				fitness_val = fitness_val + (Distances_sq/(4*noOfObjects*3.7*3.7))*TimeStep*0.1;
 			}
+			total_fitness_val = total_fitness_val + fitness_val;
+
 			for(int i = 0; i < noOfShepherd; i++)
 			{
 				valarray<Color> image = shepherds[i]->camera.image;
@@ -254,6 +260,7 @@ class Shepherding
 			centroid_x = centroid_x/noOfObjects;
 			centroid_y = centroid_y/noOfObjects;
 
+			fitness_val = 0;
 			for(int i = 0; i < noOfObjects; i++)
 			{
 				double Distance_x1 = centroid_x - objects[i]->pos.x;
@@ -289,6 +296,8 @@ class Shepherding
 				double Distances_sq = (pow(Distance_x1,2) + pow(Distance_y1,2))*(pow(Distance_x2,2) + pow(Distance_y2,2));
 				fitness_val = fitness_val + (Distances_sq/(4*noOfSheep*3.7*3.7))*TimeStep*0.1;
 			}
+			total_fitness_val = total_fitness_val + fitness_val;
+
 			for(int i = 0; i < noOfShepherd; i++)
 			{
 				valarray<Color> image = shepherds[i]->camera.image;
@@ -373,12 +382,12 @@ class Shepherding
 					double Distance_x = flock[i]->pos.x - flock[j]->pos.x;
 					double Distance_y = flock[i]->pos.y - flock[j]->pos.y;
 					double Distance_sq = pow(Distance_x,2) + pow(Distance_y,2);
-					if(Distance_sq < 100)
+					if(Distance_sq < 225)
 					{
 						Force_x = Force_x + (Csheep/Distance_sq)*(Distance_x/sqrt(Distance_sq));
 						Force_y = Force_y + (Csheep/Distance_sq)*(Distance_y/sqrt(Distance_sq));
 					}
-					if(Distance_sq > 500 && Distance_sq < 1000)
+					if(Distance_sq > 625 && Distance_sq < 1225)
 					{
 						Force_x = Force_x - Ksheep*Distance_sq*(Distance_x/sqrt(Distance_sq));
 						Force_y = Force_y - Ksheep*Distance_sq*(Distance_y/sqrt(Distance_sq));
@@ -395,7 +404,7 @@ class Shepherding
 					double Distance_x = flock[i]->pos.x - shepherds[j]->pos.x;
 					double Distance_y = flock[i]->pos.y - shepherds[j]->pos.y;
 					double Distance_sq = pow(Distance_x,2) + pow(Distance_y,2);
-					if(Distance_sq < 1500)
+					if(Distance_sq < 2500)
 					{
 						ShepherdDetected = true;
 						Force_x = Force_x + (Cshepherd/Distance_sq)*(Distance_x/sqrt(Distance_sq));
@@ -449,6 +458,10 @@ class Shepherding
 	double getFitness()
 	{
 		return fitness_val;
+	}
+	double getTotalFitness()
+	{
+		return total_fitness_val;
 	}
 	~Shepherding()
 	{
