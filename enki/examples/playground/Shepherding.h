@@ -421,20 +421,20 @@ class Shepherding
 			int margin = 15;
 			if(flock[i]->pos.x < margin)
 			{
-				Force_x = Force_x - KWall*(margin-flock[i]->pos.x);
+				Force_x = Force_x - KWall*(0-flock[i]->pos.x);
 			}
 			else if(flock[i]->pos.x > (300-margin))
 			{
-				Force_x = Force_x - KWall*(300-margin-flock[i]->pos.x);
+				Force_x = Force_x - KWall*(300-flock[i]->pos.x);
 			}
 
 			if(flock[i]->pos.y < margin)
 			{
-				Force_y = Force_y - KWall*(margin-flock[i]->pos.y);
+				Force_y = Force_y - KWall*(0-flock[i]->pos.y);
 			}
 			else if(flock[i]->pos.y > (300-margin))
 			{
-				Force_y = Force_y - KWall*(300-margin-flock[i]->pos.y);
+				Force_y = Force_y - KWall*(300-flock[i]->pos.y);
 			}
 
 			Force_x = cos(-Angle) * Force_x - sin(-Angle) * Force_y;
