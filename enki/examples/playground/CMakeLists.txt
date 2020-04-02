@@ -1,3 +1,4 @@
+set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -O3")
 if (SDL2_FOUND)
 	message(STATUS "SDL2 found, enabling joystick support")
 	include_directories(${SDL2_INCLUDE_DIR})

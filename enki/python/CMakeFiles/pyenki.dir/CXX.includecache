@@ -6,9 +6,9 @@
 
 #IncludeRegexTransform: 
 
-/home/yadav/Downloads/enki/enki/BluetoothBase.h
+/home/yadav/Documents/Final-Year-Project/FYP_Simulation/enki/enki/BluetoothBase.h
 PhysicalEngine.h
-/home/yadav/Downloads/enki/enki/PhysicalEngine.h
+/home/yadav/Documents/Final-Year-Project/FYP_Simulation/enki/enki/PhysicalEngine.h
 valarray
 -
 list
@@ -16,7 +16,7 @@ list
 queue
 -
 
-/home/yadav/Downloads/enki/enki/Geometry.h
+/home/yadav/Documents/Final-Year-Project/FYP_Simulation/enki/enki/Geometry.h
 math.h
 -
 cmath
@@ -30,19 +30,19 @@ ostream
 algorithm
 -
 
-/home/yadav/Downloads/enki/enki/Interaction.h
+/home/yadav/Documents/Final-Year-Project/FYP_Simulation/enki/enki/Interaction.h
 
-/home/yadav/Downloads/enki/enki/PhysicalEngine.h
+/home/yadav/Documents/Final-Year-Project/FYP_Simulation/enki/enki/PhysicalEngine.h
 Geometry.h
-/home/yadav/Downloads/enki/enki/Geometry.h
+/home/yadav/Documents/Final-Year-Project/FYP_Simulation/enki/enki/Geometry.h
 Types.h
-/home/yadav/Downloads/enki/enki/Types.h
+/home/yadav/Documents/Final-Year-Project/FYP_Simulation/enki/enki/Types.h
 Random.h
-/home/yadav/Downloads/enki/enki/Random.h
+/home/yadav/Documents/Final-Year-Project/FYP_Simulation/enki/enki/Random.h
 Interaction.h
-/home/yadav/Downloads/enki/enki/Interaction.h
+/home/yadav/Documents/Final-Year-Project/FYP_Simulation/enki/enki/Interaction.h
 BluetoothBase.h
-/home/yadav/Downloads/enki/enki/BluetoothBase.h
+/home/yadav/Documents/Final-Year-Project/FYP_Simulation/enki/enki/BluetoothBase.h
 iostream
 -
 set
@@ -52,13 +52,13 @@ vector
 valarray
 -
 
-/home/yadav/Downloads/enki/enki/Random.h
+/home/yadav/Documents/Final-Year-Project/FYP_Simulation/enki/enki/Random.h
 cmath
 -
 cstdlib
 -
 
-/home/yadav/Downloads/enki/enki/Types.h
+/home/yadav/Documents/Final-Year-Project/FYP_Simulation/enki/enki/Types.h
 vector
 -
 sstream
@@ -70,7 +70,7 @@ cassert
 stdint.h
 -
 
-/home/yadav/Downloads/enki/enki/robots/e-puck/EPuck.h
+/home/yadav/Documents/Final-Year-Project/FYP_Simulation/enki/enki/robots/e-puck/EPuck.h
 enki/robots/DifferentialWheeled.h
 -
 enki/interactions/IRSensor.h
@@ -80,7 +80,7 @@ enki/interactions/CircularCam.h
 enki/interactions/Bluetooth.h
 -
 
-/home/yadav/Downloads/enki/enki/robots/thymio2/Thymio2.h
+/home/yadav/Documents/Final-Year-Project/FYP_Simulation/enki/enki/robots/thymio2/Thymio2.h
 enki/robots/DifferentialWheeled.h
 -
 enki/interactions/IRSensor.h
@@ -88,7 +88,7 @@ enki/interactions/IRSensor.h
 enki/interactions/GroundSensor.h
 -
 
-/home/yadav/Downloads/enki/python/enki.cpp
+/home/yadav/Documents/Final-Year-Project/FYP_Simulation/enki/python/enki.cpp
 Python.h
 -
 boost/python.hpp
@@ -98,17 +98,17 @@ boost/python/suite/indexing/vector_indexing_suite.hpp
 boost/python/return_value_policy.hpp
 -
 ../enki/Types.h
-/home/yadav/Downloads/enki/enki/Types.h
+/home/yadav/Documents/Final-Year-Project/FYP_Simulation/enki/enki/Types.h
 ../enki/Geometry.h
-/home/yadav/Downloads/enki/enki/Geometry.h
+/home/yadav/Documents/Final-Year-Project/FYP_Simulation/enki/enki/Geometry.h
 ../enki/PhysicalEngine.h
-/home/yadav/Downloads/enki/enki/PhysicalEngine.h
+/home/yadav/Documents/Final-Year-Project/FYP_Simulation/enki/enki/PhysicalEngine.h
 ../enki/robots/e-puck/EPuck.h
-/home/yadav/Downloads/enki/enki/robots/e-puck/EPuck.h
+/home/yadav/Documents/Final-Year-Project/FYP_Simulation/enki/enki/robots/e-puck/EPuck.h
 ../enki/robots/thymio2/Thymio2.h
-/home/yadav/Downloads/enki/enki/robots/thymio2/Thymio2.h
+/home/yadav/Documents/Final-Year-Project/FYP_Simulation/enki/enki/robots/thymio2/Thymio2.h
 ../viewer/Viewer.h
-/home/yadav/Downloads/enki/viewer/Viewer.h
+/home/yadav/Documents/Final-Year-Project/FYP_Simulation/enki/viewer/Viewer.h
 QApplication
 -
 QImage
@@ -116,7 +116,7 @@ QImage
 QGLWidget
 -
 
-/home/yadav/Downloads/enki/viewer/Viewer.h
+/home/yadav/Documents/Final-Year-Project/FYP_Simulation/enki/viewer/Viewer.h
 typeinfo
 -
 QGLWidget
@@ -136,13 +136,13 @@ enki/Geometry.h
 enki/PhysicalEngine.h
 -
 
-/usr/include/python3.6m/Python.h
+/usr/include/python2.7/Python.h
 patchlevel.h
-/usr/include/python3.6m/patchlevel.h
+/usr/include/python2.7/patchlevel.h
 pyconfig.h
-/usr/include/python3.6m/pyconfig.h
+/usr/include/python2.7/pyconfig.h
 pymacconfig.h
-/usr/include/python3.6m/pymacconfig.h
+/usr/include/python2.7/pymacconfig.h
 limits.h
 -
 stdio.h
@@ -162,321 +162,297 @@ stddef.h
 assert.h
 -
 pyport.h
-/usr/include/python3.6m/pyport.h
-pymacro.h
-/usr/include/python3.6m/pymacro.h
-pyatomic.h
-/usr/include/python3.6m/pyatomic.h
+/usr/include/python2.7/pyport.h
 pymath.h
-/usr/include/python3.6m/pymath.h
-pytime.h
-/usr/include/python3.6m/pytime.h
+/usr/include/python2.7/pymath.h
 pymem.h
-/usr/include/python3.6m/pymem.h
+/usr/include/python2.7/pymem.h
 object.h
-/usr/include/python3.6m/object.h
+/usr/include/python2.7/object.h
 objimpl.h
-/usr/include/python3.6m/objimpl.h
-typeslots.h
-/usr/include/python3.6m/typeslots.h
-pyhash.h
-/usr/include/python3.6m/pyhash.h
+/usr/include/python2.7/objimpl.h
 pydebug.h
-/usr/include/python3.6m/pydebug.h
-bytearrayobject.h
-/usr/include/python3.6m/bytearrayobject.h
-bytesobject.h
-/usr/include/python3.6m/bytesobject.h
+/usr/include/python2.7/pydebug.h
 unicodeobject.h
-/usr/include/python3.6m/unicodeobject.h
-longobject.h
-/usr/include/python3.6m/longobject.h
-longintrepr.h
-/usr/include/python3.6m/longintrepr.h
+/usr/include/python2.7/unicodeobject.h
+intobject.h
+/usr/include/python2.7/intobject.h
 boolobject.h
-/usr/include/python3.6m/boolobject.h
+/usr/include/python2.7/boolobject.h
+longobject.h
+/usr/include/python2.7/longobject.h
 floatobject.h
-/usr/include/python3.6m/floatobject.h
+/usr/include/python2.7/floatobject.h
 complexobject.h
-/usr/include/python3.6m/complexobject.h
+/usr/include/python2.7/complexobject.h
 rangeobject.h
-/usr/include/python3.6m/rangeobject.h
+/usr/include/python2.7/rangeobject.h
+stringobject.h
+/usr/include/python2.7/stringobject.h
 memoryobject.h
-/usr/include/python3.6m/memoryobject.h
+/usr/include/python2.7/memoryobject.h
+bufferobject.h
+/usr/include/python2.7/bufferobject.h
+bytesobject.h
+/usr/include/python2.7/bytesobject.h
+bytearrayobject.h
+/usr/include/python2.7/bytearrayobject.h
 tupleobject.h
-/usr/include/python3.6m/tupleobject.h
+/usr/include/python2.7/tupleobject.h
 listobject.h
-/usr/include/python3.6m/listobject.h
+/usr/include/python2.7/listobject.h
 dictobject.h
-/usr/include/python3.6m/dictobject.h
-odictobject.h
-/usr/include/python3.6m/odictobject.h
+/usr/include/python2.7/dictobject.h
 enumobject.h
-/usr/include/python3.6m/enumobject.h
+/usr/include/python2.7/enumobject.h
 setobject.h
-/usr/include/python3.6m/setobject.h
+/usr/include/python2.7/setobject.h
 methodobject.h
-/usr/include/python3.6m/methodobject.h
+/usr/include/python2.7/methodobject.h
 moduleobject.h
-/usr/include/python3.6m/moduleobject.h
+/usr/include/python2.7/moduleobject.h
 funcobject.h
-/usr/include/python3.6m/funcobject.h
+/usr/include/python2.7/funcobject.h
 classobject.h
-/usr/include/python3.6m/classobject.h
+/usr/include/python2.7/classobject.h
 fileobject.h
-/usr/include/python3.6m/fileobject.h
+/usr/include/python2.7/fileobject.h
+cobject.h
+/usr/include/python2.7/cobject.h
 pycapsule.h
-/usr/include/python3.6m/pycapsule.h
+/usr/include/python2.7/pycapsule.h
 traceback.h
-/usr/include/python3.6m/traceback.h
+/usr/include/python2.7/traceback.h
 sliceobject.h
-/usr/include/python3.6m/sliceobject.h
+/usr/include/python2.7/sliceobject.h
 cellobject.h
-/usr/include/python3.6m/cellobject.h
+/usr/include/python2.7/cellobject.h
 iterobject.h
-/usr/include/python3.6m/iterobject.h
+/usr/include/python2.7/iterobject.h
 genobject.h
-/usr/include/python3.6m/genobject.h
+/usr/include/python2.7/genobject.h
 descrobject.h
-/usr/include/python3.6m/descrobject.h
+/usr/include/python2.7/descrobject.h
 warnings.h
-/usr/include/python3.6m/warnings.h
+/usr/include/python2.7/warnings.h
 weakrefobject.h
-/usr/include/python3.6m/weakrefobject.h
-structseq.h
-/usr/include/python3.6m/structseq.h
-namespaceobject.h
-/usr/include/python3.6m/namespaceobject.h
+/usr/include/python2.7/weakrefobject.h
 codecs.h
-/usr/include/python3.6m/codecs.h
+/usr/include/python2.7/codecs.h
 pyerrors.h
-/usr/include/python3.6m/pyerrors.h
+/usr/include/python2.7/pyerrors.h
 pystate.h
-/usr/include/python3.6m/pystate.h
+/usr/include/python2.7/pystate.h
 pyarena.h
-/usr/include/python3.6m/pyarena.h
+/usr/include/python2.7/pyarena.h
 modsupport.h
-/usr/include/python3.6m/modsupport.h
+/usr/include/python2.7/modsupport.h
 pythonrun.h
-/usr/include/python3.6m/pythonrun.h
-pylifecycle.h
-/usr/include/python3.6m/pylifecycle.h
+/usr/include/python2.7/pythonrun.h
 ceval.h
-/usr/include/python3.6m/ceval.h
+/usr/include/python2.7/ceval.h
 sysmodule.h
-/usr/include/python3.6m/sysmodule.h
-osmodule.h
-/usr/include/python3.6m/osmodule.h
+/usr/include/python2.7/sysmodule.h
 intrcheck.h
-/usr/include/python3.6m/intrcheck.h
+/usr/include/python2.7/intrcheck.h
 import.h
-/usr/include/python3.6m/import.h
+/usr/include/python2.7/import.h
 abstract.h
-/usr/include/python3.6m/abstract.h
-bltinmodule.h
-/usr/include/python3.6m/bltinmodule.h
+/usr/include/python2.7/abstract.h
 compile.h
-/usr/include/python3.6m/compile.h
+/usr/include/python2.7/compile.h
 eval.h
-/usr/include/python3.6m/eval.h
+/usr/include/python2.7/eval.h
 pyctype.h
-/usr/include/python3.6m/pyctype.h
+/usr/include/python2.7/pyctype.h
 pystrtod.h
-/usr/include/python3.6m/pystrtod.h
+/usr/include/python2.7/pystrtod.h
 pystrcmp.h
-/usr/include/python3.6m/pystrcmp.h
+/usr/include/python2.7/pystrcmp.h
 dtoa.h
-/usr/include/python3.6m/dtoa.h
-fileutils.h
-/usr/include/python3.6m/fileutils.h
+/usr/include/python2.7/dtoa.h
 pyfpe.h
-/usr/include/python3.6m/pyfpe.h
+/usr/include/python2.7/pyfpe.h
+pth.h
+-
 
-/usr/include/python3.6m/abstract.h
+/usr/include/python2.7/abstract.h
 
-/usr/include/python3.6m/bltinmodule.h
+/usr/include/python2.7/boolobject.h
 
-/usr/include/python3.6m/boolobject.h
+/usr/include/python2.7/bufferobject.h
 
-/usr/include/python3.6m/bytearrayobject.h
+/usr/include/python2.7/bytearrayobject.h
 stdarg.h
 -
 
-/usr/include/python3.6m/bytesobject.h
-stdarg.h
--
+/usr/include/python2.7/bytesobject.h
 
-/usr/include/python3.6m/cellobject.h
+/usr/include/python2.7/cellobject.h
 
-/usr/include/python3.6m/ceval.h
+/usr/include/python2.7/ceval.h
 
-/usr/include/python3.6m/classobject.h
+/usr/include/python2.7/classobject.h
 
-/usr/include/python3.6m/code.h
+/usr/include/python2.7/cobject.h
 
-/usr/include/python3.6m/codecs.h
+/usr/include/python2.7/code.h
 
-/usr/include/python3.6m/compile.h
+/usr/include/python2.7/codecs.h
+
+/usr/include/python2.7/compile.h
 code.h
-/usr/include/python3.6m/code.h
+/usr/include/python2.7/code.h
 
-/usr/include/python3.6m/complexobject.h
+/usr/include/python2.7/complexobject.h
 
-/usr/include/python3.6m/descrobject.h
+/usr/include/python2.7/descrobject.h
 
-/usr/include/python3.6m/dictobject.h
+/usr/include/python2.7/dictobject.h
 
-/usr/include/python3.6m/dtoa.h
+/usr/include/python2.7/dtoa.h
 
-/usr/include/python3.6m/dynamic_annotations.h
+/usr/include/python2.7/enumobject.h
 
-/usr/include/python3.6m/enumobject.h
+/usr/include/python2.7/eval.h
 
-/usr/include/python3.6m/eval.h
+/usr/include/python2.7/fileobject.h
 
-/usr/include/python3.6m/fileobject.h
+/usr/include/python2.7/floatobject.h
 
-/usr/include/python3.6m/fileutils.h
+/usr/include/python2.7/funcobject.h
 
-/usr/include/python3.6m/floatobject.h
+/usr/include/python2.7/genobject.h
 
-/usr/include/python3.6m/funcobject.h
+/usr/include/python2.7/import.h
 
-/usr/include/python3.6m/genobject.h
+/usr/include/python2.7/intobject.h
 
-/usr/include/python3.6m/import.h
+/usr/include/python2.7/intrcheck.h
 
-/usr/include/python3.6m/intrcheck.h
+/usr/include/python2.7/iterobject.h
 
-/usr/include/python3.6m/iterobject.h
+/usr/include/python2.7/listobject.h
 
-/usr/include/python3.6m/listobject.h
+/usr/include/python2.7/longobject.h
 
-/usr/include/python3.6m/longintrepr.h
+/usr/include/python2.7/memoryobject.h
 
-/usr/include/python3.6m/longobject.h
+/usr/include/python2.7/methodobject.h
 
-/usr/include/python3.6m/memoryobject.h
-
-/usr/include/python3.6m/methodobject.h
-
-/usr/include/python3.6m/modsupport.h
+/usr/include/python2.7/modsupport.h
 stdarg.h
 -
 
-/usr/include/python3.6m/moduleobject.h
+/usr/include/python2.7/moduleobject.h
 
-/usr/include/python3.6m/namespaceobject.h
+/usr/include/python2.7/object.h
 
-/usr/include/python3.6m/object.h
-
-/usr/include/python3.6m/objimpl.h
+/usr/include/python2.7/objimpl.h
 pymem.h
-/usr/include/python3.6m/pymem.h
+/usr/include/python2.7/pymem.h
 
-/usr/include/python3.6m/odictobject.h
+/usr/include/python2.7/patchlevel.h
 
-/usr/include/python3.6m/osmodule.h
+/usr/include/python2.7/pyarena.h
 
-/usr/include/python3.6m/patchlevel.h
+/usr/include/python2.7/pycapsule.h
 
-/usr/include/python3.6m/pyarena.h
-
-/usr/include/python3.6m/pyatomic.h
-dynamic_annotations.h
-/usr/include/python3.6m/dynamic_annotations.h
-pyconfig.h
-/usr/include/python3.6m/pyconfig.h
-stdatomic.h
+/usr/include/python2.7/pyconfig.h
+x86_64-linux-gnu/python2.7/pyconfig.h
 -
-
-/usr/include/python3.6m/pycapsule.h
-
-/usr/include/python3.6m/pyconfig.h
-x86_64-linux-gnu/python3.6m/pyconfig.h
+x86_64-linux-gnux32/python2.7/pyconfig.h
 -
-x86_64-linux-gnux32/python3.6m/pyconfig.h
+i386-linux-gnu/python2.7/pyconfig.h
 -
-i386-linux-gnu/python3.6m/pyconfig.h
+aarch64_ilp32-linux-gnu/python2.7/pyconfig.h
 -
-aarch64-linux-gnu/python3.6m/pyconfig.h
+aarch64-linux-gnu/python2.7/pyconfig.h
 -
-alpha-linux-gnu/python3.6m/pyconfig.h
+aarch64_be_ilp32-linux-gnu/python2.7/pyconfig.h
 -
-arm-linux-gnueabihf/python3.6m/pyconfig.h
+aarch64_be-linux-gnu/python2.7/pyconfig.h
 -
-arm-linux-gnueabi/python3.6m/pyconfig.h
+alpha-linux-gnu/python2.7/pyconfig.h
 -
-hppa-linux-gnu/python3.6m/pyconfig.h
+arm-linux-gnueabihf/python2.7/pyconfig.h
 -
-ia64-linux-gnu/python3.6m/pyconfig.h
+armeb-linux-gnueabihf/python2.7/pyconfig.h
 -
-m68k-linux-gnu/python3.6m/pyconfig.h
+arm-linux-gnueabi/python2.7/pyconfig.h
 -
-mipsisa32r6el-linux-gnu/python3.6m/pyconfig.h
+armeb-linux-gnueabi/python2.7/pyconfig.h
 -
-mipsisa64r6el-linux-gnuabin32/python3.6m/pyconfig.h
+hppa-linux-gnu/python2.7/pyconfig.h
 -
-mipsisa64r6el-linux-gnuabi64/python3.6m/pyconfig.h
+ia64-linux-gnu/python2.7/pyconfig.h
 -
-mipsisa32r6-linux-gnu/python3.6m/pyconfig.h
+m68k-linux-gnu/python2.7/pyconfig.h
 -
-mipsisa64r6-linux-gnuabin32/python3.6m/pyconfig.h
+mipsisa32r6el-linux-gnu/python2.7/pyconfig.h
 -
-mipsisa64r6-linux-gnuabi64/python3.6m/pyconfig.h
+mipsisa64r6el-linux-gnuabin32/python2.7/pyconfig.h
 -
-mipsel-linux-gnu/python3.6m/pyconfig.h
+mipsisa64r6el-linux-gnuabi64/python2.7/pyconfig.h
 -
-mips64el-linux-gnuabin32/python3.6m/pyconfig.h
+mipsisa32r6-linux-gnu/python2.7/pyconfig.h
 -
-mips64el-linux-gnuabi64/python3.6m/pyconfig.h
+mipsisa64r6-linux-gnuabin32/python2.7/pyconfig.h
 -
-mips-linux-gnu/python3.6m/pyconfig.h
+mipsisa64r6-linux-gnuabi64/python2.7/pyconfig.h
 -
-mips64-linux-gnuabin32/python3.6m/pyconfig.h
+mipsel-linux-gnu/python2.7/pyconfig.h
 -
-mips64-linux-gnuabi64/python3.6m/pyconfig.h
+mips64el-linux-gnuabin32/python2.7/pyconfig.h
 -
-or1k-linux-gnu/python3.6m/pyconfig.h
+mips64el-linux-gnuabi64/python2.7/pyconfig.h
 -
-powerpc-linux-gnuspe/python3.6m/pyconfig.h
+mips-linux-gnu/python2.7/pyconfig.h
 -
-powerpc64le-linux-gnu/python3.6m/pyconfig.h
+mips64-linux-gnuabin32/python2.7/pyconfig.h
 -
-powerpc64-linux-gnu/python3.6m/pyconfig.h
+mips64-linux-gnuabi64/python2.7/pyconfig.h
 -
-powerpc-linux-gnu/python3.6m/pyconfig.h
+or1k-linux-gnu/python2.7/pyconfig.h
 -
-s390x-linux-gnu/python3.6m/pyconfig.h
+powerpc-linux-gnuspe/python2.7/pyconfig.h
 -
-s390-linux-gnu/python3.6m/pyconfig.h
+powerpc64le-linux-gnu/python2.7/pyconfig.h
 -
-sh4-linux-gnu/python3.6m/pyconfig.h
+powerpc64-linux-gnu/python2.7/pyconfig.h
 -
-sparc64-linux-gnu/python3.6m/pyconfig.h
+powerpc-linux-gnu/python2.7/pyconfig.h
 -
-sparc-linux-gnu/python3.6m/pyconfig.h
+s390x-linux-gnu/python2.7/pyconfig.h
 -
-riscv64-linux-gnu/python3.6m/pyconfig.h
+s390-linux-gnu/python2.7/pyconfig.h
 -
-riscv32-linux-gnu/python3.6m/pyconfig.h
+sh4-linux-gnu/python2.7/pyconfig.h
 -
-x86_64-kfreebsd-gnu/python3.6m/pyconfig.h
+sparc64-linux-gnu/python2.7/pyconfig.h
 -
-i386-kfreebsd-gnu/python3.6m/pyconfig.h
+sparc-linux-gnu/python2.7/pyconfig.h
 -
-i386-gnu/python3.6m/pyconfig.h
+riscv64-linux-gnu/python2.7/pyconfig.h
+-
+riscv32-linux-gnu/python2.7/pyconfig.h
+-
+x86_64-kfreebsd-gnu/python2.7/pyconfig.h
+-
+i386-kfreebsd-gnu/python2.7/pyconfig.h
+-
+i386-gnu/python2.7/pyconfig.h
 -
 
-/usr/include/python3.6m/pyctype.h
+/usr/include/python2.7/pyctype.h
 
-/usr/include/python3.6m/pydebug.h
+/usr/include/python2.7/pydebug.h
 
-/usr/include/python3.6m/pyerrors.h
+/usr/include/python2.7/pyerrors.h
 stdarg.h
 -
 
-/usr/include/python3.6m/pyfpe.h
+/usr/include/python2.7/pyfpe.h
 signal.h
 -
 setjmp.h
@@ -484,26 +460,22 @@ setjmp.h
 math.h
 -
 
-/usr/include/python3.6m/pyhash.h
+/usr/include/python2.7/pymacconfig.h
 
-/usr/include/python3.6m/pylifecycle.h
-
-/usr/include/python3.6m/pymacconfig.h
-
-/usr/include/python3.6m/pymacro.h
-
-/usr/include/python3.6m/pymath.h
+/usr/include/python2.7/pymath.h
 pyconfig.h
-/usr/include/python3.6m/pyconfig.h
+/usr/include/python2.7/pyconfig.h
 
-/usr/include/python3.6m/pymem.h
+/usr/include/python2.7/pymem.h
 pyport.h
-/usr/include/python3.6m/pyport.h
+/usr/include/python2.7/pyport.h
 
-/usr/include/python3.6m/pyport.h
+/usr/include/python2.7/pyport.h
 pyconfig.h
-/usr/include/python3.6m/pyconfig.h
+/usr/include/python2.7/pyconfig.h
 inttypes.h
+-
+stdint.h
 -
 stdlib.h
 -
@@ -521,6 +493,12 @@ time.h
 -
 sys/select.h
 -
+sys/types.h
+-
+unixstuff.h
+/usr/include/python2.7/unixstuff.h
+sys/types.h
+-
 sys/stat.h
 -
 stat.h
@@ -537,42 +515,32 @@ ctype.h
 -
 wctype.h
 -
-android/api-level.h
+
+/usr/include/python2.7/pystate.h
+
+/usr/include/python2.7/pystrcmp.h
+
+/usr/include/python2.7/pystrtod.h
+
+/usr/include/python2.7/pythonrun.h
+
+/usr/include/python2.7/rangeobject.h
+
+/usr/include/python2.7/setobject.h
+
+/usr/include/python2.7/sliceobject.h
+
+/usr/include/python2.7/stringobject.h
+stdarg.h
 -
 
-/usr/include/python3.6m/pystate.h
+/usr/include/python2.7/sysmodule.h
 
-/usr/include/python3.6m/pystrcmp.h
+/usr/include/python2.7/traceback.h
 
-/usr/include/python3.6m/pystrtod.h
+/usr/include/python2.7/tupleobject.h
 
-/usr/include/python3.6m/pythonrun.h
-
-/usr/include/python3.6m/pytime.h
-pyconfig.h
-/usr/include/python3.6m/pyconfig.h
-object.h
-/usr/include/python3.6m/object.h
-
-/usr/include/python3.6m/rangeobject.h
-
-/usr/include/python3.6m/setobject.h
-
-/usr/include/python3.6m/sliceobject.h
-
-/usr/include/python3.6m/structseq.h
-
-/usr/include/python3.6m/sysmodule.h
-
-/usr/include/python3.6m/traceback.h
-pystate.h
-/usr/include/python3.6m/pystate.h
-
-/usr/include/python3.6m/tupleobject.h
-
-/usr/include/python3.6m/typeslots.h
-
-/usr/include/python3.6m/unicodeobject.h
+/usr/include/python2.7/unicodeobject.h
 stdarg.h
 -
 ctype.h
@@ -581,10 +549,12 @@ time.h
 -
 wchar.h
 -
+wctype.h
+-
 
-/usr/include/python3.6m/warnings.h
+/usr/include/python2.7/warnings.h
 
-/usr/include/python3.6m/weakrefobject.h
+/usr/include/python2.7/weakrefobject.h
 
 /usr/include/x86_64-linux-gnu/qt5/QtCore/QMap
 qmap.h

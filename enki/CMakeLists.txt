@@ -19,6 +19,7 @@ set(LIB_VERSION_MAJOR 2) # Must be bumped for incompatible ABI changes
 set(LIB_VERSION_MINOR 0)
 set(LIB_VERSION_PATCH 0)
 set(LIB_VERSION_STRING ${LIB_VERSION_MAJOR}.${LIB_VERSION_MINOR}.${LIB_VERSION_PATCH})
+set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -O3")
 
 add_subdirectory(enki)
 

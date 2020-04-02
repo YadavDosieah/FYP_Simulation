@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/home/yadav/Downloads/enki/enki/Geometry.h
+/home/yadav/Documents/Final-Year-Project/FYP_Simulation/enki/enki/Geometry.h
 math.h
 -
 cmath
@@ -20,9 +20,9 @@ ostream
 algorithm
 -
 
-/home/yadav/Downloads/enki/tests/testGeometry.cpp
+/home/yadav/Documents/Final-Year-Project/FYP_Simulation/enki/tests/testGeometry.cpp
 ../enki/Geometry.h
-/home/yadav/Downloads/enki/enki/Geometry.h
+/home/yadav/Documents/Final-Year-Project/FYP_Simulation/enki/enki/Geometry.h
 iostream
 -
 
