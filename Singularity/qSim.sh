@@ -15,4 +15,4 @@
 #Don't forget to make the script executable before running by using chmod
 
 chmod +x ../enki/examples/playground/RunSim.sh
-singularity exec myimage.simg ../enki/examples/playground/RunSim.sh
+singularity exec myimage.simg ../enki/examples/playground/RunSim.sh $1
