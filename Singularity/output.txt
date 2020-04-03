@@ -199,3 +199,11 @@ INFO - iter=24 / evals=480 / f-value=795777459088.473 / sigma=0.808295230529465 
 INFO - iter=25 / evals=500 / f-value=901361353739.383 / sigma=0.767827511933849 / last_iter=1479687
 INFO - iter=26 / evals=520 / f-value=796244028089.427 / sigma=0.711632010813567 / last_iter=1489822
 INFO - iter=27 / evals=540 / f-value=919208170756.882 / sigma=0.666703916484394 / last_iter=1478768
+-- Python version from interpreter is 2.7.17
+-- Python libs and executable found, looking for boost::python
+-- Boost version: 1.65.1
+-- Found the following Boost libraries:
+--   python
+-- boost::python found, generating python bindings
+-- SDL2 found, enabling joystick support
+-- Configuring done

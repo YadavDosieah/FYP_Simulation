@@ -6,5 +6,5 @@ CXX_FLAGS =  -O3 -fopenmp -O3   -fPIC -std=gnu++11
 
 CXX_DEFINES = -DQT_CORE_LIB -DQT_GUI_LIB -DQT_NO_DEBUG -DQT_OPENGL_LIB -DQT_WIDGETS_LIB -DUSE_SDL
 
-CXX_INCLUDES = -I/home/yadav/Documents/Final-Year-Project/FYP_Simulation/enki/examples/playground/enkiplayground_autogen/include -I/usr/include/SDL2 -I/home/yadav/Documents/Final-Year-Project/FYP_Simulation/enki -I/usr/local/include/libcmaes -I/usr/local/lib -isystem /usr/include/x86_64-linux-gnu/qt5 -isystem /usr/include/x86_64-linux-gnu/qt5/QtWidgets -isystem /usr/include/x86_64-linux-gnu/qt5/QtGui -isystem /usr/include/x86_64-linux-gnu/qt5/QtCore -isystem /usr/lib/x86_64-linux-gnu/qt5/mkspecs/linux-g++ -isystem /usr/include/x86_64-linux-gnu/qt5/QtOpenGL -isystem /usr/include/eigen3 
+CXX_INCLUDES = -I/home/coa16gyd/simulation/FYP_Simulation/enki/examples/playground/enkiplayground_autogen/include -I/usr/include/SDL2 -I/home/coa16gyd/simulation/FYP_Simulation/enki -I/usr/local/include/libcmaes -I/usr/local/lib -isystem /usr/include/x86_64-linux-gnu/qt5 -isystem /usr/include/x86_64-linux-gnu/qt5/QtWidgets -isystem /usr/include/x86_64-linux-gnu/qt5/QtGui -isystem /usr/include/x86_64-linux-gnu/qt5/QtCore -isystem /usr/lib/x86_64-linux-gnu/qt5/mkspecs/linux-g++ -isystem /usr/include/x86_64-linux-gnu/qt5/QtOpenGL -isystem /usr/include/eigen3 
 

@@ -6,7 +6,6 @@
 #$ -pe smp 10
 #$ -m bea
 #$ -M gydosieah1@sheffield.ac.uk
-#$ -o output.txt
 #$ -e error.txt
 #$ -j y
 # 4GB memory, 48hrs max, 10 processors
