@@ -26,7 +26,7 @@ int No_Of_Trials;
 int NoOfSteps;
 int dim;
 
-//Function that runs simultion during evolutionary algorithm
+//Function that runs simulation during evolutionary algorithm
 FitFunc ControllerFitness = [](const double *x, const int N)
 {
   pthread_mutex_lock(&mtx);
@@ -184,9 +184,10 @@ int main(int argc, char *argv[])
     }
 
     int No_Of_Success = 0;
+    float SuccessRate = 0;
     omp_set_num_threads(No_Of_Threads);
     omp_set_dynamic(false);
-    #pragma omp parallel for reduction(+:No_Of_Success)
+    #pragma omp parallel for reduction(+:No_Of_Success,SuccessRate)
     for(int i=0;i<No_Of_Trials;i++)
     {
       cout << "Trial " << i << endl;
@@ -207,10 +208,21 @@ int main(int argc, char *argv[])
           {
             simulation.printPositions();
           }
+          if(simulation.getSuccessRate()==1)
+          {
+            cout << "Target Reached" << endl;
+            cout << "Time Taken = " << j << "steps" << endl;
+            j = NoOfSteps;
+            No_Of_Success++;
+          }
         }
+        float SR = simulation.getSuccessRate();
+        cout << SR << endl;
+        SuccessRate = SuccessRate + SR;
+
     }
     // cout << No_Of_Success << endl;
-    // cout << "Success rate = " << float(No_Of_Success)/float(No_Of_Trials) << endl;
+    cout << "Success rate = " << SuccessRate/No_Of_Trials << endl;
   }
 
   //Run optimization algorithm

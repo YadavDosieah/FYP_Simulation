@@ -54,7 +54,7 @@ ObjectDot = {}
 sheepLines = {}
 shepherdLines = {}
 
-goal = plt.Circle((150,250),25,fc='b')
+goal = plt.Circle((150,250),12.5,fc='b')
 goalArea = plt.Circle((150,250),50,fc='b',alpha=0.3)
 ax.add_patch(goal)
 ax.add_patch(goalArea)
@@ -73,6 +73,7 @@ for n in range(noOfShepherd):
 for k in range(noOfObjects):
     ObjectDot[k] = plt.Circle((float(CylinderX[0][k]),float(CylinderY[0][k])),3.7,fc='y')
 
+print(noOfObjects)
 
 def init():
     for i in range(noOfSheep):
@@ -90,7 +91,7 @@ def init():
         ax.add_patch(shepherdDot[n])
 
     for k in range(noOfObjects):
-        ObjectDot[k].center = (float(CylinderX[0][n]),float(CylinderY[0][n]))
+        ObjectDot[k].center = (float(CylinderX[0][k]),float(CylinderY[0][k]))
         ax.add_patch(ObjectDot[k])
     return sheepLines
 
