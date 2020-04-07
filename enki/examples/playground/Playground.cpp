@@ -87,6 +87,7 @@ int main(int argc, char *argv[])
 	Goaly = configfile.lookup("Goaly");
   bool GUI = configfile.lookup("GUI");
   bool Analysis = configfile.lookup("Analysis");
+  bool logData = configfile.lookup("logData");
   bool Optimise = configfile.lookup("Optimise");
   No_Of_Trials = configfile.lookup("No_Of_Trials");
   NoOfSteps = configfile.lookup("NoOfSteps");
@@ -94,6 +95,41 @@ int main(int argc, char *argv[])
   int MaxIter = configfile.lookup("MaxIter");
   int lambda = configfile.lookup("lambda"); // offsprings at each generation.
   int No_Of_Threads = configfile.lookup("No_Of_Threads");
+
+  double x0[16] = { 4.47020,  2.25992,
+                    -2.03707, 1.71585,
+                    1.29139, 1.060159,
+                    5.32278,  3.63879,
+                    -1.25734, 2.58292,
+                    -1.24890, 0.390242,
+                    0,0,0,0}; //Anil's
+
+  // double x0[16] = { 2.04404,  12.2577,
+  //                   2.28314, -1.40369,
+  //                   -1.11563, -6.81307,
+  //                   4.50014,  7.06904,
+  //                   1.77243, -4.61716,
+  //                   -2.35163, -4.76965,
+  //                   0,0,0,0};
+
+  // double x0[16] =  {7.62906,  2.12052,
+  //                   -0.208291, 4.76392,
+  //                   -12.4398,  2.2009,
+  //                   8.03278,  8.97639,
+  //                   10.9182,  6.82779,
+  //                   9.40439,  2.39981,
+  //                   0,0,0,0};
+  // double x0[16] = {0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0};
+
+  double x1[16] = { 1.62085,   4.87631,
+                    7.00202,   3.59515,
+                    0.253233,  0.375119,
+                    -2.51459,  0.194949,
+                    6.61425,   3.94885,
+                    -1.80797, 0.0526062,
+                    0,0,0,0};
+
+
   //Run simulation with GUI
   if(GUI)
   {
@@ -117,20 +153,12 @@ int main(int argc, char *argv[])
     double x[16] = {0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0};
     if(mode == 0)
     {
-      double x1[16] =  {7.62906,  2.12052,
-                        -0.208291, 4.76392,
-                        -12.4398,  2.2009,
-                        8.03278,  8.97639,
-                        10.9182,  6.82779,
-                        9.40439,  2.39981,
-                        0,0,0,0};
-      std::copy ( x1, x1+16, x);
+      std::copy ( x0, x0+16, x);
       dim = 12;
     }
     else
     {
-      double x2[16] = {0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0};
-      std::copy ( x2, x2+16, x);
+      std::copy ( x1, x1+16, x);
       dim = 16;
     }
     cout << "Mode = " << mode << endl;
@@ -145,20 +173,13 @@ int main(int argc, char *argv[])
   {
     double x[16] = {0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0};
     if(mode == 0)
-    {double x1[16] =  {7.62906,  2.12052,
-                        -0.208291, 4.76392,
-                        -12.4398,  2.2009,
-                        8.03278,  8.97639,
-                        10.9182,  6.82779,
-                        9.40439,  2.39981,
-                        0,0,0,0};
-      std::copy ( x1, x1+16, x);
+    {
+      std::copy ( x0, x0+16, x);
       dim = 12;
     }
     else
     {
-      double x2[16] = {0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0};
-      std::copy ( x2, x2+16, x);
+      std::copy ( x1, x1+16, x);
       dim = 16;
     }
 
@@ -173,20 +194,23 @@ int main(int argc, char *argv[])
       Shepherding simulation(&world,mode,noOfSheep,noOfShepherd,noOfObjects,Csheep,
         Cshepherd,Ksheep,K1, K2, KWall, Goalx, Goaly, x, dim);
 
+        if(logData)
+        {
+          simulation.printHeaders();
+        }
+
         for (unsigned j=0; j < NoOfSteps; j++)
         {
           world.step(0.1);
           simulation.doPerTick();
-          if(simulation.getFitness() == 0)
+          if(logData)
           {
-            cout << "Success" << endl;
-            j = NoOfSteps;
-            No_Of_Success ++;
+            simulation.printPositions();
           }
         }
     }
-    cout << No_Of_Success << endl;
-    cout << "Success rate = " << float(No_Of_Success)/float(No_Of_Trials) << endl;
+    // cout << No_Of_Success << endl;
+    // cout << "Success rate = " << float(No_Of_Success)/float(No_Of_Trials) << endl;
   }
 
   //Run optimization algorithm

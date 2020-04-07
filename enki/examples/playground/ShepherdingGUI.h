@@ -329,7 +329,7 @@ class ShepherdingGUI: public ViewerWidget
 				Force_y = Force_y + Force_Sheep_y;
 			}
 
-			int margin = 25;
+			int margin = 15;
 			if(flock[i]->pos.x < margin)
 			{
 				Force_x = Force_x - KWall*(0-flock[i]->pos.x);
@@ -348,23 +348,23 @@ class ShepherdingGUI: public ViewerWidget
 				Force_y = Force_y - KWall*(300-flock[i]->pos.y);
 			}
 
-			double Angle = flock[i]->angle;
+			double Angle = -flock[i]->angle;
 			Force_x = cos(-Angle) * Force_x - sin(-Angle) * Force_y;
-			Force_y = cos(-Angle) * Force_y + sin(-Angle) * Force_x;
+   		Force_y = sin(-Angle) * Force_x + cos(-Angle) * Force_y;
 
-			flock[i]->leftSpeed = (K1*Force_x + K2*Force_y) + 2;
-			flock[i]->rightSpeed = (K1*Force_x - K2*Force_y) + 2;
+			flock[i]->leftSpeed = K1*Force_x + K2*Force_y;
+			flock[i]->rightSpeed = K1*Force_x - K2*Force_y;
 			flock[i]->leftSpeed = flock[i]->leftSpeed > SPEED_MAX/2 ? SPEED_MAX/2 : flock[i]->leftSpeed;
 			flock[i]->rightSpeed = flock[i]->rightSpeed > SPEED_MAX/2 ? SPEED_MAX/2 : flock[i]->rightSpeed;
 			flock[i]->leftSpeed = flock[i]->leftSpeed < -SPEED_MAX/2 ? -SPEED_MAX/2 : flock[i]->leftSpeed;
 			flock[i]->rightSpeed = flock[i]->rightSpeed < -SPEED_MAX/2 ? -SPEED_MAX/2 : flock[i]->rightSpeed;
 
-			// if(Force_x == 0 && Force_y == 0)
-			// {
-			// 	flock[i]->leftSpeed = (rand()%int(SPEED_MAX)) - SPEED_MAX/2;
-			// 	flock[i]->rightSpeed = (rand()%int(SPEED_MAX)) - SPEED_MAX/2;
-			// }
-			outputFile << flock[i]->pos.x << "," << flock[i]->pos.y << ",";
+			if(Force_x == 0 && Force_y == 0)
+			{
+				flock[i]->leftSpeed = (fmod(rand(),SPEED_MAX)) - SPEED_MAX/2;
+				flock[i]->rightSpeed = (fmod(rand(),SPEED_MAX)) - SPEED_MAX/2;
+			}
+			outputFile << flock[i]->pos.x << "," << flock[i]->pos.y << "," << flock[i]->angle << ",";
 		}
 
 		for(int i=0; i < int(objects.size()); i++)
@@ -374,7 +374,7 @@ class ShepherdingGUI: public ViewerWidget
 
 		for(int i=0; i < int(shepherds.size()); i++)
 		{
-			outputFile << shepherds[i]->pos.x << "," << shepherds[i]->pos.y << ",";
+			outputFile << shepherds[i]->pos.x << "," << shepherds[i]->pos.y << "," << shepherds[i]->angle << ",";
 		}
 
 		outputFile << "\n";
@@ -405,7 +405,7 @@ class ShepherdingGUI: public ViewerWidget
 			epuck->camera.init(0.01,world);
 			epuck->setColor(Color(0, 1, 0)); // Green for shepherd
 			epuck->pos = Point(rand()%300, rand()%200);
-			epuck->angle = rand()%360;
+			epuck->angle = fmod(rand(),(2*M_PI)) - M_PI;
 			V->push_back(epuck);
 			world->addObject(epuck);
 		}
@@ -414,7 +414,7 @@ class ShepherdingGUI: public ViewerWidget
 			EPuck *epuck = new EPuck;
 			epuck->setColor(Color(1, 0, 0)); // Red for Sheep
 			epuck->pos = Point(rand()%300, rand()%200);
-			epuck->angle = rand()%360;
+			epuck->angle = fmod(rand(),(2*M_PI)) - M_PI;
 			V->push_back(epuck);
 			world->addObject(epuck);
 		}

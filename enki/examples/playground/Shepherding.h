@@ -36,6 +36,7 @@ class Shepherding
 		double fitness_val = 0;
 		double total_fitness_val = 0;
 		int TimeStep = 0;
+		std::ofstream outputFile;
 
 	public:
 	Shepherding(World *world, int mode, int noOfSheep, int noOfShepherd, int noOfObjects,
@@ -103,8 +104,8 @@ class Shepherding
 				double Distance_y1 = centroid_y - flock[i]->pos.y;
 				double Distance_x2 = Goalx - centroid_x;
 				double Distance_y2 = Goaly - centroid_y;
-				Distance_x2 = abs(Distance_x2) < 50? 0 : Distance_x2;
-				Distance_y2 = abs(Distance_y2) < 50? 0 : Distance_y2;
+				// Distance_x2 = abs(Distance_x2) < 50? 0 : Distance_x2;
+				// Distance_y2 = abs(Distance_y2) < 50? 0 : Distance_y2;
 
 				double Distances_sq = (pow(Distance_x1,2) + pow(Distance_y1,2))*(pow(Distance_x2,2) + pow(Distance_y2,2));
 				fitness_val = fitness_val + (Distances_sq/(4*noOfSheep*3.7*3.7))*TimeStep*0.1;
@@ -118,10 +119,13 @@ class Shepherding
 				bool sheepDetected = false;
 				bool shepherdDetected = false;
 				bool goalDetected = false;
+				bool objectDetected = false;
 
 				sheepDetected 	= image[0].components[0] == 1 ? 1 : 0;
 				shepherdDetected = image[0].components[1] == 1 ? 1 : 0;
 				goalDetected 	= image2[0].components[2] == 1 ? 1 : 0;
+				objectDetected = image[0].components[0] == 0.9 ? 1 : 0;
+				sheepDetected = objectDetected || sheepDetected;
 
 				if((sheepDetected||shepherdDetected||goalDetected) == false) //No objects seen			STATE 0
 				{
@@ -185,8 +189,8 @@ class Shepherding
 				double Distance_y1 = centroid_y - objects[i]->pos.y;
 				double Distance_x2 = Goalx - centroid_x;
 				double Distance_y2 = Goaly - centroid_y;
-				Distance_x2 = abs(Distance_x2) < 50? 0 : Distance_x2;
-				Distance_y2 = abs(Distance_y2) < 50? 0 : Distance_y2;
+				// Distance_x2 = abs(Distance_x2) < 50? 0 : Distance_x2;
+				// Distance_y2 = abs(Distance_y2) < 50? 0 : Distance_y2;
 
 				double Distances_sq = (pow(Distance_x1,2) + pow(Distance_y1,2))*(pow(Distance_x2,2) + pow(Distance_y2,2));
 				fitness_val = fitness_val + (Distances_sq/(4*noOfObjects*3.7*3.7))*TimeStep*0.1;
@@ -197,13 +201,16 @@ class Shepherding
 			{
 				valarray<Color> image = shepherds[i]->camera.image;
 				valarray<Color> image2 = shepherds[i]->camera2.image;
+				bool sheepDetected = false;
 				bool shepherdDetected = false;
 				bool goalDetected = false;
 				bool objectDetected = false;
 
+				sheepDetected 	= image[0].components[0] == 1 ? 1 : 0;
 				shepherdDetected = image[0].components[1] == 1 ? 1 : 0;
 				goalDetected 	= image2[0].components[2] == 1 ? 1 : 0;
 				objectDetected = image[0].components[0] == 0.9 ? 1 : 0;
+				objectDetected = objectDetected || sheepDetected;
 
 				if((objectDetected||shepherdDetected||goalDetected) == false) //No objects seen			STATE 0
 				{
@@ -267,8 +274,8 @@ class Shepherding
 				double Distance_y1 = centroid_y - objects[i]->pos.y;
 				double Distance_x2 = Goalx - centroid_x;
 				double Distance_y2 = Goaly - centroid_y;
-				Distance_x2 = abs(Distance_x2) < 50? 0 : Distance_x2;
-				Distance_y2 = abs(Distance_y2) < 50? 0 : Distance_y2;
+				// Distance_x2 = abs(Distance_x2) < 50? 0 : Distance_x2;
+				// Distance_y2 = abs(Distance_y2) < 50? 0 : Distance_y2;
 
 				double Distances_sq = (pow(Distance_x1,2) + pow(Distance_y1,2))*(pow(Distance_x2,2) + pow(Distance_y2,2));
 				fitness_val = fitness_val + (Distances_sq/(4*noOfObjects*3.7*3.7))*TimeStep*0.1;
@@ -290,8 +297,8 @@ class Shepherding
 				double Distance_y1 = centroid_y - flock[i]->pos.y;
 				double Distance_x2 = Goalx - centroid_x;
 				double Distance_y2 = Goaly - centroid_y;
-				Distance_x2 = abs(Distance_x2) < 50? 0 : Distance_x2;
-				Distance_y2 = abs(Distance_y2) < 50? 0 : Distance_y2;
+				// Distance_x2 = abs(Distance_x2) < 50? 0 : Distance_x2;
+				// Distance_y2 = abs(Distance_y2) < 50? 0 : Distance_y2;
 
 				double Distances_sq = (pow(Distance_x1,2) + pow(Distance_y1,2))*(pow(Distance_x2,2) + pow(Distance_y2,2));
 				fitness_val = fitness_val + (Distances_sq/(4*noOfSheep*3.7*3.7))*TimeStep*0.1;
@@ -382,21 +389,24 @@ class Shepherding
 					double Distance_x = flock[i]->pos.x - flock[j]->pos.x;
 					double Distance_y = flock[i]->pos.y - flock[j]->pos.y;
 					double Distance_sq = pow(Distance_x,2) + pow(Distance_y,2);
-					if(Distance_sq < 225)
+					double Distance = sqrt(Distance_sq);
+					double X_Comp = Distance_x/Distance;
+					double Y_Comp = Distance_y/Distance;
+					if(Distance < 15)
 					{
-						Force_x = Force_x + (Csheep/Distance_sq)*(Distance_x/sqrt(Distance_sq));
-						Force_y = Force_y + (Csheep/Distance_sq)*(Distance_y/sqrt(Distance_sq));
+						Force_x = Force_x + (Csheep/Distance_sq)*X_Comp;
+						Force_y = Force_y + (Csheep/Distance_sq)*Y_Comp;
 					}
-					if(Distance_sq > 625 && Distance_sq < 1225)
+					else if(Distance > 25 && Distance < 35)
 					{
-						Force_x = Force_x - Ksheep*Distance_sq*(Distance_x/sqrt(Distance_sq));
-						Force_y = Force_y - Ksheep*Distance_sq*(Distance_y/sqrt(Distance_sq));
+						Force_x = Force_x - Ksheep*Distance_sq*X_Comp;
+						Force_y = Force_y - Ksheep*Distance_sq*Y_Comp;
 					}
 				}
 			}
 			double Force_Sheep_x = Force_x;
 			double Force_Sheep_y = Force_y;
-			bool ShepherdDetected = false;
+			// bool ShepherdDetected = false;
 			Force_x = 0;
 			Force_y = 0;
 			for(int j=0; j < int(shepherds.size()); j++)
@@ -404,43 +414,47 @@ class Shepherding
 					double Distance_x = flock[i]->pos.x - shepherds[j]->pos.x;
 					double Distance_y = flock[i]->pos.y - shepherds[j]->pos.y;
 					double Distance_sq = pow(Distance_x,2) + pow(Distance_y,2);
-					if(Distance_sq < 2500)
+					double Distance = sqrt(Distance_sq);
+					if(Distance < 50)
 					{
-						ShepherdDetected = true;
-						Force_x = Force_x + (Cshepherd/Distance_sq)*(Distance_x/sqrt(Distance_sq));
-						Force_y = Force_y + (Cshepherd/Distance_sq)*(Distance_y/sqrt(Distance_sq));
+						// ShepherdDetected = true;
+						Force_x = Force_x + (Cshepherd/Distance_sq)*(Distance_x/Distance);
+						Force_y = Force_y + (Cshepherd/Distance_sq)*(Distance_y/Distance);
 					}
 			}
-			double Angle = flock[i]->angle;
-			if (ShepherdDetected != true)
-			{
+			// if (ShepherdDetected != true)
+			// {
 				Force_x = Force_x + Force_Sheep_x;
 				Force_y = Force_y + Force_Sheep_y;
-			}
+			// }
 
-			int margin = 15;
+			int margin = 25;
 			if(flock[i]->pos.x < margin)
 			{
-				Force_x = Force_x - KWall*(0-flock[i]->pos.x);
+				Force_x = Force_x + KWall/pow((flock[i]->pos.x),2);
 			}
 			else if(flock[i]->pos.x > (300-margin))
 			{
-				Force_x = Force_x - KWall*(300-flock[i]->pos.x);
+				Force_x = Force_x - KWall/pow((300-flock[i]->pos.x),2);
 			}
 
 			if(flock[i]->pos.y < margin)
 			{
-				Force_y = Force_y - KWall*(0-flock[i]->pos.y);
+				Force_y = Force_y + KWall/pow((flock[i]->pos.y),2);
 			}
 			else if(flock[i]->pos.y > (300-margin))
 			{
-				Force_y = Force_y - KWall*(300-flock[i]->pos.y);
+				Force_y = Force_y - KWall/pow((300-flock[i]->pos.y),2);
 			}
 
-			Force_x = cos(-Angle) * Force_x - sin(-Angle) * Force_y;
-   		Force_y = cos(-Angle) * Force_y + sin(-Angle) * Force_x;
-			flock[i]->leftSpeed = K1*Force_x + K2*Force_y;
-			flock[i]->rightSpeed = K1*Force_x - K2*Force_y;
+			double Angle = -flock[i]->angle;
+			float cs = cos(Angle);
+			float sn = sin(Angle);
+			float Robot_Force_x = cs*Force_x - sn*Force_y;
+   		float Robot_Force_y = sn*Force_x + cs*Force_y;
+
+			flock[i]->leftSpeed = K1*Robot_Force_x + K2*Robot_Force_y;
+			flock[i]->rightSpeed = K1*Robot_Force_x - K2*Robot_Force_y;
 
 			flock[i]->leftSpeed = flock[i]->leftSpeed > SPEED_MAX/2 ? SPEED_MAX/2 : flock[i]->leftSpeed;
 			flock[i]->rightSpeed = flock[i]->rightSpeed > SPEED_MAX/2 ? SPEED_MAX/2 : flock[i]->rightSpeed;
@@ -454,7 +468,46 @@ class Shepherding
 			}
 		}
 	}
+	void printHeaders()
+	{
+		outputFile.open("Output.csv");
+		for(int i = 0; i < noOfSheep; i++)
+		{
+			outputFile << "SheepX,SheepY,Angle,";
+		}
 
+		for(int i = 0; i < noOfObjects; i++)
+		{
+			outputFile << "CylinderX,CylinderY,";
+		}
+
+		for(int i = 0; i < noOfShepherd; i++)
+		{
+			outputFile << "ShepherdX,ShepherdY,Angle";
+		}
+
+		outputFile << "\n";
+	}
+
+	void printPositions()
+	{
+		for(int i=0; i < int(flock.size()); i++)
+		{
+			outputFile << flock[i]->pos.x << "," << flock[i]->pos.y << "," << flock[i]->angle << ",";
+		}
+
+		for(int i=0; i < int(objects.size()); i++)
+		{
+			outputFile << objects[i]->pos.x << "," << objects[i]->pos.y << ",";
+		}
+
+		for(int i=0; i < int(shepherds.size()); i++)
+		{
+			outputFile << shepherds[i]->pos.x << "," << shepherds[i]->pos.y << "," << shepherds[i]->angle << ",";
+		}
+
+		outputFile << "\n";
+	}
 	double getFitness()
 	{
 		return fitness_val;
@@ -465,6 +518,10 @@ class Shepherding
 	}
 	~Shepherding()
 	{
+		if(outputFile.is_open())
+		{
+			outputFile.close();
+		}
 	}
 
 	void addCylinders(World *world, QVector<PhysicalObject*> *V)
@@ -487,8 +544,7 @@ class Shepherding
 			epuck->camera.init(0.01,world);
 			epuck->setColor(Color(0, 1, 0)); // Green for shepherd
 			epuck->pos = Point(rand()%300, rand()%200);
-			epuck->leftSpeed = 0;
-			epuck->rightSpeed = 0;
+			epuck->angle = fmod(rand(),(2*M_PI)) - M_PI;
 			V->push_back(epuck);
 			world->addObject(epuck);
 		}
@@ -497,8 +553,7 @@ class Shepherding
 			EPuck *epuck = new EPuck;
 			epuck->setColor(Color(1, 0, 0)); // Red for Sheep
 			epuck->pos = Point(rand()%300, rand()%200);
-			epuck->leftSpeed = 0;
-			epuck->rightSpeed = 0;
+			epuck->angle = fmod(rand(),(2*M_PI)) - M_PI;
 			V->push_back(epuck);
 			world->addObject(epuck);
 		}
