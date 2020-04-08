@@ -1,0 +1,102 @@
+-- Python version from interpreter is 2.7.17
+-- Python libs and executable found, looking for boost::python
+-- Boost version: 1.65.1
+-- Found the following Boost libraries:
+--   python
+-- boost::python found, generating python bindings
+-- SDL2 found, enabling joystick support
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/coa16gyd/simulation/FYP_Simulation/enki
+[ 46%] Built target enki
+[ 48%] Automatic MOC and RCC for target enkiviewer
+[ 48%] Built target enkiviewer_autogen
+[ 89%] Built target enkiviewer
+[ 92%] Automatic MOC for target enkiplayground
+[ 92%] Built target enkiplayground_autogen
+[100%] Built target enkiplayground
+Shepherding + Object Clustering
+INFO - CMA-ES / dim=16 / lambda=20 / sigma0=0.72 / mu=10 / mueff=6.19569 / c1=0.00654695 / cmu=0.0263909 / tpa=0 / threads=10
+INFO - iter=0 / evals=0 / f-value=nan / sigma=0.72 / last_iter=0
+INFO - iter=1 / evals=20 / f-value=48080765683534.1 / sigma=0.665481930935827 / last_iter=946939
+INFO - iter=2 / evals=40 / f-value=36991801585459.7 / sigma=0.672998004834972 / last_iter=942657
+INFO - iter=3 / evals=60 / f-value=11932966225878.2 / sigma=0.700989799760379 / last_iter=940436
+INFO - iter=4 / evals=80 / f-value=14485580076005.3 / sigma=0.757377792912017 / last_iter=933789
+INFO - iter=5 / evals=100 / f-value=nan / sigma=0.731247224280405 / last_iter=941807
+INFO - iter=6 / evals=120 / f-value=14053484439686.9 / sigma=0.733431169291533 / last_iter=930841
+INFO - iter=7 / evals=140 / f-value=9121469577779.32 / sigma=0.75582850354579 / last_iter=924510
+INFO - iter=8 / evals=160 / f-value=8898898118221.32 / sigma=0.813459744159612 / last_iter=923423
+INFO - iter=9 / evals=180 / f-value=5375108614467.95 / sigma=0.810016260954857 / last_iter=923371
+INFO - iter=10 / evals=200 / f-value=5720916253422.6 / sigma=0.813179510425554 / last_iter=916478
+INFO - iter=11 / evals=220 / f-value=nan / sigma=0.816591971096676 / last_iter=910006
+INFO - iter=12 / evals=240 / f-value=4932988570826.65 / sigma=0.781324354243817 / last_iter=914348
+INFO - iter=13 / evals=260 / f-value=3197066097529.32 / sigma=0.796277185172959 / last_iter=910561
+INFO - iter=14 / evals=280 / f-value=3120412161047.26 / sigma=0.798071000950026 / last_iter=893320
+INFO - iter=15 / evals=300 / f-value=2713903832212.45 / sigma=0.816215893795981 / last_iter=904763
+INFO - iter=16 / evals=320 / f-value=2394315997955.62 / sigma=0.877660329339678 / last_iter=896702
+INFO - iter=17 / evals=340 / f-value=1630626364665.35 / sigma=0.931561663646588 / last_iter=892382
+INFO - iter=18 / evals=360 / f-value=2268149482924.09 / sigma=0.940703817748223 / last_iter=896131
+INFO - iter=19 / evals=380 / f-value=1779622573749.24 / sigma=0.935191469650735 / last_iter=900052
+INFO - iter=20 / evals=400 / f-value=1704232607768.95 / sigma=0.950711348555756 / last_iter=884230
+INFO - iter=21 / evals=420 / f-value=nan / sigma=1.00119508320931 / last_iter=892833
+INFO - iter=22 / evals=440 / f-value=1892559422321.2 / sigma=0.97538551780546 / last_iter=893100
+INFO - iter=23 / evals=460 / f-value=1545177433341.75 / sigma=0.977165309605869 / last_iter=889824
+INFO - iter=24 / evals=480 / f-value=1330579981893.79 / sigma=0.990456002606714 / last_iter=885290
+INFO - iter=25 / evals=500 / f-value=1359514978848.43 / sigma=1.00801041007813 / last_iter=894969
+INFO - iter=26 / evals=520 / f-value=1528005447761.68 / sigma=1.01188186101595 / last_iter=888483
+INFO - iter=27 / evals=540 / f-value=1365663419807.45 / sigma=1.00189318286525 / last_iter=884514
+INFO - iter=28 / evals=560 / f-value=1593275355870.66 / sigma=1.02646316701591 / last_iter=887678
+INFO - iter=29 / evals=580 / f-value=1740950160976.66 / sigma=0.990811549081367 / last_iter=887870
+INFO - iter=30 / evals=600 / f-value=1397141021302.56 / sigma=0.987657832137991 / last_iter=886046
+INFO - iter=31 / evals=620 / f-value=1884081760706.53 / sigma=0.968574049360727 / last_iter=883705
+INFO - iter=32 / evals=640 / f-value=1488124448061.15 / sigma=0.97212166650391 / last_iter=882100
+INFO - iter=33 / evals=660 / f-value=1574491497275.9 / sigma=0.978155161676089 / last_iter=886601
+INFO - iter=34 / evals=680 / f-value=1623293922345.98 / sigma=0.952999761838729 / last_iter=883817
+INFO - iter=35 / evals=700 / f-value=1660420973824.37 / sigma=0.94662927716538 / last_iter=887511
+INFO - iter=36 / evals=720 / f-value=1563255663367 / sigma=0.982582340124972 / last_iter=892125
+INFO - iter=37 / evals=740 / f-value=1626875362017.65 / sigma=0.94873543544345 / last_iter=885898
+INFO - iter=38 / evals=760 / f-value=1553285276581.31 / sigma=0.909359971601304 / last_iter=884828
+INFO - iter=39 / evals=780 / f-value=1630798685701.78 / sigma=0.882881299774359 / last_iter=885773
+INFO - iter=40 / evals=800 / f-value=1472670758348.48 / sigma=0.842580350949625 / last_iter=884577
+INFO - iter=41 / evals=820 / f-value=1510669167072.52 / sigma=0.795142238749125 / last_iter=885300
+INFO - iter=42 / evals=840 / f-value=1502804615872.92 / sigma=0.823699504226763 / last_iter=882135
+INFO - iter=43 / evals=860 / f-value=1593721827145.58 / sigma=0.805096974364387 / last_iter=882858
+INFO - iter=44 / evals=880 / f-value=1438410517863.74 / sigma=0.789847267267647 / last_iter=884414
+INFO - iter=45 / evals=900 / f-value=1383772202608.08 / sigma=0.802892724731028 / last_iter=884388
+INFO - iter=46 / evals=920 / f-value=nan / sigma=0.813070452621559 / last_iter=885209
+INFO - iter=47 / evals=940 / f-value=1410502205209.4 / sigma=0.765512276010045 / last_iter=881726
+INFO - iter=48 / evals=960 / f-value=1458640645470.15 / sigma=0.732871827009149 / last_iter=882407
+INFO - iter=49 / evals=980 / f-value=1398494200033.9 / sigma=0.722505698341667 / last_iter=880995
+INFO - iter=50 / evals=1000 / f-value=1415055959873.82 / sigma=0.745394732911617 / last_iter=881585
+INFO - iter=51 / evals=1020 / f-value=1387980918064.54 / sigma=0.712210267800063 / last_iter=881878
+INFO - iter=52 / evals=1040 / f-value=1404021947164.44 / sigma=0.703880268598327 / last_iter=881958
+INFO - iter=53 / evals=1060 / f-value=1319456587822.43 / sigma=0.738212621673252 / last_iter=883019
+INFO - iter=54 / evals=1080 / f-value=1161059789653.05 / sigma=0.770904856604498 / last_iter=880881
+INFO - iter=55 / evals=1100 / f-value=1293410010395.72 / sigma=0.787284984178574 / last_iter=885838
+INFO - iter=56 / evals=1120 / f-value=1369625977239.53 / sigma=0.798327641393139 / last_iter=886732
+INFO - iter=57 / evals=1140 / f-value=nan / sigma=0.817265809669824 / last_iter=880386
+INFO - iter=58 / evals=1160 / f-value=1227344111328.06 / sigma=0.795336198469516 / last_iter=882193
+INFO - iter=59 / evals=1180 / f-value=1060145909454.2 / sigma=0.788367892762374 / last_iter=881254
+INFO - iter=60 / evals=1200 / f-value=1228509914097.09 / sigma=0.777734084342672 / last_iter=878570
+INFO - iter=61 / evals=1220 / f-value=1108650014427.59 / sigma=0.751977913639603 / last_iter=880587
+INFO - iter=62 / evals=1240 / f-value=1138096392141.39 / sigma=0.793720419858143 / last_iter=880508
+INFO - iter=63 / evals=1260 / f-value=1434104903747.51 / sigma=0.824228094386974 / last_iter=885921
+INFO - iter=64 / evals=1280 / f-value=1343079250917.06 / sigma=0.796877156631884 / last_iter=878224
+INFO - iter=65 / evals=1300 / f-value=1243236804423.41 / sigma=0.805145079355529 / last_iter=878830
+INFO - iter=66 / evals=1320 / f-value=1294373043395.79 / sigma=0.815990285217443 / last_iter=883172
+INFO - iter=67 / evals=1340 / f-value=1279014611871.02 / sigma=0.770445678743152 / last_iter=881733
+INFO - iter=68 / evals=1360 / f-value=1217553497487.71 / sigma=0.726514714982791 / last_iter=881422
+INFO - iter=69 / evals=1380 / f-value=1191886293418.03 / sigma=0.680305422516569 / last_iter=878684
+INFO - iter=70 / evals=1400 / f-value=1205239094823.76 / sigma=0.628541594917013 / last_iter=881110
+INFO - iter=71 / evals=1420 / f-value=1115943756178.47 / sigma=0.636477261529235 / last_iter=878467
+INFO - iter=72 / evals=1440 / f-value=1198100495008 / sigma=0.631338931635421 / last_iter=880423
+INFO - iter=73 / evals=1460 / f-value=1200239060914.34 / sigma=0.619318479932024 / last_iter=880471
+INFO - iter=74 / evals=1480 / f-value=nan / sigma=0.577500660741932 / last_iter=880160
+INFO - iter=75 / evals=1500 / f-value=1162152688122.41 / sigma=0.516836220303591 / last_iter=879486
+INFO - iter=76 / evals=1520 / f-value=1190193978045.61 / sigma=0.499225809500385 / last_iter=880352
+INFO - iter=77 / evals=1540 / f-value=1155259780911.35 / sigma=0.489539013589419 / last_iter=878349
+INFO - iter=78 / evals=1560 / f-value=1111441500484.71 / sigma=0.487572038140908 / last_iter=877082
+INFO - iter=79 / evals=1580 / f-value=1080408432498.47 / sigma=0.469626784897272 / last_iter=878404
+INFO - iter=80 / evals=1600 / f-value=1082489784338.21 / sigma=0.453353756737326 / last_iter=879086
+best solution: best solution => f-value=1082489784338.21 / fevals=1600 / sigma=0.453353756737326 / iter=80 / elaps=71330529ms / x=  5.52420324681031   1.41709528671235   3.35711262093937   11.8144231044616 -0.839285528376127  -2.24035633800117 -0.928744595886714   7.15170509576809   5.05222712234922  -0.33507051470034   6.69508446143986    5.0843773578607  0.523578885044988    -5.962492201519 -0.539202990311355   4.00640622217638
+optimization took 71330.529 seconds
