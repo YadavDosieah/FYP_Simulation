@@ -30,13 +30,13 @@ ax.add_patch(rec2)
 rec1 = plt.Rectangle((0,0),300,200,ls=':',fill=False,label='Initial Area of Sheep')
 ax.add_patch(rec1)
 
-plt.annotate(s='25cm', xy=(150,250), xytext=(175,267.7), arrowprops=dict(arrowstyle='<-'))
-plt.annotate(s='50cm', xy=(150,250), xytext=(200,215.6), arrowprops=dict(arrowstyle='<-'))
+plt.annotate(s='12.5cm', xy=(150,250), xytext=(159,259), arrowprops=dict(arrowstyle='<-',color='w'))
+plt.annotate(s='50cm', xy=(150,250), xytext=(195,215), arrowprops=dict(arrowstyle='<-',color='w'))
 
 plt.annotate(s='Goal Area', xy=(150,290), xytext=(190,315), arrowprops=dict(arrowstyle='<-',color='b'),color='b')
 plt.annotate(s='Initial Area for Sheep, Shepherds and Objects', xy=(10,190), xytext=(10,345), arrowprops=dict(arrowstyle='<-',color='g'),color='g')
-goal = plt.Circle((150,250),25,fc='b')
-goal2 = plt.Circle((150,250),50,ls=':',fill=False)
+goal = plt.Circle((150,250),12.5,fc='b')
+goal2 = plt.Circle((150,250),50,fc='b',alpha=0.3)
 ax.add_patch(goal)
 ax.add_patch(goal2)
 
@@ -52,7 +52,7 @@ for m in range(noOfObjects):
     ObjectDot[m] = plt.Circle((random.randint(0,300),random.randint(0,200)),3.7,fc='gold')
     ax.add_patch(ObjectDot[m])
 
-legendbox = plt.Rectangle((240,320),60,60,fill=False,edgecolor='k')
+legendbox = plt.Rectangle((240,320),65,60,fill=False,edgecolor='k')
 legend1 = plt.Circle((250, 350),3.7,fc='g')
 legend2 = plt.Circle((250, 370),3.7,fc='r')
 legend3 = plt.Circle((250, 330),3.7,fc='gold')
@@ -82,5 +82,6 @@ ax.annotate('Object', xy=(260,330), ha='left', va='center', rotation=0)
 #     return sheepDots.values()
 #
 # anim=animation.FuncAnimation(fig,animate,init_func=init,interval=1,frames=len(SheepX), repeat=False)
-
+ax.set_aspect('equal', 'box')
+fig.tight_layout()
 plt.show()

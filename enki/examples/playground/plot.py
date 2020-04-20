@@ -6,10 +6,22 @@ import matplotlib.pyplot as plt
 import matplotlib.animation as animation
 import string
 import math
+import io, libconf
 
 noOfSheep = 0
 noOfShepherd = 0
 noOfObjects = 0
+
+with io.open('Parameters.cfg') as f:
+    config = libconf.load(f)
+
+Goalx = config.Goalx
+Goaly = config.Goaly
+Xbound = config.Xbound
+Ybound = config.Ybound
+
+f = open("Output.csv")
+numlines = len(f.readlines())
 
 with open('Output.csv','r') as csvfile:
     data = csv.reader(csvfile, delimiter=',')
@@ -33,7 +45,7 @@ with open('Output.csv','r') as csvfile:
     CylinderY = []
     i = 0
     for row in data:
-        if(i%25 == 0):
+        if(i%25 == 0 or i == numlines-2):
             #Start:End:Step
             SheepX.append(row[0:noOfSheep*3:3])
             SheepY.append(row[1:noOfSheep*3:3])
@@ -43,10 +55,10 @@ with open('Output.csv','r') as csvfile:
             ShepherdAngle.append(row[noOfSheep*3+noOfObjects*2+2::3])
             CylinderX.append(row[noOfSheep*3:noOfSheep*3+noOfObjects*2:2])
             CylinderY.append(row[noOfSheep*3+1:noOfSheep*3+noOfObjects*2:2])
-
         i = i +1
+
 fig = plt.figure()
-ax = plt.axes(xlim=(0, 300), ylim=(0, 300))
+ax = plt.axes(xlim=(0, Xbound), ylim=(0, Ybound))
 
 sheepDots = {}
 shepherdDot = {}
@@ -54,8 +66,8 @@ ObjectDot = {}
 sheepLines = {}
 shepherdLines = {}
 
-goal = plt.Circle((150,250),12.5,fc='b')
-goalArea = plt.Circle((150,250),50,fc='b',alpha=0.3)
+goal = plt.Circle((Goalx,Goaly),12.5,fc='b')
+goalArea = plt.Circle((Goalx,Goaly),50,fc='b',alpha=0.3)
 ax.add_patch(goal)
 ax.add_patch(goalArea)
 # ax.plot([0,600], [100,100], color = 'k', linewidth = 1)[0]
@@ -73,7 +85,6 @@ for n in range(noOfShepherd):
 for k in range(noOfObjects):
     ObjectDot[k] = plt.Circle((float(CylinderX[0][k]),float(CylinderY[0][k])),3.7,fc='y')
 
-print(noOfObjects)
 
 def init():
     for i in range(noOfSheep):

@@ -18,7 +18,7 @@ std::ofstream out;
 
 int noOfSheep, noOfShepherd, noOfObjects, Csheep, Cshepherd, mode;
 float Ksheep, K1, K2, KWall;
-int Goalx, Goaly;
+int Goalx, Goaly, Xbound, Ybound;
 int global_iter;
 int generation;
 int evolution = 0;
@@ -45,21 +45,28 @@ FitFunc ControllerFitness = [](const double *x, const int N)
   for(int i=0;i<No_Of_Trials;i++)
   {
     trial++;
-    World world(300,300, Color(0.5,0.5,0.5));
+    start:
+    World world(Xbound,Ybound, Color(0.5,0.5,0.5));
     Shepherding simulation(&world,mode,noOfSheep,noOfShepherd,noOfObjects,Csheep,
       Cshepherd,Ksheep,K1, K2, KWall, Goalx, Goaly, x, dim);
 
       for (unsigned j=0; j < NoOfSteps; j++)
       {
         world.step(0.1);
-        simulation.doPerTick();
+        int ReturnVal = simulation.doPerTick();
+        if(ReturnVal == 1)
+        {
+          cout << "Trial restarting\n";
+          goto start;
+        }
       }
       pthread_mutex_lock(&mtx);
-      out << generation << "," << iter << "," << trial << "," << x[0]
-                << "," << x[1] << ","  << x[2] << "," << x[3] << "," << x[4]
-                << "," << x[5] << ","  << x[6] << "," << x[7] << "," << x[8]
-                << "," << x[9] << ","  << x[10] << "," << x[11] << "," << x[12]
-                << "," << x[13] << "," << x[14]<< "," << x[15] << "," << simulation.getTotalFitness() << endl;
+      out << generation << "," << iter << "," << trial;
+      for(int k=0; k<dim/2; k++)
+      {
+        out << "," << x[k*2] << ","  << x[(k*2)+1];
+      }
+      out << "," << simulation.getTotalFitness() << endl;
       pthread_mutex_unlock(&mtx);
       fitness = fitness + simulation.getTotalFitness();
   }
@@ -85,10 +92,13 @@ int main(int argc, char *argv[])
   //cout << KWall;
 	Goalx = configfile.lookup("Goalx");
 	Goaly = configfile.lookup("Goaly");
+  Xbound = configfile.lookup("Xbound");
+  Ybound = configfile.lookup("Ybound");
   bool GUI = configfile.lookup("GUI");
   bool Analysis = configfile.lookup("Analysis");
   bool logData = configfile.lookup("logData");
   bool Optimise = configfile.lookup("Optimise");
+  bool Stop = configfile.lookup("Stop");
   No_Of_Trials = configfile.lookup("No_Of_Trials");
   NoOfSteps = configfile.lookup("NoOfSteps");
   int NoOfEvolutions = configfile.lookup("NoOfEvolutions");
@@ -96,30 +106,22 @@ int main(int argc, char *argv[])
   int lambda = configfile.lookup("lambda"); // offsprings at each generation.
   int No_Of_Threads = configfile.lookup("No_Of_Threads");
 
-  double x0[16] = { 4.47020,  2.25992,
-                    -2.03707, 1.71585,
-                    1.29139, 1.060159,
-                    5.32278,  3.63879,
-                    -1.25734, 2.58292,
-                    -1.24890, 0.390242,
-                    0,0,0,0}; //Anil's
+  // double x0[16] = { 4.47020,  2.25992,
+  //                   -2.03707, 1.71585,
+  //                   1.29139, 1.060159,
+  //                   5.32278,  3.63879,
+  //                   -1.25734, 2.58292,
+  //                   -1.24890, 0.390242,
+  //                   0,0,0,0}; //Anil's
 
-  // double x0[16] = { 2.04404,  12.2577,
-  //                   2.28314, -1.40369,
-  //                   -1.11563, -6.81307,
-  //                   4.50014,  7.06904,
-  //                   1.77243, -4.61716,
-  //                   -2.35163, -4.76965,
-  //                   0,0,0,0};
+  double x0[16] = { 5.1175,  1.49066,
+                    -1.02706,  1.72113,
+                    1.42577,  0.19968,
+                    0.658893,  4.20533,
+                    -1.28859, 0.402441,
+                    0.968842,   1.1955,
+                    0,0,0,0};
 
-  // double x0[16] =  {7.62906,  2.12052,
-  //                   -0.208291, 4.76392,
-  //                   -12.4398,  2.2009,
-  //                   8.03278,  8.97639,
-  //                   10.9182,  6.82779,
-  //                   9.40439,  2.39981,
-  //                   0,0,0,0};
-  // double x0[16] = {0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0};
 
   double x1[16] = { 1.62085,   4.87631,
                     7.00202,   3.59515,
@@ -129,6 +131,24 @@ int main(int argc, char *argv[])
                     -1.80797, 0.0526062,
                     0,0,0,0};
 
+  // double x1[16] = { 9.72565,  1.25369,
+  //                   3.40784,  9.64805,
+  //                   -0.39977, -0.36701,
+  //                   3.65284, 0.918264,
+  //                   4.14598,  1.10587,
+  //                   5.41277, -3.71182,
+  //                   0,0,0,0};
+
+  double x2[16] = { 5.5242,    1.4171,
+                    3.35711,   11.8144,
+                    -0.839286,   -2.24036,
+                    -0.928745,   7.15171,
+                    5.05223,   -0.335071,
+                    6.69508,   5.08438,
+                    0.523579,   -5.96249,
+                    -0.539203,   4.00641};
+
+  double xn[16] = {0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0};
 
   //Run simulation with GUI
   if(GUI)
@@ -148,7 +168,7 @@ int main(int argc, char *argv[])
     #endif
 
     //Size of world (arena)
-    World world(300,300, Color(0.5,0.5,0.5), igt ? World::GroundTexture(gt.width(), gt.height(), bits) : World::GroundTexture());
+    World world(Xbound,Ybound, Color(0.5,0.5,0.5), igt ? World::GroundTexture(gt.width(), gt.height(), bits) : World::GroundTexture());
 
     double x[16] = {0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0};
     if(mode == 0)
@@ -156,9 +176,19 @@ int main(int argc, char *argv[])
       std::copy ( x0, x0+16, x);
       dim = 12;
     }
-    else
+    else if(mode == 1)
     {
       std::copy ( x1, x1+16, x);
+      dim = 12;
+    }
+    else if(mode == 2)
+    {
+      std::copy ( x2, x2+16, x);
+      dim = 16;
+    }
+    else
+    {
+      std::copy ( xn, xn+16, x);
       dim = 16;
     }
     cout << "Mode = " << mode << endl;
@@ -177,9 +207,19 @@ int main(int argc, char *argv[])
       std::copy ( x0, x0+16, x);
       dim = 12;
     }
-    else
+    else if(mode == 1)
     {
       std::copy ( x1, x1+16, x);
+      dim = 12;
+    }
+    else if(mode == 2)
+    {
+      std::copy ( x2, x2+16, x);
+      dim = 16;
+    }
+    else
+    {
+      std::copy ( xn, xn+16, x);
       dim = 16;
     }
 
@@ -191,7 +231,8 @@ int main(int argc, char *argv[])
     for(int i=0;i<No_Of_Trials;i++)
     {
       cout << "Trial " << i << endl;
-      World world(300,300, Color(0.5,0.5,0.5));
+      startAnalysis:
+      World world(Xbound,Ybound, Color(0.5,0.5,0.5));
       Shepherding simulation(&world,mode,noOfSheep,noOfShepherd,noOfObjects,Csheep,
         Cshepherd,Ksheep,K1, K2, KWall, Goalx, Goaly, x, dim);
 
@@ -203,12 +244,19 @@ int main(int argc, char *argv[])
         for (unsigned j=0; j < NoOfSteps; j++)
         {
           world.step(0.1);
-          simulation.doPerTick();
+          int ReturnVal = simulation.doPerTick();
+          if(ReturnVal == 1)
+          {
+            cout << "Trial restarting\n";
+            goto startAnalysis;
+          }
+
           if(logData)
           {
             simulation.printPositions();
           }
-          if(simulation.getSuccessRate()==1)
+
+          if(simulation.getSuccessRate()==1 && Stop)
           {
             cout << "Target Reached" << endl;
             cout << "Time Taken = " << j << "steps" << endl;
@@ -238,14 +286,15 @@ int main(int argc, char *argv[])
       generation = 1;
       evolution++;
       out.open("Results/mode" + std::to_string(mode) + "/Optimisation_Logfile" + std::to_string(evolution) + ".csv");
-      out << "Generation, Iteration, Trial, Vl_1, Vr_1, Vl_2, Vr_2, Vl_3, Vr_3, Vl_4, Vr_4,Vl_5, Vr_5,Vl_6, Vr_6,Vl_7, Vr_7,Vl_8, Vr_8, Fitness Value" << endl;
       if(mode == 2)
       {
         dim = 16; // problem dimensions.
+        out << "Generation, Iteration, Trial, Vl_1, Vr_1, Vl_2, Vr_2, Vl_3, Vr_3, Vl_4, Vr_4,Vl_5, Vr_5,Vl_6, Vr_6,Vl_7, Vr_7,Vl_8, Vr_8, Fitness Value" << endl;
       }
       else
       {
         dim = 12; // problem dimensions.
+        out << "Generation, Iteration, Trial, Vl_1, Vr_1, Vl_2, Vr_2, Vl_3, Vr_3, Vl_4, Vr_4,Vl_5, Vr_5,Vl_6, Vr_6, Fitness Value" << endl;
       }
       std::vector<double> x0(dim,0);
       double sigma = 0.72;

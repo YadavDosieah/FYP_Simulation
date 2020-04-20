@@ -30,6 +30,8 @@ class Shepherding
 		float KWall;
 		int Goalx;
 		int Goaly;
+		int Xbound;
+		int Ybound;
 		int dim;
     const double *y;
 		double x[16];
@@ -47,6 +49,9 @@ class Shepherding
 							Ksheep(Ksheep), K1(K1), K2(K2),KWall(KWall), Goalx(Goalx), Goaly(Goaly),
 							y(y), dim(dim)
 	{
+		Xbound = int(world->w);
+		Ybound = int(world->h);
+
 		//cout << sizeof(y)/sizeof(*y) << endl;
 		for(int i=0; i<dim; i++)
 		{
@@ -78,7 +83,7 @@ class Shepherding
 		world->addObject(Goal);
 	}
 
-	virtual void doPerTick()
+	int doPerTick()
 	{
 		TimeStep++;
 
@@ -341,18 +346,18 @@ class Shepherding
 			{
 				Force_x = Force_x + KWall/pow((flock[i]->pos.x),2);
 			}
-			else if(flock[i]->pos.x > (300-margin))
+			else if(flock[i]->pos.x > (Xbound-margin))
 			{
-				Force_x = Force_x - KWall/pow((300-flock[i]->pos.x),2);
+				Force_x = Force_x - KWall/pow((Xbound-flock[i]->pos.x),2);
 			}
 
 			if(flock[i]->pos.y < margin)
 			{
 				Force_y = Force_y + KWall/pow((flock[i]->pos.y),2);
 			}
-			else if(flock[i]->pos.y > (300-margin))
+			else if(flock[i]->pos.y > (Ybound-margin))
 			{
-				Force_y = Force_y - KWall/pow((300-flock[i]->pos.y),2);
+				Force_y = Force_y - KWall/pow((Ybound-flock[i]->pos.y),2);
 			}
 
 			double Angle = -flock[i]->angle;
@@ -375,6 +380,7 @@ class Shepherding
 				flock[i]->rightSpeed = (rand()%int(SPEED_MAX)) - SPEED_MAX/2;
 			}
 		}
+		return isnan(fitness_val);
 	}
 
 	void CalculateFitness()
@@ -518,7 +524,7 @@ class Shepherding
 	void addCylinders(World *world, QVector<PhysicalObject*> *V)
 	{
 		PhysicalObject* Obj = new PhysicalObject;
-		Obj->pos = Point(rand()%300, rand()%200);;
+		Obj->pos = Point(rand()%Xbound, rand()%(Goaly-50));;
 		Obj->setCylindric(3.7, 4.7, 152);
 		Obj->dryFrictionCoefficient = 2.5;
 		Obj->setColor(Color(0.9, 0.9, 0));
@@ -534,7 +540,7 @@ class Shepherding
 			EPuck *epuck = new EPuck(0x2);
 			epuck->camera.init(0.01,world);
 			epuck->setColor(Color(0, 1, 0)); // Green for shepherd
-			epuck->pos = Point(rand()%300, rand()%200);
+			epuck->pos = Point(rand()%Xbound, rand()%(Goaly-50));
 			epuck->angle = fmod(rand(),(2*M_PI)) - M_PI;
 			V->push_back(epuck);
 			world->addObject(epuck);
@@ -543,7 +549,7 @@ class Shepherding
 		{
 			EPuck *epuck = new EPuck;
 			epuck->setColor(Color(1, 0, 0)); // Red for Sheep
-			epuck->pos = Point(rand()%300, rand()%200);
+			epuck->pos = Point(rand()%Xbound, rand()%(Goaly-50));
 			epuck->angle = fmod(rand(),(2*M_PI)) - M_PI;
 			V->push_back(epuck);
 			world->addObject(epuck);
