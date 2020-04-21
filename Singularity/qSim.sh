@@ -2,7 +2,7 @@
 #$ -P acsehpc
 #$ -q acsehpc.q
 #$ -l rmem=4G
-#$ -l h_rt=48:00:00
+#$ -l h_rt=24:00:00
 #$ -pe smp 10
 #$ -m bea
 #$ -M gydosieah1@sheffield.ac.uk
