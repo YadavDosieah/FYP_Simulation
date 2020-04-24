@@ -73,11 +73,12 @@ def plot(filename):
     if dim > 0:
         subplot(221)
     semilogy(fevals,fvalue,'b')
-    semilogy(fevals,sigma,'g')
-    semilogy(fevals,kappa,'r')
+    # semilogy(fevals,sigma,'g')
+    # semilogy(fevals,kappa,'r')
     if dim > 0:
-        semilogy(fevals,sigma*minstds,'y')
-        semilogy(fevals,sigma*maxstds,'y')
+        pass
+        # semilogy(fevals,sigma*minstds,'y')
+        # semilogy(fevals,sigma*maxstds,'y')
     title('f-value (blue), sigma (green), kappa (red)')
     grid(True)
 

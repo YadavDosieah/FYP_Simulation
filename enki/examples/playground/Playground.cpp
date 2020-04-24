@@ -6,6 +6,7 @@
 #include <fstream>
 #include <algorithm>
 #include <omp.h>
+#include <iomanip>
 // #ifdef USE_SDL
 // #include </usr/include/SDL2/SDL.h>
 // #endif
@@ -13,42 +14,41 @@
 using namespace libconfig;
 using namespace libcmaes;
 
-pthread_mutex_t mtx=PTHREAD_MUTEX_INITIALIZER;
+std::mutex mtx;
 std::ofstream out;
+pthread_mutex_t mtx2=PTHREAD_MUTEX_INITIALIZER;
 
 int noOfSheep, noOfShepherd, noOfObjects, Csheep, Cshepherd, mode;
 float Ksheep, K1, K2, KWall;
 int Goalx, Goaly, Xbound, Ybound;
 int global_iter;
 int generation;
+int lambda;
 int evolution = 0;
 int No_Of_Trials;
 int NoOfSteps;
-int dim;
 
 //Function that runs simulation during evolutionary algorithm
-FitFunc ControllerFitness = [](const double *x, const int N)
+FitFunc fitnessfunction = [](const double *x, const int N)
 {
-  pthread_mutex_lock(&mtx);
   global_iter++;
-  if(global_iter>20)
+  if(global_iter>lambda)
   {
-    global_iter = global_iter - 20;
+    global_iter = global_iter - lambda;
     generation++;
   }
   int iter = global_iter;
-  pthread_mutex_unlock(&mtx);
-  int trial = 0;
+
   double fitness = 0;
 
   //Run simulation multiple times for randomness
+  #pragma omp parallel for reduction(+:fitness)
   for(int i=0;i<No_Of_Trials;i++)
   {
-    trial++;
     start:
     World world(Xbound,Ybound, Color(0.5,0.5,0.5));
     Shepherding simulation(&world,mode,noOfSheep,noOfShepherd,noOfObjects,Csheep,
-      Cshepherd,Ksheep,K1, K2, KWall, Goalx, Goaly, x, dim);
+      Cshepherd,Ksheep,K1, K2, KWall, Goalx, Goaly, x, N);
 
       for (unsigned j=0; j < NoOfSteps; j++)
       {
@@ -60,19 +60,30 @@ FitFunc ControllerFitness = [](const double *x, const int N)
           goto start;
         }
       }
-      pthread_mutex_lock(&mtx);
-      out << generation << "," << iter << "," << trial;
-      for(int k=0; k<dim/2; k++)
+
+      pthread_mutex_lock(&mtx2);
+      out << generation << "," << iter << "," << i+1;
+      for(int k=0; k<N/2; k++)
       {
         out << "," << x[k*2] << ","  << x[(k*2)+1];
       }
+      out.precision(std::numeric_limits<long double>::digits10 + 1);
       out << "," << simulation.getTotalFitness() << endl;
-      pthread_mutex_unlock(&mtx);
+      out.precision(-1);
+      cout << "Fitness= " << simulation.getTotalFitness() << endl;
+      pthread_mutex_unlock(&mtx2);
       fitness = fitness + simulation.getTotalFitness();
   }
+  cout << "Average Fitness= " <<fitness/No_Of_Trials << endl;
   return fitness/No_Of_Trials;
 };
 
+FitFunc ControllerFitness = [](const double *x, const int N)
+{
+  std::lock_guard<std::mutex> lck (mtx);
+  double fval = fitnessfunction(x,N);
+  return fval;
+};
 
 int main(int argc, char *argv[])
 {
@@ -103,8 +114,10 @@ int main(int argc, char *argv[])
   NoOfSteps = configfile.lookup("NoOfSteps");
   int NoOfEvolutions = configfile.lookup("NoOfEvolutions");
   int MaxIter = configfile.lookup("MaxIter");
-  int lambda = configfile.lookup("lambda"); // offsprings at each generation.
+  lambda = configfile.lookup("lambda"); // offsprings at each generation.
   int No_Of_Threads = configfile.lookup("No_Of_Threads");
+  omp_set_num_threads(No_Of_Threads);
+  omp_set_dynamic(false);
 
   // double x0[16] = { 4.47020,  2.25992,
   //                   -2.03707, 1.71585,
@@ -171,6 +184,7 @@ int main(int argc, char *argv[])
     World world(Xbound,Ybound, Color(0.5,0.5,0.5), igt ? World::GroundTexture(gt.width(), gt.height(), bits) : World::GroundTexture());
 
     double x[16] = {0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0};
+    int dim;
     if(mode == 0)
     {
       std::copy ( x0, x0+16, x);
@@ -202,6 +216,7 @@ int main(int argc, char *argv[])
   else if(Analysis)
   {
     double x[16] = {0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0};
+    int dim;
     if(mode == 0)
     {
       std::copy ( x0, x0+16, x);
@@ -286,6 +301,7 @@ int main(int argc, char *argv[])
       generation = 1;
       evolution++;
       out.open("Results/mode" + std::to_string(mode) + "/Optimisation_Logfile" + std::to_string(evolution) + ".csv");
+      int dim;
       if(mode == 2)
       {
         dim = 16; // problem dimensions.
@@ -301,7 +317,7 @@ int main(int argc, char *argv[])
 
       CMAParameters<> cmaparams(x0,sigma,lambda);
       //cmaparams._algo = BIPOP_CMAES;
-      cmaparams.set_mt_feval(true); //Paralell eval
+      cmaparams.set_mt_feval(false); //Paralell eval
       cmaparams.set_quiet(false);
       cmaparams.set_fplot("Results/mode" + std::to_string(mode) + "/youroutput" + std::to_string(evolution) + ".dat");
       cmaparams.set_max_iter(MaxIter);
