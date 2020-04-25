@@ -70,11 +70,11 @@ FitFunc fitnessfunction = [](const double *x, const int N)
       out.precision(std::numeric_limits<long double>::digits10 + 1);
       out << "," << simulation.getTotalFitness() << endl;
       out.precision(-1);
-      cout << "Fitness= " << simulation.getTotalFitness() << endl;
+      //cout << "Fitness= " << simulation.getTotalFitness() << endl;
       pthread_mutex_unlock(&mtx2);
       fitness = fitness + simulation.getTotalFitness();
   }
-  cout << "Average Fitness= " <<fitness/No_Of_Trials << endl;
+  //cout << "Average Fitness= " <<fitness/No_Of_Trials << endl;
   return fitness/No_Of_Trials;
 };
 
