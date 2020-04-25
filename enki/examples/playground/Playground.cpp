@@ -19,7 +19,7 @@ std::ofstream out;
 pthread_mutex_t mtx2=PTHREAD_MUTEX_INITIALIZER;
 
 int noOfSheep, noOfShepherd, noOfObjects, Csheep, Cshepherd, mode;
-float Ksheep, K1, K2, KWall;
+float Ksheep, K1, K2, KWall, GoalRadius, GoalDistance;
 int Goalx, Goaly, Xbound, Ybound;
 int global_iter;
 int generation;
@@ -48,7 +48,7 @@ FitFunc fitnessfunction = [](const double *x, const int N)
     start:
     World world(Xbound,Ybound, Color(0.5,0.5,0.5));
     Shepherding simulation(&world,mode,noOfSheep,noOfShepherd,noOfObjects,Csheep,
-      Cshepherd,Ksheep,K1, K2, KWall, Goalx, Goaly, x, N);
+      Cshepherd,Ksheep,K1, K2, KWall, Goalx, Goaly,GoalRadius, GoalDistance, x, N);
 
       for (unsigned j=0; j < NoOfSteps; j++)
       {
@@ -70,11 +70,11 @@ FitFunc fitnessfunction = [](const double *x, const int N)
       out.precision(std::numeric_limits<long double>::digits10 + 1);
       out << "," << simulation.getTotalFitness() << endl;
       out.precision(-1);
-      //cout << "Fitness= " << simulation.getTotalFitness() << endl;
+      // cout << "Fitness= " << simulation.getTotalFitness() << endl;
       pthread_mutex_unlock(&mtx2);
       fitness = fitness + simulation.getTotalFitness();
   }
-  //cout << "Average Fitness= " <<fitness/No_Of_Trials << endl;
+  // cout << "Average Fitness= " <<fitness/No_Of_Trials << endl;
   return fitness/No_Of_Trials;
 };
 
@@ -103,6 +103,8 @@ int main(int argc, char *argv[])
   //cout << KWall;
 	Goalx = configfile.lookup("Goalx");
 	Goaly = configfile.lookup("Goaly");
+  GoalRadius = configfile.lookup("GoalRadius");
+  GoalDistance = configfile.lookup("GoalDistance");
   Xbound = configfile.lookup("Xbound");
   Ybound = configfile.lookup("Ybound");
   bool GUI = configfile.lookup("GUI");
@@ -207,7 +209,7 @@ int main(int argc, char *argv[])
     }
     cout << "Mode = " << mode << endl;
     ShepherdingGUI viewer(&world, mode, noOfSheep,noOfShepherd,noOfObjects,Csheep,
-      Cshepherd,Ksheep, K1, K2, KWall, Goalx, Goaly, x, dim);
+      Cshepherd,Ksheep, K1, K2, KWall, Goalx, Goaly,GoalRadius, x, dim);
 
       viewer.show();
       return app.exec();
@@ -249,7 +251,7 @@ int main(int argc, char *argv[])
       startAnalysis:
       World world(Xbound,Ybound, Color(0.5,0.5,0.5));
       Shepherding simulation(&world,mode,noOfSheep,noOfShepherd,noOfObjects,Csheep,
-        Cshepherd,Ksheep,K1, K2, KWall, Goalx, Goaly, x, dim);
+        Cshepherd,Ksheep,K1, K2, KWall, Goalx, Goaly,GoalRadius, GoalDistance, x, dim);
 
         if(logData)
         {

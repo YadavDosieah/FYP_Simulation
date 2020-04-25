@@ -17,6 +17,8 @@ with io.open('Parameters.cfg') as f:
 
 Goalx = config.Goalx
 Goaly = config.Goaly
+GoalRadius = config.GoalRadius
+GoalDistance = config.GoalDistance
 Xbound = config.Xbound
 Ybound = config.Ybound
 
@@ -66,8 +68,8 @@ ObjectDot = {}
 sheepLines = {}
 shepherdLines = {}
 
-goal = plt.Circle((Goalx,Goaly),12.5,fc='b')
-goalArea = plt.Circle((Goalx,Goaly),50,fc='b',alpha=0.3)
+goal = plt.Circle((Goalx,Goaly),GoalRadius,fc='b')
+goalArea = plt.Circle((Goalx,Goaly),GoalDistance,fc='b',alpha=0.3)
 ax.add_patch(goal)
 ax.add_patch(goalArea)
 # ax.plot([0,600], [100,100], color = 'k', linewidth = 1)[0]
@@ -127,5 +129,5 @@ anim=animation.FuncAnimation(fig,animate,init_func=init,interval=1,frames=len(Sh
 ax.set_aspect('equal', 'box')
 fig.tight_layout()
 # Set up formatting for the movie files
-# anim.save('mode1-Both.mp4',fps=20)
+anim.save('mode1-Both.mp4',fps=20,dpi=1000)
 plt.show()

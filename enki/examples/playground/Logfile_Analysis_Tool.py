@@ -79,22 +79,26 @@ if __name__ == "__main__":
     y_sample = [np.min(y[i:i+Population_size]) for i in range(0, len(y), Population_size)]
     y_index = [np.argmin(y[i:i+Population_size])+i for i in range(0, len(y), Population_size)]
 
-    x = np.linspace(Population_size, (No_Of_Generation), num = len(y_sample))
+    x = np.linspace(0, (No_Of_Generation), num = len(y_sample))
     # Slice notation a[start_index:end_index:step]
-    plt.semilogy(x,y_sample,color='k')
 
     max_sampled = max[y_index]
     min_sampled = min[y_index]
 
     max = [np.max(max[i:i+Population_size]) for i in range(0, len(max), Population_size)]
     min = [np.min(min[i:i+Population_size]) for i in range(0, len(min), Population_size)]
-    x2 = np.linspace(Population_size, (No_Of_Generation), num = len(max))
+    x2 = np.linspace(0, (No_Of_Generation), num = len(max))
 
-    plt.fill_between(x, min_sampled, max_sampled, alpha=0.2,color='k')
+
+    plt.rcParams['font.size'] = 18
+    plt.semilogy(x,y_sample,color='k',label='Average Fitness Value')
+    plt.fill_between(x, min_sampled, max_sampled, alpha=0.2,color='b',label='Min/Max Fitness Value')
     # plt.fill_between(x2, min, max, alpha=0.2,color='b')
 
-
-
+    plt.xlabel('Generation')
+    plt.ylabel('Fitness Value')
+    plt.tight_layout()
+    plt.legend()
     plt.grid(True)
     plt.show()
 

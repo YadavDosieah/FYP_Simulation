@@ -1,2 +1,2 @@
-1,best solution: best solution => f-value=8.43262e+11 / fevals=1600 / sigma=0.902898 / iter=80 / elaps=73360156ms / x= 2.04404  12.2577  2.28314 -1.40369 -1.11563 -6.81307  4.50014  7.06904  1.77243 -4.61716 -2.35163 -4.76965
-optimization took 73360.2 seconds
+1,best solution: best solution => f-value=1.20317e+11 / fevals=1600 / sigma=0.254057 / iter=80 / elaps=71194902ms / x=  1.46536     5.029   3.86595 -0.423476  -1.42011  0.591789   4.85686 -0.433813   3.30068   2.27523  -2.14908   2.71443
+optimization took 71194.9 seconds

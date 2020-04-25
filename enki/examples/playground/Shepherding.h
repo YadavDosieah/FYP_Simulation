@@ -33,6 +33,8 @@ class Shepherding
 		int Xbound;
 		int Ybound;
 		int dim;
+		float GoalRadius;
+		float GoalDistance;
     const double *y;
 		double x[16];
 		double fitness_val = 0;
@@ -43,11 +45,11 @@ class Shepherding
 	public:
 	Shepherding(World *world, int mode, int noOfSheep, int noOfShepherd, int noOfObjects,
 							int Csheep, int Cshepherd, float Ksheep, float K1,	float K2,
-							float KWall, int Goalx, int Goaly, const double *y, int dim):
+							float KWall, int Goalx, int Goaly, float GoalRadius, float GoalDistance, const double *y, int dim):
 							mode(mode), noOfSheep(noOfSheep), noOfShepherd(noOfShepherd),
 							noOfObjects(noOfObjects), Csheep(Csheep), Cshepherd(Cshepherd),
 							Ksheep(Ksheep), K1(K1), K2(K2),KWall(KWall), Goalx(Goalx), Goaly(Goaly),
-							y(y), dim(dim)
+							GoalRadius(GoalRadius), GoalDistance(pow(GoalDistance,2)),	y(y), dim(dim)
 	{
 		Xbound = int(world->w);
 		Ybound = int(world->h);
@@ -76,7 +78,7 @@ class Shepherding
 
 		PhysicalObject* Goal = new PhysicalObject;
 		Goal->pos = Point(Goalx,Goaly);
-		Goal->setCylindric(12.5, 5, 1000000);
+		Goal->setCylindric(GoalRadius, 5, 1000000);
 		Goal->dryFrictionCoefficient = 100;
 		Goal->setColor(Color(0, 0, 1));
 		Goal->collisionElasticity = 0;
@@ -444,7 +446,7 @@ class Shepherding
 		for(int i = 0; i < noOfObjects; i++)
 		{
 			Distance_sq = pow(Goalx - objects[i]->pos.x,2) + pow(Goaly - objects[i]->pos.y,2);
-			if(Distance_sq <= 2500)
+			if(Distance_sq <= GoalDistance)
 			{
 				counter++;
 			}
@@ -453,7 +455,7 @@ class Shepherding
 		for(int i = 0; i < noOfSheep; i++)
 		{
 			Distance_sq = pow(Goalx - flock[i]->pos.x,2) + pow(Goaly - flock[i]->pos.y,2);
-			if(Distance_sq <= 2500)
+			if(Distance_sq <= GoalDistance)
 			{
 				counter++;
 			}

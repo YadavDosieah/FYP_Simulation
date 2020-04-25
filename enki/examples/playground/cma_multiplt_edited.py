@@ -81,6 +81,7 @@ if __name__ == "__main__":
     # Average1 = [np.mean(Controller1[i:i+20]) for i in range(0, len(Controller1), 20)]
 
 
+    plt.rcParams['font.size'] = 18
     plt.semilogy(Controller1,'r', label='Only Shepherding',marker = "x")
     # plt.semilogy(Min1,'r', label='Only Shepherding')
     # plt.semilogy(Max1,'r', label='Only Shepherding')
@@ -88,7 +89,12 @@ if __name__ == "__main__":
     plt.semilogy(Controller2,'b', label='Only Object Clustering')
     plt.semilogy(Controller3,'g', label='Shepherding + Object Clustering')
     plt.grid(True)
+
+    plt.xlabel('Generation')
+    plt.ylabel('Fitness Value')
+    plt.tight_layout()
     plt.legend()
+
     plt.show()
 
     # axs.fill_between(x, min_ser, max_ser, alpha=0.2)

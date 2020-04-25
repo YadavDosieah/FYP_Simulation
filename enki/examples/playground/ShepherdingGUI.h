@@ -34,6 +34,7 @@ class ShepherdingGUI: public ViewerWidget
 		int Goalx;
 		int Goaly;
 		int dim;
+		float GoalRadius;
 		const double *y;
 		double x[16];
 		std::ofstream outputFile;
@@ -42,10 +43,11 @@ class ShepherdingGUI: public ViewerWidget
 	public:
 	ShepherdingGUI(World *world, int mode, int noOfSheep, int noOfShepherd, int noOfObjects,
 								int Csheep, int Cshepherd, float Ksheep, float K1,	float K2,
-								float KWall,	int Goalx, int Goaly, const double (&y)[16], int dim, QWidget *parent = 0):
+								float KWall,	int Goalx, int Goaly,float GoalRadius, const double (&y)[16], int dim, QWidget *parent = 0):
 								ViewerWidget(world, parent), mode(mode), noOfSheep(noOfSheep),
 								noOfShepherd(noOfShepherd), noOfObjects(noOfObjects), Csheep(Csheep), Cshepherd(Cshepherd),
-								Ksheep(Ksheep), K1(K1), K2(K2), KWall(KWall), Goalx(Goalx),	Goaly(Goaly), y(y), dim(dim)
+								Ksheep(Ksheep), K1(K1), K2(K2), KWall(KWall), Goalx(Goalx),	Goaly(Goaly),
+								GoalRadius(GoalRadius), y(y), dim(dim)
 	{
 		for(int i=0; i<dim; i++)
 		{
@@ -78,7 +80,7 @@ class ShepherdingGUI: public ViewerWidget
 
 		PhysicalObject* Goal = new PhysicalObject;
 		Goal->pos = Point(Goalx,Goaly);
-		Goal->setCylindric(25, 5, 1000000);
+		Goal->setCylindric(GoalRadius, 5, 1000000);
 		Goal->dryFrictionCoefficient = 100;
 		Goal->setColor(Color(0, 0, 1));
 		Goal->collisionElasticity = 0;
