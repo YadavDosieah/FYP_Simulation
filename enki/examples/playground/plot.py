@@ -61,6 +61,8 @@ with open('Output.csv','r') as csvfile:
 
 fig = plt.figure()
 ax = plt.axes(xlim=(0, Xbound), ylim=(0, Ybound))
+rec = plt.Rectangle((0,0),Xbound,Ybound,fill=True,edgecolor = None, color='#d3d3d3')
+ax.add_patch(rec)
 
 sheepDots = {}
 shepherdDot = {}
@@ -129,5 +131,5 @@ anim=animation.FuncAnimation(fig,animate,init_func=init,interval=1,frames=len(Sh
 ax.set_aspect('equal', 'box')
 fig.tight_layout()
 # Set up formatting for the movie files
-anim.save('mode1-Both.mp4',fps=20,dpi=1000)
+# anim.save('sim.mp4',fps=20)
 plt.show()

@@ -82,11 +82,11 @@ if __name__ == "__main__":
 
 
     plt.rcParams['font.size'] = 18
-    plt.semilogy(Controller1,'r', label='Only Shepherding',marker = "x")
+    plt.semilogy(Controller1,'r', label='Only Shepherding',linestyle=":")
     # plt.semilogy(Min1,'r', label='Only Shepherding')
     # plt.semilogy(Max1,'r', label='Only Shepherding')
 
-    plt.semilogy(Controller2,'b', label='Only Object Clustering')
+    plt.semilogy(Controller2,'b', label='Only Object Clustering',linestyle="--")
     plt.semilogy(Controller3,'g', label='Shepherding + Object Clustering')
     plt.grid(True)
 

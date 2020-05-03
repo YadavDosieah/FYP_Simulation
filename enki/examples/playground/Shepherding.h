@@ -307,7 +307,7 @@ class Shepherding
 					double Distance = sqrt(Distance_sq);
 					double X_Comp = Distance_x/Distance;
 					double Y_Comp = Distance_y/Distance;
-					if(Distance < 15)
+					if(Distance < 10)
 					{
 						Force_x = Force_x + (Csheep/Distance_sq)*X_Comp;
 						Force_y = Force_y + (Csheep/Distance_sq)*Y_Comp;
@@ -321,7 +321,7 @@ class Shepherding
 			}
 			double Force_Sheep_x = Force_x;
 			double Force_Sheep_y = Force_y;
-			// bool ShepherdDetected = false;
+			bool ShepherdDetected = false;
 			Force_x = 0;
 			Force_y = 0;
 			for(int j=0; j < int(shepherds.size()); j++)
@@ -330,18 +330,18 @@ class Shepherding
 					double Distance_y = flock[i]->pos.y - shepherds[j]->pos.y;
 					double Distance_sq = pow(Distance_x,2) + pow(Distance_y,2);
 					double Distance = sqrt(Distance_sq);
-					if(Distance < 35)
+					if(Distance < 50)
 					{
-						// ShepherdDetected = true;
+						ShepherdDetected = true;
 						Force_x = Force_x + (Cshepherd/Distance_sq)*(Distance_x/Distance);
 						Force_y = Force_y + (Cshepherd/Distance_sq)*(Distance_y/Distance);
 					}
 			}
-			// if (ShepherdDetected != true)
-			// {
+			if (ShepherdDetected != true)
+			{
 				Force_x = Force_x + Force_Sheep_x;
 				Force_y = Force_y + Force_Sheep_y;
-			// }
+			}
 
 			int margin = 25;
 			if(flock[i]->pos.x < margin)

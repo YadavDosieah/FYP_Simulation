@@ -2,12 +2,12 @@
 
 #Calling ls directly using the exec command
 make enkiplayground
-pwd
 
 sed -i "/^GUI		=/s/=.*/= false;/" Parameters.cfg
 sed -i "/^Analysis	=/s/=.*/= true;/" Parameters.cfg
 sed -i "/^logData		=/s/=.*/= true;/" Parameters.cfg
 sed -i "/^No_Of_Trials	=/s/=.*/= 1;/" Parameters.cfg
+sed -i "/^Stop		=/s/=.*/= true;/" Parameters.cfg
 
 sed -i "/^mode		=/s/=.*/= $1;/" Parameters.cfg
 sed -i "/^noOfShepherd 	=/s/=.*/= $2;/" Parameters.cfg
