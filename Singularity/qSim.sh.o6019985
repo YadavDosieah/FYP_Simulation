@@ -1,0 +1,25 @@
+-- Python version from interpreter is 2.7.17
+-- Python libs and executable found, looking for boost::python
+-- Boost version: 1.65.1
+-- Found the following Boost libraries:
+--   python
+-- boost::python found, generating python bindings
+-- SDL2 found, enabling joystick support
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/coa16gyd/simulation/FYP_Simulation/enki
+[ 46%] Built target enki
+[ 48%] Automatic MOC and RCC for target enkiviewer
+[ 48%] Built target enkiviewer_autogen
+[ 89%] Built target enkiviewer
+[ 92%] Automatic MOC for target enkiplayground
+[ 92%] Built target enkiplayground_autogen
+[100%] Built target enkiplayground
+Object Clustering
+INFO - CMA-ES / dim=12 / lambda=20 / sigma0=0.72 / mu=10 / mueff=6.19569 / c1=0.0109238 / cmu=0.0430977 / tpa=0 / threads=10
+INFO - iter=0 / evals=0 / f-value=nan / sigma=0.72 / last_iter=0
+INFO - iter=1 / evals=20 / f-value=619067710745662 / sigma=0.704988174374363 / last_iter=228835
+INFO - iter=2 / evals=40 / f-value=587905252594463 / sigma=0.669591758483879 / last_iter=228989
+INFO - iter=3 / evals=60 / f-value=579644527546598 / sigma=0.672422894833977 / last_iter=230987
+INFO - iter=4 / evals=80 / f-value=620889223245492 / sigma=0.662375794419025 / last_iter=229466
+INFO - iter=5 / evals=100 / f-value=608367568440192 / sigma=0.631558298578173 / last_iter=228576

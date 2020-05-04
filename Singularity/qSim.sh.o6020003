@@ -1,0 +1,247 @@
+-- Python version from interpreter is 2.7.17
+-- Python libs and executable found, looking for boost::python
+-- Boost version: 1.65.1
+-- Found the following Boost libraries:
+--   python
+-- boost::python found, generating python bindings
+-- SDL2 found, enabling joystick support
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/coa16gyd/simulation/FYP_Simulation/enki
+[ 46%] Built target enki
+[ 48%] Automatic MOC and RCC for target enkiviewer
+[ 48%] Built target enkiviewer_autogen
+[ 89%] Built target enkiviewer
+[ 92%] Automatic MOC for target enkiplayground
+[ 92%] Built target enkiplayground_autogen
+[100%] Built target enkiplayground
+Shepherding
+INFO - CMA-ES / dim=12 / lambda=20 / sigma0=0.72 / mu=10 / mueff=6.19569 / c1=0.0109238 / cmu=0.0430977 / tpa=0 / threads=10
+INFO - iter=0 / evals=0 / f-value=nan / sigma=0.72 / last_iter=0
+Trial restarting
+Trial restarting
+Trial restarting
+Trial restarting
+Trial restarting
+Trial restarting
+Trial restarting
+Trial restarting
+INFO - iter=1 / evals=20 / f-value=232411758318336 / sigma=0.71602427631592 / last_iter=2455650
+Trial restarting
+Trial restarting
+Trial restarting
+Trial restarting
+Trial restarting
+Trial restarting
+Trial restarting
+Trial restarting
+Trial restarting
+Trial restarting
+Trial restarting
+INFO - iter=2 / evals=40 / f-value=115532900431726 / sigma=0.744936809326191 / last_iter=2451091
+Trial restarting
+Trial restarting
+Trial restarting
+Trial restarting
+Trial restarting
+Trial restarting
+Trial restarting
+Trial restarting
+Trial restarting
+Trial restarting
+Trial restarting
+Trial restarting
+Trial restarting
+INFO - iter=3 / evals=60 / f-value=77666447717819.5 / sigma=0.74332549681537 / last_iter=2405372
+Trial restarting
+Trial restarting
+Trial restarting
+Trial restarting
+Trial restarting
+Trial restarting
+Trial restarting
+Trial restarting
+INFO - iter=4 / evals=80 / f-value=23772294540636.9 / sigma=0.768642689767609 / last_iter=2371065
+Trial restarting
+Trial restarting
+Trial restarting
+Trial restarting
+Trial restarting
+Trial restarting
+INFO - iter=5 / evals=100 / f-value=32155499717824.4 / sigma=0.785779844965694 / last_iter=2402837
+Trial restarting
+Trial restarting
+Trial restarting
+Trial restarting
+Trial restarting
+Trial restarting
+Trial restarting
+Trial restarting
+Trial restarting
+Trial restarting
+Trial restarting
+Trial restarting
+Trial restarting
+Trial restarting
+Trial restarting
+Trial restarting
+INFO - iter=6 / evals=120 / f-value=22159662459986.6 / sigma=0.821648337972509 / last_iter=2350739
+Trial restarting
+Trial restarting
+Trial restarting
+Trial restarting
+Trial restarting
+Trial restarting
+Trial restarting
+Trial restarting
+Trial restarting
+INFO - iter=7 / evals=140 / f-value=16936156774885.1 / sigma=0.838573631805168 / last_iter=2337901
+Trial restarting
+Trial restarting
+Trial restarting
+Trial restarting
+Trial restarting
+Trial restarting
+INFO - iter=8 / evals=160 / f-value=14622273086171.3 / sigma=0.860219359818688 / last_iter=2335110
+Trial restarting
+Trial restarting
+Trial restarting
+Trial restarting
+Trial restarting
+Trial restarting
+Trial restarting
+Trial restarting
+Trial restarting
+Trial restarting
+Trial restarting
+INFO - iter=9 / evals=180 / f-value=16137991861876.3 / sigma=0.961658334235207 / last_iter=2266018
+Trial restarting
+Trial restarting
+Trial restarting
+Trial restarting
+Trial restarting
+Trial restarting
+Trial restarting
+Trial restarting
+Trial restarting
+Trial restarting
+Trial restarting
+INFO - iter=10 / evals=200 / f-value=13484189928041 / sigma=1.08046922113549 / last_iter=2262855
+Trial restarting
+Trial restarting
+Trial restarting
+Trial restarting
+INFO - iter=11 / evals=220 / f-value=8767410462010.18 / sigma=1.15732659642399 / last_iter=2213123
+Trial restarting
+Trial restarting
+Trial restarting
+Trial restarting
+Trial restarting
+Trial restarting
+Trial restarting
+Trial restarting
+Trial restarting
+Trial restarting
+Trial restarting
+Trial restarting
+Trial restarting
+Trial restarting
+INFO - iter=12 / evals=240 / f-value=9303857288818.03 / sigma=1.29018389842251 / last_iter=2251692
+Trial restarting
+Trial restarting
+Trial restarting
+Trial restarting
+Trial restarting
+Trial restarting
+INFO - iter=13 / evals=260 / f-value=10134357158407.1 / sigma=1.40345700468441 / last_iter=2195129
+Trial restarting
+Trial restarting
+Trial restarting
+Trial restarting
+Trial restarting
+Trial restarting
+Trial restarting
+Trial restarting
+Trial restarting
+INFO - iter=14 / evals=280 / f-value=10004418666079.1 / sigma=1.41853502042052 / last_iter=2249942
+Trial restarting
+Trial restarting
+Trial restarting
+Trial restarting
+Trial restarting
+Trial restarting
+Trial restarting
+Trial restarting
+Trial restarting
+INFO - iter=15 / evals=300 / f-value=9756193876471.19 / sigma=1.4975937894195 / last_iter=2229182
+Trial restarting
+Trial restarting
+Trial restarting
+Trial restarting
+Trial restarting
+Trial restarting
+Trial restarting
+Trial restarting
+Trial restarting
+INFO - iter=16 / evals=320 / f-value=11854261175317.9 / sigma=1.43334448299829 / last_iter=2276197
+Trial restarting
+Trial restarting
+Trial restarting
+Trial restarting
+Trial restarting
+Trial restarting
+Trial restarting
+Trial restarting
+Trial restarting
+Trial restarting
+Trial restarting
+Trial restarting
+INFO - iter=17 / evals=340 / f-value=9533592494540.2 / sigma=1.40553355204326 / last_iter=2280813
+Trial restarting
+Trial restarting
+Trial restarting
+Trial restarting
+Trial restarting
+Trial restarting
+Trial restarting
+Trial restarting
+INFO - iter=18 / evals=360 / f-value=10916502733335.3 / sigma=1.29046645884339 / last_iter=2229061
+Trial restarting
+Trial restarting
+Trial restarting
+Trial restarting
+Trial restarting
+Trial restarting
+Trial restarting
+Trial restarting
+INFO - iter=19 / evals=380 / f-value=8792303910430.14 / sigma=1.22237116837494 / last_iter=2186445
+Trial restarting
+Trial restarting
+Trial restarting
+Trial restarting
+Trial restarting
+INFO - iter=20 / evals=400 / f-value=6832552781254.53 / sigma=1.15857856044006 / last_iter=2195787
+Trial restarting
+Trial restarting
+Trial restarting
+Trial restarting
+Trial restarting
+Trial restarting
+Trial restarting
+Trial restarting
+Trial restarting
+INFO - iter=21 / evals=420 / f-value=9134088575790.32 / sigma=1.10161533818821 / last_iter=2216324
+Trial restarting
+Trial restarting
+Trial restarting
+Trial restarting
+Trial restarting
+Trial restarting
+Trial restarting
+Trial restarting
+Trial restarting
+Trial restarting
+Trial restarting
+Trial restarting
+Trial restarting
+INFO - iter=22 / evals=440 / f-value=9889673334117.63 / sigma=1.08092986273062 / last_iter=2179585
