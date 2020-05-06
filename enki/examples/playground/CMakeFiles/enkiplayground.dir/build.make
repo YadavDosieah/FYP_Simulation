@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/coa16gyd/simulation/FYP_Simulation/enki
+CMAKE_SOURCE_DIR = /home/yadav/Documents/Final-Year-Project/FYP_Simulation/enki
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/coa16gyd/simulation/FYP_Simulation/enki
+CMAKE_BINARY_DIR = /home/yadav/Documents/Final-Year-Project/FYP_Simulation/enki
 
 # Include any dependencies generated for this target.
 include examples/playground/CMakeFiles/enkiplayground.dir/depend.make
@@ -59,16 +59,16 @@ include examples/playground/CMakeFiles/enkiplayground.dir/flags.make
 
 examples/playground/CMakeFiles/enkiplayground.dir/Playground.cpp.o: examples/playground/CMakeFiles/enkiplayground.dir/flags.make
 examples/playground/CMakeFiles/enkiplayground.dir/Playground.cpp.o: examples/playground/Playground.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/coa16gyd/simulation/FYP_Simulation/enki/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object examples/playground/CMakeFiles/enkiplayground.dir/Playground.cpp.o"
-	cd /home/coa16gyd/simulation/FYP_Simulation/enki/examples/playground && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/enkiplayground.dir/Playground.cpp.o -c /home/coa16gyd/simulation/FYP_Simulation/enki/examples/playground/Playground.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/yadav/Documents/Final-Year-Project/FYP_Simulation/enki/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object examples/playground/CMakeFiles/enkiplayground.dir/Playground.cpp.o"
+	cd /home/yadav/Documents/Final-Year-Project/FYP_Simulation/enki/examples/playground && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/enkiplayground.dir/Playground.cpp.o -c /home/yadav/Documents/Final-Year-Project/FYP_Simulation/enki/examples/playground/Playground.cpp
 
 examples/playground/CMakeFiles/enkiplayground.dir/Playground.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/enkiplayground.dir/Playground.cpp.i"
-	cd /home/coa16gyd/simulation/FYP_Simulation/enki/examples/playground && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/coa16gyd/simulation/FYP_Simulation/enki/examples/playground/Playground.cpp > CMakeFiles/enkiplayground.dir/Playground.cpp.i
+	cd /home/yadav/Documents/Final-Year-Project/FYP_Simulation/enki/examples/playground && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/yadav/Documents/Final-Year-Project/FYP_Simulation/enki/examples/playground/Playground.cpp > CMakeFiles/enkiplayground.dir/Playground.cpp.i
 
 examples/playground/CMakeFiles/enkiplayground.dir/Playground.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/enkiplayground.dir/Playground.cpp.s"
-	cd /home/coa16gyd/simulation/FYP_Simulation/enki/examples/playground && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/coa16gyd/simulation/FYP_Simulation/enki/examples/playground/Playground.cpp -o CMakeFiles/enkiplayground.dir/Playground.cpp.s
+	cd /home/yadav/Documents/Final-Year-Project/FYP_Simulation/enki/examples/playground && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/yadav/Documents/Final-Year-Project/FYP_Simulation/enki/examples/playground/Playground.cpp -o CMakeFiles/enkiplayground.dir/Playground.cpp.s
 
 examples/playground/CMakeFiles/enkiplayground.dir/Playground.cpp.o.requires:
 
@@ -83,16 +83,16 @@ examples/playground/CMakeFiles/enkiplayground.dir/Playground.cpp.o.provides.buil
 
 examples/playground/CMakeFiles/enkiplayground.dir/enkiplayground_autogen/mocs_compilation.cpp.o: examples/playground/CMakeFiles/enkiplayground.dir/flags.make
 examples/playground/CMakeFiles/enkiplayground.dir/enkiplayground_autogen/mocs_compilation.cpp.o: examples/playground/enkiplayground_autogen/mocs_compilation.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/coa16gyd/simulation/FYP_Simulation/enki/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object examples/playground/CMakeFiles/enkiplayground.dir/enkiplayground_autogen/mocs_compilation.cpp.o"
-	cd /home/coa16gyd/simulation/FYP_Simulation/enki/examples/playground && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/enkiplayground.dir/enkiplayground_autogen/mocs_compilation.cpp.o -c /home/coa16gyd/simulation/FYP_Simulation/enki/examples/playground/enkiplayground_autogen/mocs_compilation.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/yadav/Documents/Final-Year-Project/FYP_Simulation/enki/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object examples/playground/CMakeFiles/enkiplayground.dir/enkiplayground_autogen/mocs_compilation.cpp.o"
+	cd /home/yadav/Documents/Final-Year-Project/FYP_Simulation/enki/examples/playground && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/enkiplayground.dir/enkiplayground_autogen/mocs_compilation.cpp.o -c /home/yadav/Documents/Final-Year-Project/FYP_Simulation/enki/examples/playground/enkiplayground_autogen/mocs_compilation.cpp
 
 examples/playground/CMakeFiles/enkiplayground.dir/enkiplayground_autogen/mocs_compilation.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/enkiplayground.dir/enkiplayground_autogen/mocs_compilation.cpp.i"
-	cd /home/coa16gyd/simulation/FYP_Simulation/enki/examples/playground && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/coa16gyd/simulation/FYP_Simulation/enki/examples/playground/enkiplayground_autogen/mocs_compilation.cpp > CMakeFiles/enkiplayground.dir/enkiplayground_autogen/mocs_compilation.cpp.i
+	cd /home/yadav/Documents/Final-Year-Project/FYP_Simulation/enki/examples/playground && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/yadav/Documents/Final-Year-Project/FYP_Simulation/enki/examples/playground/enkiplayground_autogen/mocs_compilation.cpp > CMakeFiles/enkiplayground.dir/enkiplayground_autogen/mocs_compilation.cpp.i
 
 examples/playground/CMakeFiles/enkiplayground.dir/enkiplayground_autogen/mocs_compilation.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/enkiplayground.dir/enkiplayground_autogen/mocs_compilation.cpp.s"
-	cd /home/coa16gyd/simulation/FYP_Simulation/enki/examples/playground && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/coa16gyd/simulation/FYP_Simulation/enki/examples/playground/enkiplayground_autogen/mocs_compilation.cpp -o CMakeFiles/enkiplayground.dir/enkiplayground_autogen/mocs_compilation.cpp.s
+	cd /home/yadav/Documents/Final-Year-Project/FYP_Simulation/enki/examples/playground && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/yadav/Documents/Final-Year-Project/FYP_Simulation/enki/examples/playground/enkiplayground_autogen/mocs_compilation.cpp -o CMakeFiles/enkiplayground.dir/enkiplayground_autogen/mocs_compilation.cpp.s
 
 examples/playground/CMakeFiles/enkiplayground.dir/enkiplayground_autogen/mocs_compilation.cpp.o.requires:
 
@@ -127,8 +127,8 @@ examples/playground/enkiplayground: /usr/lib/x86_64-linux-gnu/libQt5Core.so.5.9.
 examples/playground/enkiplayground: /usr/lib/x86_64-linux-gnu/libGL.so
 examples/playground/enkiplayground: /usr/lib/x86_64-linux-gnu/libGLU.so
 examples/playground/enkiplayground: examples/playground/CMakeFiles/enkiplayground.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/coa16gyd/simulation/FYP_Simulation/enki/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable enkiplayground"
-	cd /home/coa16gyd/simulation/FYP_Simulation/enki/examples/playground && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/enkiplayground.dir/link.txt --verbose=$(VERBOSE)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/yadav/Documents/Final-Year-Project/FYP_Simulation/enki/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable enkiplayground"
+	cd /home/yadav/Documents/Final-Year-Project/FYP_Simulation/enki/examples/playground && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/enkiplayground.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 examples/playground/CMakeFiles/enkiplayground.dir/build: examples/playground/enkiplayground
@@ -141,10 +141,10 @@ examples/playground/CMakeFiles/enkiplayground.dir/requires: examples/playground/
 .PHONY : examples/playground/CMakeFiles/enkiplayground.dir/requires
 
 examples/playground/CMakeFiles/enkiplayground.dir/clean:
-	cd /home/coa16gyd/simulation/FYP_Simulation/enki/examples/playground && $(CMAKE_COMMAND) -P CMakeFiles/enkiplayground.dir/cmake_clean.cmake
+	cd /home/yadav/Documents/Final-Year-Project/FYP_Simulation/enki/examples/playground && $(CMAKE_COMMAND) -P CMakeFiles/enkiplayground.dir/cmake_clean.cmake
 .PHONY : examples/playground/CMakeFiles/enkiplayground.dir/clean
 
 examples/playground/CMakeFiles/enkiplayground.dir/depend:
-	cd /home/coa16gyd/simulation/FYP_Simulation/enki && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/coa16gyd/simulation/FYP_Simulation/enki /home/coa16gyd/simulation/FYP_Simulation/enki/examples/playground /home/coa16gyd/simulation/FYP_Simulation/enki /home/coa16gyd/simulation/FYP_Simulation/enki/examples/playground /home/coa16gyd/simulation/FYP_Simulation/enki/examples/playground/CMakeFiles/enkiplayground.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/yadav/Documents/Final-Year-Project/FYP_Simulation/enki && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/yadav/Documents/Final-Year-Project/FYP_Simulation/enki /home/yadav/Documents/Final-Year-Project/FYP_Simulation/enki/examples/playground /home/yadav/Documents/Final-Year-Project/FYP_Simulation/enki /home/yadav/Documents/Final-Year-Project/FYP_Simulation/enki/examples/playground /home/yadav/Documents/Final-Year-Project/FYP_Simulation/enki/examples/playground/CMakeFiles/enkiplayground.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : examples/playground/CMakeFiles/enkiplayground.dir/depend
 
