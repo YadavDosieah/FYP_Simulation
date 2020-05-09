@@ -11,6 +11,8 @@ ShepherdingGUI.h
 /home/yadav/Documents/Final-Year-Project/FYP_Simulation/enki/examples/playground/ShepherdingGUI.h
 Shepherding.h
 /home/yadav/Documents/Final-Year-Project/FYP_Simulation/enki/examples/playground/Shepherding.h
+ShepherdingNoise.h
+/home/yadav/Documents/Final-Year-Project/FYP_Simulation/enki/examples/playground/ShepherdingNoise.h
 cmaes.h
 /home/yadav/Documents/Final-Year-Project/FYP_Simulation/enki/examples/playground/cmaes.h
 libconfig.h++
@@ -67,6 +69,24 @@ math.h
 /home/yadav/Documents/Final-Year-Project/FYP_Simulation/enki/examples/playground/math.h
 fstream
 -
+
+/home/yadav/Documents/Final-Year-Project/FYP_Simulation/enki/examples/playground/ShepherdingNoise.h
+viewer/Viewer.h
+-
+enki/PhysicalEngine.h
+-
+enki/robots/e-puck/EPuck.h
+-
+iostream
+-
+stdio.h
+/home/yadav/Documents/Final-Year-Project/FYP_Simulation/enki/examples/playground/stdio.h
+cstdlib
+-
+time.h
+/home/yadav/Documents/Final-Year-Project/FYP_Simulation/enki/examples/playground/time.h
+math.h
+/home/yadav/Documents/Final-Year-Project/FYP_Simulation/enki/examples/playground/math.h
 
 /home/yadav/Documents/Final-Year-Project/FYP_Simulation/enki/examples/playground/enkiplayground_autogen/mocs_compilation.cpp
 

@@ -47,7 +47,7 @@ with open('Output.csv','r') as csvfile:
     CylinderY = []
     i = 0
     for row in data:
-        if(i%1 == 0 or i == numlines-2):
+        if(i%25 == 0 or i == numlines-2):
             #Start:End:Step
             SheepX.append(row[0:noOfSheep*3:3])
             SheepY.append(row[1:noOfSheep*3:3])

@@ -337,11 +337,20 @@ class Shepherding
 						Force_y = Force_y + (Cshepherd/Distance_sq)*(Distance_y/Distance);
 					}
 			}
-			if (ShepherdDetected != true)
+			if(mode == 1)
 			{
 				Force_x = Force_x + Force_Sheep_x;
 				Force_y = Force_y + Force_Sheep_y;
 			}
+			else
+			{
+				if (ShepherdDetected != true)
+				{
+					Force_x = Force_x + Force_Sheep_x;
+					Force_y = Force_y + Force_Sheep_y;
+				}
+			}
+
 
 			int margin = 25;
 			if(flock[i]->pos.x < margin)

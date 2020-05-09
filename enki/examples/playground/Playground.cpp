@@ -1,5 +1,6 @@
 #include "ShepherdingGUI.h"
 #include "Shepherding.h"
+#include "ShepherdingNoise.h"
 #include "cmaes.h"
 #include <libconfig.h++>
 #include <mutex>
@@ -7,6 +8,10 @@
 #include <algorithm>
 #include <omp.h>
 #include <iomanip>
+
+// #define Analyis_Log 1
+#define Noise_Analysis 1
+
 // #ifdef USE_SDL
 // #include </usr/include/SDL2/SDL.h>
 // #endif
@@ -87,6 +92,7 @@ FitFunc ControllerFitness = [](const double *x, const int N)
 
 int main(int argc, char *argv[])
 {
+  //cout << omp_get_max_threads() << endl;
   //Read configuration file
 	Config configfile;
 	configfile.readFile("Parameters.cfg");
@@ -120,6 +126,11 @@ int main(int argc, char *argv[])
   int No_Of_Threads = configfile.lookup("No_Of_Threads");
   omp_set_num_threads(No_Of_Threads);
   omp_set_dynamic(false);
+
+  #ifdef Noise_Analysis
+    float Noise_Level = configfile.lookup("Noise_Level");
+    int Noise_Scenario = configfile.lookup("Noise_Scenario");
+  #endif
 
   // double x0[16] = { 4.47020,  2.25992,
   //                   -2.03707, 1.71585,
@@ -165,13 +176,13 @@ int main(int argc, char *argv[])
   //                   -1.80797, 0.0526062,
   //                   0,0,0,0};//Arch. Evo 1
   //
-  double x1[16] = { 1.4226,    5.11139,
-                    8.71069,    4.27825,
-                    0.00327356,  -0.447402,
-                    1.44861,    4.96937,
-                    1.38475,    8.23185,
-                    0.0966084,   -5.95994,
-                    0,0,0,0};//Evo 3
+  // double x1[16] = { 1.4226,    5.11139,
+  //                   8.71069,    4.27825,
+  //                   0.00327356,  -0.447402,
+  //                   1.44861,    4.96937,
+  //                   1.38475,    8.23185,
+  //                   0.0966084,   -5.95994,
+  //                   0,0,0,0};//Evo 3 - Not good
 
 
   // double x1[16] = { 9.72565,  1.25369,
@@ -180,7 +191,7 @@ int main(int argc, char *argv[])
   //                   3.65284, 0.918264,
   //                   4.14598,  1.10587,
   //                   5.41277, -3.71182,
-  //                   0,0,0,0};//Evo 1
+  //                   0,0,0,0};//Evo 1 - Not good
 
 // double x1[16] = { 12.8278,  1.37234,
 //                   1.55537,  8.38157,
@@ -189,6 +200,22 @@ int main(int argc, char *argv[])
 //                   8.97432,  4.55264,
 //                   -6.65248,   2.5631,
 //                   0,0,0,0};//Evo 4 --Not Good
+// double x1[16] = { 0.875843,  3.98296,
+//                   6.89279,  2.36443,
+//                   2.72799, 0.245733,
+//                   -1.25524,  2.21442,
+//                   4.15631,  2.58278,
+//                   -1.18257,  6.30556,
+//                   0,0,0,0}; //Evo 4 v2 - ok?
+
+double x1[16] = { 11.7619,   1.19117,
+                  2.52318,   11.9229,
+                  6.28643,   1.26785,
+                  -0.696947,   2.73256,
+                  1.08471,  -3.25945,
+                  -10.3829,   1.37449,
+                  0,0,0,0};//Evo 4 v3
+
 
   // double x2[16] = { 5.5242,    1.4171,
   //                   3.35711,   11.8144,
@@ -271,6 +298,16 @@ int main(int argc, char *argv[])
   //Analysis
   else if(Analysis)
   {
+    #ifdef Analyis_Log
+      std::ofstream Analysis_Logfile;
+      Analysis_Logfile.open("Analysis.csv",std::ios_base::app);
+    #endif
+
+    #ifdef Noise_Analysis
+      std::ofstream Noise_Logfile;
+      Noise_Logfile.open("Noise.csv",std::ios_base::app);
+    #endif
+
     double x[16] = {0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0};
     int dim;
     if(mode == 0)
@@ -296,21 +333,30 @@ int main(int argc, char *argv[])
 
     int No_Of_Success = 0;
     float SuccessRate = 0;
+    float maxSR = 0;
     omp_set_num_threads(No_Of_Threads);
     omp_set_dynamic(false);
-    #pragma omp parallel for reduction(+:No_Of_Success,SuccessRate)
+    #pragma omp parallel for reduction(+:No_Of_Success,SuccessRate,maxSR)
     for(int i=0;i<No_Of_Trials;i++)
     {
-      cout << "Trial " << i << endl;
+      maxSR = 0;
+      //cout << "Trial " << i << endl;
       startAnalysis:
       World world(Xbound,Ybound, Color(0.5,0.5,0.5));
-      Shepherding simulation(&world,mode,noOfSheep,noOfShepherd,noOfObjects,Csheep,
-        Cshepherd,Ksheep,K1, K2, KWall, Goalx, Goaly,GoalRadius, GoalDistance, x, dim);
+      #ifdef Noise_Analysis
+        ShepherdingNoise simulation(&world,mode,noOfSheep,noOfShepherd,noOfObjects,Csheep,
+          Cshepherd,Ksheep,K1, K2, KWall, Goalx, Goaly,GoalRadius, GoalDistance, x, dim,Noise_Level,Noise_Scenario);
+      #else
+        Shepherding simulation(&world,mode,noOfSheep,noOfShepherd,noOfObjects,Csheep,
+          Cshepherd,Ksheep,K1, K2, KWall, Goalx, Goaly,GoalRadius, GoalDistance, x, dim);
+      #endif
 
-        if(logData)
-        {
-          simulation.printHeaders();
-        }
+        #if !defined(Analyis_Log) && !defined(Noise_Analysis)
+          if(logData)
+          {
+            simulation.printHeaders();
+          }
+        #endif
 
         for (unsigned j=0; j < NoOfSteps; j++)
         {
@@ -322,26 +368,71 @@ int main(int argc, char *argv[])
             goto startAnalysis;
           }
 
-          if(logData)
-          {
-            simulation.printPositions();
-          }
+          #if !defined(Analyis_Log) && !defined(Noise_Analysis)
+            if(logData)
+            {
+              simulation.printPositions();
+            }
+          #endif
 
-          if(simulation.getSuccessRate()==1 && Stop)
-          {
-            cout << "Target Reached" << endl;
-            cout << "Time Taken = " << j << "steps" << endl;
-            j = NoOfSteps;
-            No_Of_Success++;
-          }
+          #if !defined(Analyis_Log) && !defined(Noise_Analysis)
+            if(simulation.getSuccessRate()==1 && Stop)
+            {
+              cout << "Target Reached" << endl;
+              cout << "Time Taken = " << j << "steps" << endl;
+              j = NoOfSteps;
+              No_Of_Success++;
+            }
+          #endif
+          maxSR = max(maxSR,simulation.getSuccessRate());
         }
-        float SR = simulation.getSuccessRate();
-        cout << SR << endl;
-        SuccessRate = SuccessRate + SR;
 
+        #if !defined(Analyis_Log) && !defined(Noise_Analysis)
+          //float SR = simulation.getSuccessRate();
+          cout << maxSR << endl;
+          SuccessRate = SuccessRate + maxSR;
+        #endif
+
+
+        #ifdef Analyis_Log
+          pthread_mutex_lock(&mtx2);
+          Analysis_Logfile << mode << "," << noOfShepherd << "," << noOfSheep
+          << "," << noOfObjects <<  ",";
+
+          Analysis_Logfile.precision(std::numeric_limits<long double>::digits10 + 1);
+          Analysis_Logfile << simulation.getTotalFitness();
+          Analysis_Logfile.precision(-1);
+
+          Analysis_Logfile << "," << maxSR << "," << simulation.getSuccessRate() << "\n";
+          pthread_mutex_unlock(&mtx2);
+        #endif
+
+        #ifdef Noise_Analysis
+          pthread_mutex_lock(&mtx2);
+          Noise_Logfile << mode << "," << Noise_Level << "," << Noise_Scenario
+          << ",";
+
+          Noise_Logfile.precision(std::numeric_limits<long double>::digits10 + 1);
+          Noise_Logfile << simulation.getTotalFitness();
+          Noise_Logfile.precision(-1);
+
+          Noise_Logfile << "," << maxSR << "," << simulation.getSuccessRate() << "\n";
+          pthread_mutex_unlock(&mtx2);
+        #endif
     }
     // cout << No_Of_Success << endl;
-    cout << "Success rate = " << SuccessRate/No_Of_Trials << endl;
+    #if !defined(Analyis_Log) && !defined(Noise_Analysis)
+      cout << "Success rate = " << SuccessRate/No_Of_Trials << endl;
+    #endif
+
+    #ifdef Analyis_Log
+      Analysis_Logfile.close();
+    #endif
+
+    #ifdef Noise_Analysis
+      Noise_Logfile.close();
+    #endif
+
   }
 
   //Run optimization algorithm

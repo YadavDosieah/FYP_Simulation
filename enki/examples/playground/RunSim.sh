@@ -6,7 +6,7 @@ cmake .
 cd examples/playground/
 make enkiplayground
 
-sed -i '/^No_Of_Threads	=/s/=.*/= 10;/' Parameters.cfg
+sed -i '/^No_Of_Threads	=/s/=.*/= 8;/' Parameters.cfg
 
 if [ $1 -eq 0 ]
 then
