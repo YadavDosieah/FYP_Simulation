@@ -1,4 +1,5 @@
 #!/bin/bash
+cd "$(dirname "$0")"
 
 # Source progress bar
 source ./progress_bar.sh
@@ -12,7 +13,7 @@ setup_scroll_area
 _end=234
 
 #Calling ls directly using the exec command
-cd ../enki
+cd ../../
 cmake .
 cd examples/playground/
 make enkiplayground
@@ -20,7 +21,7 @@ make enkiplayground
 sed -i "/^GUI		=/s/=.*/= false;/" Parameters.cfg
 sed -i "/^Analysis	=/s/=.*/= true;/" Parameters.cfg
 sed -i "/^logData		=/s/=.*/= false;/" Parameters.cfg
-sed -i "/^No_Of_Trials	=/s/=.*/= 50;/" Parameters.cfg
+sed -i "/^No_Of_Trials	=/s/=.*/= 25;/" Parameters.cfg
 sed -i "/^Stop		=/s/=.*/= true;/" Parameters.cfg
 sed -i '/^No_Of_Threads	=/s/=.*/= 10;/' Parameters.cfg
 
@@ -35,7 +36,7 @@ sed -i "/^noOfShepherd 	=/s/=.*/= 10;/" Parameters.cfg
 _counter=0
 mode=0
 
-echo -e "\Started at $(date)!"
+echo -e "Started at $(date)!"
 for list in "${Controllers[@]}"
 do
   echo "-----------------------Controller "${modeArray[$mode]}"--------------------" >> Noise.csv

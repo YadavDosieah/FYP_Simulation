@@ -364,7 +364,7 @@ double x1[16] = { 11.7619,   1.19117,
           int ReturnVal = simulation.doPerTick();
           if(ReturnVal == 1)
           {
-            cout << "Trial restarting\n";
+            //cout << "Trial restarting\n";
             goto startAnalysis;
           }
 
