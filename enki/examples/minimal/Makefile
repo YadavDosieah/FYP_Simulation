@@ -48,10 +48,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/shyamal/Desktop/FYP_Simulation/enki
+CMAKE_SOURCE_DIR = /home/yadav/Documents/Final-Year-Project/FYP_Simulation/enki
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/shyamal/Desktop/FYP_Simulation/enki
+CMAKE_BINARY_DIR = /home/yadav/Documents/Final-Year-Project/FYP_Simulation/enki
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -137,14 +137,14 @@ install/fast: preinstall/fast
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/shyamal/Desktop/FYP_Simulation/enki && $(CMAKE_COMMAND) -E cmake_progress_start /home/shyamal/Desktop/FYP_Simulation/enki/CMakeFiles /home/shyamal/Desktop/FYP_Simulation/enki/examples/minimal/CMakeFiles/progress.marks
-	cd /home/shyamal/Desktop/FYP_Simulation/enki && $(MAKE) -f CMakeFiles/Makefile2 examples/minimal/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/shyamal/Desktop/FYP_Simulation/enki/CMakeFiles 0
+	cd /home/yadav/Documents/Final-Year-Project/FYP_Simulation/enki && $(CMAKE_COMMAND) -E cmake_progress_start /home/yadav/Documents/Final-Year-Project/FYP_Simulation/enki/CMakeFiles /home/yadav/Documents/Final-Year-Project/FYP_Simulation/enki/examples/minimal/CMakeFiles/progress.marks
+	cd /home/yadav/Documents/Final-Year-Project/FYP_Simulation/enki && $(MAKE) -f CMakeFiles/Makefile2 examples/minimal/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/yadav/Documents/Final-Year-Project/FYP_Simulation/enki/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/shyamal/Desktop/FYP_Simulation/enki && $(MAKE) -f CMakeFiles/Makefile2 examples/minimal/clean
+	cd /home/yadav/Documents/Final-Year-Project/FYP_Simulation/enki && $(MAKE) -f CMakeFiles/Makefile2 examples/minimal/clean
 .PHONY : clean
 
 # The main clean target
@@ -154,22 +154,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/shyamal/Desktop/FYP_Simulation/enki && $(MAKE) -f CMakeFiles/Makefile2 examples/minimal/preinstall
+	cd /home/yadav/Documents/Final-Year-Project/FYP_Simulation/enki && $(MAKE) -f CMakeFiles/Makefile2 examples/minimal/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/shyamal/Desktop/FYP_Simulation/enki && $(MAKE) -f CMakeFiles/Makefile2 examples/minimal/preinstall
+	cd /home/yadav/Documents/Final-Year-Project/FYP_Simulation/enki && $(MAKE) -f CMakeFiles/Makefile2 examples/minimal/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/shyamal/Desktop/FYP_Simulation/enki && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/yadav/Documents/Final-Year-Project/FYP_Simulation/enki && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 examples/minimal/CMakeFiles/enkiMinimal.dir/rule:
-	cd /home/shyamal/Desktop/FYP_Simulation/enki && $(MAKE) -f CMakeFiles/Makefile2 examples/minimal/CMakeFiles/enkiMinimal.dir/rule
+	cd /home/yadav/Documents/Final-Year-Project/FYP_Simulation/enki && $(MAKE) -f CMakeFiles/Makefile2 examples/minimal/CMakeFiles/enkiMinimal.dir/rule
 .PHONY : examples/minimal/CMakeFiles/enkiMinimal.dir/rule
 
 # Convenience name for target.
@@ -179,7 +179,7 @@ enkiMinimal: examples/minimal/CMakeFiles/enkiMinimal.dir/rule
 
 # fast build rule for target.
 enkiMinimal/fast:
-	cd /home/shyamal/Desktop/FYP_Simulation/enki && $(MAKE) -f examples/minimal/CMakeFiles/enkiMinimal.dir/build.make examples/minimal/CMakeFiles/enkiMinimal.dir/build
+	cd /home/yadav/Documents/Final-Year-Project/FYP_Simulation/enki && $(MAKE) -f examples/minimal/CMakeFiles/enkiMinimal.dir/build.make examples/minimal/CMakeFiles/enkiMinimal.dir/build
 .PHONY : enkiMinimal/fast
 
 enkiMinimal.o: enkiMinimal.cpp.o
@@ -188,7 +188,7 @@ enkiMinimal.o: enkiMinimal.cpp.o
 
 # target to build an object file
 enkiMinimal.cpp.o:
-	cd /home/shyamal/Desktop/FYP_Simulation/enki && $(MAKE) -f examples/minimal/CMakeFiles/enkiMinimal.dir/build.make examples/minimal/CMakeFiles/enkiMinimal.dir/enkiMinimal.cpp.o
+	cd /home/yadav/Documents/Final-Year-Project/FYP_Simulation/enki && $(MAKE) -f examples/minimal/CMakeFiles/enkiMinimal.dir/build.make examples/minimal/CMakeFiles/enkiMinimal.dir/enkiMinimal.cpp.o
 .PHONY : enkiMinimal.cpp.o
 
 enkiMinimal.i: enkiMinimal.cpp.i
@@ -197,7 +197,7 @@ enkiMinimal.i: enkiMinimal.cpp.i
 
 # target to preprocess a source file
 enkiMinimal.cpp.i:
-	cd /home/shyamal/Desktop/FYP_Simulation/enki && $(MAKE) -f examples/minimal/CMakeFiles/enkiMinimal.dir/build.make examples/minimal/CMakeFiles/enkiMinimal.dir/enkiMinimal.cpp.i
+	cd /home/yadav/Documents/Final-Year-Project/FYP_Simulation/enki && $(MAKE) -f examples/minimal/CMakeFiles/enkiMinimal.dir/build.make examples/minimal/CMakeFiles/enkiMinimal.dir/enkiMinimal.cpp.i
 .PHONY : enkiMinimal.cpp.i
 
 enkiMinimal.s: enkiMinimal.cpp.s
@@ -206,7 +206,7 @@ enkiMinimal.s: enkiMinimal.cpp.s
 
 # target to generate assembly for a file
 enkiMinimal.cpp.s:
-	cd /home/shyamal/Desktop/FYP_Simulation/enki && $(MAKE) -f examples/minimal/CMakeFiles/enkiMinimal.dir/build.make examples/minimal/CMakeFiles/enkiMinimal.dir/enkiMinimal.cpp.s
+	cd /home/yadav/Documents/Final-Year-Project/FYP_Simulation/enki && $(MAKE) -f examples/minimal/CMakeFiles/enkiMinimal.dir/build.make examples/minimal/CMakeFiles/enkiMinimal.dir/enkiMinimal.cpp.s
 .PHONY : enkiMinimal.cpp.s
 
 # Help Target
@@ -237,6 +237,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/shyamal/Desktop/FYP_Simulation/enki && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/yadav/Documents/Final-Year-Project/FYP_Simulation/enki && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

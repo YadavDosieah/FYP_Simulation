@@ -1,4 +1,4 @@
-# Install script for directory: /home/shyamal/Desktop/FYP_Simulation/enki
+# Install script for directory: /home/yadav/Documents/Final-Year-Project/FYP_Simulation/enki
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -38,20 +38,20 @@ if(NOT DEFINED CMAKE_CROSSCOMPILING)
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/doc" TYPE DIRECTORY OPTIONAL FILES "/home/shyamal/Desktop/FYP_Simulation/enki/html")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/doc" TYPE DIRECTORY OPTIONAL FILES "/home/yadav/Documents/Final-Year-Project/FYP_Simulation/enki/html")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xdevx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/enki/CMake" TYPE FILE FILES "/home/shyamal/Desktop/FYP_Simulation/enki/enkiConfig.cmake")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/enki/CMake" TYPE FILE FILES "/home/yadav/Documents/Final-Year-Project/FYP_Simulation/enki/enkiConfig.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/home/shyamal/Desktop/FYP_Simulation/enki/enki/cmake_install.cmake")
-  include("/home/shyamal/Desktop/FYP_Simulation/enki/viewer/cmake_install.cmake")
-  include("/home/shyamal/Desktop/FYP_Simulation/enki/python/cmake_install.cmake")
-  include("/home/shyamal/Desktop/FYP_Simulation/enki/tests/cmake_install.cmake")
-  include("/home/shyamal/Desktop/FYP_Simulation/enki/examples/cmake_install.cmake")
+  include("/home/yadav/Documents/Final-Year-Project/FYP_Simulation/enki/enki/cmake_install.cmake")
+  include("/home/yadav/Documents/Final-Year-Project/FYP_Simulation/enki/viewer/cmake_install.cmake")
+  include("/home/yadav/Documents/Final-Year-Project/FYP_Simulation/enki/python/cmake_install.cmake")
+  include("/home/yadav/Documents/Final-Year-Project/FYP_Simulation/enki/tests/cmake_install.cmake")
+  include("/home/yadav/Documents/Final-Year-Project/FYP_Simulation/enki/examples/cmake_install.cmake")
 
 endif()
 
@@ -63,5 +63,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/shyamal/Desktop/FYP_Simulation/enki/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/yadav/Documents/Final-Year-Project/FYP_Simulation/enki/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

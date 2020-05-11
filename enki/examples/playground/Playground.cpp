@@ -9,7 +9,7 @@
 #include <omp.h>
 #include <iomanip>
 
-#define Analyis_Log 1
+// #define Analyis_Log 1
 // #define Noise_Analysis 1
 
 // #ifdef USE_SDL
@@ -389,8 +389,8 @@ double x1[16] = { 11.7619,   1.19117,
 
         #if !defined(Analyis_Log) && !defined(Noise_Analysis)
           //float SR = simulation.getSuccessRate();
-          cout << maxSR << endl;
-          SuccessRate = SuccessRate + maxSR;
+          //cout << maxSR << endl;
+          SuccessRate = SuccessRate + simulation.getSuccessRate();
         #endif
 
 

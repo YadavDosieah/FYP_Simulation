@@ -10,7 +10,7 @@ enable_trapping
 setup_scroll_area
 
 # This accounts as the "totalState" variable for the ProgressBar function
-_end=234
+_end=72
 
 #Calling ls directly using the exec command
 cd ../../
@@ -25,8 +25,9 @@ sed -i "/^No_Of_Trials	=/s/=.*/= 25;/" Parameters.cfg
 sed -i "/^Stop		=/s/=.*/= true;/" Parameters.cfg
 sed -i '/^No_Of_Threads	=/s/=.*/= 10;/' Parameters.cfg
 
-modeArray=( 'A' 'B' 'C' )
-Controllers=( "0 1 3 4" "1 2 3 4" "0 1 2 3 4")
+modeArray=( 'A' )
+#"1 2 3 4" "0 1 2 3 4"
+Controllers=( "0 1 3 4" )
 NoiseLevel=( 0.0 0.2 0.4 0.6 0.8 1.0 )
 
 echo "mode,Noise Level,Noise Scenario, Fit Val, max SR, SR" > Noise.csv
@@ -57,6 +58,7 @@ do
       echo -ne "\rMode $mode,Scenario 0, Noise Scenario $scenario, Noise Level $Noise_Level"
       draw_progress_bar $(($_counter*100/$_end))
       ./enkiplayground
+      # sleep 0.3
       _counter=$((${_counter}+1))
     done
   done
@@ -76,6 +78,7 @@ do
       echo -ne "\rMode $mode,Scenario 1, Noise Scenario $scenario, Noise Level $Noise_Level"
       draw_progress_bar $(($_counter*100/$_end))
       ./enkiplayground
+      # sleep 0.3
       _counter=$((${_counter}+1))
     done
   done
@@ -95,6 +98,7 @@ do
       echo -ne "\rMode $mode,Scenario 2, Noise Scenario $scenario, Noise Level $Noise_Level"
       draw_progress_bar $(($_counter*100/$_end))
       ./enkiplayground
+      # sleep 0.3
       _counter=$((${_counter}+1))
     done
   done
