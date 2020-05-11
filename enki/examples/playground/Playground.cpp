@@ -9,8 +9,8 @@
 #include <omp.h>
 #include <iomanip>
 
-// #define Analyis_Log 1
-#define Noise_Analysis 1
+#define Analyis_Log 1
+// #define Noise_Analysis 1
 
 // #ifdef USE_SDL
 // #include </usr/include/SDL2/SDL.h>

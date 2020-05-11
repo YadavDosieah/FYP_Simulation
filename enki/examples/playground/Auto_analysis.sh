@@ -1,6 +1,18 @@
 #!/bin/bash
 
-#Calling ls directly using the exec command
+# Source progress bar
+source ./progress_bar.sh
+
+# Make sure that the progress bar is cleaned up when user presses ctrl+c
+enable_trapping
+# Create progress bar
+setup_scroll_area
+
+# This accounts as the "totalState" variable for the ProgressBar function
+_end=45
+_counter=0
+
+
 make enkiplayground
 
 sed -i "/^GUI		=/s/=.*/= false;/" Parameters.cfg
@@ -11,14 +23,16 @@ sed -i "/^Stop		=/s/=.*/= true;/" Parameters.cfg
 sed -i '/^No_Of_Threads	=/s/=.*/= 10;/' Parameters.cfg
 
 
-shepherdArray=( 5 10 15 )
+shepherdArray=( 05 10 15 )
 sheepArray=( 10 20 30 40 50 )
 objectArray=( 10 20 30 40 50 )
 bothArray=( 10 20 30 40 50 )
-modeArray=( 0 1 2 )
+modeArray=( 1 )
 
 
 echo "mode,Shepherds,Sheep,Objects, Fit Val, max SR, SR" > Analysis.csv
+
+echo -e "\Started at $(date)!"
 
 for mode in "${modeArray[@]}"
 do
@@ -35,9 +49,10 @@ do
     for sheep in "${sheepArray[@]}"
     do
       sed -i "/^noOfSheep 	=/s/=.*/= $sheep;/" Parameters.cfg
-      echo "Run $mode,$shepherd,$sheep,0"
-      date
+      echo -ne "\rRun $mode,$shepherd,$sheep,00"
+      draw_progress_bar $(($_counter*100/$_end))
       ./enkiplayground
+      _counter=$((${_counter}+1))
     done
   done
 
@@ -50,9 +65,10 @@ do
     for object in "${objectArray[@]}"
     do
       sed -i "/^noOfObjects 	=/s/=.*/= $object;/" Parameters.cfg
-      echo "Run $mode,$shepherd,0,$object"
-      date
+      echo -ne "\rRun $mode,$shepherd,00,$object"
+      draw_progress_bar $(($_counter*100/$_end))
       ./enkiplayground
+      _counter=$((${_counter}+1))
     done
   done
 
@@ -66,11 +82,14 @@ do
     do
       sed -i "/^noOfSheep 	=/s/=.*/= $both;/" Parameters.cfg
       sed -i "/^noOfObjects 	=/s/=.*/= $both;/" Parameters.cfg
-      echo "Run $mode,$shepherd,$both,$both"
-      date
+      echo -ne "\rRun $mode,$shepherd,$both,$both"
+      draw_progress_bar $(($_counter*100/$_end))
       ./enkiplayground
+      _counter=$((${_counter}+1))
     done
   done
 done
+echo -e "\nCompleted at $(date)!"
+destroy_scroll_area
 
-poweroff
+# poweroff

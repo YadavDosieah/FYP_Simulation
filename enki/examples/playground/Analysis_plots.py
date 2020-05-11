@@ -67,7 +67,7 @@ fname = ["Controller A", "Controller B", "Controller C"]
 
 sns.set_palette('bright')
 
-for i in range(3):
+for i in range(3z):
     # plt.figure(figsize=(9,3))
     fig,axes = plt.subplots(ncols=4, gridspec_kw=dict(width_ratios=[1,1,1,0.1]),figsize=(9,4))
     for j in range(3):
