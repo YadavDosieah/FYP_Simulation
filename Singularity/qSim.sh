@@ -13,5 +13,5 @@
 #Have Singularity call a custom script from your home or other mounted directories
 #Don't forget to make the script executable before running by using chmod
 
-chmod +x ../enki/examples/playground/RunSim.sh
-singularity exec myimage.simg ../enki/examples/playground/RunSim.sh $1
+chmod +x ../enki/examples/playground/RunOptimisation.sh
+singularity exec myimage.simg ../enki/examples/playground/RunOptimisation.sh $1

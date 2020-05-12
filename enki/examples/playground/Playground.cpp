@@ -8,6 +8,7 @@
 #include <algorithm>
 #include <omp.h>
 #include <iomanip>
+#include "config.h"
 
 // #define Analyis_Log 1
 // #define Noise_Analysis 1
@@ -92,7 +93,7 @@ FitFunc ControllerFitness = [](const double *x, const int N)
 
 int main(int argc, char *argv[])
 {
-  //cout << omp_get_max_threads() << endl;
+  // cout << omp_get_max_threads() << endl;
   //Read configuration file
 	Config configfile;
 	configfile.readFile("Parameters.cfg");
@@ -113,11 +114,6 @@ int main(int argc, char *argv[])
   GoalDistance = configfile.lookup("GoalDistance");
   Xbound = configfile.lookup("Xbound");
   Ybound = configfile.lookup("Ybound");
-  bool GUI = configfile.lookup("GUI");
-  bool Analysis = configfile.lookup("Analysis");
-  bool logData = configfile.lookup("logData");
-  bool Optimise = configfile.lookup("Optimise");
-  bool Stop = configfile.lookup("Stop");
   No_Of_Trials = configfile.lookup("No_Of_Trials");
   NoOfSteps = configfile.lookup("NoOfSteps");
   int NoOfEvolutions = configfile.lookup("NoOfEvolutions");
@@ -132,6 +128,7 @@ int main(int argc, char *argv[])
     int Noise_Scenario = configfile.lookup("Noise_Scenario");
   #endif
 
+  #if (Gui || Analysis)
   // double x0[16] = { 4.47020,  2.25992,
   //                   -2.03707, 1.71585,
   //                   1.29139, 1.060159,
@@ -243,12 +240,13 @@ double x1[16] = { 11.7619,   1.19117,
                     1.55119,    10.6471,
                     9.54676,   -2.38561,
                     4.40578,   -1.76815};//Evo 4
-
+                    
+  double x3[16] = {0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0};
   double xn[16] = {0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0};
+  #endif
 
   //Run simulation with GUI
-  if(GUI)
-  {
+  #if(GUI)
     QApplication app(argc, argv);
 
     // Create the world and the viewer
@@ -283,6 +281,11 @@ double x1[16] = { 11.7619,   1.19117,
       std::copy ( x2, x2+16, x);
       dim = 16;
     }
+    else if(mode == 3)
+    {
+      std::copy ( x3, x3+16, x);
+      dim = 16;
+    }
     else
     {
       std::copy ( xn, xn+16, x);
@@ -294,10 +297,8 @@ double x1[16] = { 11.7619,   1.19117,
 
       viewer.show();
       return app.exec();
-  }
   //Analysis
-  else if(Analysis)
-  {
+  #elif(Analysis)
     #ifdef Analyis_Log
       std::ofstream Analysis_Logfile;
       Analysis_Logfile.open("Analysis.csv",std::ios_base::app);
@@ -323,6 +324,11 @@ double x1[16] = { 11.7619,   1.19117,
     else if(mode == 2)
     {
       std::copy ( x2, x2+16, x);
+      dim = 16;
+    }
+    else if(mode == 3)
+    {
+      std::copy ( x3, x3+16, x);
       dim = 16;
     }
     else
@@ -352,10 +358,11 @@ double x1[16] = { 11.7619,   1.19117,
       #endif
 
         #if !defined(Analyis_Log) && !defined(Noise_Analysis)
-          if(logData)
+          #if(logData)
           {
             simulation.printHeaders();
           }
+          #endif
         #endif
 
         for (unsigned j=0; j < NoOfSteps; j++)
@@ -369,20 +376,23 @@ double x1[16] = { 11.7619,   1.19117,
           }
 
           #if !defined(Analyis_Log) && !defined(Noise_Analysis)
-            if(logData)
+            #if(logData)
             {
               simulation.printPositions();
             }
+            #endif
           #endif
 
           #if !defined(Analyis_Log) && !defined(Noise_Analysis)
-            if(simulation.getSuccessRate()==1 && Stop)
-            {
-              cout << "Target Reached" << endl;
-              cout << "Time Taken = " << j << "steps" << endl;
-              j = NoOfSteps;
-              No_Of_Success++;
-            }
+            #if Stop
+              if(simulation.getSuccessRate()==1)
+              {
+                cout << "Target Reached" << endl;
+                cout << "Time Taken = " << j << "steps" << endl;
+                j = NoOfSteps;
+                No_Of_Success++;
+              }
+            #endif
           #endif
           maxSR = max(maxSR,simulation.getSuccessRate());
         }
@@ -433,11 +443,9 @@ double x1[16] = { 11.7619,   1.19117,
       Noise_Logfile.close();
     #endif
 
-  }
 
   //Run optimization algorithm
-  else if(Optimise)
-  {
+  #elif(Optimise)
     omp_set_num_threads(No_Of_Threads);
     omp_set_dynamic(false);
     std::ofstream Parameters_Outfile;
@@ -453,6 +461,11 @@ double x1[16] = { 11.7619,   1.19117,
       {
         dim = 16; // problem dimensions.
         out << "Generation, Iteration, Trial, Vl_1, Vr_1, Vl_2, Vr_2, Vl_3, Vr_3, Vl_4, Vr_4,Vl_5, Vr_5,Vl_6, Vr_6,Vl_7, Vr_7,Vl_8, Vr_8, Fitness Value" << endl;
+      }
+      else if(mode == 3)
+      {
+        dim = 8;
+        out << "Generation, Iteration, Trial, Vl_1, Vr_1, Vl_2, Vr_2, Vl_3, Vr_3, Vl_4, Vr_4, Fitness Value" << endl;
       }
       else
       {
@@ -493,5 +506,5 @@ double x1[16] = { 11.7619,   1.19117,
       //return cmasols.run_status();
     }
     Parameters_Outfile.close();
-  }
+  #endif
 }

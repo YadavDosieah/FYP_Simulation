@@ -19,13 +19,15 @@ _end=9
 cd ../../
 cmake .
 cd examples/playground/
-make enkiplayground
 
-sed -i "/^GUI		=/s/=.*/= false;/" Parameters.cfg
-sed -i "/^Analysis	=/s/=.*/= true;/" Parameters.cfg
-sed -i "/^logData		=/s/=.*/= true;/" Parameters.cfg
-sed -i "/^No_Of_Trials	=/s/=.*/= 1;/" Parameters.cfg
-sed -i "/^Stop		=/s/=.*/= false;/" Parameters.cfg
+sed -i "/^#define GUI  /s/  .*/  false/" config.h
+sed -i "/^#define Analysis  /s/  .*/  true/" config.h
+sed -i "/^#define Optimise  /s/  .*/  false/" config.h
+sed -i "/^#define logData  /s/  .*/  false/" config.h
+sed -i "/^#define Stop  /s/  .*/  false/" config.h
+sed -i "/^#define Analyis_Log 1/s/.*/\/\/ #define Analyis_Log 1/" config.h
+sed -i "/^#define Noise_Analysis 1/s/.*/\/\/ #define Noise_Analysis 1/" config.h
+make enkiplayground
 
 Controllers=( "A" "B" "C")
 Scenarios=( "0" "1" "2" )
