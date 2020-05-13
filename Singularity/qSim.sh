@@ -1,8 +1,8 @@
 #!/bin/bash
 #$ -P acsehpc
 #$ -q acsehpc.q
-#$ -l rmem=4G
-#$ -l h_rt=06:00:00
+#$ -l rmem=1G
+#$ -l h_rt=27:00:00
 #$ -pe smp 10
 #$ -m bea
 #$ -M gydosieah1@sheffield.ac.uk

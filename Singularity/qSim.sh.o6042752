@@ -1,0 +1,75 @@
+-- Python version from interpreter is 2.7.17
+-- Python libs and executable found, looking for boost::python
+-- Boost version: 1.65.1
+-- Found the following Boost libraries:
+--   python
+-- boost::python found, generating python bindings
+-- SDL2 found, enabling joystick support
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/coa16gyd/simulation/FYP_Simulation/enki
+[ 46%] Built target enki
+[ 48%] Automatic MOC and RCC for target enkiviewer
+[ 48%] Built target enkiviewer_autogen
+[ 89%] Built target enkiviewer
+[ 92%] Automatic MOC for target enkiplayground
+[ 92%] Built target enkiplayground_autogen
+[100%] Built target enkiplayground
+Object Clustering
+INFO - CMA-ES / dim=12 / lambda=20 / sigma0=0.72 / mu=10 / mueff=6.19569 / c1=0.0109238 / cmu=0.0430977 / tpa=0 / threads=15
+INFO - iter=0 / evals=0 / f-value=nan / sigma=0.72 / last_iter=0
+INFO - iter=1 / evals=20 / f-value=16041313023062.4 / sigma=0.677910820454658 / last_iter=375306
+INFO - iter=2 / evals=40 / f-value=10485018775601.7 / sigma=0.73733959360322 / last_iter=379239
+INFO - iter=3 / evals=60 / f-value=3723706278959.83 / sigma=0.812435502882413 / last_iter=379449
+INFO - iter=4 / evals=80 / f-value=4960539546489.23 / sigma=0.839403298966613 / last_iter=382005
+INFO - iter=5 / evals=100 / f-value=10643142461459.5 / sigma=0.916270744436579 / last_iter=378518
+INFO - iter=6 / evals=120 / f-value=3669416555513.89 / sigma=0.935860323704603 / last_iter=381302
+INFO - iter=7 / evals=140 / f-value=1736914490847.86 / sigma=1.01050855095111 / last_iter=389369
+INFO - iter=8 / evals=160 / f-value=1775635811137.63 / sigma=1.12128151683806 / last_iter=386692
+INFO - iter=9 / evals=180 / f-value=1814479646989.92 / sigma=1.27205966104787 / last_iter=387789
+INFO - iter=10 / evals=200 / f-value=3663589361416.7 / sigma=1.30526237299939 / last_iter=383113
+INFO - iter=11 / evals=220 / f-value=1906959157163.4 / sigma=1.37289987097783 / last_iter=385818
+INFO - iter=12 / evals=240 / f-value=1279047615918.08 / sigma=1.5793701444573 / last_iter=390906
+INFO - iter=13 / evals=260 / f-value=2128785073140.66 / sigma=1.87696559900578 / last_iter=380736
+INFO - iter=14 / evals=280 / f-value=1737149428292.93 / sigma=2.06635215477731 / last_iter=383256
+INFO - iter=15 / evals=300 / f-value=1744187170831.65 / sigma=2.08756798820284 / last_iter=384352
+INFO - iter=16 / evals=320 / f-value=974331483640.13 / sigma=1.9187234140118 / last_iter=384399
+INFO - iter=17 / evals=340 / f-value=1414975026279.54 / sigma=1.88597023420326 / last_iter=390926
+INFO - iter=18 / evals=360 / f-value=1539766575140.71 / sigma=2.06386478156435 / last_iter=385402
+INFO - iter=19 / evals=380 / f-value=2273785383850.92 / sigma=1.89537994133479 / last_iter=377971
+INFO - iter=20 / evals=400 / f-value=1284864264971.14 / sigma=1.6390394193234 / last_iter=388611
+INFO - iter=21 / evals=420 / f-value=1317185770553.64 / sigma=1.46974378772305 / last_iter=382320
+INFO - iter=22 / evals=440 / f-value=1593351284517.62 / sigma=1.45618974081407 / last_iter=392682
+INFO - iter=23 / evals=460 / f-value=1225044071956.26 / sigma=1.44581720533957 / last_iter=385976
+INFO - iter=24 / evals=480 / f-value=1140037977558.12 / sigma=1.33041178614217 / last_iter=384636
+INFO - iter=25 / evals=500 / f-value=1099159510436.45 / sigma=1.33655978478119 / last_iter=390231
+INFO - iter=26 / evals=520 / f-value=1158227716538.96 / sigma=1.22672523961139 / last_iter=390879
+INFO - iter=27 / evals=540 / f-value=1069761448258.28 / sigma=1.16261094841181 / last_iter=387943
+INFO - iter=28 / evals=560 / f-value=1144404273400.91 / sigma=1.19765379069414 / last_iter=391725
+INFO - iter=29 / evals=580 / f-value=1084742029194.06 / sigma=1.28524007211397 / last_iter=390633
+INFO - iter=30 / evals=600 / f-value=1536251004386.09 / sigma=1.24287139483002 / last_iter=389639
+INFO - iter=31 / evals=620 / f-value=1329536676144.72 / sigma=1.19752095244302 / last_iter=387827
+INFO - iter=32 / evals=640 / f-value=1323929641625.41 / sigma=1.22270650957451 / last_iter=394117
+INFO - iter=33 / evals=660 / f-value=1434609913313.49 / sigma=1.17489035974854 / last_iter=388859
+INFO - iter=34 / evals=680 / f-value=1308077773447.1 / sigma=1.22350965968327 / last_iter=390899
+INFO - iter=35 / evals=700 / f-value=1382234027324.26 / sigma=1.16182922175481 / last_iter=395345
+INFO - iter=36 / evals=720 / f-value=1392357012130.13 / sigma=1.07125353122435 / last_iter=397127
+INFO - iter=37 / evals=740 / f-value=1408792347467.84 / sigma=0.997054172713516 / last_iter=394867
+INFO - iter=38 / evals=760 / f-value=1258350783880.74 / sigma=0.944707741315482 / last_iter=394281
+INFO - iter=39 / evals=780 / f-value=1170331690164.87 / sigma=1.01460199708442 / last_iter=392052
+INFO - iter=40 / evals=800 / f-value=951911145464.793 / sigma=1.08530250311283 / last_iter=390047
+INFO - iter=41 / evals=820 / f-value=1042136769823.23 / sigma=1.06108930777638 / last_iter=390745
+INFO - iter=42 / evals=840 / f-value=950118920406.53 / sigma=1.03481139981175 / last_iter=395901
+INFO - iter=43 / evals=860 / f-value=959673535387.278 / sigma=1.01180132507346 / last_iter=388393
+INFO - iter=44 / evals=880 / f-value=947254550510.17 / sigma=0.935300653955126 / last_iter=393933
+INFO - iter=45 / evals=900 / f-value=1008670861130.97 / sigma=0.886453651572438 / last_iter=394404
+INFO - iter=46 / evals=920 / f-value=965509818399.107 / sigma=0.945696406895655 / last_iter=398650
+INFO - iter=47 / evals=940 / f-value=967992687876.113 / sigma=0.918814368909326 / last_iter=399268
+INFO - iter=48 / evals=960 / f-value=924767743075.887 / sigma=0.855389978223613 / last_iter=395592
+INFO - iter=49 / evals=980 / f-value=779257899410.267 / sigma=0.809359142171985 / last_iter=394457
+INFO - iter=50 / evals=1000 / f-value=927206537841.04 / sigma=0.738562020435171 / last_iter=395662
+INFO - iter=51 / evals=1020 / f-value=922645051427.979 / sigma=0.725395915908991 / last_iter=398106
+INFO - iter=52 / evals=1040 / f-value=795656320790.451 / sigma=0.662066030753376 / last_iter=396935
+INFO - iter=53 / evals=1060 / f-value=818871210792.159 / sigma=0.677221764932195 / last_iter=397872
+INFO - iter=54 / evals=1080 / f-value=896579854597.45 / sigma=0.627446929333589 / last_iter=393327
+INFO - iter=55 / evals=1100 / f-value=930130244407.885 / sigma=0.623099834676649 / last_iter=397954
