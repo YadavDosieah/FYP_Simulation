@@ -31,7 +31,7 @@ shepherdArray=( 05 10 15 )
 sheepArray=( 10 20 30 40 50 )
 objectArray=( 10 20 30 40 50 )
 bothArray=( 10 20 30 40 50 )
-modeArray=( 1 )
+modeArray=( 3 )
 
 
 echo "mode,Shepherds,Sheep,Objects, Fit Val, max SR, SR" > Analysis.csv

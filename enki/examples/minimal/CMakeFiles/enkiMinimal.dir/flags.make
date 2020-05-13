@@ -6,5 +6,5 @@ CXX_FLAGS =  -O3 -fopenmp
 
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/home/coa16gyd/simulation/FYP_Simulation/enki 
+CXX_INCLUDES = -I/home/yadav/Documents/Final-Year-Project/FYP_Simulation/enki 
 

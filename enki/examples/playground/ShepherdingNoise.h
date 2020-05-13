@@ -352,6 +352,71 @@ class ShepherdingNoise
 				}
 			}
 		}
+		else if(mode == 3)
+		{
+			CalculateFitness();
+			for(int i = 0; i < noOfShepherd; i++)
+			{
+				valarray<Color> image = shepherds[i]->camera.image;
+				valarray<Color> image2 = shepherds[i]->camera2.image;
+
+				bool sheepDetected = false;
+				//bool shepherdDetected = false;
+				bool goalDetected = false;
+				bool objectDetected = false;
+
+				sheepDetected 	= image[0].components[0] == 1 ? 1 : 0;
+				//shepherdDetected = image[0].components[1] == 1 ? 1 : 0;
+				goalDetected 	= image2[0].components[2] == 1 ? 1 : 0;
+				objectDetected = image[0].components[0] == 0.9 ? 1 : 0;
+
+				objectDetected = objectDetected || sheepDetected;
+
+
+				switch (Noise_Scenario)
+				{
+					case 2: //Object
+						objectDetected = rand() / (float) RAND_MAX <= Noise_Level ? 0 : objectDetected;
+						break;
+					case 3: //Goal
+						goalDetected = rand() / (float) RAND_MAX <= Noise_Level ? 0 : goalDetected;
+						break;
+					case 4: //All
+						objectDetected = rand() / (float) RAND_MAX <= Noise_Level ? 0 : objectDetected;
+						goalDetected = rand() / (float) RAND_MAX <= Noise_Level ? 0 : goalDetected;
+						break;
+				}
+
+				if((objectDetected||goalDetected) == false) //No objects seen			STATE 0
+				{
+					// cout << "State 0\n";
+					shepherds[i]->leftSpeed 	= x[0] * SPEED_MAX;
+					shepherds[i]->rightSpeed	= x[1] * SPEED_MAX;
+				}
+				else if((objectDetected&&goalDetected) == true) //Object + goal						STATE 5
+				{
+					// cout << "State 4\n";
+					shepherds[i]->leftSpeed 	= x[6] * SPEED_MAX;
+					shepherds[i]->rightSpeed	= x[7] * SPEED_MAX;
+				}
+				else if(goalDetected) //Only goal														STATE 4
+				{
+					// cout << "State 3\n";
+					shepherds[i]->leftSpeed 	= x[4] * SPEED_MAX;
+					shepherds[i]->rightSpeed	= x[5] * SPEED_MAX;
+				}
+				else if(objectDetected)// object																STATE 1
+				{
+					// cout << "State 1\n";
+					shepherds[i]->leftSpeed 	= x[2] * SPEED_MAX;
+					shepherds[i]->rightSpeed	= x[3] * SPEED_MAX;
+				}
+				else
+				{
+					std::cout << "Error\n";
+				}
+			}
+		}
 
 		/*************************************************************************/
 		/*********************** Sheep Speed Calculation *************************/

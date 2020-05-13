@@ -73,11 +73,13 @@ StdFitness_Val_A = np.std(Fitness_Val_A, axis=3)
 IQRFitness_Val_A = quartiles(Fitness_Val_A, axis=3)
 
 maxSR_A = np.array(maxSR_A)
+SR_A = np.array(SR_A)
+maxSR_A[:,2,:,:] = SR_A[:,2,:,:]
 AvgMaxSR_A = np.median(maxSR_A, axis=3)
 StdMaxSR_A = np.std(maxSR_A, axis=3)
 IQRMaxSR_A = quartiles(maxSR_A, axis=3)
 
-SR_A = np.array(SR_A)
+# SR_A = np.array(SR_A)
 AvgSR_A = np.median(SR_A, axis=3)
 StdSR_A = np.std(SR_A, axis=3)
 IQRSR_A = quartiles(SR_A, axis=3)
@@ -89,11 +91,12 @@ StdFitness_Val_B = np.std(Fitness_Val_B, axis=3)
 IQRFitness_Val_B = quartiles(Fitness_Val_B, axis=3)
 
 maxSR_B = np.array(maxSR_B)
+SR_B = np.array(SR_B)
+maxSR_B[:,2,:,:] = SR_B[:,2,:,:]
 AvgMaxSR_B = np.median(maxSR_B, axis=3)
 StdMaxSR_B = np.std(maxSR_B, axis=3)
 IQRMaxSR_B = quartiles(maxSR_B, axis=3)
 
-SR_B = np.array(SR_B)
 AvgSR_B = np.median(SR_B, axis=3)
 StdSR_B = np.std(SR_B, axis=3)
 IQRSR_B = quartiles(SR_B, axis=3)
@@ -105,11 +108,13 @@ StdFitness_Val_C = np.std(Fitness_Val_C, axis=3)
 IQRFitness_Val_C = quartiles(Fitness_Val_C, axis=3)
 
 maxSR_C = np.array(maxSR_C)
+SR_C = np.array(SR_C)
+maxSR_C[:,2,:,:] = SR_C[:,2,:,:]
 AvgMaxSR_C = np.median(maxSR_C, axis=3)
 StdMaxSR_C = np.std(maxSR_C, axis=3)
 IQRMaxSR_C = quartiles(maxSR_C, axis=3)
 
-SR_C = np.array(SR_C)
+# SR_C = np.array(SR_C)
 AvgSR_C = np.median(SR_C, axis=3)
 StdSR_C = np.std(SR_C, axis=3)
 IQRSR_C = quartiles(SR_C, axis=3)

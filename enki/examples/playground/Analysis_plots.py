@@ -13,9 +13,9 @@ mode = -1
 scenario = -1
 trial = 0
 
-Fitness_Val = [[[[[] for _ in range(5)] for _ in range(3)] for _ in range(3)] for _ in range(3)]
-maxSR = [[[[[] for _ in range(5)] for _ in range(3)] for _ in range(3)] for _ in range(3)]
-SR = [[[[[] for _ in range(5)] for _ in range(3)] for _ in range(3)] for _ in range(3)]
+Fitness_Val = [[[[[] for _ in range(5)] for _ in range(3)] for _ in range(3)] for _ in range(4)]
+maxSR = [[[[[] for _ in range(5)] for _ in range(3)] for _ in range(3)] for _ in range(4)]
+SR = [[[[[] for _ in range(5)] for _ in range(3)] for _ in range(3)] for _ in range(4)]
 
 with open('Analysis.csv','r') as csvfile:
     data = csv.reader(csvfile, delimiter=',')
@@ -63,17 +63,17 @@ AvgSR = np.mean(SR, axis=4)
 shepherds = ["05", "10", "15"]
 sheep = ["10", "20", "30", "40", "50"]
 titles = ["Shepherding", "Obj. Clustering", "Combined Scenario"]
-fname = ["Controller A", "Controller B", "Controller C"]
+fname = ["Controller A", "Controller B", "Controller C", "Simplified Controller"]
 
 sns.set_palette('bright')
 
-for i in range(3):
+for i in range(4):
     # plt.figure(figsize=(9,3))
     fig,axes = plt.subplots(ncols=4, gridspec_kw=dict(width_ratios=[1,1,1,0.1]),figsize=(9,4))
     for j in range(3):
         # print("mode {:d}, Scenario {:d}".format(i,j))
         # print(AvgSR[i,j,:,:])
-        Values = pd.DataFrame(AvgSR[i,j,:,:], index=shepherds, columns=sheep)
+        Values = pd.DataFrame(AvgMaxSR[i,j,:,:], index=shepherds, columns=sheep)
         # print(Values)
         # Values = Values.sort_index()
         Values = Values[["50", "40", "30", "20", "10"]]

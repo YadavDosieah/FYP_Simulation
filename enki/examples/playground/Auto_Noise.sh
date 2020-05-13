@@ -30,9 +30,9 @@ make enkiplayground
 sed -i "/^No_Of_Trials	=/s/=.*/= 25;/" Parameters.cfg
 sed -i '/^No_Of_Threads	=/s/=.*/= 10;/' Parameters.cfg
 
-modeArray=( 'A' )
+modeArray=( 'C' )
 #"1 2 3 4" "0 1 2 3 4"
-Controllers=( "0 1 3 4" )
+Controllers=( "2 3 4" )
 NoiseLevel=( 0.0 0.2 0.4 0.6 0.8 1.0 )
 
 echo "mode,Noise Level,Noise Scenario, Fit Val, max SR, SR" > Noise.csv
@@ -40,7 +40,7 @@ echo "mode,Noise Level,Noise Scenario, Fit Val, max SR, SR" > Noise.csv
 sed -i "/^noOfShepherd 	=/s/=.*/= 10;/" Parameters.cfg
 
 _counter=0
-mode=0
+mode=3
 
 echo -e "Started at $(date)!"
 for list in "${Controllers[@]}"

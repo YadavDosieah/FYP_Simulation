@@ -387,7 +387,7 @@ class Shepherding
 						Force_y = Force_y + (Cshepherd/Distance_sq)*(Distance_y/Distance);
 					}
 			}
-			if(mode == 1)
+			if(mode == 1 || mode == 3)
 			{
 				Force_x = Force_x + Force_Sheep_x;
 				Force_y = Force_y + Force_Sheep_y;
