@@ -1,6 +1,6 @@
 # Final-Year-Project
 
-##Shepherding and Object Clustering using collaborative robots
+## Shepherding and Object Clustering using collaborative robots
 * The main code for the simulation can be found here: https://github.com/YadavDosieah/FYP_Simulation/tree/master/enki/examples/playground
 * The Singularity folder contains the definition file from which the Singularity container can be build
 * The tracking folder contains the files used to implement the tracking system
