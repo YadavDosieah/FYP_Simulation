@@ -81,11 +81,11 @@ ax.add_patch(goalArea)
 # ax.plot([500,500], [0,600], color = 'k', linewidth = 1)[0]
 # ax.plot([100,100], [0,600], color = 'k', linewidth = 1)[0]
 for i in range(noOfSheep):
-    sheepDots[i] = plt.Circle((float(SheepX[0][i]),float(SheepY[0][i])),3.7,fc='r')
+    sheepDots[i] = plt.Circle((float(SheepX[0][i]),float(SheepY[0][i])),3.7,fc='g')
     sheepLines[i] = ax.plot([], [], color = 'w', linewidth = 1)[0]
 
 for n in range(noOfShepherd):
-    shepherdDot[n] = plt.Circle((float(ShepherdX[0][n]),float(ShepherdY[0][n])),3.7,fc='g')
+    shepherdDot[n] = plt.Circle((float(ShepherdX[0][n]),float(ShepherdY[0][n])),3.7,fc='r')
     shepherdLines[n] = ax.plot([], [], color = 'w', linewidth = 1)[0]
 
 for k in range(noOfObjects):

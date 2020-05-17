@@ -12,7 +12,7 @@ setup_scroll_area
 
 # This accounts as the "totalState" variable for the ProgressBar function
 _counter=0
-_end=9
+_end=12
 
 
 #Calling ls directly using the exec command
@@ -23,17 +23,17 @@ cd examples/playground/
 sed -i "/^#define GUI  /s/  .*/  false/" config.h
 sed -i "/^#define Analysis  /s/  .*/  true/" config.h
 sed -i "/^#define Optimise  /s/  .*/  false/" config.h
-sed -i "/^#define logData  /s/  .*/  false/" config.h
+sed -i "/^#define logData  /s/  .*/  true/" config.h
 sed -i "/^#define Stop  /s/  .*/  false/" config.h
 sed -i "/^#define Analyis_Log 1/s/.*/\/\/ #define Analyis_Log 1/" config.h
 sed -i "/^#define Noise_Analysis 1/s/.*/\/\/ #define Noise_Analysis 1/" config.h
 make enkiplayground
 
-Controllers=( "A" "B" "C")
+Controllers=( "A" "B" "C" "D")
 Scenarios=( "0" "1" "2" )
 
 mode=0
-
+sed -i "/^No_Of_Trials	=/s/=.*/= 1;/" Parameters.cfg
 sed -i "/^noOfShepherd 	=/s/=.*/= 10;/" Parameters.cfg
 
 echo -e "Started at $(date)!"

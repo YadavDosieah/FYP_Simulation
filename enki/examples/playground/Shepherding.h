@@ -505,7 +505,7 @@ class Shepherding
 		for(int i = 0; i < noOfObjects; i++)
 		{
 			Distance_sq = pow(Goalx - objects[i]->pos.x,2) + pow(Goaly - objects[i]->pos.y,2);
-			if(Distance_sq <= GoalDistance)
+			if(Distance_sq < GoalDistance)
 			{
 				counter++;
 			}
@@ -514,7 +514,7 @@ class Shepherding
 		for(int i = 0; i < noOfSheep; i++)
 		{
 			Distance_sq = pow(Goalx - flock[i]->pos.x,2) + pow(Goaly - flock[i]->pos.y,2);
-			if(Distance_sq <= GoalDistance)
+			if(Distance_sq < GoalDistance)
 			{
 				counter++;
 			}

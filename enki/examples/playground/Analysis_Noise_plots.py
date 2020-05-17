@@ -34,12 +34,16 @@ Fitness_Val_C = [[[[] for _ in range(6)] for _ in range(5)] for _ in range(3)]
 maxSR_C = [[[[] for _ in range(6)] for _ in range(5)] for _ in range(3)]
 SR_C = [[[[] for _ in range(6)] for _ in range(5)] for _ in range(3)]
 
+Fitness_Val_Simplified = [[[[] for _ in range(6)] for _ in range(3)] for _ in range(3)]
+maxSR_Simplified = [[[[] for _ in range(6)] for _ in range(3)] for _ in range(3)]
+SR_Simplified = [[[[] for _ in range(6)] for _ in range(3)] for _ in range(3)]
+
 with open('Noise.csv','r') as csvfile:
     data = csv.reader(csvfile, delimiter=',')
     row1 = next(data)
     for row in data:
         if("Controller" in row[0]):
-            mode = mode + 1
+            mode = mode + 4
             scenario = -1
         elif("-Scenario" in row[0]):
             scenario = scenario + 1
@@ -65,69 +69,146 @@ with open('Noise.csv','r') as csvfile:
                 Fitness_Val_C[scenario][noise_scenario][noise_idx].append(float(row[3]))
                 maxSR_C[scenario][noise_scenario][noise_idx].append(float(row[4])*100)
                 SR_C[scenario][noise_scenario][noise_idx].append(float(row[5])*100)
+            elif(mode == 3):
+                Fitness_Val_Simplified[scenario][noise_scenario][noise_idx].append(float(row[3]))
+                maxSR_Simplified[scenario][noise_scenario][noise_idx].append(float(row[4])*100)
+                SR_Simplified[scenario][noise_scenario][noise_idx].append(float(row[5])*100)
 
 #######################Controller A
-Fitness_Val_A = np.array(Fitness_Val_A)
-AvgFitness_Val_A = np.median(Fitness_Val_A, axis=3)
-StdFitness_Val_A = np.std(Fitness_Val_A, axis=3)
-IQRFitness_Val_A = quartiles(Fitness_Val_A, axis=3)
-
-maxSR_A = np.array(maxSR_A)
-SR_A = np.array(SR_A)
-maxSR_A[:,2,:,:] = SR_A[:,2,:,:]
-AvgMaxSR_A = np.median(maxSR_A, axis=3)
-StdMaxSR_A = np.std(maxSR_A, axis=3)
-IQRMaxSR_A = quartiles(maxSR_A, axis=3)
-
+# Fitness_Val_A = np.array(Fitness_Val_A)
+# AvgFitness_Val_A = np.median(Fitness_Val_A, axis=3)
+# StdFitness_Val_A = np.std(Fitness_Val_A, axis=3)
+# IQRFitness_Val_A = quartiles(Fitness_Val_A, axis=3)
+#
+# maxSR_A = np.array(maxSR_A)
 # SR_A = np.array(SR_A)
-AvgSR_A = np.median(SR_A, axis=3)
-StdSR_A = np.std(SR_A, axis=3)
-IQRSR_A = quartiles(SR_A, axis=3)
-
-#######################Controller B
-Fitness_Val_B = np.array(Fitness_Val_B)
-AvgFitness_Val_B = np.median(Fitness_Val_B, axis=3)
-StdFitness_Val_B = np.std(Fitness_Val_B, axis=3)
-IQRFitness_Val_B = quartiles(Fitness_Val_B, axis=3)
-
-maxSR_B = np.array(maxSR_B)
-SR_B = np.array(SR_B)
-maxSR_B[:,2,:,:] = SR_B[:,2,:,:]
-AvgMaxSR_B = np.median(maxSR_B, axis=3)
-StdMaxSR_B = np.std(maxSR_B, axis=3)
-IQRMaxSR_B = quartiles(maxSR_B, axis=3)
-
-AvgSR_B = np.median(SR_B, axis=3)
-StdSR_B = np.std(SR_B, axis=3)
-IQRSR_B = quartiles(SR_B, axis=3)
-
-#######################Controller C
-Fitness_Val_C = np.array(Fitness_Val_C)
-AvgFitness_Val_C = np.median(Fitness_Val_C, axis=3)
-StdFitness_Val_C = np.std(Fitness_Val_C, axis=3)
-IQRFitness_Val_C = quartiles(Fitness_Val_C, axis=3)
-
-maxSR_C = np.array(maxSR_C)
-SR_C = np.array(SR_C)
-maxSR_C[:,2,:,:] = SR_C[:,2,:,:]
-AvgMaxSR_C = np.median(maxSR_C, axis=3)
-StdMaxSR_C = np.std(maxSR_C, axis=3)
-IQRMaxSR_C = quartiles(maxSR_C, axis=3)
-
+# maxSR_A[:,2,:,:] = SR_A[:,2,:,:]
+# AvgMaxSR_A = np.median(maxSR_A, axis=3)
+# StdMaxSR_A = np.std(maxSR_A, axis=3)
+# IQRMaxSR_A = quartiles(maxSR_A, axis=3)
+#
+# # SR_A = np.array(SR_A)
+# AvgSR_A = np.median(SR_A, axis=3)
+# StdSR_A = np.std(SR_A, axis=3)
+# IQRSR_A = quartiles(SR_A, axis=3)
+#
+# #######################Controller B
+# Fitness_Val_B = np.array(Fitness_Val_B)
+# AvgFitness_Val_B = np.median(Fitness_Val_B, axis=3)
+# StdFitness_Val_B = np.std(Fitness_Val_B, axis=3)
+# IQRFitness_Val_B = quartiles(Fitness_Val_B, axis=3)
+#
+# maxSR_B = np.array(maxSR_B)
+# SR_B = np.array(SR_B)
+# maxSR_B[:,2,:,:] = SR_B[:,2,:,:]
+# AvgMaxSR_B = np.median(maxSR_B, axis=3)
+# StdMaxSR_B = np.std(maxSR_B, axis=3)
+# IQRMaxSR_B = quartiles(maxSR_B, axis=3)
+#
+# AvgSR_B = np.median(SR_B, axis=3)
+# StdSR_B = np.std(SR_B, axis=3)
+# IQRSR_B = quartiles(SR_B, axis=3)
+#
+# #######################Controller C
+# Fitness_Val_C = np.array(Fitness_Val_C)
+# AvgFitness_Val_C = np.median(Fitness_Val_C, axis=3)
+# StdFitness_Val_C = np.std(Fitness_Val_C, axis=3)
+# IQRFitness_Val_C = quartiles(Fitness_Val_C, axis=3)
+#
+# maxSR_C = np.array(maxSR_C)
 # SR_C = np.array(SR_C)
-AvgSR_C = np.median(SR_C, axis=3)
-StdSR_C = np.std(SR_C, axis=3)
-IQRSR_C = quartiles(SR_C, axis=3)
+# maxSR_C[:,2,:,:] = SR_C[:,2,:,:]
+# AvgMaxSR_C = np.median(maxSR_C, axis=3)
+# StdMaxSR_C = np.std(maxSR_C, axis=3)
+# IQRMaxSR_C = quartiles(maxSR_C, axis=3)
+#
+# # SR_C = np.array(SR_C)
+# AvgSR_C = np.median(SR_C, axis=3)
+# StdSR_C = np.std(SR_C, axis=3)
+# IQRSR_C = quartiles(SR_C, axis=3)
+
+#######################Controller D
+Fitness_Val_Simplified = np.array(Fitness_Val_Simplified)
+AvgFitness_Val_Simplified = np.median(Fitness_Val_Simplified, axis=3)
+StdFitness_Val_Simplified = np.std(Fitness_Val_Simplified, axis=3)
+IQRFitness_Val_Simplified = quartiles(Fitness_Val_Simplified, axis=3)
+
+maxSR_Simplified = np.array(maxSR_Simplified)
+AvgMaxSR_Simplified = np.median(maxSR_Simplified, axis=3)
+StdMaxSR_Simplified = np.std(maxSR_Simplified, axis=3)
+IQRMaxSR_Simplified = quartiles(maxSR_Simplified, axis=3)
+
+SR_Simplified = np.array(SR_Simplified)
+AvgSR_Simplified = np.median(SR_Simplified, axis=3)
+StdSR_Simplified = np.std(SR_Simplified, axis=3)
+IQRSR_Simplified = quartiles(SR_Simplified, axis=3)
 
 x = np.array([0,0.2,0.4,0.6,0.8,1.0])
 
 titles = ["Shepherding", "Obj. Clustering", "Combined Scenario"]
 
 
+# fig, ax = plt.subplots(nrows=1, ncols=3,figsize=(9,4))
+# for i in range(3):
+#     for j in range(4):
+#         ax[i].errorbar(x,AvgMaxSR_A[i,j,:],yerr=IQRMaxSR_A[i,j,:].T)#scenario,noise scenario, noise level
+#         ax[i].set_title(titles[i])
+#         ax[i].grid(b=True,axis='y')
+#         ax[i].set_ylim(0, 105)
+#         ax[i].set_xlim(0, 1.05)
+#         ax[i].xaxis.set_ticks(np.arange(0, 1.1, 0.2))
+#
+# fig.add_subplot(111, frameon=False)
+# # hide tick and tick label of the big axis
+# plt.tick_params(labelcolor='none', top=False, bottom=False, left=False, right=False)
+# plt.xlabel('Noise Level',fontsize=12)
+# plt.ylabel('Success Rate (%)',fontsize=12)
+# plt.subplots_adjust(bottom=0.23, top = 0.93, right = 0.97, left = 0.075)
+# fig.legend(['Sheep & Object','Shepherd','Goal','All'],loc="lower center", ncol = 6,fontsize=12)
+# plt.savefig("Controller A - Noise")
+#
+# fig, ax = plt.subplots(nrows=1, ncols=3,figsize=(9,4))
+# for i in range(3):
+#     for j in range(4):
+#         ax[i].errorbar(x,AvgMaxSR_B[i,j,:],yerr=IQRMaxSR_B[i,j,:].T)#scenario,noise scenario, noise level
+#         ax[i].set_title(titles[i])
+#         ax[i].grid(b=True,axis='y')
+#         ax[i].set_ylim(0, 105)
+#         ax[i].set_xlim(0, 1.05)
+#         ax[i].xaxis.set_ticks(np.arange(0, 1.1, 0.2))
+#
+# fig.add_subplot(111, frameon=False)
+# # hide tick and tick label of the big axis
+# plt.tick_params(labelcolor='none', top=False, bottom=False, left=False, right=False)
+# plt.xlabel('Noise Level',fontsize=12)
+# plt.ylabel('Success Rate (%)',fontsize=12)
+# plt.subplots_adjust(bottom=0.23, top = 0.93, right = 0.97, left = 0.075)
+# fig.legend(['Shepherd','Sheep & Object','Goal','All'],loc="lower center", ncol = 6,fontsize=12)
+# plt.savefig("Controller B - Noise")
+#
+# fig, ax = plt.subplots(nrows=1, ncols=3,figsize=(9,4))
+# for i in range(3):
+#     for j in range(5):
+#         ax[i].errorbar(x,AvgMaxSR_C[i,j,:],yerr=IQRMaxSR_C[i,j,:].T)#scenario,noise scenario, noise level
+#         ax[i].set_title(titles[i])
+#         ax[i].grid(b=True,axis='y')
+#         ax[i].set_ylim(0, 105)
+#         ax[i].set_xlim(0, 1.05)
+#         ax[i].xaxis.set_ticks(np.arange(0, 1.1, 0.2))
+#
+# fig.add_subplot(111, frameon=False)
+# # hide tick and tick label of the big axis
+# plt.tick_params(labelcolor='none', top=False, bottom=False, left=False, right=False)
+# plt.xlabel('Noise Level',fontsize=12)
+# plt.ylabel('Success Rate (%)',fontsize=12)
+# plt.subplots_adjust(bottom=0.23, top = 0.93, right = 0.97, left = 0.075)
+# fig.legend(['Sheep','Shepherd','Object','Goal','All'],loc="lower center", ncol = 6,fontsize=12)
+# plt.savefig("Controller C - Noise")
+
 fig, ax = plt.subplots(nrows=1, ncols=3,figsize=(9,4))
 for i in range(3):
-    for j in range(4):
-        ax[i].errorbar(x,AvgMaxSR_A[i,j,:],yerr=IQRMaxSR_A[i,j,:].T)#scenario,noise scenario, noise level
+    for j in range(3):
+        ax[i].errorbar(x,AvgMaxSR_Simplified[i,j,:],yerr=IQRMaxSR_Simplified[i,j,:].T)#scenario,noise scenario, noise level
         ax[i].set_title(titles[i])
         ax[i].grid(b=True,axis='y')
         ax[i].set_ylim(0, 105)
@@ -140,47 +221,8 @@ plt.tick_params(labelcolor='none', top=False, bottom=False, left=False, right=Fa
 plt.xlabel('Noise Level',fontsize=12)
 plt.ylabel('Success Rate (%)',fontsize=12)
 plt.subplots_adjust(bottom=0.23, top = 0.93, right = 0.97, left = 0.075)
-fig.legend(['Sheep & Object','Shepherd','Goal','All'],loc="lower center", ncol = 6,fontsize=12)
-plt.savefig("Controller A - Noise")
-
-fig, ax = plt.subplots(nrows=1, ncols=3,figsize=(9,4))
-for i in range(3):
-    for j in range(4):
-        ax[i].errorbar(x,AvgMaxSR_B[i,j,:],yerr=IQRMaxSR_B[i,j,:].T)#scenario,noise scenario, noise level
-        ax[i].set_title(titles[i])
-        ax[i].grid(b=True,axis='y')
-        ax[i].set_ylim(0, 105)
-        ax[i].set_xlim(0, 1.05)
-        ax[i].xaxis.set_ticks(np.arange(0, 1.1, 0.2))
-
-fig.add_subplot(111, frameon=False)
-# hide tick and tick label of the big axis
-plt.tick_params(labelcolor='none', top=False, bottom=False, left=False, right=False)
-plt.xlabel('Noise Level',fontsize=12)
-plt.ylabel('Success Rate (%)',fontsize=12)
-plt.subplots_adjust(bottom=0.23, top = 0.93, right = 0.97, left = 0.075)
-fig.legend(['Shepherd','Sheep & Object','Goal','All'],loc="lower center", ncol = 6,fontsize=12)
-plt.savefig("Controller B - Noise")
-
-fig, ax = plt.subplots(nrows=1, ncols=3,figsize=(9,4))
-for i in range(3):
-    for j in range(5):
-        ax[i].errorbar(x,AvgMaxSR_C[i,j,:],yerr=IQRMaxSR_C[i,j,:].T)#scenario,noise scenario, noise level
-        ax[i].set_title(titles[i])
-        ax[i].grid(b=True,axis='y')
-        ax[i].set_ylim(0, 105)
-        ax[i].set_xlim(0, 1.05)
-        ax[i].xaxis.set_ticks(np.arange(0, 1.1, 0.2))
-
-fig.add_subplot(111, frameon=False)
-# hide tick and tick label of the big axis
-plt.tick_params(labelcolor='none', top=False, bottom=False, left=False, right=False)
-plt.xlabel('Noise Level',fontsize=12)
-plt.ylabel('Success Rate (%)',fontsize=12)
-plt.subplots_adjust(bottom=0.23, top = 0.93, right = 0.97, left = 0.075)
-fig.legend(['Sheep','Shepherd','Object','Goal','All'],loc="lower center", ncol = 6,fontsize=12)
-plt.savefig("Controller C - Noise")
-
+fig.legend(['Sheep/Object','Goal','All'],loc="lower center", ncol = 6,fontsize=12)
+plt.savefig("Simplified Controller - Noise")
 # plt.show()
 
 # fig,ax2 = plt.subplots(1)

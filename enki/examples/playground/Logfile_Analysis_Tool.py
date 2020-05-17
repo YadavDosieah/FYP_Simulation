@@ -16,10 +16,12 @@ from scipy.ndimage.filters import gaussian_filter1d
 
 No_Of_Generation = 80
 Population_size = 20
-No_Of_Trials = 50
+No_Of_Trials = 25
 
 def readLogfile(filename):
-    if(("mode2") in filename):
+    if(("mode3") in filename):
+        No_Of_Var = 4
+    elif(("mode2") in filename):
         No_Of_Var = 8
     else:
         No_Of_Var = 6
@@ -100,6 +102,7 @@ if __name__ == "__main__":
     plt.tight_layout()
     plt.legend()
     plt.grid(True)
+    plt.savefig("Fitness_Val_Simplified",bbox_inches='tight',pad_inches = 0)
     plt.show()
 
     # # create x-y points to be used in heatmap
