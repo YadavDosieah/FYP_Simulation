@@ -33,6 +33,7 @@ import sys, pylab, csv
 import numpy as np
 from matplotlib.pylab import subplot, semilogy, grid, title
 import matplotlib.pyplot as plt
+import math
 # from matplotlib.pylab import figure, subplot, semilogy, hold, grid, axis, title, text, xlabel, isinteractive, draw, gcf
 # TODO: the above direct imports clutter the interface in a Python shell
 
@@ -65,36 +66,101 @@ def read(filename):
         for c in range(single_values+2*dim,single_values+3*dim):
             xmeanc.append(c)
         xmean = dat[:,xmeanc]
-
-    return fevals,fvalue
+        xmean = (1 - np.exp(-xmean))/(1 + np.exp(-xmean))
+    print(xmean.shape)
+    # for
+    return fevals,xmean
 
 
 if __name__ == "__main__":
     feval1, Controller1 = read(sys.argv[1])
     feval2, Controller2 = read(sys.argv[2])
     feval3, Controller3 = read(sys.argv[3])
-    print(sys.argv[3])
+    feval4, Controller4 = read(sys.argv[4])
+    nVar1 = Controller1.shape[1]
+    nVar2 = Controller2.shape[1]
+    nVar3 = Controller3.shape[1]
+    nVar4 = Controller4.shape[1]
 
-    # print((feval1.shape))
-    # Max1 = [max(Controller1[i:i+20]) for i in range(0, len(Controller1), 20)]
-    # Min1 = [min(Controller1[i:i+20]) for i in range(0, len(Controller1), 20)]
-    # Average1 = [np.mean(Controller1[i:i+20]) for i in range(0, len(Controller1), 20)]
-
-
+    #####################################################################
+    ############################# Controller A
+    #####################################################################
     plt.rcParams['font.size'] = 18
-    plt.semilogy(Controller1,'r', label='Only Shepherding',linestyle=":")
-    # plt.semilogy(Min1,'r', label='Only Shepherding')
-    # plt.semilogy(Max1,'r', label='Only Shepherding')
-
-    plt.semilogy(Controller2,'b', label='Only Object Clustering',linestyle="--")
-    plt.semilogy(Controller3,'g', label='Shepherding + Object Clustering')
-    plt.grid(True)
-
+    fig, ax = plt.subplots(nrows=1, ncols=1,figsize=(12,6))#14.2 x 8
+    ax.plot(Controller1)
+    ax.grid(True)
+    ax.set_ylim(-1.05, 1.05)
+    ax.set_xlim(0, 80)
     plt.xlabel('Generation')
-    plt.ylabel('Fitness Value')
-    plt.tight_layout()
-    plt.legend()
+    plt.ylabel('Normalised Wheel Velocities')
 
-    plt.show()
+    fig.add_subplot(111, frameon=False)
+    # hide tick and tick label of the big axis
+    plt.tick_params(labelcolor='none', top=False, bottom=False, left=False, right=False)
+    fig.legend(['v_l_0','v_r_0','v_l_1','v_r_1','v_l_3','v_r_3',
+    'v_l_4','v_r_4','v_l_5','v_r_5','v_l_7','v_r_7'],loc="lower center", ncol = nVar1/2, handlelength=1, handleheight=1.8,fontsize=16)
 
-    # axs.fill_between(x, min_ser, max_ser, alpha=0.2)
+    plt.subplots_adjust(bottom=0.28, top = 0.97, right = 0.95, left = 0.1)
+    plt.savefig("Controller A - Wheel Vel")
+
+    #####################################################################
+    ############################# Controller B
+    #####################################################################
+    fig, ax = plt.subplots(nrows=1, ncols=1,figsize=(12,6))#14.2 x 8
+    ax.plot(Controller2)
+    ax.grid(True)
+    ax.set_ylim(-1.05, 1.05)
+    ax.set_xlim(0, 80)
+    plt.xlabel('Generation')
+    plt.ylabel('Normalised Wheel Velocities')
+
+    fig.add_subplot(111, frameon=False)
+    # hide tick and tick label of the big axis
+    plt.tick_params(labelcolor='none', top=False, bottom=False, left=False, right=False)
+    fig.legend(['v_l_0','v_r_0','v_l_2','v_r_2','v_l_3','v_r_3',
+    'v_l_4','v_r_4','v_l_6','v_r_6','v_l_7','v_r_7'],loc="lower center", ncol = nVar2/2, handlelength=1, handleheight=1.8,fontsize=16)
+
+    plt.subplots_adjust(bottom=0.28, top = 0.97, right = 0.95, left = 0.1)
+    plt.savefig("Controller B - Wheel Vel")
+
+    #####################################################################
+    ############################# Controller C
+    #####################################################################
+    fig, ax = plt.subplots(nrows=1, ncols=1,figsize=(12,6))#14.2 x 8
+    ax.plot(Controller3)
+    ax.grid(True)
+    ax.set_ylim(-1.05, 1.05)
+    ax.set_xlim(0, 80)
+    plt.xlabel('Generation')
+    plt.ylabel('Normalised Wheel Velocities')
+
+    fig.add_subplot(111, frameon=False)
+    # hide tick and tick label of the big axis
+    plt.tick_params(labelcolor='none', top=False, bottom=False, left=False, right=False)
+    fig.legend(['v_l_0','v_r_0','v_l_1','v_r_1','v_l_2','v_r_2','v_l_3','v_r_3',
+    'v_l_4','v_r_4','v_l_5','v_r_5','v_l_6','v_r_6','v_l_7','v_r_7'],loc="lower center", ncol = nVar3/2, handlelength=1, handleheight=1.8,fontsize=16)
+
+    plt.subplots_adjust(bottom=0.28, top = 0.97, right = 0.95, left = 0.1)
+    plt.savefig("Controller C - Wheel Vel")
+
+    #####################################################################
+    ############################# Controller D
+    #####################################################################
+    fig, ax = plt.subplots(nrows=1, ncols=1,figsize=(12,6))#14.2 x 8
+    ax.plot(Controller4)
+    ax.grid(True)
+    ax.set_ylim(-1.05, 1.05)
+    ax.set_xlim(0, 80)
+    plt.xlabel('Generation')
+    plt.ylabel('Normalised Wheel Velocities')
+
+    fig.add_subplot(111, frameon=False)
+    # hide tick and tick label of the big axis
+    plt.tick_params(labelcolor='none', top=False, bottom=False, left=False, right=False)
+    fig.legend(['v_l_0','v_r_0','v_l_1','v_r_1','v_l_2','v_r_2','v_l_3','v_r_3',
+    'v_l_4','v_r_4','v_l_5','v_r_5','v_l_6','v_r_6','v_l_7','v_r_7'],loc="lower center", ncol = nVar4/2, handlelength=1, handleheight=1.8,fontsize=16)
+
+    plt.subplots_adjust(bottom=0.28, top = 0.97, right = 0.95, left = 0.1)
+    plt.savefig("Simplified Controller - Wheel Vel")
+
+    # plt.show()

@@ -51,8 +51,16 @@ with open('Analysis.csv','r') as csvfile:
                 maxSR[mode][scenario][shepherdIdx-1][objIdx-1].append(float(row[5])*100)
                 SR[mode][scenario][shepherdIdx-1][objIdx-1].append(float(row[6])*100)
 
+            if(scenario == 3):
+                shepherdIdx = int(row[1])/5
+                objIdx = int(row[3])/10
+                Fitness_Val[mode][scenario][shepherdIdx-1][objIdx-1].append(float(row[4]))
+                maxSR[mode][scenario][shepherdIdx-1][objIdx-1].append(float(row[5])*100)
+                SR[mode][scenario][shepherdIdx-1][objIdx-1].append(float(row[6])*100)
+
 Fitness_Val = np.array(Fitness_Val)
 AvgFitness = np.mean(Fitness_Val, axis=4)
+AvgFitness[:,2,:,:] = AvgFitness[:,2,:,:]/2
 
 maxSR = np.array(maxSR)
 AvgMaxSR = np.mean(maxSR, axis=4)
@@ -67,6 +75,13 @@ fname = ["Controller A", "Controller B", "Controller C", "Simplified Controller"
 
 sns.set_palette('bright')
 
+# print(AvgFitness.shape)
+for i in range(4):
+    Max = (AvgFitness.max())
+    Min = (AvgFitness.min())
+
+# print(Max)
+# print(Min)
 for i in range(4):
     # plt.figure(figsize=(9,3))
     fig,axes = plt.subplots(ncols=4, gridspec_kw=dict(width_ratios=[1,1,1,0.1]),figsize=(9,4))
@@ -84,6 +99,11 @@ for i in range(4):
             sns.heatmap(Values,cmap=sns.color_palette("RdYlGn",100),vmin=0, vmax=100,annot=True,fmt=".1f",cbar=False,ax=axes[j])
         else:
             sns.heatmap(Values,cmap=sns.color_palette("RdYlGn",100),vmin=0, vmax=100,annot=True,fmt=".1f",cbar=False,ax=axes[j],yticklabels=False)
+
+        # if(j==0):
+        #     sns.heatmap(Values,cmap=sns.color_palette("RdYlGn_r",100),vmin=Min, vmax=Max,annot=True,fmt="3.2g",cbar=False,ax=axes[j])
+        # else:
+        #     sns.heatmap(Values,cmap=sns.color_palette("RdYlGn_r",100),vmin=Min, vmax=Max,annot=True,fmt="3.2g",cbar=False,ax=axes[j],yticklabels=False)
         axes[j].set_title(titles[j])
 
     fig.add_subplot(111, frameon=False)
@@ -95,6 +115,12 @@ for i in range(4):
     cbar = fig.colorbar(axes[1].collections[0], cax=axes[3])
     cbar.set_ticks([0, 20, 40, 60, 80, 100])
     cbar.set_ticklabels(['0%', '20%', '40%', '60%','80%', '100%'])
+
+    # cbar.set_ticks([Min, Max])
+    # cbar.set_ticklabels(['Min','Max'])
+
     plt.tight_layout()
     plt.savefig(fname[i],bbox_inches='tight',pad_inches = 0)
+    # plt.savefig(fname[i]+"Fitness_Val",bbox_inches='tight',pad_inches = 0)
+
 # plt.show()
