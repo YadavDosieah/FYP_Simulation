@@ -601,16 +601,16 @@ class Shepherding
 			EPuck *epuck = new EPuck(0x2);
 			epuck->camera.init(0.01,world);
 			epuck->setColor(Color(0, 1, 0)); // Green for shepherd
-			epuck->pos = Point(rand()%Xbound, rand()%(Goaly-50));
+			epuck->pos = Point(rand()%(Xbound-7.4)+3.7, rand()%(Goaly-50-3.7)+3.7);
 			epuck->angle = fmod(rand(),(2*M_PI)) - M_PI;
 			V->push_back(epuck);
 			world->addObject(epuck);
 		}
 		else
 		{
-			EPuck *epuck = new EPuck;
+			EPuck *epuck = new EPuck(0);
 			epuck->setColor(Color(1, 0, 0)); // Red for Sheep
-			epuck->pos = Point(rand()%Xbound, rand()%(Goaly-50));
+			epuck->pos = Point(rand()%(Xbound-7.4)+3.7, rand()%(Goaly-50-3.7)+3.7);
 			epuck->angle = fmod(rand(),(2*M_PI)) - M_PI;
 			V->push_back(epuck);
 			world->addObject(epuck);

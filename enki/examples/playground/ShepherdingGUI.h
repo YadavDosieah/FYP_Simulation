@@ -413,7 +413,7 @@ class ShepherdingGUI: public ViewerWidget
 		}
 		else
 		{
-			EPuck *epuck = new EPuck;
+			EPuck *epuck = new EPuck(0);
 			epuck->setColor(Color(1, 0, 0)); // Red for Sheep
 			epuck->pos = Point(rand()%300, rand()%200);
 			epuck->angle = fmod(rand(),(2*M_PI)) - M_PI;

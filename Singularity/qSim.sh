@@ -5,7 +5,7 @@
 #$ -l h_rt=27:00:00
 #$ -pe smp 10
 #$ -m bea
-#$ -M gydosieah1@sheffield.ac.uk
+#$ -M co4xgd@sheffield.ac.uk
 #$ -e error.txt
 #$ -j y
 # 4GB memory, 48hrs max, 10 processors
