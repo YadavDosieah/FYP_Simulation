@@ -10,13 +10,14 @@ cd examples/playground/
 # sed -ri 's/(.*)(\Evolution	= )([0-9]+)(.*)/echo "\1\2$((\3+1))\4"/ge' Parameters.cfg
 
 sed -i "/^#define GUI  /s/  .*/  false/" config.h
-sed -i "/^#define Analysis  /s/  .*/  false/" config.h
-sed -i "/^#define Optimise  /s/  .*/  true/" config.h
+sed -i "/^#define Analysis  /s/  .*/  true/" config.h
+sed -i "/^#define Optimise  /s/  .*/  false/" config.h
 sed -i "/^#define logData  /s/  .*/  false/" config.h
 sed -i "/^#define Stop  /s/  .*/  false/" config.h
-sed -i "/^#define Analyis_Log 1/s/.*/\/\/ #define Analyis_Log 1/" config.h
+sed -i "/^\/\/ #define Analyis_Log 1/s/.*/#define Analyis_Log 1/" config.h
 sed -i "/^#define Noise_Analysis 1/s/.*/\/\/ #define Noise_Analysis 1/" config.h
-sed -i "/^#define Post_Eval 1/s/.*/\/\/ #define Post_Eval 1/" config.h
+sed -i "/^\/\/ #define Post_Eval 1/s/.*/#define Post_Eval 1/" config.h
+
 make enkiplayground
 
 sed -i '/^No_Of_Threads	=/s/=.*/= 10;/' Parameters.cfg
@@ -30,7 +31,7 @@ then
   sed -i '/^noOfSheep 	=/s/=.*/= 10;/' Parameters.cfg
   sed -i '/^noOfObjects 	=/s/=.*/= 0;/' Parameters.cfg
   echo "Shepherding"
-  ./enkiplayground
+  ./Post_Eval.py 0
 
 elif  [ $1 -eq 1 ]
 then
@@ -38,7 +39,7 @@ then
   sed -i '/^noOfSheep 	=/s/=.*/= 0;/' Parameters.cfg
   sed -i '/^noOfObjects 	=/s/=.*/= 10;/' Parameters.cfg
   echo "Object Clustering"
-  ./enkiplayground
+  ./Post_Eval.py 1
 
 elif  [ $1 -eq 2 ]
 then
@@ -46,7 +47,7 @@ then
   sed -i '/^noOfSheep 	=/s/=.*/= 5;/' Parameters.cfg
   sed -i '/^noOfObjects 	=/s/=.*/= 5;/' Parameters.cfg
   echo "Shepherding + Object Clustering"
-  ./enkiplayground
+  ./Post_Eval.py 2
 
 elif  [ $1 -eq 3 ]
 then
@@ -54,6 +55,6 @@ then
   sed -i '/^noOfSheep 	=/s/=.*/= 5;/' Parameters.cfg
   sed -i '/^noOfObjects 	=/s/=.*/= 5;/' Parameters.cfg
   echo "Simplified Controller"
-  ./enkiplayground
+  ./Post_Eval.py 3
 
 fi

@@ -128,7 +128,7 @@ int main(int argc, char *argv[])
     int Noise_Scenario = configfile.lookup("Noise_Scenario");
   #endif
 
-  #if (Gui || Analysis)
+  #if (Gui || Analysis) && !defined(Post_Eval)
   // double x0[16] = { 4.47020,  2.25992,
   //                   -2.03707, 1.71585,
   //                   1.29139, 1.060159,
@@ -321,34 +321,61 @@ double x1[16] = { 11.7619,   1.19117,
       Noise_Logfile.open("Noise.csv",std::ios_base::app);
     #endif
 
-    double x[16] = {0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0};
+    #ifdef Post_Eval
+    double x[16] = {configfile.lookup("x0"),configfile.lookup("x1"),
+                    configfile.lookup("x2"),configfile.lookup("x3"),
+                    configfile.lookup("x4"),configfile.lookup("x5"),
+                    configfile.lookup("x6"),configfile.lookup("x7"),
+                    configfile.lookup("x8"),configfile.lookup("x9"),
+                    configfile.lookup("x10"),configfile.lookup("x11"),
+                    configfile.lookup("x12"),configfile.lookup("x13"),
+                    configfile.lookup("x14"),configfile.lookup("x15")};
     int dim;
-    if(mode == 0)
-    {
-      std::copy ( x0, x0+16, x);
-      dim = 12;
+    switch (mode) {
+      case 0:
+        dim = 12;
+        break;
+      case 1:
+        dim = 12;
+        break;
+      case 2:
+        dim = 16;
+        break;
+      case 3:
+        dim = 8;
+        break;
+      default:
+        dim = 16;
     }
-    else if(mode == 1)
-    {
-      std::copy ( x1, x1+16, x);
-      dim = 12;
-    }
-    else if(mode == 2)
-    {
-      std::copy ( x2, x2+16, x);
-      dim = 16;
-    }
-    else if(mode == 3)
-    {
-      std::copy ( x3, x3+16, x);
-      dim = 16;
-    }
-    else
-    {
-      std::copy ( xn, xn+16, x);
-      dim = 16;
-    }
-
+    #else
+      double x[16] = {0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0};
+      int dim;
+      if(mode == 0)
+      {
+        std::copy ( x0, x0+16, x);
+        dim = 12;
+      }
+      else if(mode == 1)
+      {
+        std::copy ( x1, x1+16, x);
+        dim = 12;
+      }
+      else if(mode == 2)
+      {
+        std::copy ( x2, x2+16, x);
+        dim = 16;
+      }
+      else if(mode == 3)
+      {
+        std::copy ( x3, x3+16, x);
+        dim = 8;
+      }
+      else
+      {
+        std::copy ( xn, xn+16, x);
+        dim = 16;
+      }
+    #endif
     int No_Of_Success = 0;
     float SuccessRate = 0;
     float maxSR = 0;
