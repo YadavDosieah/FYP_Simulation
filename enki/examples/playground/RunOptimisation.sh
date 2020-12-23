@@ -7,6 +7,8 @@ cd ../../
 cmake .
 cd examples/playground/
 
+# sed -ri 's/(.*)(\Evolution	= )([0-9]+)(.*)/echo "\1\2$((\3+1))\4"/ge' Parameters.cfg
+
 sed -i "/^#define GUI  /s/  .*/  false/" config.h
 sed -i "/^#define Analysis  /s/  .*/  false/" config.h
 sed -i "/^#define Optimise  /s/  .*/  true/" config.h

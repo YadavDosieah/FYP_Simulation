@@ -30,7 +30,6 @@ int Goalx, Goaly, Xbound, Ybound;
 int global_iter;
 int generation;
 int lambda;
-int evolution = 0;
 int No_Of_Trials;
 int NoOfSteps;
 
@@ -117,6 +116,7 @@ int main(int argc, char *argv[])
   No_Of_Trials = configfile.lookup("No_Of_Trials");
   NoOfSteps = configfile.lookup("NoOfSteps");
   int NoOfEvolutions = configfile.lookup("NoOfEvolutions");
+  int evolution = configfile.lookup("Evolution");
   int MaxIter = configfile.lookup("MaxIter");
   lambda = configfile.lookup("lambda"); // offsprings at each generation.
   int No_Of_Threads = configfile.lookup("No_Of_Threads");
@@ -245,7 +245,14 @@ double x1[16] = { 11.7619,   1.19117,
                     12.002738271923,  1.64270681779971,
                     17.3689922933527, -5.69151784793263,
                     9.15976141325661,  4.29874652437399,
-                    0,0,0,0,0,0,0,0};
+                    0,0,0,0,0,0,0,0}; //Final
+
+  // double x3[16] = { 0.393313892045488,   7.56223903241092,
+                    // 6.93504258503846, -0.823275277787124,
+                    // -5.12563770416676,   2.01530201051581,
+                    // -1.72754358667127,  0.653647002054542,
+                    // 0,0,0,0,0,0,0,0}; //Rerun 1
+
 
   double xn[16] = {0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0};
   #endif
@@ -454,7 +461,7 @@ double x1[16] = { 11.7619,   1.19117,
     omp_set_num_threads(No_Of_Threads);
     omp_set_dynamic(false);
     std::ofstream Parameters_Outfile;
-    Parameters_Outfile.open("Results/mode" + std::to_string(mode) + "/Parameters_File.csv");
+    Parameters_Outfile.open("Results/mode" + std::to_string(mode) + "/Parameters_File.csv",std::ofstream::app);
     for(int i = 0; i < NoOfEvolutions; i++)
     {
       global_iter = 0;
@@ -505,7 +512,7 @@ double x1[16] = { 11.7619,   1.19117,
       CMASolutions cmasols = cmaes<>(ControllerFitness,cmaparams);
       std::cout << "best solution: " << cmasols << std::endl;
       std::cout << "optimization took " << cmasols.elapsed_time() / 1000.0 << " seconds\n";
-      Parameters_Outfile << evolution << ",best solution: " << cmasols << "\n";
+      Parameters_Outfile << "Evolution "<< evolution << ",best solution: " << cmasols << "\n";
       Parameters_Outfile << "optimization took " << cmasols.elapsed_time() / 1000.0 << " seconds\n";
       out.close();
       //return cmasols.run_status();
