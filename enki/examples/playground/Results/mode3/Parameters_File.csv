@@ -9,52 +9,54 @@ optimization took 5423.34 seconds,
 Evolution 5,best solution: best solution => f-value=1.87377e+12 / fevals=1600 / sigma=0.148617 / iter=80 / elaps=5361857ms / x=   4.30186    1.41544  -0.593533   0.323679 -0.0129115    1.76575   -1.47403   0.861147
 optimization took 5361.86 seconds,
 Evolution 6,best solution: best solution => f-value=1.74269e+12 / fevals=1600 / sigma=0.499948 / iter=80 / elaps=5312850ms / x=    1.5306    4.30045 -0.0854935   -1.33239    2.71952    2.92866     5.7787    4.03891
-optimization took 5312.85 seconds
+optimization took 5312.85 seconds,
 Evolution 7,best solution: best solution => f-value=1.6289e+12 / fevals=1600 / sigma=0.641988 / iter=80 / elaps=5325290ms / x=  13.7122  0.291951 -0.365469   10.5372   6.30814   8.76876  -2.92823   1.39252
-optimization took 5325.29 seconds
+optimization took 5325.29 seconds,
 Evolution 8,best solution: best solution => f-value=1.38401e+12 / fevals=1600 / sigma=0.353559 / iter=80 / elaps=5359491ms / x=  5.12201  0.318505 -0.375725   3.64858   4.31782    4.0153   3.01553   4.57586
-optimization took 5359.49 seconds
+optimization took 5359.49 seconds,
 Evolution 9,best solution: best solution => f-value=1.7772e+12 / fevals=1600 / sigma=0.212649 / iter=80 / elaps=5455538ms / x=   6.59124   0.449842  -0.676953    7.44408    6.20809    5.89974 -0.0573696   -4.87922
-optimization took 5455.54 seconds
+optimization took 5455.54 seconds,
 Evolution 10,best solution: best solution => f-value=2.09446e+12 / fevals=1600 / sigma=2.71515 / iter=80 / elaps=5161125ms / x=1.51742 8.28967 7.81538 1.16863 11.9378 18.6798 19.0703 17.0022
-optimization took 5161.12 seconds
+optimization took 5161.12 seconds,
 Evolution 11,best solution: best solution => f-value=2.40795e+12 / fevals=1600 / sigma=0.642739 / iter=80 / elaps=5372699ms / x=  16.4967  0.619742 -0.912614   14.6933   14.7809   28.3393  -2.34229  -21.9914
-optimization took 5372.7 seconds
+optimization took 5372.7 seconds,
 Evolution 12,best solution: best solution => f-value=2.46831e+12 / fevals=1600 / sigma=0.22626 / iter=80 / elaps=5461975ms / x= 0.279628   3.32083   3.98845 -0.600847 -0.421395   2.35787  -1.71188  0.431969
-optimization took 5461.98 seconds
+optimization took 5461.98 seconds,
 Evolution 13,best solution: best solution => f-value=2.05263e+12 / fevals=1600 / sigma=0.539186 / iter=80 / elaps=5381429ms / x=  1.59919   11.9509  0.161418 -0.873865   10.9606   1.59726   1.66426 -0.249669
-optimization took 5381.43 seconds
+optimization took 5381.43 seconds,
 Evolution 14,best solution: best solution => f-value=1.48692e+12 / fevals=1600 / sigma=0.196316 / iter=80 / elaps=5370433ms / x=  1.47123   4.84607   7.11489  0.998147   5.82941   2.69252   2.32172 -0.496319
-optimization took 5370.43 seconds
+optimization took 5370.43 seconds,
 Evolution 15,best solution: best solution => f-value=1.75737e+12 / fevals=1600 / sigma=0.762214 / iter=80 / elaps=5398486ms / x=0.685118  13.8879  1.47033 -1.06343  4.18855  5.75534  6.76884   2.7459
-optimization took 5398.49 seconds
+optimization took 5398.49 seconds,
 Evolution 16,best solution: best solution => f-value=1.46913e+12 / fevals=1600 / sigma=0.390686 / iter=80 / elaps=5426640ms / x=  8.20109  0.476983 -0.681926   3.23527   5.47441   3.52877    3.4141    7.2213
-optimization took 5426.64 seconds
+optimization took 5426.64 seconds,
 Evolution 17,best solution: best solution => f-value=2.23824e+12 / fevals=1600 / sigma=0.295456 / iter=80 / elaps=5442128ms / x=0.492773  8.99811  9.23526 -1.10588 -8.22385  9.09189  4.79155   3.1118
-optimization took 5442.13 seconds
+optimization took 5442.13 seconds,
 Evolution 18,best solution: best solution => f-value=2.20625e+12 / fevals=1600 / sigma=1.05729 / iter=80 / elaps=5400482ms / x= 0.412552   5.84604   5.02832 -0.454589    5.5003  -4.48167  -2.24078   3.19676
-optimization took 5400.48 seconds
+optimization took 5400.48 seconds,
 Evolution 19,best solution: best solution => f-value=1.60466e+12 / fevals=1600 / sigma=0.444078 / iter=80 / elaps=5458369ms / x=  6.50426  0.393977 -0.546734   3.43426   7.12894   9.45136 -0.342474  0.211615
-optimization took 5458.37 seconds
+optimization took 5458.37 seconds,
 Evolution 20,best solution: best solution => f-value=1.59132e+12 / fevals=1600 / sigma=0.343424 / iter=80 / elaps=5397799ms / x=  14.5441  0.307065 -0.326968   7.00522   4.39762   5.21863   2.18167   6.50076
-optimization took 5397.8 seconds
+optimization took 5397.8 seconds,
 Evolution 21,best solution: best solution => f-value=2.24962e+12 / fevals=1600 / sigma=0.0912469 / iter=80 / elaps=4509139ms / x= 1.53261  0.11527 0.594964  4.25461 0.924169  1.43957  1.08447  1.54933
-optimization took 4509.14 seconds
+optimization took 4509.14 seconds,
 Evolution 22,best solution: best solution => f-value=1.47303e+12 / fevals=1600 / sigma=0.352315 / iter=80 / elaps=4605513ms / x= 11.5616  1.57654  1.46906  6.19461 -13.4256  2.47699 -2.07122  5.58177
-optimization took 4605.51 seconds
+optimization took 4605.51 seconds,
 Evolution 23,best solution: best solution => f-value=1.72181e+12 / fevals=1600 / sigma=0.494601 / iter=80 / elaps=4553605ms / x=  3.67016  0.286838 -0.194504   2.99597   5.78114   6.27689   10.2115   4.04689
-optimization took 4553.6 seconds
+optimization took 4553.6 seconds,
 Evolution 24,best solution: best solution => f-value=1.56706e+12 / fevals=1600 / sigma=0.0814208 / iter=80 / elaps=4548893ms / x= 0.291526   2.67934   3.74921 -0.194543   1.77297 -0.524543  -1.39826   0.88667
-optimization took 4548.89 seconds
+optimization took 4548.89 seconds,
 Evolution 25,best solution: best solution => f-value=1.79212e+12 / fevals=1600 / sigma=0.34864 / iter=80 / elaps=4578846ms / x=   11.189  0.320212 -0.322473   3.85727   4.33634    4.9393  -1.79658  0.944593
-optimization took 4578.85 seconds
+optimization took 4578.85 seconds,
 Evolution 26,best solution: best solution => f-value=2.32894e+12 / fevals=1600 / sigma=0.145833 / iter=80 / elaps=4533239ms / x= 0.421071   5.39983   2.96424 -0.378409   2.52282  0.394546   1.73662   1.31678
-optimization took 4533.24 seconds
+optimization took 4533.24 seconds,
 Evolution 27,best solution: best solution => f-value=1.59304e+12 / fevals=1600 / sigma=0.373552 / iter=80 / elaps=4545133ms / x=0.155998  1.96791  6.60825 0.243163  4.16249  4.24028  7.56807  8.07908
-optimization took 4545.13 seconds
+optimization took 4545.13 seconds,
 Evolution 28,best solution: best solution => f-value=1.65155e+12 / fevals=1600 / sigma=0.197837 / iter=80 / elaps=4510787ms / x=  1.42379   6.27072  0.349412 -0.688811    2.1414 -0.544057   5.60343  0.568195
-optimization took 4510.79 seconds
+optimization took 4510.79 seconds,
 Evolution 29,best solution: best solution => f-value=1.40303e+12 / fevals=1600 / sigma=0.261312 / iter=80 / elaps=4550396ms / x=  9.92585  0.457019 -0.648716   3.07791   3.86628   3.36339   3.23381   6.05335
-optimization took 4550.4 seconds
+optimization took 4550.4 seconds,
 Evolution 30,best solution: best solution => f-value=1.46712e+12 / fevals=1600 / sigma=0.47332 / iter=80 / elaps=4556476ms / x= 10.6284  1.50418  1.43838  6.87438 0.692993   4.5071 0.365706  3.56648
-optimization took 4556.48 seconds
+optimization took 4556.48 seconds,
+Evolution Dissertation,best solution: best solution => f-value=1.29515e+12 / fevals=1600 / sigma=0.444614 / iter=80 / elaps=86393891ms / x= 1.55213  7.38528  12.0027  1.64271   17.369 -5.69152  9.15976  4.29875
+optimization took 86393.9 seconds,

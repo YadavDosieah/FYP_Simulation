@@ -15,7 +15,8 @@ def read():
     with open('Results/mode' + mode + '/Parameters_File.csv','r') as csvfile:
         data = csv.reader(csvfile, delimiter=',')
         data = list(data)[::2]
-        for row in data:
+        # print(len(data))
+        for idx,row in enumerate(data, start=1):
             Wheel_vel = row[1].split('x=')
             Wheel_vel = Wheel_vel[1].split(' ')
             Wheel_vel = list(filter(None, Wheel_vel))
@@ -24,6 +25,8 @@ def read():
                 sed(['-i', '/^x{:d}	=/s/=.*/= {:f};/'.format(j,float(Wheel_vel[j])), 'Parameters.cfg'])
             for j in range(16-dimension):
                 sed(['-i', '/^x{:d}	=/s/=.*/= 0.0;/'.format(j+dimension), 'Parameters.cfg'])
+            print("Evolution {:d} running ...".format(idx))    
+            subprocess.call("./enkiplayground", shell=True)
 
 if(mode == "0"):
     print("mode 0 - Only Shepherding")
@@ -41,6 +44,3 @@ elif(mode == "3"):
     print("mode 3 - Simplified Controller")
     dimension = 8
     read()
-
-
-subprocess.call("./enkiplayground", shell=True)

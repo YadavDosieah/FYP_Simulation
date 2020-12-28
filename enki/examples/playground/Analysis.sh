@@ -7,6 +7,7 @@ sed -i "/^#define logData  /s/  .*/  true/" config.h
 sed -i "/^#define Stop  /s/  .*/  true/" config.h
 sed -i "/^#define Analyis_Log 1/s/.*/\/\/ #define Analyis_Log 1/" config.h
 sed -i "/^#define Noise_Analysis 1/s/.*/\/\/ #define Noise_Analysis 1/" config.h
+sed -i "/^#define Post_Eval 1/s/.*/\/\/ #define Post_Eval 1/" config.h
 
 #Calling ls directly using the exec command
 make enkiplayground

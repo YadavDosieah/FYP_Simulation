@@ -20,6 +20,7 @@ sed -i "/^#define logData  /s/  .*/  false/" config.h
 sed -i "/^#define Stop  /s/  .*/  true/" config.h
 sed -i "/^\/\/ #define Analyis_Log 1/s/.*/#define Analyis_Log 1/" config.h
 sed -i "/^#define Noise_Analysis 1/s/.*/\/\/ #define Noise_Analysis 1/" config.h
+sed -i "/^#define Post_Eval 1/s/.*/\/\/ #define Post_Eval 1/" config.h
 
 make enkiplayground
 
@@ -30,7 +31,7 @@ sed -i '/^No_Of_Threads	=/s/=.*/= 10;/' Parameters.cfg
 shepherdArray=( 05 10 15 )
 sheepArray=( 10 20 30 40 50 )
 objectArray=( 10 20 30 40 50 )
-bothArray=( 10 20 30 40 50 )
+bothArray=( 5 10 15 20 25 )
 modeArray=( 3 )
 
 

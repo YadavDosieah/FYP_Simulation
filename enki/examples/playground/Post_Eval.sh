@@ -21,9 +21,9 @@ sed -i "/^\/\/ #define Post_Eval 1/s/.*/#define Post_Eval 1/" config.h
 make enkiplayground
 
 sed -i '/^No_Of_Threads	=/s/=.*/= 10;/' Parameters.cfg
-sed -i "/^No_Of_Trials	=/s/=.*/= 50;/" Parameters.cfg
+sed -i "/^No_Of_Trials	=/s/=.*/= 100;/" Parameters.cfg
 
-sed -i "/^noOfShepherd 	=/s/=.*/= 3;/" Parameters.cfg
+sed -i "/^noOfShepherd 	=/s/=.*/= 15;/" Parameters.cfg
 
 if [ $1 -eq 0 ]
 then
@@ -52,8 +52,8 @@ then
 elif  [ $1 -eq 3 ]
 then
   sed -i '/^mode		=/s/=.*/= 3;/' Parameters.cfg
-  sed -i '/^noOfSheep 	=/s/=.*/= 5;/' Parameters.cfg
-  sed -i '/^noOfObjects 	=/s/=.*/= 5;/' Parameters.cfg
+  sed -i '/^noOfSheep 	=/s/=.*/= 25;/' Parameters.cfg
+  sed -i '/^noOfObjects 	=/s/=.*/= 25;/' Parameters.cfg
   echo "Simplified Controller"
   ./Post_Eval.py 3
 

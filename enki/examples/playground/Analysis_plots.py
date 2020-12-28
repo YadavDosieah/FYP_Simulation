@@ -44,9 +44,16 @@ with open('Analysis.csv','r') as csvfile:
                 maxSR[mode][scenario][shepherdIdx-1][objIdx-1].append(float(row[5])*100)
                 SR[mode][scenario][shepherdIdx-1][objIdx-1].append(float(row[6])*100)
 
-            if(scenario == 2):
+            if(scenario == 2) and (mode != 3):
                 shepherdIdx = int(row[1])/5
                 objIdx = int(row[3])/10
+                Fitness_Val[mode][scenario][shepherdIdx-1][objIdx-1].append(float(row[4]))
+                maxSR[mode][scenario][shepherdIdx-1][objIdx-1].append(float(row[5])*100)
+                SR[mode][scenario][shepherdIdx-1][objIdx-1].append(float(row[6])*100)
+
+            if(scenario == 2) and (mode == 3):
+                shepherdIdx = int(row[1])/5
+                objIdx = int(row[3])/5
                 Fitness_Val[mode][scenario][shepherdIdx-1][objIdx-1].append(float(row[4]))
                 maxSR[mode][scenario][shepherdIdx-1][objIdx-1].append(float(row[5])*100)
                 SR[mode][scenario][shepherdIdx-1][objIdx-1].append(float(row[6])*100)
