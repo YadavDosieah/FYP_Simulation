@@ -25,7 +25,7 @@ def read():
                 sed(['-i', '/^x{:d}	=/s/=.*/= {:f};/'.format(j,float(Wheel_vel[j])), 'Parameters.cfg'])
             for j in range(16-dimension):
                 sed(['-i', '/^x{:d}	=/s/=.*/= 0.0;/'.format(j+dimension), 'Parameters.cfg'])
-            print("Evolution {:d} running ...".format(idx))    
+            print("Evolution {:d} running ...".format(idx))
             subprocess.call("./enkiplayground", shell=True)
 
 if(mode == "0"):

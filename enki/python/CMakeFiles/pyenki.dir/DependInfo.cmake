@@ -10,17 +10,20 @@ set(CMAKE_CXX_COMPILER_ID "GNU")
 
 # Preprocessor definitions for this target.
 set(CMAKE_TARGET_DEFINITIONS_CXX
+  "BOOST_ALL_NO_LIB"
+  "BOOST_PYTHON_DYN_LINK"
   "QT_CORE_LIB"
   "QT_GUI_LIB"
   "QT_NO_DEBUG"
   "QT_OPENGL_LIB"
   "QT_WIDGETS_LIB"
+  "pyenki_EXPORTS"
   )
 
 # The include file search paths:
 set(CMAKE_CXX_TARGET_INCLUDE_PATH
   "."
-  "/usr/include/python2.7"
+  "/usr/include/python3.8"
   "/usr/include/x86_64-linux-gnu/qt5"
   "/usr/include/x86_64-linux-gnu/qt5/QtWidgets"
   "/usr/include/x86_64-linux-gnu/qt5/QtGui"

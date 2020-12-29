@@ -87,8 +87,8 @@ enki/PhysicalEngine.h
 -
 
 /home/yadav/Documents/Final-Year-Project/FYP_Simulation/enki/viewer/enkiviewer_autogen/EWIEGA46WW/moc_Viewer.cpp
-../../Viewer.h
-/home/yadav/Documents/Final-Year-Project/FYP_Simulation/enki/viewer/Viewer.h
+viewer/Viewer.h
+/home/yadav/Documents/Final-Year-Project/FYP_Simulation/enki/viewer/enkiviewer_autogen/EWIEGA46WW/viewer/Viewer.h
 QtCore/qbytearray.h
 -
 QtCore/qmetatype.h
@@ -5062,5 +5062,25 @@ enki/robots/DifferentialWheeled.h
 enki/interactions/IRSensor.h
 -
 enki/interactions/GroundSensor.h
+-
+
+viewer/Viewer.h
+typeinfo
+-
+QGLWidget
+-
+QPoint
+-
+QPointF
+-
+QMap
+-
+QVector3D
+-
+QUrl
+-
+enki/Geometry.h
+-
+enki/PhysicalEngine.h
 -
 

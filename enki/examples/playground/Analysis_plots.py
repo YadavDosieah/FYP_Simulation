@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+#!/usr/bin/env python3
 
 import numpy as np
 import csv
@@ -31,36 +31,29 @@ with open('Analysis.csv','r') as csvfile:
             # print(scenario)
         else:
             if(scenario == 0):
-                shepherdIdx = int(row[1])/5
-                sheepIdx = int(row[2])/10
+                shepherdIdx = int(row[1])//5
+                sheepIdx = int(row[2])//10
                 Fitness_Val[mode][scenario][shepherdIdx-1][sheepIdx-1].append(float(row[4]))
                 maxSR[mode][scenario][shepherdIdx-1][sheepIdx-1].append(float(row[5])*100)
                 SR[mode][scenario][shepherdIdx-1][sheepIdx-1].append(float(row[6])*100)
 
             if(scenario == 1):
-                shepherdIdx = int(row[1])/5
-                objIdx = int(row[3])/10
+                shepherdIdx = int(row[1])//5
+                objIdx = int(int(row[3])//10)
                 Fitness_Val[mode][scenario][shepherdIdx-1][objIdx-1].append(float(row[4]))
                 maxSR[mode][scenario][shepherdIdx-1][objIdx-1].append(float(row[5])*100)
                 SR[mode][scenario][shepherdIdx-1][objIdx-1].append(float(row[6])*100)
 
-            if(scenario == 2) and (mode != 3):
-                shepherdIdx = int(row[1])/5
-                objIdx = int(row[3])/10
-                Fitness_Val[mode][scenario][shepherdIdx-1][objIdx-1].append(float(row[4]))
-                maxSR[mode][scenario][shepherdIdx-1][objIdx-1].append(float(row[5])*100)
-                SR[mode][scenario][shepherdIdx-1][objIdx-1].append(float(row[6])*100)
-
-            if(scenario == 2) and (mode == 3):
-                shepherdIdx = int(row[1])/5
-                objIdx = int(row[3])/5
+            if(scenario == 2):
+                shepherdIdx = int(row[1])//5
+                objIdx = int(row[3])//5
                 Fitness_Val[mode][scenario][shepherdIdx-1][objIdx-1].append(float(row[4]))
                 maxSR[mode][scenario][shepherdIdx-1][objIdx-1].append(float(row[5])*100)
                 SR[mode][scenario][shepherdIdx-1][objIdx-1].append(float(row[6])*100)
 
             if(scenario == 3):
-                shepherdIdx = int(row[1])/5
-                objIdx = int(row[3])/10
+                shepherdIdx = int(row[1])//5
+                objIdx = int(row[3])//10
                 Fitness_Val[mode][scenario][shepherdIdx-1][objIdx-1].append(float(row[4]))
                 maxSR[mode][scenario][shepherdIdx-1][objIdx-1].append(float(row[5])*100)
                 SR[mode][scenario][shepherdIdx-1][objIdx-1].append(float(row[6])*100)
