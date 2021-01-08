@@ -6,15 +6,15 @@
 
 #IncludeRegexTransform: 
 
-/home/yadav/Documents/Final-Year-Project/FYP_Simulation/enki/examples/playground/Playground.cpp
+/home/co4xgd/FYP_Simulation/enki/examples/playground/Playground.cpp
 ShepherdingGUI.h
-/home/yadav/Documents/Final-Year-Project/FYP_Simulation/enki/examples/playground/ShepherdingGUI.h
+/home/co4xgd/FYP_Simulation/enki/examples/playground/ShepherdingGUI.h
 Shepherding.h
-/home/yadav/Documents/Final-Year-Project/FYP_Simulation/enki/examples/playground/Shepherding.h
+/home/co4xgd/FYP_Simulation/enki/examples/playground/Shepherding.h
 ShepherdingNoise.h
-/home/yadav/Documents/Final-Year-Project/FYP_Simulation/enki/examples/playground/ShepherdingNoise.h
+/home/co4xgd/FYP_Simulation/enki/examples/playground/ShepherdingNoise.h
 cmaes.h
-/home/yadav/Documents/Final-Year-Project/FYP_Simulation/enki/examples/playground/cmaes.h
+/home/co4xgd/FYP_Simulation/enki/examples/playground/cmaes.h
 libconfig.h++
 -
 mutex
@@ -28,9 +28,9 @@ omp.h
 iomanip
 -
 config.h
-/home/yadav/Documents/Final-Year-Project/FYP_Simulation/enki/examples/playground/config.h
+/home/co4xgd/FYP_Simulation/enki/examples/playground/config.h
 
-/home/yadav/Documents/Final-Year-Project/FYP_Simulation/enki/examples/playground/Shepherding.h
+/home/co4xgd/FYP_Simulation/enki/examples/playground/Shepherding.h
 viewer/Viewer.h
 -
 enki/PhysicalEngine.h
@@ -40,15 +40,15 @@ enki/robots/e-puck/EPuck.h
 iostream
 -
 stdio.h
-/home/yadav/Documents/Final-Year-Project/FYP_Simulation/enki/examples/playground/stdio.h
+/home/co4xgd/FYP_Simulation/enki/examples/playground/stdio.h
 cstdlib
 -
 time.h
-/home/yadav/Documents/Final-Year-Project/FYP_Simulation/enki/examples/playground/time.h
+/home/co4xgd/FYP_Simulation/enki/examples/playground/time.h
 math.h
-/home/yadav/Documents/Final-Year-Project/FYP_Simulation/enki/examples/playground/math.h
+/home/co4xgd/FYP_Simulation/enki/examples/playground/math.h
 
-/home/yadav/Documents/Final-Year-Project/FYP_Simulation/enki/examples/playground/ShepherdingGUI.h
+/home/co4xgd/FYP_Simulation/enki/examples/playground/ShepherdingGUI.h
 viewer/Viewer.h
 -
 enki/PhysicalEngine.h
@@ -62,17 +62,17 @@ QtGui
 iostream
 -
 stdio.h
-/home/yadav/Documents/Final-Year-Project/FYP_Simulation/enki/examples/playground/stdio.h
+/home/co4xgd/FYP_Simulation/enki/examples/playground/stdio.h
 cstdlib
 -
 time.h
-/home/yadav/Documents/Final-Year-Project/FYP_Simulation/enki/examples/playground/time.h
+/home/co4xgd/FYP_Simulation/enki/examples/playground/time.h
 math.h
-/home/yadav/Documents/Final-Year-Project/FYP_Simulation/enki/examples/playground/math.h
+/home/co4xgd/FYP_Simulation/enki/examples/playground/math.h
 fstream
 -
 
-/home/yadav/Documents/Final-Year-Project/FYP_Simulation/enki/examples/playground/ShepherdingNoise.h
+/home/co4xgd/FYP_Simulation/enki/examples/playground/ShepherdingNoise.h
 viewer/Viewer.h
 -
 enki/PhysicalEngine.h
@@ -82,15 +82,17 @@ enki/robots/e-puck/EPuck.h
 iostream
 -
 stdio.h
-/home/yadav/Documents/Final-Year-Project/FYP_Simulation/enki/examples/playground/stdio.h
+/home/co4xgd/FYP_Simulation/enki/examples/playground/stdio.h
 cstdlib
 -
 time.h
-/home/yadav/Documents/Final-Year-Project/FYP_Simulation/enki/examples/playground/time.h
+/home/co4xgd/FYP_Simulation/enki/examples/playground/time.h
 math.h
-/home/yadav/Documents/Final-Year-Project/FYP_Simulation/enki/examples/playground/math.h
+/home/co4xgd/FYP_Simulation/enki/examples/playground/math.h
 
-/home/yadav/Documents/Final-Year-Project/FYP_Simulation/enki/examples/playground/config.h
+/home/co4xgd/FYP_Simulation/enki/examples/playground/config.h
+
+/home/co4xgd/FYP_Simulation/enki/examples/playground/enkiplayground_autogen/mocs_compilation.cpp
 
 /usr/include/x86_64-linux-gnu/qt5/QtCore/QEvent
 qcoreevent.h
