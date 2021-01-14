@@ -97,4 +97,4 @@ done
 echo -e "\nCompleted at $(date)!"
 destroy_scroll_area
 
-poweroff
+# poweroff
