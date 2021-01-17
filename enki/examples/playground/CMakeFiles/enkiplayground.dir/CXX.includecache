@@ -92,6 +92,8 @@ math.h
 
 /home/yadav/Documents/Final-Year-Project/FYP_Simulation/enki/examples/playground/config.h
 
+/home/yadav/Documents/Final-Year-Project/FYP_Simulation/enki/examples/playground/enkiplayground_autogen/mocs_compilation.cpp
+
 /usr/include/x86_64-linux-gnu/qt5/QtCore/QEvent
 qcoreevent.h
 /usr/include/x86_64-linux-gnu/qt5/QtCore/qcoreevent.h
