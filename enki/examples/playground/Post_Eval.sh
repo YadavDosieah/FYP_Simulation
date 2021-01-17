@@ -23,21 +23,21 @@ make enkiplayground
 sed -i '/^No_Of_Threads	=/s/=.*/= 10;/' Parameters.cfg
 sed -i "/^No_Of_Trials	=/s/=.*/= 100;/" Parameters.cfg
 
-sed -i "/^noOfShepherd 	=/s/=.*/= 15;/" Parameters.cfg
+sed -i "/^noOfShepherd 	=/s/=.*/= 5;/" Parameters.cfg
 
 if [ $1 -eq 0 ]
 then
   sed -i '/^mode		=/s/=.*/= 0;/' Parameters.cfg
-  sed -i '/^noOfSheep 	=/s/=.*/= 50;/' Parameters.cfg
-  sed -i '/^noOfObjects 	=/s/=.*/= 0;/' Parameters.cfg
+  sed -i '/^noOfSheep 	=/s/=.*/= 25;/' Parameters.cfg
+  sed -i '/^noOfObjects 	=/s/=.*/= 25;/' Parameters.cfg
   echo "Shepherding"
   ./Post_Eval.py 0
 
 elif  [ $1 -eq 1 ]
 then
   sed -i '/^mode		=/s/=.*/= 1;/' Parameters.cfg
-  sed -i '/^noOfSheep 	=/s/=.*/= 0;/' Parameters.cfg
-  sed -i '/^noOfObjects 	=/s/=.*/= 50;/' Parameters.cfg
+  sed -i '/^noOfSheep 	=/s/=.*/= 25;/' Parameters.cfg
+  sed -i '/^noOfObjects 	=/s/=.*/= 25;/' Parameters.cfg
   echo "Object Clustering"
   ./Post_Eval.py 1
 

@@ -51,8 +51,8 @@ then
 elif  [ $1 -eq 3 ]
 then
   sed -i '/^mode		=/s/=.*/= 3;/' Parameters.cfg
-  sed -i '/^noOfSheep 	=/s/=.*/= 5;/' Parameters.cfg
-  sed -i '/^noOfObjects 	=/s/=.*/= 5;/' Parameters.cfg
+  sed -i '/^noOfSheep 	=/s/=.*/= 0;/' Parameters.cfg
+  sed -i '/^noOfObjects 	=/s/=.*/= 10;/' Parameters.cfg
   echo "Simplified Controller"
   ./enkiplayground
 
