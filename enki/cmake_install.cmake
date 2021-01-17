@@ -37,6 +37,10 @@ if(NOT DEFINED CMAKE_CROSSCOMPILING)
   set(CMAKE_CROSSCOMPILING "FALSE")
 endif()
 
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/doc" TYPE DIRECTORY OPTIONAL FILES "/home/yadav/Documents/Final-Year-Project/FYP_Simulation/enki/html")
+endif()
+
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xdevx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/enki/CMake" TYPE FILE FILES "/home/yadav/Documents/Final-Year-Project/FYP_Simulation/enki/enkiConfig.cmake")
 endif()
