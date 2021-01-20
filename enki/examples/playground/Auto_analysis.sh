@@ -9,7 +9,7 @@ enable_trapping
 setup_scroll_area
 
 # This accounts as the "totalState" variable for the ProgressBar function
-_end=270#180
+_end=270 #180
 _counter=0
 
 
@@ -25,7 +25,7 @@ sed -i "/^#define Post_Eval 1/s/.*/\/\/ #define Post_Eval 1/" config.h
 make enkiplayground
 
 sed -i "/^No_Of_Trials	=/s/=.*/= 50;/" Parameters.cfg
-sed -i '/^No_Of_Threads	=/s/=.*/= 10;/' Parameters.cfg
+sed -i '/^No_Of_Threads	=/s/=.*/= 20;/' Parameters.cfg
 
 
 shepherdArray=( 05 10 15 )
