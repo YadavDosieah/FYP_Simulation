@@ -9,7 +9,7 @@ enable_trapping
 setup_scroll_area
 
 # This accounts as the "totalState" variable for the ProgressBar function
-_end=180
+_end=270#180
 _counter=0
 
 
@@ -32,7 +32,7 @@ shepherdArray=( 05 10 15 )
 sheepArray=( 10 20 30 40 50 )
 objectArray=( 10 20 30 40 50 )
 bothArray=( 5 10 15 20 25 )
-modeArray=( 0 1 2 3 )
+modeArray=( 0 1 2 3 4 5)
 
 
 echo "mode,Shepherds,Sheep,Objects, Fit Val, max SR, SR" > Analysis.csv
