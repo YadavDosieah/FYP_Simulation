@@ -7,6 +7,8 @@
 *.o
 *.so
 *.simg
+*.png
+*.mp4
 
 # Logs and databases #
 ######################

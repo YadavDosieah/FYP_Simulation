@@ -13,9 +13,9 @@ mode = -1
 scenario = -1
 trial = 0
 
-Fitness_Val = [[[[[] for _ in range(5)] for _ in range(3)] for _ in range(3)] for _ in range(4)]
-maxSR = [[[[[] for _ in range(5)] for _ in range(3)] for _ in range(3)] for _ in range(4)]
-SR = [[[[[] for _ in range(5)] for _ in range(3)] for _ in range(3)] for _ in range(4)]
+Fitness_Val = [[[[[] for _ in range(5)] for _ in range(3)] for _ in range(3)] for _ in range(6)]
+maxSR = [[[[[] for _ in range(5)] for _ in range(3)] for _ in range(3)] for _ in range(6)]
+SR = [[[[[] for _ in range(5)] for _ in range(3)] for _ in range(3)] for _ in range(6)]
 
 with open('Analysis.csv','r') as csvfile:
     data = csv.reader(csvfile, delimiter=',')
@@ -50,7 +50,7 @@ with open('Analysis.csv','r') as csvfile:
             #     Fitness_Val[mode][scenario][shepherdIdx-1][objIdx-1].append(float(row[4]))
             #     maxSR[mode][scenario][shepherdIdx-1][objIdx-1].append(float(row[5])*100)
             #     SR[mode][scenario][shepherdIdx-1][objIdx-1].append(float(row[6])*100)
-            
+
             if(scenario == 2):
                 shepherdIdx = int(row[1])//5
                 objIdx = int(row[3])//5
@@ -67,11 +67,11 @@ with open('Analysis.csv','r') as csvfile:
 
 Fitness_Val = np.array(Fitness_Val)
 Fitness_Val[:,2,:,:,:] = Fitness_Val[:,2,:,:,:]/2
-Fitness_Val_merged = Fitness_Val.reshape(4,3,750)
+Fitness_Val_merged = Fitness_Val.reshape(6,3,750)
 # print(Fitness_Val.shape)
 
 titles = ["Shepherding", "Obj. Clustering", "Combined Scenario"]
-fname = ["Controller A", "Controller B", "Controller C", "Simplified Controller"]
+fname = ["Controller A", "Controller B", "Controller C", "Simplified Controller","Simplified Controller Scenario A","Simplified Controller Scenario B"]
 
 sns.set_palette('bright')
 #
@@ -113,12 +113,15 @@ sns.set_palette('bright')
 
 Values = pandas.DataFrame()
 for i in range(3):
-    Values1 = pandas.DataFrame(Fitness_Val_merged[0,i,:], columns=[titles[i]]).assign(Legend='Controller A')
-    Values2 = pandas.DataFrame(Fitness_Val_merged[1,i,:], columns=[titles[i]]).assign(Legend='Controller B')
-    Values3 = pandas.DataFrame(Fitness_Val_merged[2,i,:], columns=[titles[i]]).assign(Legend='Controller C')
-    Values4 = pandas.DataFrame(Fitness_Val_merged[3,i,:], columns=[titles[i]]).assign(Legend='Simplified Controller')
+    Values1 = pandas.DataFrame(Fitness_Val_merged[0,i,:], columns=[titles[i]]).assign(Legend='Cont. A')
+    Values2 = pandas.DataFrame(Fitness_Val_merged[1,i,:], columns=[titles[i]]).assign(Legend='Cont. B')
+    Values3 = pandas.DataFrame(Fitness_Val_merged[2,i,:], columns=[titles[i]]).assign(Legend='Cont. C')
+    Values4 = pandas.DataFrame(Fitness_Val_merged[3,i,:], columns=[titles[i]]).assign(Legend='Simp. Controller')
+    Values5 = pandas.DataFrame(Fitness_Val_merged[4,i,:], columns=[titles[i]]).assign(Legend='Simpl. Controller Sc. A')
+    Values6 = pandas.DataFrame(Fitness_Val_merged[5,i,:], columns=[titles[i]]).assign(Legend='Simpl.Controller Sc. B')
 
-    Values = pandas.concat([Values,Values1,Values2,Values3,Values4],sort=False)
+
+    Values = pandas.concat([Values,Values1,Values2,Values3,Values4,Values5,Values6],sort=False)
 
 
 mdf = pandas.melt(Values, id_vars=['Legend'], var_name=['Letter'])
@@ -133,7 +136,7 @@ ax.set(yscale="log")
 fig.add_subplot(111, frameon=False)
 # hide tick and tick label of the big axis
 plt.tick_params(labelcolor='none', top=False, bottom=False, left=False, right=False)
-fig.legend(loc="lower center", ncol = 4, handleheight=1.8,fontsize=16)
+fig.legend(loc="lower center", ncol = 6, handleheight=1.8,fontsize=12)
 
 plt.subplots_adjust(bottom=0.2, top = 0.9, right = 0.95, left = 0.1)
 ax.set_ylabel('Total Fitness Value after 1500s')

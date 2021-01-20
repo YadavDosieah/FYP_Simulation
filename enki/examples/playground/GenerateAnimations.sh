@@ -29,7 +29,7 @@ sed -i "/^#define Analyis_Log 1/s/.*/\/\/ #define Analyis_Log 1/" config.h
 sed -i "/^#define Noise_Analysis 1/s/.*/\/\/ #define Noise_Analysis 1/" config.h
 make enkiplayground
 
-Controllers=( "A" "B" "C" "D")
+Controllers=( "A" "B" "C" "D" "D.A" "D.B")
 Scenarios=( "0" "1" "2" )
 
 mode=0
@@ -54,8 +54,8 @@ do
 
     elif  [ $scenario -eq 2 ]
     then
-      sed -i "/^noOfSheep 	=/s/=.*/= 30;/" Parameters.cfg
-      sed -i "/^noOfObjects 	=/s/=.*/= 30;/" Parameters.cfg
+      sed -i "/^noOfSheep 	=/s/=.*/= 15;/" Parameters.cfg
+      sed -i "/^noOfObjects 	=/s/=.*/= 15;/" Parameters.cfg
 
     fi
     draw_progress_bar $(($_counter*100/$_end))
