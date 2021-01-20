@@ -54,3 +54,7 @@ Evolution 27,best solution: best solution => f-value=87312550605.2155 / fevals=1
 optimization took 5951.378 seconds
 Evolution 28,best solution: best solution => f-value=94698029834.1858 / fevals=1600 / sigma=2.61692340368147 / iter=80 / elaps=6019576ms / x= 14.2416207506439 0.719865279244871 -41.9147296869269  26.2366543804453  12.2528479804686  9.40633362748695  -14.370777887459  14.2858876222811
 optimization took 6019.576 seconds
+Evolution 29,best solution: best solution => f-value=1.05882e+11 / fevals=1600 / sigma=0.672475 / iter=80 / elaps=5926831ms / x= 4.16982  1.39659 -1.00405  5.03742  1.12839  1.34533 -1.33244  1.03173
+optimization took 5926.83 seconds
+Evolution 30,best solution: best solution => f-value=1.02724e+11 / fevals=1600 / sigma=0.304997 / iter=80 / elaps=5877676ms / x=  1.79066   4.81126  0.564862  -5.61567   2.82887  -3.45749   1.52837 -0.576851
+optimization took 5877.68 seconds
