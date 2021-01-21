@@ -28,7 +28,7 @@ sed -i "/^#define Post_Eval 1/s/.*/\/\/ #define Post_Eval 1/" config.h
 
 make enkiplayground
 
-sed -i "/^No_Of_Trials	=/s/=.*/= 100;/" Parameters.cfg
+sed -i "/^No_Of_Trials	=/s/=.*/= 50;/" Parameters.cfg
 sed -i '/^No_Of_Threads	=/s/=.*/= 20;/' Parameters.cfg
 
 
@@ -101,5 +101,5 @@ done
 echo -e "\nCompleted at $(date)!"
 destroy_scroll_area
 
-./GenerateAnimations.sh
+#./GenerateAnimations.sh
 # poweroff
