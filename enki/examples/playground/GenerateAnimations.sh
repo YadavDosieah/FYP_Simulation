@@ -60,7 +60,7 @@ do
     fi
     draw_progress_bar $(($_counter*100/$_end))
     ./enkiplayground
-    $(./plot.py "Animations/$controller$scenario/")
+    $(./plot.py "NewAnimations/$controller$scenario/")
     _counter=$((${_counter}+1))
   done
   mode=$(($mode+1))

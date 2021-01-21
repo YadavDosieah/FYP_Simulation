@@ -67,6 +67,8 @@ with open('Analysis.csv','r') as csvfile:
 
 Fitness_Val = np.array(Fitness_Val)
 Fitness_Val[:,2,:,:,:] = Fitness_Val[:,2,:,:,:]/2
+# print(Fitness_Val.shape)
+Fitness_Val=Fitness_Val[:,:,:,:,0:50]
 Fitness_Val_merged = Fitness_Val.reshape(6,3,750)
 # print(Fitness_Val.shape)
 
