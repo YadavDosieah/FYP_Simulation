@@ -1,5 +1,7 @@
 #!/bin/bash
 
+cd "$(dirname "$0")"
+
 # Source progress bar
 source ./progress_bar.sh
 
