@@ -14,7 +14,9 @@ setup_scroll_area
 _end=270 #180
 _counter=0
 
-
+cd ../../
+cmake .
+cd examples/playground/
 
 sed -i "/^#define GUI  /s/  .*/  false/" config.h
 sed -i "/^#define Analysis  /s/  .*/  true/" config.h
