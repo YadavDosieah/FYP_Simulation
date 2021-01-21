@@ -101,5 +101,5 @@ done
 echo -e "\nCompleted at $(date)!"
 destroy_scroll_area
 
-#./GenerateAnimations.sh
+# ./GenerateAnimations.sh
 # poweroff
