@@ -1,0 +1,1014 @@
+/home/co4xgd/FYP_Simulation/enki/examples/playground/Auto_analysis.sh: line 4: ./progress_bar.sh: No such file or directory
+/home/co4xgd/FYP_Simulation/enki/examples/playground/Auto_analysis.sh: line 7: enable_trapping: command not found
+/home/co4xgd/FYP_Simulation/enki/examples/playground/Auto_analysis.sh: line 9: setup_scroll_area: command not found
+sed: can't read config.h: No such file or directory
+sed: can't read config.h: No such file or directory
+sed: can't read config.h: No such file or directory
+sed: can't read config.h: No such file or directory
+sed: can't read config.h: No such file or directory
+sed: can't read config.h: No such file or directory
+sed: can't read config.h: No such file or directory
+make: *** No rule to make target 'enkiplayground'.  Stop.
+sed: can't read Parameters.cfg: No such file or directory
+sed: can't read Parameters.cfg: No such file or directory
+\Started at Thu Jan 21 05:28:19 GMT 2021!
+sed: can't read Parameters.cfg: No such file or directory
+sed: can't read Parameters.cfg: No such file or directory
+sed: can't read Parameters.cfg: No such file or directory
+sed: can't read Parameters.cfg: No such file or directory
+Run 0,05,10,00/home/co4xgd/FYP_Simulation/enki/examples/playground/Auto_analysis.sh: line 58: draw_progress_bar: command not found
+/home/co4xgd/FYP_Simulation/enki/examples/playground/Auto_analysis.sh: line 59: ./enkiplayground: No such file or directory
+sed: can't read Parameters.cfg: No such file or directory
+Run 0,05,20,00/home/co4xgd/FYP_Simulation/enki/examples/playground/Auto_analysis.sh: line 58: draw_progress_bar: command not found
+/home/co4xgd/FYP_Simulation/enki/examples/playground/Auto_analysis.sh: line 59: ./enkiplayground: No such file or directory
+sed: can't read Parameters.cfg: No such file or directory
+Run 0,05,30,00/home/co4xgd/FYP_Simulation/enki/examples/playground/Auto_analysis.sh: line 58: draw_progress_bar: command not found
+/home/co4xgd/FYP_Simulation/enki/examples/playground/Auto_analysis.sh: line 59: ./enkiplayground: No such file or directory
+sed: can't read Parameters.cfg: No such file or directory
+Run 0,05,40,00/home/co4xgd/FYP_Simulation/enki/examples/playground/Auto_analysis.sh: line 58: draw_progress_bar: command not found
+/home/co4xgd/FYP_Simulation/enki/examples/playground/Auto_analysis.sh: line 59: ./enkiplayground: No such file or directory
+sed: can't read Parameters.cfg: No such file or directory
+Run 0,05,50,00/home/co4xgd/FYP_Simulation/enki/examples/playground/Auto_analysis.sh: line 58: draw_progress_bar: command not found
+/home/co4xgd/FYP_Simulation/enki/examples/playground/Auto_analysis.sh: line 59: ./enkiplayground: No such file or directory
+sed: can't read Parameters.cfg: No such file or directory
+sed: can't read Parameters.cfg: No such file or directory
+sed: can't read Parameters.cfg: No such file or directory
+Run 0,10,10,00/home/co4xgd/FYP_Simulation/enki/examples/playground/Auto_analysis.sh: line 58: draw_progress_bar: command not found
+/home/co4xgd/FYP_Simulation/enki/examples/playground/Auto_analysis.sh: line 59: ./enkiplayground: No such file or directory
+sed: can't read Parameters.cfg: No such file or directory
+Run 0,10,20,00/home/co4xgd/FYP_Simulation/enki/examples/playground/Auto_analysis.sh: line 58: draw_progress_bar: command not found
+/home/co4xgd/FYP_Simulation/enki/examples/playground/Auto_analysis.sh: line 59: ./enkiplayground: No such file or directory
+sed: can't read Parameters.cfg: No such file or directory
+Run 0,10,30,00/home/co4xgd/FYP_Simulation/enki/examples/playground/Auto_analysis.sh: line 58: draw_progress_bar: command not found
+/home/co4xgd/FYP_Simulation/enki/examples/playground/Auto_analysis.sh: line 59: ./enkiplayground: No such file or directory
+sed: can't read Parameters.cfg: No such file or directory
+Run 0,10,40,00/home/co4xgd/FYP_Simulation/enki/examples/playground/Auto_analysis.sh: line 58: draw_progress_bar: command not found
+/home/co4xgd/FYP_Simulation/enki/examples/playground/Auto_analysis.sh: line 59: ./enkiplayground: No such file or directory
+sed: can't read Parameters.cfg: No such file or directory
+Run 0,10,50,00/home/co4xgd/FYP_Simulation/enki/examples/playground/Auto_analysis.sh: line 58: draw_progress_bar: command not found
+/home/co4xgd/FYP_Simulation/enki/examples/playground/Auto_analysis.sh: line 59: ./enkiplayground: No such file or directory
+sed: can't read Parameters.cfg: No such file or directory
+sed: can't read Parameters.cfg: No such file or directory
+sed: can't read Parameters.cfg: No such file or directory
+Run 0,15,10,00/home/co4xgd/FYP_Simulation/enki/examples/playground/Auto_analysis.sh: line 58: draw_progress_bar: command not found
+/home/co4xgd/FYP_Simulation/enki/examples/playground/Auto_analysis.sh: line 59: ./enkiplayground: No such file or directory
+sed: can't read Parameters.cfg: No such file or directory
+Run 0,15,20,00/home/co4xgd/FYP_Simulation/enki/examples/playground/Auto_analysis.sh: line 58: draw_progress_bar: command not found
+/home/co4xgd/FYP_Simulation/enki/examples/playground/Auto_analysis.sh: line 59: ./enkiplayground: No such file or directory
+sed: can't read Parameters.cfg: No such file or directory
+Run 0,15,30,00/home/co4xgd/FYP_Simulation/enki/examples/playground/Auto_analysis.sh: line 58: draw_progress_bar: command not found
+/home/co4xgd/FYP_Simulation/enki/examples/playground/Auto_analysis.sh: line 59: ./enkiplayground: No such file or directory
+sed: can't read Parameters.cfg: No such file or directory
+Run 0,15,40,00/home/co4xgd/FYP_Simulation/enki/examples/playground/Auto_analysis.sh: line 58: draw_progress_bar: command not found
+/home/co4xgd/FYP_Simulation/enki/examples/playground/Auto_analysis.sh: line 59: ./enkiplayground: No such file or directory
+sed: can't read Parameters.cfg: No such file or directory
+Run 0,15,50,00/home/co4xgd/FYP_Simulation/enki/examples/playground/Auto_analysis.sh: line 58: draw_progress_bar: command not found
+/home/co4xgd/FYP_Simulation/enki/examples/playground/Auto_analysis.sh: line 59: ./enkiplayground: No such file or directory
+sed: can't read Parameters.cfg: No such file or directory
+sed: can't read Parameters.cfg: No such file or directory
+sed: can't read Parameters.cfg: No such file or directory
+Run 0,05,00,10/home/co4xgd/FYP_Simulation/enki/examples/playground/Auto_analysis.sh: line 74: draw_progress_bar: command not found
+/home/co4xgd/FYP_Simulation/enki/examples/playground/Auto_analysis.sh: line 75: ./enkiplayground: No such file or directory
+sed: can't read Parameters.cfg: No such file or directory
+Run 0,05,00,20/home/co4xgd/FYP_Simulation/enki/examples/playground/Auto_analysis.sh: line 74: draw_progress_bar: command not found
+/home/co4xgd/FYP_Simulation/enki/examples/playground/Auto_analysis.sh: line 75: ./enkiplayground: No such file or directory
+sed: can't read Parameters.cfg: No such file or directory
+Run 0,05,00,30/home/co4xgd/FYP_Simulation/enki/examples/playground/Auto_analysis.sh: line 74: draw_progress_bar: command not found
+/home/co4xgd/FYP_Simulation/enki/examples/playground/Auto_analysis.sh: line 75: ./enkiplayground: No such file or directory
+sed: can't read Parameters.cfg: No such file or directory
+Run 0,05,00,40/home/co4xgd/FYP_Simulation/enki/examples/playground/Auto_analysis.sh: line 74: draw_progress_bar: command not found
+/home/co4xgd/FYP_Simulation/enki/examples/playground/Auto_analysis.sh: line 75: ./enkiplayground: No such file or directory
+sed: can't read Parameters.cfg: No such file or directory
+Run 0,05,00,50/home/co4xgd/FYP_Simulation/enki/examples/playground/Auto_analysis.sh: line 74: draw_progress_bar: command not found
+/home/co4xgd/FYP_Simulation/enki/examples/playground/Auto_analysis.sh: line 75: ./enkiplayground: No such file or directory
+sed: can't read Parameters.cfg: No such file or directory
+sed: can't read Parameters.cfg: No such file or directory
+sed: can't read Parameters.cfg: No such file or directory
+Run 0,10,00,10/home/co4xgd/FYP_Simulation/enki/examples/playground/Auto_analysis.sh: line 74: draw_progress_bar: command not found
+/home/co4xgd/FYP_Simulation/enki/examples/playground/Auto_analysis.sh: line 75: ./enkiplayground: No such file or directory
+sed: can't read Parameters.cfg: No such file or directory
+Run 0,10,00,20/home/co4xgd/FYP_Simulation/enki/examples/playground/Auto_analysis.sh: line 74: draw_progress_bar: command not found
+/home/co4xgd/FYP_Simulation/enki/examples/playground/Auto_analysis.sh: line 75: ./enkiplayground: No such file or directory
+sed: can't read Parameters.cfg: No such file or directory
+Run 0,10,00,30/home/co4xgd/FYP_Simulation/enki/examples/playground/Auto_analysis.sh: line 74: draw_progress_bar: command not found
+/home/co4xgd/FYP_Simulation/enki/examples/playground/Auto_analysis.sh: line 75: ./enkiplayground: No such file or directory
+sed: can't read Parameters.cfg: No such file or directory
+Run 0,10,00,40/home/co4xgd/FYP_Simulation/enki/examples/playground/Auto_analysis.sh: line 74: draw_progress_bar: command not found
+/home/co4xgd/FYP_Simulation/enki/examples/playground/Auto_analysis.sh: line 75: ./enkiplayground: No such file or directory
+sed: can't read Parameters.cfg: No such file or directory
+Run 0,10,00,50/home/co4xgd/FYP_Simulation/enki/examples/playground/Auto_analysis.sh: line 74: draw_progress_bar: command not found
+/home/co4xgd/FYP_Simulation/enki/examples/playground/Auto_analysis.sh: line 75: ./enkiplayground: No such file or directory
+sed: can't read Parameters.cfg: No such file or directory
+sed: can't read Parameters.cfg: No such file or directory
+sed: can't read Parameters.cfg: No such file or directory
+Run 0,15,00,10/home/co4xgd/FYP_Simulation/enki/examples/playground/Auto_analysis.sh: line 74: draw_progress_bar: command not found
+/home/co4xgd/FYP_Simulation/enki/examples/playground/Auto_analysis.sh: line 75: ./enkiplayground: No such file or directory
+sed: can't read Parameters.cfg: No such file or directory
+Run 0,15,00,20/home/co4xgd/FYP_Simulation/enki/examples/playground/Auto_analysis.sh: line 74: draw_progress_bar: command not found
+/home/co4xgd/FYP_Simulation/enki/examples/playground/Auto_analysis.sh: line 75: ./enkiplayground: No such file or directory
+sed: can't read Parameters.cfg: No such file or directory
+Run 0,15,00,30/home/co4xgd/FYP_Simulation/enki/examples/playground/Auto_analysis.sh: line 74: draw_progress_bar: command not found
+/home/co4xgd/FYP_Simulation/enki/examples/playground/Auto_analysis.sh: line 75: ./enkiplayground: No such file or directory
+sed: can't read Parameters.cfg: No such file or directory
+Run 0,15,00,40/home/co4xgd/FYP_Simulation/enki/examples/playground/Auto_analysis.sh: line 74: draw_progress_bar: command not found
+/home/co4xgd/FYP_Simulation/enki/examples/playground/Auto_analysis.sh: line 75: ./enkiplayground: No such file or directory
+sed: can't read Parameters.cfg: No such file or directory
+Run 0,15,00,50/home/co4xgd/FYP_Simulation/enki/examples/playground/Auto_analysis.sh: line 74: draw_progress_bar: command not found
+/home/co4xgd/FYP_Simulation/enki/examples/playground/Auto_analysis.sh: line 75: ./enkiplayground: No such file or directory
+sed: can't read Parameters.cfg: No such file or directory
+sed: can't read Parameters.cfg: No such file or directory
+sed: can't read Parameters.cfg: No such file or directory
+Run 0,05,5,5/home/co4xgd/FYP_Simulation/enki/examples/playground/Auto_analysis.sh: line 91: draw_progress_bar: command not found
+/home/co4xgd/FYP_Simulation/enki/examples/playground/Auto_analysis.sh: line 92: ./enkiplayground: No such file or directory
+sed: can't read Parameters.cfg: No such file or directory
+sed: can't read Parameters.cfg: No such file or directory
+Run 0,05,10,10/home/co4xgd/FYP_Simulation/enki/examples/playground/Auto_analysis.sh: line 91: draw_progress_bar: command not found
+/home/co4xgd/FYP_Simulation/enki/examples/playground/Auto_analysis.sh: line 92: ./enkiplayground: No such file or directory
+sed: can't read Parameters.cfg: No such file or directory
+sed: can't read Parameters.cfg: No such file or directory
+Run 0,05,15,15/home/co4xgd/FYP_Simulation/enki/examples/playground/Auto_analysis.sh: line 91: draw_progress_bar: command not found
+/home/co4xgd/FYP_Simulation/enki/examples/playground/Auto_analysis.sh: line 92: ./enkiplayground: No such file or directory
+sed: can't read Parameters.cfg: No such file or directory
+sed: can't read Parameters.cfg: No such file or directory
+Run 0,05,20,20/home/co4xgd/FYP_Simulation/enki/examples/playground/Auto_analysis.sh: line 91: draw_progress_bar: command not found
+/home/co4xgd/FYP_Simulation/enki/examples/playground/Auto_analysis.sh: line 92: ./enkiplayground: No such file or directory
+sed: can't read Parameters.cfg: No such file or directory
+sed: can't read Parameters.cfg: No such file or directory
+Run 0,05,25,25/home/co4xgd/FYP_Simulation/enki/examples/playground/Auto_analysis.sh: line 91: draw_progress_bar: command not found
+/home/co4xgd/FYP_Simulation/enki/examples/playground/Auto_analysis.sh: line 92: ./enkiplayground: No such file or directory
+sed: can't read Parameters.cfg: No such file or directory
+sed: can't read Parameters.cfg: No such file or directory
+sed: can't read Parameters.cfg: No such file or directory
+Run 0,10,5,5/home/co4xgd/FYP_Simulation/enki/examples/playground/Auto_analysis.sh: line 91: draw_progress_bar: command not found
+/home/co4xgd/FYP_Simulation/enki/examples/playground/Auto_analysis.sh: line 92: ./enkiplayground: No such file or directory
+sed: can't read Parameters.cfg: No such file or directory
+sed: can't read Parameters.cfg: No such file or directory
+Run 0,10,10,10/home/co4xgd/FYP_Simulation/enki/examples/playground/Auto_analysis.sh: line 91: draw_progress_bar: command not found
+/home/co4xgd/FYP_Simulation/enki/examples/playground/Auto_analysis.sh: line 92: ./enkiplayground: No such file or directory
+sed: can't read Parameters.cfg: No such file or directory
+sed: can't read Parameters.cfg: No such file or directory
+Run 0,10,15,15/home/co4xgd/FYP_Simulation/enki/examples/playground/Auto_analysis.sh: line 91: draw_progress_bar: command not found
+/home/co4xgd/FYP_Simulation/enki/examples/playground/Auto_analysis.sh: line 92: ./enkiplayground: No such file or directory
+sed: can't read Parameters.cfg: No such file or directory
+sed: can't read Parameters.cfg: No such file or directory
+Run 0,10,20,20/home/co4xgd/FYP_Simulation/enki/examples/playground/Auto_analysis.sh: line 91: draw_progress_bar: command not found
+/home/co4xgd/FYP_Simulation/enki/examples/playground/Auto_analysis.sh: line 92: ./enkiplayground: No such file or directory
+sed: can't read Parameters.cfg: No such file or directory
+sed: can't read Parameters.cfg: No such file or directory
+Run 0,10,25,25/home/co4xgd/FYP_Simulation/enki/examples/playground/Auto_analysis.sh: line 91: draw_progress_bar: command not found
+/home/co4xgd/FYP_Simulation/enki/examples/playground/Auto_analysis.sh: line 92: ./enkiplayground: No such file or directory
+sed: can't read Parameters.cfg: No such file or directory
+sed: can't read Parameters.cfg: No such file or directory
+sed: can't read Parameters.cfg: No such file or directory
+Run 0,15,5,5/home/co4xgd/FYP_Simulation/enki/examples/playground/Auto_analysis.sh: line 91: draw_progress_bar: command not found
+/home/co4xgd/FYP_Simulation/enki/examples/playground/Auto_analysis.sh: line 92: ./enkiplayground: No such file or directory
+sed: can't read Parameters.cfg: No such file or directory
+sed: can't read Parameters.cfg: No such file or directory
+Run 0,15,10,10/home/co4xgd/FYP_Simulation/enki/examples/playground/Auto_analysis.sh: line 91: draw_progress_bar: command not found
+/home/co4xgd/FYP_Simulation/enki/examples/playground/Auto_analysis.sh: line 92: ./enkiplayground: No such file or directory
+sed: can't read Parameters.cfg: No such file or directory
+sed: can't read Parameters.cfg: No such file or directory
+Run 0,15,15,15/home/co4xgd/FYP_Simulation/enki/examples/playground/Auto_analysis.sh: line 91: draw_progress_bar: command not found
+/home/co4xgd/FYP_Simulation/enki/examples/playground/Auto_analysis.sh: line 92: ./enkiplayground: No such file or directory
+sed: can't read Parameters.cfg: No such file or directory
+sed: can't read Parameters.cfg: No such file or directory
+Run 0,15,20,20/home/co4xgd/FYP_Simulation/enki/examples/playground/Auto_analysis.sh: line 91: draw_progress_bar: command not found
+/home/co4xgd/FYP_Simulation/enki/examples/playground/Auto_analysis.sh: line 92: ./enkiplayground: No such file or directory
+sed: can't read Parameters.cfg: No such file or directory
+sed: can't read Parameters.cfg: No such file or directory
+Run 0,15,25,25/home/co4xgd/FYP_Simulation/enki/examples/playground/Auto_analysis.sh: line 91: draw_progress_bar: command not found
+/home/co4xgd/FYP_Simulation/enki/examples/playground/Auto_analysis.sh: line 92: ./enkiplayground: No such file or directory
+sed: can't read Parameters.cfg: No such file or directory
+sed: can't read Parameters.cfg: No such file or directory
+sed: can't read Parameters.cfg: No such file or directory
+sed: can't read Parameters.cfg: No such file or directory
+Run 1,05,10,00/home/co4xgd/FYP_Simulation/enki/examples/playground/Auto_analysis.sh: line 58: draw_progress_bar: command not found
+/home/co4xgd/FYP_Simulation/enki/examples/playground/Auto_analysis.sh: line 59: ./enkiplayground: No such file or directory
+sed: can't read Parameters.cfg: No such file or directory
+Run 1,05,20,00/home/co4xgd/FYP_Simulation/enki/examples/playground/Auto_analysis.sh: line 58: draw_progress_bar: command not found
+/home/co4xgd/FYP_Simulation/enki/examples/playground/Auto_analysis.sh: line 59: ./enkiplayground: No such file or directory
+sed: can't read Parameters.cfg: No such file or directory
+Run 1,05,30,00/home/co4xgd/FYP_Simulation/enki/examples/playground/Auto_analysis.sh: line 58: draw_progress_bar: command not found
+/home/co4xgd/FYP_Simulation/enki/examples/playground/Auto_analysis.sh: line 59: ./enkiplayground: No such file or directory
+sed: can't read Parameters.cfg: No such file or directory
+Run 1,05,40,00/home/co4xgd/FYP_Simulation/enki/examples/playground/Auto_analysis.sh: line 58: draw_progress_bar: command not found
+/home/co4xgd/FYP_Simulation/enki/examples/playground/Auto_analysis.sh: line 59: ./enkiplayground: No such file or directory
+sed: can't read Parameters.cfg: No such file or directory
+Run 1,05,50,00/home/co4xgd/FYP_Simulation/enki/examples/playground/Auto_analysis.sh: line 58: draw_progress_bar: command not found
+/home/co4xgd/FYP_Simulation/enki/examples/playground/Auto_analysis.sh: line 59: ./enkiplayground: No such file or directory
+sed: can't read Parameters.cfg: No such file or directory
+sed: can't read Parameters.cfg: No such file or directory
+sed: can't read Parameters.cfg: No such file or directory
+Run 1,10,10,00/home/co4xgd/FYP_Simulation/enki/examples/playground/Auto_analysis.sh: line 58: draw_progress_bar: command not found
+/home/co4xgd/FYP_Simulation/enki/examples/playground/Auto_analysis.sh: line 59: ./enkiplayground: No such file or directory
+sed: can't read Parameters.cfg: No such file or directory
+Run 1,10,20,00/home/co4xgd/FYP_Simulation/enki/examples/playground/Auto_analysis.sh: line 58: draw_progress_bar: command not found
+/home/co4xgd/FYP_Simulation/enki/examples/playground/Auto_analysis.sh: line 59: ./enkiplayground: No such file or directory
+sed: can't read Parameters.cfg: No such file or directory
+Run 1,10,30,00/home/co4xgd/FYP_Simulation/enki/examples/playground/Auto_analysis.sh: line 58: draw_progress_bar: command not found
+/home/co4xgd/FYP_Simulation/enki/examples/playground/Auto_analysis.sh: line 59: ./enkiplayground: No such file or directory
+sed: can't read Parameters.cfg: No such file or directory
+Run 1,10,40,00/home/co4xgd/FYP_Simulation/enki/examples/playground/Auto_analysis.sh: line 58: draw_progress_bar: command not found
+/home/co4xgd/FYP_Simulation/enki/examples/playground/Auto_analysis.sh: line 59: ./enkiplayground: No such file or directory
+sed: can't read Parameters.cfg: No such file or directory
+Run 1,10,50,00/home/co4xgd/FYP_Simulation/enki/examples/playground/Auto_analysis.sh: line 58: draw_progress_bar: command not found
+/home/co4xgd/FYP_Simulation/enki/examples/playground/Auto_analysis.sh: line 59: ./enkiplayground: No such file or directory
+sed: can't read Parameters.cfg: No such file or directory
+sed: can't read Parameters.cfg: No such file or directory
+sed: can't read Parameters.cfg: No such file or directory
+Run 1,15,10,00/home/co4xgd/FYP_Simulation/enki/examples/playground/Auto_analysis.sh: line 58: draw_progress_bar: command not found
+/home/co4xgd/FYP_Simulation/enki/examples/playground/Auto_analysis.sh: line 59: ./enkiplayground: No such file or directory
+sed: can't read Parameters.cfg: No such file or directory
+Run 1,15,20,00/home/co4xgd/FYP_Simulation/enki/examples/playground/Auto_analysis.sh: line 58: draw_progress_bar: command not found
+/home/co4xgd/FYP_Simulation/enki/examples/playground/Auto_analysis.sh: line 59: ./enkiplayground: No such file or directory
+sed: can't read Parameters.cfg: No such file or directory
+Run 1,15,30,00/home/co4xgd/FYP_Simulation/enki/examples/playground/Auto_analysis.sh: line 58: draw_progress_bar: command not found
+/home/co4xgd/FYP_Simulation/enki/examples/playground/Auto_analysis.sh: line 59: ./enkiplayground: No such file or directory
+sed: can't read Parameters.cfg: No such file or directory
+Run 1,15,40,00/home/co4xgd/FYP_Simulation/enki/examples/playground/Auto_analysis.sh: line 58: draw_progress_bar: command not found
+/home/co4xgd/FYP_Simulation/enki/examples/playground/Auto_analysis.sh: line 59: ./enkiplayground: No such file or directory
+sed: can't read Parameters.cfg: No such file or directory
+Run 1,15,50,00/home/co4xgd/FYP_Simulation/enki/examples/playground/Auto_analysis.sh: line 58: draw_progress_bar: command not found
+/home/co4xgd/FYP_Simulation/enki/examples/playground/Auto_analysis.sh: line 59: ./enkiplayground: No such file or directory
+sed: can't read Parameters.cfg: No such file or directory
+sed: can't read Parameters.cfg: No such file or directory
+sed: can't read Parameters.cfg: No such file or directory
+Run 1,05,00,10/home/co4xgd/FYP_Simulation/enki/examples/playground/Auto_analysis.sh: line 74: draw_progress_bar: command not found
+/home/co4xgd/FYP_Simulation/enki/examples/playground/Auto_analysis.sh: line 75: ./enkiplayground: No such file or directory
+sed: can't read Parameters.cfg: No such file or directory
+Run 1,05,00,20/home/co4xgd/FYP_Simulation/enki/examples/playground/Auto_analysis.sh: line 74: draw_progress_bar: command not found
+/home/co4xgd/FYP_Simulation/enki/examples/playground/Auto_analysis.sh: line 75: ./enkiplayground: No such file or directory
+sed: can't read Parameters.cfg: No such file or directory
+Run 1,05,00,30/home/co4xgd/FYP_Simulation/enki/examples/playground/Auto_analysis.sh: line 74: draw_progress_bar: command not found
+/home/co4xgd/FYP_Simulation/enki/examples/playground/Auto_analysis.sh: line 75: ./enkiplayground: No such file or directory
+sed: can't read Parameters.cfg: No such file or directory
+Run 1,05,00,40/home/co4xgd/FYP_Simulation/enki/examples/playground/Auto_analysis.sh: line 74: draw_progress_bar: command not found
+/home/co4xgd/FYP_Simulation/enki/examples/playground/Auto_analysis.sh: line 75: ./enkiplayground: No such file or directory
+sed: can't read Parameters.cfg: No such file or directory
+Run 1,05,00,50/home/co4xgd/FYP_Simulation/enki/examples/playground/Auto_analysis.sh: line 74: draw_progress_bar: command not found
+/home/co4xgd/FYP_Simulation/enki/examples/playground/Auto_analysis.sh: line 75: ./enkiplayground: No such file or directory
+sed: can't read Parameters.cfg: No such file or directory
+sed: can't read Parameters.cfg: No such file or directory
+sed: can't read Parameters.cfg: No such file or directory
+Run 1,10,00,10/home/co4xgd/FYP_Simulation/enki/examples/playground/Auto_analysis.sh: line 74: draw_progress_bar: command not found
+/home/co4xgd/FYP_Simulation/enki/examples/playground/Auto_analysis.sh: line 75: ./enkiplayground: No such file or directory
+sed: can't read Parameters.cfg: No such file or directory
+Run 1,10,00,20/home/co4xgd/FYP_Simulation/enki/examples/playground/Auto_analysis.sh: line 74: draw_progress_bar: command not found
+/home/co4xgd/FYP_Simulation/enki/examples/playground/Auto_analysis.sh: line 75: ./enkiplayground: No such file or directory
+sed: can't read Parameters.cfg: No such file or directory
+Run 1,10,00,30/home/co4xgd/FYP_Simulation/enki/examples/playground/Auto_analysis.sh: line 74: draw_progress_bar: command not found
+/home/co4xgd/FYP_Simulation/enki/examples/playground/Auto_analysis.sh: line 75: ./enkiplayground: No such file or directory
+sed: can't read Parameters.cfg: No such file or directory
+Run 1,10,00,40/home/co4xgd/FYP_Simulation/enki/examples/playground/Auto_analysis.sh: line 74: draw_progress_bar: command not found
+/home/co4xgd/FYP_Simulation/enki/examples/playground/Auto_analysis.sh: line 75: ./enkiplayground: No such file or directory
+sed: can't read Parameters.cfg: No such file or directory
+Run 1,10,00,50/home/co4xgd/FYP_Simulation/enki/examples/playground/Auto_analysis.sh: line 74: draw_progress_bar: command not found
+/home/co4xgd/FYP_Simulation/enki/examples/playground/Auto_analysis.sh: line 75: ./enkiplayground: No such file or directory
+sed: can't read Parameters.cfg: No such file or directory
+sed: can't read Parameters.cfg: No such file or directory
+sed: can't read Parameters.cfg: No such file or directory
+Run 1,15,00,10/home/co4xgd/FYP_Simulation/enki/examples/playground/Auto_analysis.sh: line 74: draw_progress_bar: command not found
+/home/co4xgd/FYP_Simulation/enki/examples/playground/Auto_analysis.sh: line 75: ./enkiplayground: No such file or directory
+sed: can't read Parameters.cfg: No such file or directory
+Run 1,15,00,20/home/co4xgd/FYP_Simulation/enki/examples/playground/Auto_analysis.sh: line 74: draw_progress_bar: command not found
+/home/co4xgd/FYP_Simulation/enki/examples/playground/Auto_analysis.sh: line 75: ./enkiplayground: No such file or directory
+sed: can't read Parameters.cfg: No such file or directory
+Run 1,15,00,30/home/co4xgd/FYP_Simulation/enki/examples/playground/Auto_analysis.sh: line 74: draw_progress_bar: command not found
+/home/co4xgd/FYP_Simulation/enki/examples/playground/Auto_analysis.sh: line 75: ./enkiplayground: No such file or directory
+sed: can't read Parameters.cfg: No such file or directory
+Run 1,15,00,40/home/co4xgd/FYP_Simulation/enki/examples/playground/Auto_analysis.sh: line 74: draw_progress_bar: command not found
+/home/co4xgd/FYP_Simulation/enki/examples/playground/Auto_analysis.sh: line 75: ./enkiplayground: No such file or directory
+sed: can't read Parameters.cfg: No such file or directory
+Run 1,15,00,50/home/co4xgd/FYP_Simulation/enki/examples/playground/Auto_analysis.sh: line 74: draw_progress_bar: command not found
+/home/co4xgd/FYP_Simulation/enki/examples/playground/Auto_analysis.sh: line 75: ./enkiplayground: No such file or directory
+sed: can't read Parameters.cfg: No such file or directory
+sed: can't read Parameters.cfg: No such file or directory
+sed: can't read Parameters.cfg: No such file or directory
+Run 1,05,5,5/home/co4xgd/FYP_Simulation/enki/examples/playground/Auto_analysis.sh: line 91: draw_progress_bar: command not found
+/home/co4xgd/FYP_Simulation/enki/examples/playground/Auto_analysis.sh: line 92: ./enkiplayground: No such file or directory
+sed: can't read Parameters.cfg: No such file or directory
+sed: can't read Parameters.cfg: No such file or directory
+Run 1,05,10,10/home/co4xgd/FYP_Simulation/enki/examples/playground/Auto_analysis.sh: line 91: draw_progress_bar: command not found
+/home/co4xgd/FYP_Simulation/enki/examples/playground/Auto_analysis.sh: line 92: ./enkiplayground: No such file or directory
+sed: can't read Parameters.cfg: No such file or directory
+sed: can't read Parameters.cfg: No such file or directory
+Run 1,05,15,15/home/co4xgd/FYP_Simulation/enki/examples/playground/Auto_analysis.sh: line 91: draw_progress_bar: command not found
+/home/co4xgd/FYP_Simulation/enki/examples/playground/Auto_analysis.sh: line 92: ./enkiplayground: No such file or directory
+sed: can't read Parameters.cfg: No such file or directory
+sed: can't read Parameters.cfg: No such file or directory
+Run 1,05,20,20/home/co4xgd/FYP_Simulation/enki/examples/playground/Auto_analysis.sh: line 91: draw_progress_bar: command not found
+/home/co4xgd/FYP_Simulation/enki/examples/playground/Auto_analysis.sh: line 92: ./enkiplayground: No such file or directory
+sed: can't read Parameters.cfg: No such file or directory
+sed: can't read Parameters.cfg: No such file or directory
+Run 1,05,25,25/home/co4xgd/FYP_Simulation/enki/examples/playground/Auto_analysis.sh: line 91: draw_progress_bar: command not found
+/home/co4xgd/FYP_Simulation/enki/examples/playground/Auto_analysis.sh: line 92: ./enkiplayground: No such file or directory
+sed: can't read Parameters.cfg: No such file or directory
+sed: can't read Parameters.cfg: No such file or directory
+sed: can't read Parameters.cfg: No such file or directory
+Run 1,10,5,5/home/co4xgd/FYP_Simulation/enki/examples/playground/Auto_analysis.sh: line 91: draw_progress_bar: command not found
+/home/co4xgd/FYP_Simulation/enki/examples/playground/Auto_analysis.sh: line 92: ./enkiplayground: No such file or directory
+sed: can't read Parameters.cfg: No such file or directory
+sed: can't read Parameters.cfg: No such file or directory
+Run 1,10,10,10/home/co4xgd/FYP_Simulation/enki/examples/playground/Auto_analysis.sh: line 91: draw_progress_bar: command not found
+/home/co4xgd/FYP_Simulation/enki/examples/playground/Auto_analysis.sh: line 92: ./enkiplayground: No such file or directory
+sed: can't read Parameters.cfg: No such file or directory
+sed: can't read Parameters.cfg: No such file or directory
+Run 1,10,15,15/home/co4xgd/FYP_Simulation/enki/examples/playground/Auto_analysis.sh: line 91: draw_progress_bar: command not found
+/home/co4xgd/FYP_Simulation/enki/examples/playground/Auto_analysis.sh: line 92: ./enkiplayground: No such file or directory
+sed: can't read Parameters.cfg: No such file or directory
+sed: can't read Parameters.cfg: No such file or directory
+Run 1,10,20,20/home/co4xgd/FYP_Simulation/enki/examples/playground/Auto_analysis.sh: line 91: draw_progress_bar: command not found
+/home/co4xgd/FYP_Simulation/enki/examples/playground/Auto_analysis.sh: line 92: ./enkiplayground: No such file or directory
+sed: can't read Parameters.cfg: No such file or directory
+sed: can't read Parameters.cfg: No such file or directory
+Run 1,10,25,25/home/co4xgd/FYP_Simulation/enki/examples/playground/Auto_analysis.sh: line 91: draw_progress_bar: command not found
+/home/co4xgd/FYP_Simulation/enki/examples/playground/Auto_analysis.sh: line 92: ./enkiplayground: No such file or directory
+sed: can't read Parameters.cfg: No such file or directory
+sed: can't read Parameters.cfg: No such file or directory
+sed: can't read Parameters.cfg: No such file or directory
+Run 1,15,5,5/home/co4xgd/FYP_Simulation/enki/examples/playground/Auto_analysis.sh: line 91: draw_progress_bar: command not found
+/home/co4xgd/FYP_Simulation/enki/examples/playground/Auto_analysis.sh: line 92: ./enkiplayground: No such file or directory
+sed: can't read Parameters.cfg: No such file or directory
+sed: can't read Parameters.cfg: No such file or directory
+Run 1,15,10,10/home/co4xgd/FYP_Simulation/enki/examples/playground/Auto_analysis.sh: line 91: draw_progress_bar: command not found
+/home/co4xgd/FYP_Simulation/enki/examples/playground/Auto_analysis.sh: line 92: ./enkiplayground: No such file or directory
+sed: can't read Parameters.cfg: No such file or directory
+sed: can't read Parameters.cfg: No such file or directory
+Run 1,15,15,15/home/co4xgd/FYP_Simulation/enki/examples/playground/Auto_analysis.sh: line 91: draw_progress_bar: command not found
+/home/co4xgd/FYP_Simulation/enki/examples/playground/Auto_analysis.sh: line 92: ./enkiplayground: No such file or directory
+sed: can't read Parameters.cfg: No such file or directory
+sed: can't read Parameters.cfg: No such file or directory
+Run 1,15,20,20/home/co4xgd/FYP_Simulation/enki/examples/playground/Auto_analysis.sh: line 91: draw_progress_bar: command not found
+/home/co4xgd/FYP_Simulation/enki/examples/playground/Auto_analysis.sh: line 92: ./enkiplayground: No such file or directory
+sed: can't read Parameters.cfg: No such file or directory
+sed: can't read Parameters.cfg: No such file or directory
+Run 1,15,25,25/home/co4xgd/FYP_Simulation/enki/examples/playground/Auto_analysis.sh: line 91: draw_progress_bar: command not found
+/home/co4xgd/FYP_Simulation/enki/examples/playground/Auto_analysis.sh: line 92: ./enkiplayground: No such file or directory
+sed: can't read Parameters.cfg: No such file or directory
+sed: can't read Parameters.cfg: No such file or directory
+sed: can't read Parameters.cfg: No such file or directory
+sed: can't read Parameters.cfg: No such file or directory
+Run 2,05,10,00/home/co4xgd/FYP_Simulation/enki/examples/playground/Auto_analysis.sh: line 58: draw_progress_bar: command not found
+/home/co4xgd/FYP_Simulation/enki/examples/playground/Auto_analysis.sh: line 59: ./enkiplayground: No such file or directory
+sed: can't read Parameters.cfg: No such file or directory
+Run 2,05,20,00/home/co4xgd/FYP_Simulation/enki/examples/playground/Auto_analysis.sh: line 58: draw_progress_bar: command not found
+/home/co4xgd/FYP_Simulation/enki/examples/playground/Auto_analysis.sh: line 59: ./enkiplayground: No such file or directory
+sed: can't read Parameters.cfg: No such file or directory
+Run 2,05,30,00/home/co4xgd/FYP_Simulation/enki/examples/playground/Auto_analysis.sh: line 58: draw_progress_bar: command not found
+/home/co4xgd/FYP_Simulation/enki/examples/playground/Auto_analysis.sh: line 59: ./enkiplayground: No such file or directory
+sed: can't read Parameters.cfg: No such file or directory
+Run 2,05,40,00/home/co4xgd/FYP_Simulation/enki/examples/playground/Auto_analysis.sh: line 58: draw_progress_bar: command not found
+/home/co4xgd/FYP_Simulation/enki/examples/playground/Auto_analysis.sh: line 59: ./enkiplayground: No such file or directory
+sed: can't read Parameters.cfg: No such file or directory
+Run 2,05,50,00/home/co4xgd/FYP_Simulation/enki/examples/playground/Auto_analysis.sh: line 58: draw_progress_bar: command not found
+/home/co4xgd/FYP_Simulation/enki/examples/playground/Auto_analysis.sh: line 59: ./enkiplayground: No such file or directory
+sed: can't read Parameters.cfg: No such file or directory
+sed: can't read Parameters.cfg: No such file or directory
+sed: can't read Parameters.cfg: No such file or directory
+Run 2,10,10,00/home/co4xgd/FYP_Simulation/enki/examples/playground/Auto_analysis.sh: line 58: draw_progress_bar: command not found
+/home/co4xgd/FYP_Simulation/enki/examples/playground/Auto_analysis.sh: line 59: ./enkiplayground: No such file or directory
+sed: can't read Parameters.cfg: No such file or directory
+Run 2,10,20,00/home/co4xgd/FYP_Simulation/enki/examples/playground/Auto_analysis.sh: line 58: draw_progress_bar: command not found
+/home/co4xgd/FYP_Simulation/enki/examples/playground/Auto_analysis.sh: line 59: ./enkiplayground: No such file or directory
+sed: can't read Parameters.cfg: No such file or directory
+Run 2,10,30,00/home/co4xgd/FYP_Simulation/enki/examples/playground/Auto_analysis.sh: line 58: draw_progress_bar: command not found
+/home/co4xgd/FYP_Simulation/enki/examples/playground/Auto_analysis.sh: line 59: ./enkiplayground: No such file or directory
+sed: can't read Parameters.cfg: No such file or directory
+Run 2,10,40,00/home/co4xgd/FYP_Simulation/enki/examples/playground/Auto_analysis.sh: line 58: draw_progress_bar: command not found
+/home/co4xgd/FYP_Simulation/enki/examples/playground/Auto_analysis.sh: line 59: ./enkiplayground: No such file or directory
+sed: can't read Parameters.cfg: No such file or directory
+Run 2,10,50,00/home/co4xgd/FYP_Simulation/enki/examples/playground/Auto_analysis.sh: line 58: draw_progress_bar: command not found
+/home/co4xgd/FYP_Simulation/enki/examples/playground/Auto_analysis.sh: line 59: ./enkiplayground: No such file or directory
+sed: can't read Parameters.cfg: No such file or directory
+sed: can't read Parameters.cfg: No such file or directory
+sed: can't read Parameters.cfg: No such file or directory
+Run 2,15,10,00/home/co4xgd/FYP_Simulation/enki/examples/playground/Auto_analysis.sh: line 58: draw_progress_bar: command not found
+/home/co4xgd/FYP_Simulation/enki/examples/playground/Auto_analysis.sh: line 59: ./enkiplayground: No such file or directory
+sed: can't read Parameters.cfg: No such file or directory
+Run 2,15,20,00/home/co4xgd/FYP_Simulation/enki/examples/playground/Auto_analysis.sh: line 58: draw_progress_bar: command not found
+/home/co4xgd/FYP_Simulation/enki/examples/playground/Auto_analysis.sh: line 59: ./enkiplayground: No such file or directory
+sed: can't read Parameters.cfg: No such file or directory
+Run 2,15,30,00/home/co4xgd/FYP_Simulation/enki/examples/playground/Auto_analysis.sh: line 58: draw_progress_bar: command not found
+/home/co4xgd/FYP_Simulation/enki/examples/playground/Auto_analysis.sh: line 59: ./enkiplayground: No such file or directory
+sed: can't read Parameters.cfg: No such file or directory
+Run 2,15,40,00/home/co4xgd/FYP_Simulation/enki/examples/playground/Auto_analysis.sh: line 58: draw_progress_bar: command not found
+/home/co4xgd/FYP_Simulation/enki/examples/playground/Auto_analysis.sh: line 59: ./enkiplayground: No such file or directory
+sed: can't read Parameters.cfg: No such file or directory
+Run 2,15,50,00/home/co4xgd/FYP_Simulation/enki/examples/playground/Auto_analysis.sh: line 58: draw_progress_bar: command not found
+/home/co4xgd/FYP_Simulation/enki/examples/playground/Auto_analysis.sh: line 59: ./enkiplayground: No such file or directory
+sed: can't read Parameters.cfg: No such file or directory
+sed: can't read Parameters.cfg: No such file or directory
+sed: can't read Parameters.cfg: No such file or directory
+Run 2,05,00,10/home/co4xgd/FYP_Simulation/enki/examples/playground/Auto_analysis.sh: line 74: draw_progress_bar: command not found
+/home/co4xgd/FYP_Simulation/enki/examples/playground/Auto_analysis.sh: line 75: ./enkiplayground: No such file or directory
+sed: can't read Parameters.cfg: No such file or directory
+Run 2,05,00,20/home/co4xgd/FYP_Simulation/enki/examples/playground/Auto_analysis.sh: line 74: draw_progress_bar: command not found
+/home/co4xgd/FYP_Simulation/enki/examples/playground/Auto_analysis.sh: line 75: ./enkiplayground: No such file or directory
+sed: can't read Parameters.cfg: No such file or directory
+Run 2,05,00,30/home/co4xgd/FYP_Simulation/enki/examples/playground/Auto_analysis.sh: line 74: draw_progress_bar: command not found
+/home/co4xgd/FYP_Simulation/enki/examples/playground/Auto_analysis.sh: line 75: ./enkiplayground: No such file or directory
+sed: can't read Parameters.cfg: No such file or directory
+Run 2,05,00,40/home/co4xgd/FYP_Simulation/enki/examples/playground/Auto_analysis.sh: line 74: draw_progress_bar: command not found
+/home/co4xgd/FYP_Simulation/enki/examples/playground/Auto_analysis.sh: line 75: ./enkiplayground: No such file or directory
+sed: can't read Parameters.cfg: No such file or directory
+Run 2,05,00,50/home/co4xgd/FYP_Simulation/enki/examples/playground/Auto_analysis.sh: line 74: draw_progress_bar: command not found
+/home/co4xgd/FYP_Simulation/enki/examples/playground/Auto_analysis.sh: line 75: ./enkiplayground: No such file or directory
+sed: can't read Parameters.cfg: No such file or directory
+sed: can't read Parameters.cfg: No such file or directory
+sed: can't read Parameters.cfg: No such file or directory
+Run 2,10,00,10/home/co4xgd/FYP_Simulation/enki/examples/playground/Auto_analysis.sh: line 74: draw_progress_bar: command not found
+/home/co4xgd/FYP_Simulation/enki/examples/playground/Auto_analysis.sh: line 75: ./enkiplayground: No such file or directory
+sed: can't read Parameters.cfg: No such file or directory
+Run 2,10,00,20/home/co4xgd/FYP_Simulation/enki/examples/playground/Auto_analysis.sh: line 74: draw_progress_bar: command not found
+/home/co4xgd/FYP_Simulation/enki/examples/playground/Auto_analysis.sh: line 75: ./enkiplayground: No such file or directory
+sed: can't read Parameters.cfg: No such file or directory
+Run 2,10,00,30/home/co4xgd/FYP_Simulation/enki/examples/playground/Auto_analysis.sh: line 74: draw_progress_bar: command not found
+/home/co4xgd/FYP_Simulation/enki/examples/playground/Auto_analysis.sh: line 75: ./enkiplayground: No such file or directory
+sed: can't read Parameters.cfg: No such file or directory
+Run 2,10,00,40/home/co4xgd/FYP_Simulation/enki/examples/playground/Auto_analysis.sh: line 74: draw_progress_bar: command not found
+/home/co4xgd/FYP_Simulation/enki/examples/playground/Auto_analysis.sh: line 75: ./enkiplayground: No such file or directory
+sed: can't read Parameters.cfg: No such file or directory
+Run 2,10,00,50/home/co4xgd/FYP_Simulation/enki/examples/playground/Auto_analysis.sh: line 74: draw_progress_bar: command not found
+/home/co4xgd/FYP_Simulation/enki/examples/playground/Auto_analysis.sh: line 75: ./enkiplayground: No such file or directory
+sed: can't read Parameters.cfg: No such file or directory
+sed: can't read Parameters.cfg: No such file or directory
+sed: can't read Parameters.cfg: No such file or directory
+Run 2,15,00,10/home/co4xgd/FYP_Simulation/enki/examples/playground/Auto_analysis.sh: line 74: draw_progress_bar: command not found
+/home/co4xgd/FYP_Simulation/enki/examples/playground/Auto_analysis.sh: line 75: ./enkiplayground: No such file or directory
+sed: can't read Parameters.cfg: No such file or directory
+Run 2,15,00,20/home/co4xgd/FYP_Simulation/enki/examples/playground/Auto_analysis.sh: line 74: draw_progress_bar: command not found
+/home/co4xgd/FYP_Simulation/enki/examples/playground/Auto_analysis.sh: line 75: ./enkiplayground: No such file or directory
+sed: can't read Parameters.cfg: No such file or directory
+Run 2,15,00,30/home/co4xgd/FYP_Simulation/enki/examples/playground/Auto_analysis.sh: line 74: draw_progress_bar: command not found
+/home/co4xgd/FYP_Simulation/enki/examples/playground/Auto_analysis.sh: line 75: ./enkiplayground: No such file or directory
+sed: can't read Parameters.cfg: No such file or directory
+Run 2,15,00,40/home/co4xgd/FYP_Simulation/enki/examples/playground/Auto_analysis.sh: line 74: draw_progress_bar: command not found
+/home/co4xgd/FYP_Simulation/enki/examples/playground/Auto_analysis.sh: line 75: ./enkiplayground: No such file or directory
+sed: can't read Parameters.cfg: No such file or directory
+Run 2,15,00,50/home/co4xgd/FYP_Simulation/enki/examples/playground/Auto_analysis.sh: line 74: draw_progress_bar: command not found
+/home/co4xgd/FYP_Simulation/enki/examples/playground/Auto_analysis.sh: line 75: ./enkiplayground: No such file or directory
+sed: can't read Parameters.cfg: No such file or directory
+sed: can't read Parameters.cfg: No such file or directory
+sed: can't read Parameters.cfg: No such file or directory
+Run 2,05,5,5/home/co4xgd/FYP_Simulation/enki/examples/playground/Auto_analysis.sh: line 91: draw_progress_bar: command not found
+/home/co4xgd/FYP_Simulation/enki/examples/playground/Auto_analysis.sh: line 92: ./enkiplayground: No such file or directory
+sed: can't read Parameters.cfg: No such file or directory
+sed: can't read Parameters.cfg: No such file or directory
+Run 2,05,10,10/home/co4xgd/FYP_Simulation/enki/examples/playground/Auto_analysis.sh: line 91: draw_progress_bar: command not found
+/home/co4xgd/FYP_Simulation/enki/examples/playground/Auto_analysis.sh: line 92: ./enkiplayground: No such file or directory
+sed: can't read Parameters.cfg: No such file or directory
+sed: can't read Parameters.cfg: No such file or directory
+Run 2,05,15,15/home/co4xgd/FYP_Simulation/enki/examples/playground/Auto_analysis.sh: line 91: draw_progress_bar: command not found
+/home/co4xgd/FYP_Simulation/enki/examples/playground/Auto_analysis.sh: line 92: ./enkiplayground: No such file or directory
+sed: can't read Parameters.cfg: No such file or directory
+sed: can't read Parameters.cfg: No such file or directory
+Run 2,05,20,20/home/co4xgd/FYP_Simulation/enki/examples/playground/Auto_analysis.sh: line 91: draw_progress_bar: command not found
+/home/co4xgd/FYP_Simulation/enki/examples/playground/Auto_analysis.sh: line 92: ./enkiplayground: No such file or directory
+sed: can't read Parameters.cfg: No such file or directory
+sed: can't read Parameters.cfg: No such file or directory
+Run 2,05,25,25/home/co4xgd/FYP_Simulation/enki/examples/playground/Auto_analysis.sh: line 91: draw_progress_bar: command not found
+/home/co4xgd/FYP_Simulation/enki/examples/playground/Auto_analysis.sh: line 92: ./enkiplayground: No such file or directory
+sed: can't read Parameters.cfg: No such file or directory
+sed: can't read Parameters.cfg: No such file or directory
+sed: can't read Parameters.cfg: No such file or directory
+Run 2,10,5,5/home/co4xgd/FYP_Simulation/enki/examples/playground/Auto_analysis.sh: line 91: draw_progress_bar: command not found
+/home/co4xgd/FYP_Simulation/enki/examples/playground/Auto_analysis.sh: line 92: ./enkiplayground: No such file or directory
+sed: can't read Parameters.cfg: No such file or directory
+sed: can't read Parameters.cfg: No such file or directory
+Run 2,10,10,10/home/co4xgd/FYP_Simulation/enki/examples/playground/Auto_analysis.sh: line 91: draw_progress_bar: command not found
+/home/co4xgd/FYP_Simulation/enki/examples/playground/Auto_analysis.sh: line 92: ./enkiplayground: No such file or directory
+sed: can't read Parameters.cfg: No such file or directory
+sed: can't read Parameters.cfg: No such file or directory
+Run 2,10,15,15/home/co4xgd/FYP_Simulation/enki/examples/playground/Auto_analysis.sh: line 91: draw_progress_bar: command not found
+/home/co4xgd/FYP_Simulation/enki/examples/playground/Auto_analysis.sh: line 92: ./enkiplayground: No such file or directory
+sed: can't read Parameters.cfg: No such file or directory
+sed: can't read Parameters.cfg: No such file or directory
+Run 2,10,20,20/home/co4xgd/FYP_Simulation/enki/examples/playground/Auto_analysis.sh: line 91: draw_progress_bar: command not found
+/home/co4xgd/FYP_Simulation/enki/examples/playground/Auto_analysis.sh: line 92: ./enkiplayground: No such file or directory
+sed: can't read Parameters.cfg: No such file or directory
+sed: can't read Parameters.cfg: No such file or directory
+Run 2,10,25,25/home/co4xgd/FYP_Simulation/enki/examples/playground/Auto_analysis.sh: line 91: draw_progress_bar: command not found
+/home/co4xgd/FYP_Simulation/enki/examples/playground/Auto_analysis.sh: line 92: ./enkiplayground: No such file or directory
+sed: can't read Parameters.cfg: No such file or directory
+sed: can't read Parameters.cfg: No such file or directory
+sed: can't read Parameters.cfg: No such file or directory
+Run 2,15,5,5/home/co4xgd/FYP_Simulation/enki/examples/playground/Auto_analysis.sh: line 91: draw_progress_bar: command not found
+/home/co4xgd/FYP_Simulation/enki/examples/playground/Auto_analysis.sh: line 92: ./enkiplayground: No such file or directory
+sed: can't read Parameters.cfg: No such file or directory
+sed: can't read Parameters.cfg: No such file or directory
+Run 2,15,10,10/home/co4xgd/FYP_Simulation/enki/examples/playground/Auto_analysis.sh: line 91: draw_progress_bar: command not found
+/home/co4xgd/FYP_Simulation/enki/examples/playground/Auto_analysis.sh: line 92: ./enkiplayground: No such file or directory
+sed: can't read Parameters.cfg: No such file or directory
+sed: can't read Parameters.cfg: No such file or directory
+Run 2,15,15,15/home/co4xgd/FYP_Simulation/enki/examples/playground/Auto_analysis.sh: line 91: draw_progress_bar: command not found
+/home/co4xgd/FYP_Simulation/enki/examples/playground/Auto_analysis.sh: line 92: ./enkiplayground: No such file or directory
+sed: can't read Parameters.cfg: No such file or directory
+sed: can't read Parameters.cfg: No such file or directory
+Run 2,15,20,20/home/co4xgd/FYP_Simulation/enki/examples/playground/Auto_analysis.sh: line 91: draw_progress_bar: command not found
+/home/co4xgd/FYP_Simulation/enki/examples/playground/Auto_analysis.sh: line 92: ./enkiplayground: No such file or directory
+sed: can't read Parameters.cfg: No such file or directory
+sed: can't read Parameters.cfg: No such file or directory
+Run 2,15,25,25/home/co4xgd/FYP_Simulation/enki/examples/playground/Auto_analysis.sh: line 91: draw_progress_bar: command not found
+/home/co4xgd/FYP_Simulation/enki/examples/playground/Auto_analysis.sh: line 92: ./enkiplayground: No such file or directory
+sed: can't read Parameters.cfg: No such file or directory
+sed: can't read Parameters.cfg: No such file or directory
+sed: can't read Parameters.cfg: No such file or directory
+sed: can't read Parameters.cfg: No such file or directory
+Run 3,05,10,00/home/co4xgd/FYP_Simulation/enki/examples/playground/Auto_analysis.sh: line 58: draw_progress_bar: command not found
+/home/co4xgd/FYP_Simulation/enki/examples/playground/Auto_analysis.sh: line 59: ./enkiplayground: No such file or directory
+sed: can't read Parameters.cfg: No such file or directory
+Run 3,05,20,00/home/co4xgd/FYP_Simulation/enki/examples/playground/Auto_analysis.sh: line 58: draw_progress_bar: command not found
+/home/co4xgd/FYP_Simulation/enki/examples/playground/Auto_analysis.sh: line 59: ./enkiplayground: No such file or directory
+sed: can't read Parameters.cfg: No such file or directory
+Run 3,05,30,00/home/co4xgd/FYP_Simulation/enki/examples/playground/Auto_analysis.sh: line 58: draw_progress_bar: command not found
+/home/co4xgd/FYP_Simulation/enki/examples/playground/Auto_analysis.sh: line 59: ./enkiplayground: No such file or directory
+sed: can't read Parameters.cfg: No such file or directory
+Run 3,05,40,00/home/co4xgd/FYP_Simulation/enki/examples/playground/Auto_analysis.sh: line 58: draw_progress_bar: command not found
+/home/co4xgd/FYP_Simulation/enki/examples/playground/Auto_analysis.sh: line 59: ./enkiplayground: No such file or directory
+sed: can't read Parameters.cfg: No such file or directory
+Run 3,05,50,00/home/co4xgd/FYP_Simulation/enki/examples/playground/Auto_analysis.sh: line 58: draw_progress_bar: command not found
+/home/co4xgd/FYP_Simulation/enki/examples/playground/Auto_analysis.sh: line 59: ./enkiplayground: No such file or directory
+sed: can't read Parameters.cfg: No such file or directory
+sed: can't read Parameters.cfg: No such file or directory
+sed: can't read Parameters.cfg: No such file or directory
+Run 3,10,10,00/home/co4xgd/FYP_Simulation/enki/examples/playground/Auto_analysis.sh: line 58: draw_progress_bar: command not found
+/home/co4xgd/FYP_Simulation/enki/examples/playground/Auto_analysis.sh: line 59: ./enkiplayground: No such file or directory
+sed: can't read Parameters.cfg: No such file or directory
+Run 3,10,20,00/home/co4xgd/FYP_Simulation/enki/examples/playground/Auto_analysis.sh: line 58: draw_progress_bar: command not found
+/home/co4xgd/FYP_Simulation/enki/examples/playground/Auto_analysis.sh: line 59: ./enkiplayground: No such file or directory
+sed: can't read Parameters.cfg: No such file or directory
+Run 3,10,30,00/home/co4xgd/FYP_Simulation/enki/examples/playground/Auto_analysis.sh: line 58: draw_progress_bar: command not found
+/home/co4xgd/FYP_Simulation/enki/examples/playground/Auto_analysis.sh: line 59: ./enkiplayground: No such file or directory
+sed: can't read Parameters.cfg: No such file or directory
+Run 3,10,40,00/home/co4xgd/FYP_Simulation/enki/examples/playground/Auto_analysis.sh: line 58: draw_progress_bar: command not found
+/home/co4xgd/FYP_Simulation/enki/examples/playground/Auto_analysis.sh: line 59: ./enkiplayground: No such file or directory
+sed: can't read Parameters.cfg: No such file or directory
+Run 3,10,50,00/home/co4xgd/FYP_Simulation/enki/examples/playground/Auto_analysis.sh: line 58: draw_progress_bar: command not found
+/home/co4xgd/FYP_Simulation/enki/examples/playground/Auto_analysis.sh: line 59: ./enkiplayground: No such file or directory
+sed: can't read Parameters.cfg: No such file or directory
+sed: can't read Parameters.cfg: No such file or directory
+sed: can't read Parameters.cfg: No such file or directory
+Run 3,15,10,00/home/co4xgd/FYP_Simulation/enki/examples/playground/Auto_analysis.sh: line 58: draw_progress_bar: command not found
+/home/co4xgd/FYP_Simulation/enki/examples/playground/Auto_analysis.sh: line 59: ./enkiplayground: No such file or directory
+sed: can't read Parameters.cfg: No such file or directory
+Run 3,15,20,00/home/co4xgd/FYP_Simulation/enki/examples/playground/Auto_analysis.sh: line 58: draw_progress_bar: command not found
+/home/co4xgd/FYP_Simulation/enki/examples/playground/Auto_analysis.sh: line 59: ./enkiplayground: No such file or directory
+sed: can't read Parameters.cfg: No such file or directory
+Run 3,15,30,00/home/co4xgd/FYP_Simulation/enki/examples/playground/Auto_analysis.sh: line 58: draw_progress_bar: command not found
+/home/co4xgd/FYP_Simulation/enki/examples/playground/Auto_analysis.sh: line 59: ./enkiplayground: No such file or directory
+sed: can't read Parameters.cfg: No such file or directory
+Run 3,15,40,00/home/co4xgd/FYP_Simulation/enki/examples/playground/Auto_analysis.sh: line 58: draw_progress_bar: command not found
+/home/co4xgd/FYP_Simulation/enki/examples/playground/Auto_analysis.sh: line 59: ./enkiplayground: No such file or directory
+sed: can't read Parameters.cfg: No such file or directory
+Run 3,15,50,00/home/co4xgd/FYP_Simulation/enki/examples/playground/Auto_analysis.sh: line 58: draw_progress_bar: command not found
+/home/co4xgd/FYP_Simulation/enki/examples/playground/Auto_analysis.sh: line 59: ./enkiplayground: No such file or directory
+sed: can't read Parameters.cfg: No such file or directory
+sed: can't read Parameters.cfg: No such file or directory
+sed: can't read Parameters.cfg: No such file or directory
+Run 3,05,00,10/home/co4xgd/FYP_Simulation/enki/examples/playground/Auto_analysis.sh: line 74: draw_progress_bar: command not found
+/home/co4xgd/FYP_Simulation/enki/examples/playground/Auto_analysis.sh: line 75: ./enkiplayground: No such file or directory
+sed: can't read Parameters.cfg: No such file or directory
+Run 3,05,00,20/home/co4xgd/FYP_Simulation/enki/examples/playground/Auto_analysis.sh: line 74: draw_progress_bar: command not found
+/home/co4xgd/FYP_Simulation/enki/examples/playground/Auto_analysis.sh: line 75: ./enkiplayground: No such file or directory
+sed: can't read Parameters.cfg: No such file or directory
+Run 3,05,00,30/home/co4xgd/FYP_Simulation/enki/examples/playground/Auto_analysis.sh: line 74: draw_progress_bar: command not found
+/home/co4xgd/FYP_Simulation/enki/examples/playground/Auto_analysis.sh: line 75: ./enkiplayground: No such file or directory
+sed: can't read Parameters.cfg: No such file or directory
+Run 3,05,00,40/home/co4xgd/FYP_Simulation/enki/examples/playground/Auto_analysis.sh: line 74: draw_progress_bar: command not found
+/home/co4xgd/FYP_Simulation/enki/examples/playground/Auto_analysis.sh: line 75: ./enkiplayground: No such file or directory
+sed: can't read Parameters.cfg: No such file or directory
+Run 3,05,00,50/home/co4xgd/FYP_Simulation/enki/examples/playground/Auto_analysis.sh: line 74: draw_progress_bar: command not found
+/home/co4xgd/FYP_Simulation/enki/examples/playground/Auto_analysis.sh: line 75: ./enkiplayground: No such file or directory
+sed: can't read Parameters.cfg: No such file or directory
+sed: can't read Parameters.cfg: No such file or directory
+sed: can't read Parameters.cfg: No such file or directory
+Run 3,10,00,10/home/co4xgd/FYP_Simulation/enki/examples/playground/Auto_analysis.sh: line 74: draw_progress_bar: command not found
+/home/co4xgd/FYP_Simulation/enki/examples/playground/Auto_analysis.sh: line 75: ./enkiplayground: No such file or directory
+sed: can't read Parameters.cfg: No such file or directory
+Run 3,10,00,20/home/co4xgd/FYP_Simulation/enki/examples/playground/Auto_analysis.sh: line 74: draw_progress_bar: command not found
+/home/co4xgd/FYP_Simulation/enki/examples/playground/Auto_analysis.sh: line 75: ./enkiplayground: No such file or directory
+sed: can't read Parameters.cfg: No such file or directory
+Run 3,10,00,30/home/co4xgd/FYP_Simulation/enki/examples/playground/Auto_analysis.sh: line 74: draw_progress_bar: command not found
+/home/co4xgd/FYP_Simulation/enki/examples/playground/Auto_analysis.sh: line 75: ./enkiplayground: No such file or directory
+sed: can't read Parameters.cfg: No such file or directory
+Run 3,10,00,40/home/co4xgd/FYP_Simulation/enki/examples/playground/Auto_analysis.sh: line 74: draw_progress_bar: command not found
+/home/co4xgd/FYP_Simulation/enki/examples/playground/Auto_analysis.sh: line 75: ./enkiplayground: No such file or directory
+sed: can't read Parameters.cfg: No such file or directory
+Run 3,10,00,50/home/co4xgd/FYP_Simulation/enki/examples/playground/Auto_analysis.sh: line 74: draw_progress_bar: command not found
+/home/co4xgd/FYP_Simulation/enki/examples/playground/Auto_analysis.sh: line 75: ./enkiplayground: No such file or directory
+sed: can't read Parameters.cfg: No such file or directory
+sed: can't read Parameters.cfg: No such file or directory
+sed: can't read Parameters.cfg: No such file or directory
+Run 3,15,00,10/home/co4xgd/FYP_Simulation/enki/examples/playground/Auto_analysis.sh: line 74: draw_progress_bar: command not found
+/home/co4xgd/FYP_Simulation/enki/examples/playground/Auto_analysis.sh: line 75: ./enkiplayground: No such file or directory
+sed: can't read Parameters.cfg: No such file or directory
+Run 3,15,00,20/home/co4xgd/FYP_Simulation/enki/examples/playground/Auto_analysis.sh: line 74: draw_progress_bar: command not found
+/home/co4xgd/FYP_Simulation/enki/examples/playground/Auto_analysis.sh: line 75: ./enkiplayground: No such file or directory
+sed: can't read Parameters.cfg: No such file or directory
+Run 3,15,00,30/home/co4xgd/FYP_Simulation/enki/examples/playground/Auto_analysis.sh: line 74: draw_progress_bar: command not found
+/home/co4xgd/FYP_Simulation/enki/examples/playground/Auto_analysis.sh: line 75: ./enkiplayground: No such file or directory
+sed: can't read Parameters.cfg: No such file or directory
+Run 3,15,00,40/home/co4xgd/FYP_Simulation/enki/examples/playground/Auto_analysis.sh: line 74: draw_progress_bar: command not found
+/home/co4xgd/FYP_Simulation/enki/examples/playground/Auto_analysis.sh: line 75: ./enkiplayground: No such file or directory
+sed: can't read Parameters.cfg: No such file or directory
+Run 3,15,00,50/home/co4xgd/FYP_Simulation/enki/examples/playground/Auto_analysis.sh: line 74: draw_progress_bar: command not found
+/home/co4xgd/FYP_Simulation/enki/examples/playground/Auto_analysis.sh: line 75: ./enkiplayground: No such file or directory
+sed: can't read Parameters.cfg: No such file or directory
+sed: can't read Parameters.cfg: No such file or directory
+sed: can't read Parameters.cfg: No such file or directory
+Run 3,05,5,5/home/co4xgd/FYP_Simulation/enki/examples/playground/Auto_analysis.sh: line 91: draw_progress_bar: command not found
+/home/co4xgd/FYP_Simulation/enki/examples/playground/Auto_analysis.sh: line 92: ./enkiplayground: No such file or directory
+sed: can't read Parameters.cfg: No such file or directory
+sed: can't read Parameters.cfg: No such file or directory
+Run 3,05,10,10/home/co4xgd/FYP_Simulation/enki/examples/playground/Auto_analysis.sh: line 91: draw_progress_bar: command not found
+/home/co4xgd/FYP_Simulation/enki/examples/playground/Auto_analysis.sh: line 92: ./enkiplayground: No such file or directory
+sed: can't read Parameters.cfg: No such file or directory
+sed: can't read Parameters.cfg: No such file or directory
+Run 3,05,15,15/home/co4xgd/FYP_Simulation/enki/examples/playground/Auto_analysis.sh: line 91: draw_progress_bar: command not found
+/home/co4xgd/FYP_Simulation/enki/examples/playground/Auto_analysis.sh: line 92: ./enkiplayground: No such file or directory
+sed: can't read Parameters.cfg: No such file or directory
+sed: can't read Parameters.cfg: No such file or directory
+Run 3,05,20,20/home/co4xgd/FYP_Simulation/enki/examples/playground/Auto_analysis.sh: line 91: draw_progress_bar: command not found
+/home/co4xgd/FYP_Simulation/enki/examples/playground/Auto_analysis.sh: line 92: ./enkiplayground: No such file or directory
+sed: can't read Parameters.cfg: No such file or directory
+sed: can't read Parameters.cfg: No such file or directory
+Run 3,05,25,25/home/co4xgd/FYP_Simulation/enki/examples/playground/Auto_analysis.sh: line 91: draw_progress_bar: command not found
+/home/co4xgd/FYP_Simulation/enki/examples/playground/Auto_analysis.sh: line 92: ./enkiplayground: No such file or directory
+sed: can't read Parameters.cfg: No such file or directory
+sed: can't read Parameters.cfg: No such file or directory
+sed: can't read Parameters.cfg: No such file or directory
+Run 3,10,5,5/home/co4xgd/FYP_Simulation/enki/examples/playground/Auto_analysis.sh: line 91: draw_progress_bar: command not found
+/home/co4xgd/FYP_Simulation/enki/examples/playground/Auto_analysis.sh: line 92: ./enkiplayground: No such file or directory
+sed: can't read Parameters.cfg: No such file or directory
+sed: can't read Parameters.cfg: No such file or directory
+Run 3,10,10,10/home/co4xgd/FYP_Simulation/enki/examples/playground/Auto_analysis.sh: line 91: draw_progress_bar: command not found
+/home/co4xgd/FYP_Simulation/enki/examples/playground/Auto_analysis.sh: line 92: ./enkiplayground: No such file or directory
+sed: can't read Parameters.cfg: No such file or directory
+sed: can't read Parameters.cfg: No such file or directory
+Run 3,10,15,15/home/co4xgd/FYP_Simulation/enki/examples/playground/Auto_analysis.sh: line 91: draw_progress_bar: command not found
+/home/co4xgd/FYP_Simulation/enki/examples/playground/Auto_analysis.sh: line 92: ./enkiplayground: No such file or directory
+sed: can't read Parameters.cfg: No such file or directory
+sed: can't read Parameters.cfg: No such file or directory
+Run 3,10,20,20/home/co4xgd/FYP_Simulation/enki/examples/playground/Auto_analysis.sh: line 91: draw_progress_bar: command not found
+/home/co4xgd/FYP_Simulation/enki/examples/playground/Auto_analysis.sh: line 92: ./enkiplayground: No such file or directory
+sed: can't read Parameters.cfg: No such file or directory
+sed: can't read Parameters.cfg: No such file or directory
+Run 3,10,25,25/home/co4xgd/FYP_Simulation/enki/examples/playground/Auto_analysis.sh: line 91: draw_progress_bar: command not found
+/home/co4xgd/FYP_Simulation/enki/examples/playground/Auto_analysis.sh: line 92: ./enkiplayground: No such file or directory
+sed: can't read Parameters.cfg: No such file or directory
+sed: can't read Parameters.cfg: No such file or directory
+sed: can't read Parameters.cfg: No such file or directory
+Run 3,15,5,5/home/co4xgd/FYP_Simulation/enki/examples/playground/Auto_analysis.sh: line 91: draw_progress_bar: command not found
+/home/co4xgd/FYP_Simulation/enki/examples/playground/Auto_analysis.sh: line 92: ./enkiplayground: No such file or directory
+sed: can't read Parameters.cfg: No such file or directory
+sed: can't read Parameters.cfg: No such file or directory
+Run 3,15,10,10/home/co4xgd/FYP_Simulation/enki/examples/playground/Auto_analysis.sh: line 91: draw_progress_bar: command not found
+/home/co4xgd/FYP_Simulation/enki/examples/playground/Auto_analysis.sh: line 92: ./enkiplayground: No such file or directory
+sed: can't read Parameters.cfg: No such file or directory
+sed: can't read Parameters.cfg: No such file or directory
+Run 3,15,15,15/home/co4xgd/FYP_Simulation/enki/examples/playground/Auto_analysis.sh: line 91: draw_progress_bar: command not found
+/home/co4xgd/FYP_Simulation/enki/examples/playground/Auto_analysis.sh: line 92: ./enkiplayground: No such file or directory
+sed: can't read Parameters.cfg: No such file or directory
+sed: can't read Parameters.cfg: No such file or directory
+Run 3,15,20,20/home/co4xgd/FYP_Simulation/enki/examples/playground/Auto_analysis.sh: line 91: draw_progress_bar: command not found
+/home/co4xgd/FYP_Simulation/enki/examples/playground/Auto_analysis.sh: line 92: ./enkiplayground: No such file or directory
+sed: can't read Parameters.cfg: No such file or directory
+sed: can't read Parameters.cfg: No such file or directory
+Run 3,15,25,25/home/co4xgd/FYP_Simulation/enki/examples/playground/Auto_analysis.sh: line 91: draw_progress_bar: command not found
+/home/co4xgd/FYP_Simulation/enki/examples/playground/Auto_analysis.sh: line 92: ./enkiplayground: No such file or directory
+sed: can't read Parameters.cfg: No such file or directory
+sed: can't read Parameters.cfg: No such file or directory
+sed: can't read Parameters.cfg: No such file or directory
+sed: can't read Parameters.cfg: No such file or directory
+Run 4,05,10,00/home/co4xgd/FYP_Simulation/enki/examples/playground/Auto_analysis.sh: line 58: draw_progress_bar: command not found
+/home/co4xgd/FYP_Simulation/enki/examples/playground/Auto_analysis.sh: line 59: ./enkiplayground: No such file or directory
+sed: can't read Parameters.cfg: No such file or directory
+Run 4,05,20,00/home/co4xgd/FYP_Simulation/enki/examples/playground/Auto_analysis.sh: line 58: draw_progress_bar: command not found
+/home/co4xgd/FYP_Simulation/enki/examples/playground/Auto_analysis.sh: line 59: ./enkiplayground: No such file or directory
+sed: can't read Parameters.cfg: No such file or directory
+Run 4,05,30,00/home/co4xgd/FYP_Simulation/enki/examples/playground/Auto_analysis.sh: line 58: draw_progress_bar: command not found
+/home/co4xgd/FYP_Simulation/enki/examples/playground/Auto_analysis.sh: line 59: ./enkiplayground: No such file or directory
+sed: can't read Parameters.cfg: No such file or directory
+Run 4,05,40,00/home/co4xgd/FYP_Simulation/enki/examples/playground/Auto_analysis.sh: line 58: draw_progress_bar: command not found
+/home/co4xgd/FYP_Simulation/enki/examples/playground/Auto_analysis.sh: line 59: ./enkiplayground: No such file or directory
+sed: can't read Parameters.cfg: No such file or directory
+Run 4,05,50,00/home/co4xgd/FYP_Simulation/enki/examples/playground/Auto_analysis.sh: line 58: draw_progress_bar: command not found
+/home/co4xgd/FYP_Simulation/enki/examples/playground/Auto_analysis.sh: line 59: ./enkiplayground: No such file or directory
+sed: can't read Parameters.cfg: No such file or directory
+sed: can't read Parameters.cfg: No such file or directory
+sed: can't read Parameters.cfg: No such file or directory
+Run 4,10,10,00/home/co4xgd/FYP_Simulation/enki/examples/playground/Auto_analysis.sh: line 58: draw_progress_bar: command not found
+/home/co4xgd/FYP_Simulation/enki/examples/playground/Auto_analysis.sh: line 59: ./enkiplayground: No such file or directory
+sed: can't read Parameters.cfg: No such file or directory
+Run 4,10,20,00/home/co4xgd/FYP_Simulation/enki/examples/playground/Auto_analysis.sh: line 58: draw_progress_bar: command not found
+/home/co4xgd/FYP_Simulation/enki/examples/playground/Auto_analysis.sh: line 59: ./enkiplayground: No such file or directory
+sed: can't read Parameters.cfg: No such file or directory
+Run 4,10,30,00/home/co4xgd/FYP_Simulation/enki/examples/playground/Auto_analysis.sh: line 58: draw_progress_bar: command not found
+/home/co4xgd/FYP_Simulation/enki/examples/playground/Auto_analysis.sh: line 59: ./enkiplayground: No such file or directory
+sed: can't read Parameters.cfg: No such file or directory
+Run 4,10,40,00/home/co4xgd/FYP_Simulation/enki/examples/playground/Auto_analysis.sh: line 58: draw_progress_bar: command not found
+/home/co4xgd/FYP_Simulation/enki/examples/playground/Auto_analysis.sh: line 59: ./enkiplayground: No such file or directory
+sed: can't read Parameters.cfg: No such file or directory
+Run 4,10,50,00/home/co4xgd/FYP_Simulation/enki/examples/playground/Auto_analysis.sh: line 58: draw_progress_bar: command not found
+/home/co4xgd/FYP_Simulation/enki/examples/playground/Auto_analysis.sh: line 59: ./enkiplayground: No such file or directory
+sed: can't read Parameters.cfg: No such file or directory
+sed: can't read Parameters.cfg: No such file or directory
+sed: can't read Parameters.cfg: No such file or directory
+Run 4,15,10,00/home/co4xgd/FYP_Simulation/enki/examples/playground/Auto_analysis.sh: line 58: draw_progress_bar: command not found
+/home/co4xgd/FYP_Simulation/enki/examples/playground/Auto_analysis.sh: line 59: ./enkiplayground: No such file or directory
+sed: can't read Parameters.cfg: No such file or directory
+Run 4,15,20,00/home/co4xgd/FYP_Simulation/enki/examples/playground/Auto_analysis.sh: line 58: draw_progress_bar: command not found
+/home/co4xgd/FYP_Simulation/enki/examples/playground/Auto_analysis.sh: line 59: ./enkiplayground: No such file or directory
+sed: can't read Parameters.cfg: No such file or directory
+Run 4,15,30,00/home/co4xgd/FYP_Simulation/enki/examples/playground/Auto_analysis.sh: line 58: draw_progress_bar: command not found
+/home/co4xgd/FYP_Simulation/enki/examples/playground/Auto_analysis.sh: line 59: ./enkiplayground: No such file or directory
+sed: can't read Parameters.cfg: No such file or directory
+Run 4,15,40,00/home/co4xgd/FYP_Simulation/enki/examples/playground/Auto_analysis.sh: line 58: draw_progress_bar: command not found
+/home/co4xgd/FYP_Simulation/enki/examples/playground/Auto_analysis.sh: line 59: ./enkiplayground: No such file or directory
+sed: can't read Parameters.cfg: No such file or directory
+Run 4,15,50,00/home/co4xgd/FYP_Simulation/enki/examples/playground/Auto_analysis.sh: line 58: draw_progress_bar: command not found
+/home/co4xgd/FYP_Simulation/enki/examples/playground/Auto_analysis.sh: line 59: ./enkiplayground: No such file or directory
+sed: can't read Parameters.cfg: No such file or directory
+sed: can't read Parameters.cfg: No such file or directory
+sed: can't read Parameters.cfg: No such file or directory
+Run 4,05,00,10/home/co4xgd/FYP_Simulation/enki/examples/playground/Auto_analysis.sh: line 74: draw_progress_bar: command not found
+/home/co4xgd/FYP_Simulation/enki/examples/playground/Auto_analysis.sh: line 75: ./enkiplayground: No such file or directory
+sed: can't read Parameters.cfg: No such file or directory
+Run 4,05,00,20/home/co4xgd/FYP_Simulation/enki/examples/playground/Auto_analysis.sh: line 74: draw_progress_bar: command not found
+/home/co4xgd/FYP_Simulation/enki/examples/playground/Auto_analysis.sh: line 75: ./enkiplayground: No such file or directory
+sed: can't read Parameters.cfg: No such file or directory
+Run 4,05,00,30/home/co4xgd/FYP_Simulation/enki/examples/playground/Auto_analysis.sh: line 74: draw_progress_bar: command not found
+/home/co4xgd/FYP_Simulation/enki/examples/playground/Auto_analysis.sh: line 75: ./enkiplayground: No such file or directory
+sed: can't read Parameters.cfg: No such file or directory
+Run 4,05,00,40/home/co4xgd/FYP_Simulation/enki/examples/playground/Auto_analysis.sh: line 74: draw_progress_bar: command not found
+/home/co4xgd/FYP_Simulation/enki/examples/playground/Auto_analysis.sh: line 75: ./enkiplayground: No such file or directory
+sed: can't read Parameters.cfg: No such file or directory
+Run 4,05,00,50/home/co4xgd/FYP_Simulation/enki/examples/playground/Auto_analysis.sh: line 74: draw_progress_bar: command not found
+/home/co4xgd/FYP_Simulation/enki/examples/playground/Auto_analysis.sh: line 75: ./enkiplayground: No such file or directory
+sed: can't read Parameters.cfg: No such file or directory
+sed: can't read Parameters.cfg: No such file or directory
+sed: can't read Parameters.cfg: No such file or directory
+Run 4,10,00,10/home/co4xgd/FYP_Simulation/enki/examples/playground/Auto_analysis.sh: line 74: draw_progress_bar: command not found
+/home/co4xgd/FYP_Simulation/enki/examples/playground/Auto_analysis.sh: line 75: ./enkiplayground: No such file or directory
+sed: can't read Parameters.cfg: No such file or directory
+Run 4,10,00,20/home/co4xgd/FYP_Simulation/enki/examples/playground/Auto_analysis.sh: line 74: draw_progress_bar: command not found
+/home/co4xgd/FYP_Simulation/enki/examples/playground/Auto_analysis.sh: line 75: ./enkiplayground: No such file or directory
+sed: can't read Parameters.cfg: No such file or directory
+Run 4,10,00,30/home/co4xgd/FYP_Simulation/enki/examples/playground/Auto_analysis.sh: line 74: draw_progress_bar: command not found
+/home/co4xgd/FYP_Simulation/enki/examples/playground/Auto_analysis.sh: line 75: ./enkiplayground: No such file or directory
+sed: can't read Parameters.cfg: No such file or directory
+Run 4,10,00,40/home/co4xgd/FYP_Simulation/enki/examples/playground/Auto_analysis.sh: line 74: draw_progress_bar: command not found
+/home/co4xgd/FYP_Simulation/enki/examples/playground/Auto_analysis.sh: line 75: ./enkiplayground: No such file or directory
+sed: can't read Parameters.cfg: No such file or directory
+Run 4,10,00,50/home/co4xgd/FYP_Simulation/enki/examples/playground/Auto_analysis.sh: line 74: draw_progress_bar: command not found
+/home/co4xgd/FYP_Simulation/enki/examples/playground/Auto_analysis.sh: line 75: ./enkiplayground: No such file or directory
+sed: can't read Parameters.cfg: No such file or directory
+sed: can't read Parameters.cfg: No such file or directory
+sed: can't read Parameters.cfg: No such file or directory
+Run 4,15,00,10/home/co4xgd/FYP_Simulation/enki/examples/playground/Auto_analysis.sh: line 74: draw_progress_bar: command not found
+/home/co4xgd/FYP_Simulation/enki/examples/playground/Auto_analysis.sh: line 75: ./enkiplayground: No such file or directory
+sed: can't read Parameters.cfg: No such file or directory
+Run 4,15,00,20/home/co4xgd/FYP_Simulation/enki/examples/playground/Auto_analysis.sh: line 74: draw_progress_bar: command not found
+/home/co4xgd/FYP_Simulation/enki/examples/playground/Auto_analysis.sh: line 75: ./enkiplayground: No such file or directory
+sed: can't read Parameters.cfg: No such file or directory
+Run 4,15,00,30/home/co4xgd/FYP_Simulation/enki/examples/playground/Auto_analysis.sh: line 74: draw_progress_bar: command not found
+/home/co4xgd/FYP_Simulation/enki/examples/playground/Auto_analysis.sh: line 75: ./enkiplayground: No such file or directory
+sed: can't read Parameters.cfg: No such file or directory
+Run 4,15,00,40/home/co4xgd/FYP_Simulation/enki/examples/playground/Auto_analysis.sh: line 74: draw_progress_bar: command not found
+/home/co4xgd/FYP_Simulation/enki/examples/playground/Auto_analysis.sh: line 75: ./enkiplayground: No such file or directory
+sed: can't read Parameters.cfg: No such file or directory
+Run 4,15,00,50/home/co4xgd/FYP_Simulation/enki/examples/playground/Auto_analysis.sh: line 74: draw_progress_bar: command not found
+/home/co4xgd/FYP_Simulation/enki/examples/playground/Auto_analysis.sh: line 75: ./enkiplayground: No such file or directory
+sed: can't read Parameters.cfg: No such file or directory
+sed: can't read Parameters.cfg: No such file or directory
+sed: can't read Parameters.cfg: No such file or directory
+Run 4,05,5,5/home/co4xgd/FYP_Simulation/enki/examples/playground/Auto_analysis.sh: line 91: draw_progress_bar: command not found
+/home/co4xgd/FYP_Simulation/enki/examples/playground/Auto_analysis.sh: line 92: ./enkiplayground: No such file or directory
+sed: can't read Parameters.cfg: No such file or directory
+sed: can't read Parameters.cfg: No such file or directory
+Run 4,05,10,10/home/co4xgd/FYP_Simulation/enki/examples/playground/Auto_analysis.sh: line 91: draw_progress_bar: command not found
+/home/co4xgd/FYP_Simulation/enki/examples/playground/Auto_analysis.sh: line 92: ./enkiplayground: No such file or directory
+sed: can't read Parameters.cfg: No such file or directory
+sed: can't read Parameters.cfg: No such file or directory
+Run 4,05,15,15/home/co4xgd/FYP_Simulation/enki/examples/playground/Auto_analysis.sh: line 91: draw_progress_bar: command not found
+/home/co4xgd/FYP_Simulation/enki/examples/playground/Auto_analysis.sh: line 92: ./enkiplayground: No such file or directory
+sed: can't read Parameters.cfg: No such file or directory
+sed: can't read Parameters.cfg: No such file or directory
+Run 4,05,20,20/home/co4xgd/FYP_Simulation/enki/examples/playground/Auto_analysis.sh: line 91: draw_progress_bar: command not found
+/home/co4xgd/FYP_Simulation/enki/examples/playground/Auto_analysis.sh: line 92: ./enkiplayground: No such file or directory
+sed: can't read Parameters.cfg: No such file or directory
+sed: can't read Parameters.cfg: No such file or directory
+Run 4,05,25,25/home/co4xgd/FYP_Simulation/enki/examples/playground/Auto_analysis.sh: line 91: draw_progress_bar: command not found
+/home/co4xgd/FYP_Simulation/enki/examples/playground/Auto_analysis.sh: line 92: ./enkiplayground: No such file or directory
+sed: can't read Parameters.cfg: No such file or directory
+sed: can't read Parameters.cfg: No such file or directory
+sed: can't read Parameters.cfg: No such file or directory
+Run 4,10,5,5/home/co4xgd/FYP_Simulation/enki/examples/playground/Auto_analysis.sh: line 91: draw_progress_bar: command not found
+/home/co4xgd/FYP_Simulation/enki/examples/playground/Auto_analysis.sh: line 92: ./enkiplayground: No such file or directory
+sed: can't read Parameters.cfg: No such file or directory
+sed: can't read Parameters.cfg: No such file or directory
+Run 4,10,10,10/home/co4xgd/FYP_Simulation/enki/examples/playground/Auto_analysis.sh: line 91: draw_progress_bar: command not found
+/home/co4xgd/FYP_Simulation/enki/examples/playground/Auto_analysis.sh: line 92: ./enkiplayground: No such file or directory
+sed: can't read Parameters.cfg: No such file or directory
+sed: can't read Parameters.cfg: No such file or directory
+Run 4,10,15,15/home/co4xgd/FYP_Simulation/enki/examples/playground/Auto_analysis.sh: line 91: draw_progress_bar: command not found
+/home/co4xgd/FYP_Simulation/enki/examples/playground/Auto_analysis.sh: line 92: ./enkiplayground: No such file or directory
+sed: can't read Parameters.cfg: No such file or directory
+sed: can't read Parameters.cfg: No such file or directory
+Run 4,10,20,20/home/co4xgd/FYP_Simulation/enki/examples/playground/Auto_analysis.sh: line 91: draw_progress_bar: command not found
+/home/co4xgd/FYP_Simulation/enki/examples/playground/Auto_analysis.sh: line 92: ./enkiplayground: No such file or directory
+sed: can't read Parameters.cfg: No such file or directory
+sed: can't read Parameters.cfg: No such file or directory
+Run 4,10,25,25/home/co4xgd/FYP_Simulation/enki/examples/playground/Auto_analysis.sh: line 91: draw_progress_bar: command not found
+/home/co4xgd/FYP_Simulation/enki/examples/playground/Auto_analysis.sh: line 92: ./enkiplayground: No such file or directory
+sed: can't read Parameters.cfg: No such file or directory
+sed: can't read Parameters.cfg: No such file or directory
+sed: can't read Parameters.cfg: No such file or directory
+Run 4,15,5,5/home/co4xgd/FYP_Simulation/enki/examples/playground/Auto_analysis.sh: line 91: draw_progress_bar: command not found
+/home/co4xgd/FYP_Simulation/enki/examples/playground/Auto_analysis.sh: line 92: ./enkiplayground: No such file or directory
+sed: can't read Parameters.cfg: No such file or directory
+sed: can't read Parameters.cfg: No such file or directory
+Run 4,15,10,10/home/co4xgd/FYP_Simulation/enki/examples/playground/Auto_analysis.sh: line 91: draw_progress_bar: command not found
+/home/co4xgd/FYP_Simulation/enki/examples/playground/Auto_analysis.sh: line 92: ./enkiplayground: No such file or directory
+sed: can't read Parameters.cfg: No such file or directory
+sed: can't read Parameters.cfg: No such file or directory
+Run 4,15,15,15/home/co4xgd/FYP_Simulation/enki/examples/playground/Auto_analysis.sh: line 91: draw_progress_bar: command not found
+/home/co4xgd/FYP_Simulation/enki/examples/playground/Auto_analysis.sh: line 92: ./enkiplayground: No such file or directory
+sed: can't read Parameters.cfg: No such file or directory
+sed: can't read Parameters.cfg: No such file or directory
+Run 4,15,20,20/home/co4xgd/FYP_Simulation/enki/examples/playground/Auto_analysis.sh: line 91: draw_progress_bar: command not found
+/home/co4xgd/FYP_Simulation/enki/examples/playground/Auto_analysis.sh: line 92: ./enkiplayground: No such file or directory
+sed: can't read Parameters.cfg: No such file or directory
+sed: can't read Parameters.cfg: No such file or directory
+Run 4,15,25,25/home/co4xgd/FYP_Simulation/enki/examples/playground/Auto_analysis.sh: line 91: draw_progress_bar: command not found
+/home/co4xgd/FYP_Simulation/enki/examples/playground/Auto_analysis.sh: line 92: ./enkiplayground: No such file or directory
+sed: can't read Parameters.cfg: No such file or directory
+sed: can't read Parameters.cfg: No such file or directory
+sed: can't read Parameters.cfg: No such file or directory
+sed: can't read Parameters.cfg: No such file or directory
+Run 5,05,10,00/home/co4xgd/FYP_Simulation/enki/examples/playground/Auto_analysis.sh: line 58: draw_progress_bar: command not found
+/home/co4xgd/FYP_Simulation/enki/examples/playground/Auto_analysis.sh: line 59: ./enkiplayground: No such file or directory
+sed: can't read Parameters.cfg: No such file or directory
+Run 5,05,20,00/home/co4xgd/FYP_Simulation/enki/examples/playground/Auto_analysis.sh: line 58: draw_progress_bar: command not found
+/home/co4xgd/FYP_Simulation/enki/examples/playground/Auto_analysis.sh: line 59: ./enkiplayground: No such file or directory
+sed: can't read Parameters.cfg: No such file or directory
+Run 5,05,30,00/home/co4xgd/FYP_Simulation/enki/examples/playground/Auto_analysis.sh: line 58: draw_progress_bar: command not found
+/home/co4xgd/FYP_Simulation/enki/examples/playground/Auto_analysis.sh: line 59: ./enkiplayground: No such file or directory
+sed: can't read Parameters.cfg: No such file or directory
+Run 5,05,40,00/home/co4xgd/FYP_Simulation/enki/examples/playground/Auto_analysis.sh: line 58: draw_progress_bar: command not found
+/home/co4xgd/FYP_Simulation/enki/examples/playground/Auto_analysis.sh: line 59: ./enkiplayground: No such file or directory
+sed: can't read Parameters.cfg: No such file or directory
+Run 5,05,50,00/home/co4xgd/FYP_Simulation/enki/examples/playground/Auto_analysis.sh: line 58: draw_progress_bar: command not found
+/home/co4xgd/FYP_Simulation/enki/examples/playground/Auto_analysis.sh: line 59: ./enkiplayground: No such file or directory
+sed: can't read Parameters.cfg: No such file or directory
+sed: can't read Parameters.cfg: No such file or directory
+sed: can't read Parameters.cfg: No such file or directory
+Run 5,10,10,00/home/co4xgd/FYP_Simulation/enki/examples/playground/Auto_analysis.sh: line 58: draw_progress_bar: command not found
+/home/co4xgd/FYP_Simulation/enki/examples/playground/Auto_analysis.sh: line 59: ./enkiplayground: No such file or directory
+sed: can't read Parameters.cfg: No such file or directory
+Run 5,10,20,00/home/co4xgd/FYP_Simulation/enki/examples/playground/Auto_analysis.sh: line 58: draw_progress_bar: command not found
+/home/co4xgd/FYP_Simulation/enki/examples/playground/Auto_analysis.sh: line 59: ./enkiplayground: No such file or directory
+sed: can't read Parameters.cfg: No such file or directory
+Run 5,10,30,00/home/co4xgd/FYP_Simulation/enki/examples/playground/Auto_analysis.sh: line 58: draw_progress_bar: command not found
+/home/co4xgd/FYP_Simulation/enki/examples/playground/Auto_analysis.sh: line 59: ./enkiplayground: No such file or directory
+sed: can't read Parameters.cfg: No such file or directory
+Run 5,10,40,00/home/co4xgd/FYP_Simulation/enki/examples/playground/Auto_analysis.sh: line 58: draw_progress_bar: command not found
+/home/co4xgd/FYP_Simulation/enki/examples/playground/Auto_analysis.sh: line 59: ./enkiplayground: No such file or directory
+sed: can't read Parameters.cfg: No such file or directory
+Run 5,10,50,00/home/co4xgd/FYP_Simulation/enki/examples/playground/Auto_analysis.sh: line 58: draw_progress_bar: command not found
+/home/co4xgd/FYP_Simulation/enki/examples/playground/Auto_analysis.sh: line 59: ./enkiplayground: No such file or directory
+sed: can't read Parameters.cfg: No such file or directory
+sed: can't read Parameters.cfg: No such file or directory
+sed: can't read Parameters.cfg: No such file or directory
+Run 5,15,10,00/home/co4xgd/FYP_Simulation/enki/examples/playground/Auto_analysis.sh: line 58: draw_progress_bar: command not found
+/home/co4xgd/FYP_Simulation/enki/examples/playground/Auto_analysis.sh: line 59: ./enkiplayground: No such file or directory
+sed: can't read Parameters.cfg: No such file or directory
+Run 5,15,20,00/home/co4xgd/FYP_Simulation/enki/examples/playground/Auto_analysis.sh: line 58: draw_progress_bar: command not found
+/home/co4xgd/FYP_Simulation/enki/examples/playground/Auto_analysis.sh: line 59: ./enkiplayground: No such file or directory
+sed: can't read Parameters.cfg: No such file or directory
+Run 5,15,30,00/home/co4xgd/FYP_Simulation/enki/examples/playground/Auto_analysis.sh: line 58: draw_progress_bar: command not found
+/home/co4xgd/FYP_Simulation/enki/examples/playground/Auto_analysis.sh: line 59: ./enkiplayground: No such file or directory
+sed: can't read Parameters.cfg: No such file or directory
+Run 5,15,40,00/home/co4xgd/FYP_Simulation/enki/examples/playground/Auto_analysis.sh: line 58: draw_progress_bar: command not found
+/home/co4xgd/FYP_Simulation/enki/examples/playground/Auto_analysis.sh: line 59: ./enkiplayground: No such file or directory
+sed: can't read Parameters.cfg: No such file or directory
+Run 5,15,50,00/home/co4xgd/FYP_Simulation/enki/examples/playground/Auto_analysis.sh: line 58: draw_progress_bar: command not found
+/home/co4xgd/FYP_Simulation/enki/examples/playground/Auto_analysis.sh: line 59: ./enkiplayground: No such file or directory
+sed: can't read Parameters.cfg: No such file or directory
+sed: can't read Parameters.cfg: No such file or directory
+sed: can't read Parameters.cfg: No such file or directory
+Run 5,05,00,10/home/co4xgd/FYP_Simulation/enki/examples/playground/Auto_analysis.sh: line 74: draw_progress_bar: command not found
+/home/co4xgd/FYP_Simulation/enki/examples/playground/Auto_analysis.sh: line 75: ./enkiplayground: No such file or directory
+sed: can't read Parameters.cfg: No such file or directory
+Run 5,05,00,20/home/co4xgd/FYP_Simulation/enki/examples/playground/Auto_analysis.sh: line 74: draw_progress_bar: command not found
+/home/co4xgd/FYP_Simulation/enki/examples/playground/Auto_analysis.sh: line 75: ./enkiplayground: No such file or directory
+sed: can't read Parameters.cfg: No such file or directory
+Run 5,05,00,30/home/co4xgd/FYP_Simulation/enki/examples/playground/Auto_analysis.sh: line 74: draw_progress_bar: command not found
+/home/co4xgd/FYP_Simulation/enki/examples/playground/Auto_analysis.sh: line 75: ./enkiplayground: No such file or directory
+sed: can't read Parameters.cfg: No such file or directory
+Run 5,05,00,40/home/co4xgd/FYP_Simulation/enki/examples/playground/Auto_analysis.sh: line 74: draw_progress_bar: command not found
+/home/co4xgd/FYP_Simulation/enki/examples/playground/Auto_analysis.sh: line 75: ./enkiplayground: No such file or directory
+sed: can't read Parameters.cfg: No such file or directory
+Run 5,05,00,50/home/co4xgd/FYP_Simulation/enki/examples/playground/Auto_analysis.sh: line 74: draw_progress_bar: command not found
+/home/co4xgd/FYP_Simulation/enki/examples/playground/Auto_analysis.sh: line 75: ./enkiplayground: No such file or directory
+sed: can't read Parameters.cfg: No such file or directory
+sed: can't read Parameters.cfg: No such file or directory
+sed: can't read Parameters.cfg: No such file or directory
+Run 5,10,00,10/home/co4xgd/FYP_Simulation/enki/examples/playground/Auto_analysis.sh: line 74: draw_progress_bar: command not found
+/home/co4xgd/FYP_Simulation/enki/examples/playground/Auto_analysis.sh: line 75: ./enkiplayground: No such file or directory
+sed: can't read Parameters.cfg: No such file or directory
+Run 5,10,00,20/home/co4xgd/FYP_Simulation/enki/examples/playground/Auto_analysis.sh: line 74: draw_progress_bar: command not found
+/home/co4xgd/FYP_Simulation/enki/examples/playground/Auto_analysis.sh: line 75: ./enkiplayground: No such file or directory
+sed: can't read Parameters.cfg: No such file or directory
+Run 5,10,00,30/home/co4xgd/FYP_Simulation/enki/examples/playground/Auto_analysis.sh: line 74: draw_progress_bar: command not found
+/home/co4xgd/FYP_Simulation/enki/examples/playground/Auto_analysis.sh: line 75: ./enkiplayground: No such file or directory
+sed: can't read Parameters.cfg: No such file or directory
+Run 5,10,00,40/home/co4xgd/FYP_Simulation/enki/examples/playground/Auto_analysis.sh: line 74: draw_progress_bar: command not found
+/home/co4xgd/FYP_Simulation/enki/examples/playground/Auto_analysis.sh: line 75: ./enkiplayground: No such file or directory
+sed: can't read Parameters.cfg: No such file or directory
+Run 5,10,00,50/home/co4xgd/FYP_Simulation/enki/examples/playground/Auto_analysis.sh: line 74: draw_progress_bar: command not found
+/home/co4xgd/FYP_Simulation/enki/examples/playground/Auto_analysis.sh: line 75: ./enkiplayground: No such file or directory
+sed: can't read Parameters.cfg: No such file or directory
+sed: can't read Parameters.cfg: No such file or directory
+sed: can't read Parameters.cfg: No such file or directory
+Run 5,15,00,10/home/co4xgd/FYP_Simulation/enki/examples/playground/Auto_analysis.sh: line 74: draw_progress_bar: command not found
+/home/co4xgd/FYP_Simulation/enki/examples/playground/Auto_analysis.sh: line 75: ./enkiplayground: No such file or directory
+sed: can't read Parameters.cfg: No such file or directory
+Run 5,15,00,20/home/co4xgd/FYP_Simulation/enki/examples/playground/Auto_analysis.sh: line 74: draw_progress_bar: command not found
+/home/co4xgd/FYP_Simulation/enki/examples/playground/Auto_analysis.sh: line 75: ./enkiplayground: No such file or directory
+sed: can't read Parameters.cfg: No such file or directory
+Run 5,15,00,30/home/co4xgd/FYP_Simulation/enki/examples/playground/Auto_analysis.sh: line 74: draw_progress_bar: command not found
+/home/co4xgd/FYP_Simulation/enki/examples/playground/Auto_analysis.sh: line 75: ./enkiplayground: No such file or directory
+sed: can't read Parameters.cfg: No such file or directory
+Run 5,15,00,40/home/co4xgd/FYP_Simulation/enki/examples/playground/Auto_analysis.sh: line 74: draw_progress_bar: command not found
+/home/co4xgd/FYP_Simulation/enki/examples/playground/Auto_analysis.sh: line 75: ./enkiplayground: No such file or directory
+sed: can't read Parameters.cfg: No such file or directory
+Run 5,15,00,50/home/co4xgd/FYP_Simulation/enki/examples/playground/Auto_analysis.sh: line 74: draw_progress_bar: command not found
+/home/co4xgd/FYP_Simulation/enki/examples/playground/Auto_analysis.sh: line 75: ./enkiplayground: No such file or directory
+sed: can't read Parameters.cfg: No such file or directory
+sed: can't read Parameters.cfg: No such file or directory
+sed: can't read Parameters.cfg: No such file or directory
+Run 5,05,5,5/home/co4xgd/FYP_Simulation/enki/examples/playground/Auto_analysis.sh: line 91: draw_progress_bar: command not found
+/home/co4xgd/FYP_Simulation/enki/examples/playground/Auto_analysis.sh: line 92: ./enkiplayground: No such file or directory
+sed: can't read Parameters.cfg: No such file or directory
+sed: can't read Parameters.cfg: No such file or directory
+Run 5,05,10,10/home/co4xgd/FYP_Simulation/enki/examples/playground/Auto_analysis.sh: line 91: draw_progress_bar: command not found
+/home/co4xgd/FYP_Simulation/enki/examples/playground/Auto_analysis.sh: line 92: ./enkiplayground: No such file or directory
+sed: can't read Parameters.cfg: No such file or directory
+sed: can't read Parameters.cfg: No such file or directory
+Run 5,05,15,15/home/co4xgd/FYP_Simulation/enki/examples/playground/Auto_analysis.sh: line 91: draw_progress_bar: command not found
+/home/co4xgd/FYP_Simulation/enki/examples/playground/Auto_analysis.sh: line 92: ./enkiplayground: No such file or directory
+sed: can't read Parameters.cfg: No such file or directory
+sed: can't read Parameters.cfg: No such file or directory
+Run 5,05,20,20/home/co4xgd/FYP_Simulation/enki/examples/playground/Auto_analysis.sh: line 91: draw_progress_bar: command not found
+/home/co4xgd/FYP_Simulation/enki/examples/playground/Auto_analysis.sh: line 92: ./enkiplayground: No such file or directory
+sed: can't read Parameters.cfg: No such file or directory
+sed: can't read Parameters.cfg: No such file or directory
+Run 5,05,25,25/home/co4xgd/FYP_Simulation/enki/examples/playground/Auto_analysis.sh: line 91: draw_progress_bar: command not found
+/home/co4xgd/FYP_Simulation/enki/examples/playground/Auto_analysis.sh: line 92: ./enkiplayground: No such file or directory
+sed: can't read Parameters.cfg: No such file or directory
+sed: can't read Parameters.cfg: No such file or directory
+sed: can't read Parameters.cfg: No such file or directory
+Run 5,10,5,5/home/co4xgd/FYP_Simulation/enki/examples/playground/Auto_analysis.sh: line 91: draw_progress_bar: command not found
+/home/co4xgd/FYP_Simulation/enki/examples/playground/Auto_analysis.sh: line 92: ./enkiplayground: No such file or directory
+sed: can't read Parameters.cfg: No such file or directory
+sed: can't read Parameters.cfg: No such file or directory
+Run 5,10,10,10/home/co4xgd/FYP_Simulation/enki/examples/playground/Auto_analysis.sh: line 91: draw_progress_bar: command not found
+/home/co4xgd/FYP_Simulation/enki/examples/playground/Auto_analysis.sh: line 92: ./enkiplayground: No such file or directory
+sed: can't read Parameters.cfg: No such file or directory
+sed: can't read Parameters.cfg: No such file or directory
+Run 5,10,15,15/home/co4xgd/FYP_Simulation/enki/examples/playground/Auto_analysis.sh: line 91: draw_progress_bar: command not found
+/home/co4xgd/FYP_Simulation/enki/examples/playground/Auto_analysis.sh: line 92: ./enkiplayground: No such file or directory
+sed: can't read Parameters.cfg: No such file or directory
+sed: can't read Parameters.cfg: No such file or directory
+Run 5,10,20,20/home/co4xgd/FYP_Simulation/enki/examples/playground/Auto_analysis.sh: line 91: draw_progress_bar: command not found
+/home/co4xgd/FYP_Simulation/enki/examples/playground/Auto_analysis.sh: line 92: ./enkiplayground: No such file or directory
+sed: can't read Parameters.cfg: No such file or directory
+sed: can't read Parameters.cfg: No such file or directory
+Run 5,10,25,25/home/co4xgd/FYP_Simulation/enki/examples/playground/Auto_analysis.sh: line 91: draw_progress_bar: command not found
+/home/co4xgd/FYP_Simulation/enki/examples/playground/Auto_analysis.sh: line 92: ./enkiplayground: No such file or directory
+sed: can't read Parameters.cfg: No such file or directory
+sed: can't read Parameters.cfg: No such file or directory
+sed: can't read Parameters.cfg: No such file or directory
+Run 5,15,5,5/home/co4xgd/FYP_Simulation/enki/examples/playground/Auto_analysis.sh: line 91: draw_progress_bar: command not found
+/home/co4xgd/FYP_Simulation/enki/examples/playground/Auto_analysis.sh: line 92: ./enkiplayground: No such file or directory
+sed: can't read Parameters.cfg: No such file or directory
+sed: can't read Parameters.cfg: No such file or directory
+Run 5,15,10,10/home/co4xgd/FYP_Simulation/enki/examples/playground/Auto_analysis.sh: line 91: draw_progress_bar: command not found
+/home/co4xgd/FYP_Simulation/enki/examples/playground/Auto_analysis.sh: line 92: ./enkiplayground: No such file or directory
+sed: can't read Parameters.cfg: No such file or directory
+sed: can't read Parameters.cfg: No such file or directory
+Run 5,15,15,15/home/co4xgd/FYP_Simulation/enki/examples/playground/Auto_analysis.sh: line 91: draw_progress_bar: command not found
+/home/co4xgd/FYP_Simulation/enki/examples/playground/Auto_analysis.sh: line 92: ./enkiplayground: No such file or directory
+sed: can't read Parameters.cfg: No such file or directory
+sed: can't read Parameters.cfg: No such file or directory
+Run 5,15,20,20/home/co4xgd/FYP_Simulation/enki/examples/playground/Auto_analysis.sh: line 91: draw_progress_bar: command not found
+/home/co4xgd/FYP_Simulation/enki/examples/playground/Auto_analysis.sh: line 92: ./enkiplayground: No such file or directory
+sed: can't read Parameters.cfg: No such file or directory
+sed: can't read Parameters.cfg: No such file or directory
+Run 5,15,25,25/home/co4xgd/FYP_Simulation/enki/examples/playground/Auto_analysis.sh: line 91: draw_progress_bar: command not found
+/home/co4xgd/FYP_Simulation/enki/examples/playground/Auto_analysis.sh: line 92: ./enkiplayground: No such file or directory
+
+Completed at Thu Jan 21 05:28:22 GMT 2021!
+/home/co4xgd/FYP_Simulation/enki/examples/playground/Auto_analysis.sh: line 98: destroy_scroll_area: command not found
+/home/co4xgd/FYP_Simulation/enki/examples/playground/Auto_analysis.sh: line 100: ./GenerateAnimations.sh: No such file or directory
