@@ -4,10 +4,12 @@ import numpy as np
 import csv
 import matplotlib.pyplot as plt
 import matplotlib.animation as animation
+from matplotlib.colors import to_rgba
 import string
 import math
 import pandas
 import seaborn as sns
+from itertools import cycle
 
 mode = -1
 scenario = -1
@@ -68,7 +70,7 @@ with open('Analysis.csv','r') as csvfile:
 Fitness_Val = np.array(Fitness_Val)
 Fitness_Val[:,2,:,:,:] = Fitness_Val[:,2,:,:,:]/2
 # print(Fitness_Val.shape)
-Fitness_Val=Fitness_Val[:,:,:,:,0:50]
+# Fitness_Val=Fitness_Val[:,:,:,:,0:50]
 Fitness_Val_merged = Fitness_Val.reshape(6,3,750)
 # print(Fitness_Val.shape)
 
@@ -118,19 +120,49 @@ for i in range(3):
     Values1 = pandas.DataFrame(Fitness_Val_merged[0,i,:], columns=[titles[i]]).assign(Legend='Cont. A')
     Values2 = pandas.DataFrame(Fitness_Val_merged[1,i,:], columns=[titles[i]]).assign(Legend='Cont. B')
     Values3 = pandas.DataFrame(Fitness_Val_merged[2,i,:], columns=[titles[i]]).assign(Legend='Cont. C')
-    Values4 = pandas.DataFrame(Fitness_Val_merged[3,i,:], columns=[titles[i]]).assign(Legend='Simp. Controller')
-    Values5 = pandas.DataFrame(Fitness_Val_merged[4,i,:], columns=[titles[i]]).assign(Legend='Simpl. Controller Sc. A')
-    Values6 = pandas.DataFrame(Fitness_Val_merged[5,i,:], columns=[titles[i]]).assign(Legend='Simpl.Controller Sc. B')
+    Values4 = pandas.DataFrame(Fitness_Val_merged[3,i,:], columns=[titles[i]]).assign(Legend='Simpl. Controller C')
+    Values5 = pandas.DataFrame(Fitness_Val_merged[4,i,:], columns=[titles[i]]).assign(Legend='Simpl. Controller A')
+    Values6 = pandas.DataFrame(Fitness_Val_merged[5,i,:], columns=[titles[i]]).assign(Legend='Simpl.Controller B')
 
 
-    Values = pandas.concat([Values,Values1,Values2,Values3,Values4,Values5,Values6],sort=False)
+    Values = pandas.concat([Values,Values1,Values5,Values2,Values6,Values3,Values4],sort=False)
 
 
 mdf = pandas.melt(Values, id_vars=['Legend'], var_name=['Letter'])
 
 plt.rcParams.update({'font.size': 22})
+# paper_rc = {'lines.linewidth': 1, 'lines.markersize': 1}
 fig, ax = plt.subplots(nrows=1, ncols=1,figsize=(12,6))
-ax = sns.boxplot(x="Letter", y="value",hue="Legend", data=mdf, width = 0.5, linewidth = 2.0)
+# sns.set_style('whitegrid')
+bp = sns.boxplot(x="Letter", y="value",hue="Legend", data=mdf, width = 0.5, linewidth = 2.0)
+
+
+num_locations = len(mdf.Letter.unique())
+hatches = cycle(["xx",""])
+colours = cycle(['red','red','blue','blue','green','green'])
+for i,patch in enumerate(ax.artists):
+    hatch = next(hatches)
+    patch.set_hatch(hatch)
+for i, patch in enumerate(bp.patches):
+    hatch = next(hatches)
+    patch.set_hatch(hatch)
+
+
+for i,artist in enumerate(ax.artists):
+    col = next(colours)
+    # Set the linecolor on the artist to the facecolor, and set the facecolor to None
+    # col = artist.get_facecolor()
+    artist.set_facecolor(to_rgba(col, 0.2))
+    artist.set_edgecolor(col)
+
+    # Each box has 6 associated Line2D objects (to make the whiskers, fliers, etc.)
+    # Loop over them here, and use the same colour as above
+    for j in range(i*6,i*6+6):
+        line = ax.lines[j]
+        line.set_color(col)
+        line.set_mfc(col)
+        line.set_mec(col)
+
 ax.legend_.remove()
 plt.grid(axis='y')
 ax.set(yscale="log")
@@ -138,7 +170,15 @@ ax.set(yscale="log")
 fig.add_subplot(111, frameon=False)
 # hide tick and tick label of the big axis
 plt.tick_params(labelcolor='none', top=False, bottom=False, left=False, right=False)
-fig.legend(loc="lower center", ncol = 6, handleheight=1.8,fontsize=12)
+leg = fig.legend(loc="lower center", ncol = 6, handleheight=1.8,fontsize=12)
+
+# Also fix the legend
+for legpatch in leg.get_patches():
+    # col = legpatch.get_facecolor()
+    col = next(colours)
+    legpatch.set_edgecolor(col)
+    legpatch.set_facecolor(to_rgba(col, 0.2))
+
 
 plt.subplots_adjust(bottom=0.2, top = 0.9, right = 0.95, left = 0.1)
 ax.set_ylabel('Total Fitness Value after 1500s')

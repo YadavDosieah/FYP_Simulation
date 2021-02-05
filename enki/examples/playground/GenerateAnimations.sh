@@ -12,7 +12,7 @@ setup_scroll_area
 
 # This accounts as the "totalState" variable for the ProgressBar function
 _counter=0
-_end=12
+_end=18
 
 
 #Calling ls directly using the exec command
