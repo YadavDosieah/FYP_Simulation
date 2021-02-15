@@ -36,7 +36,7 @@ class Shepherding
 		float GoalRadius;
 		float GoalDistance;
     const double *y;
-		double x[16];
+		double x[32];
 		double fitness_val = 0;
 		int TimeStep = 0;
 		std::ofstream outputFile;
@@ -58,14 +58,13 @@ class Shepherding
 		for(int i=0; i<dim; i++)
 		{
 			x[i] = (1-exp(-y[i]))/(1+exp(-y[i]));
-			//cout << y[i] << endl;
+			//cout << x[i] << endl;
 		}
 		srand(time(0));
 		for(int i = 0; i < noOfSheep; i++)
 		{
 			addRobots(world, &flock, false);
 		}
-
 		for(int i = 0; i < noOfShepherd; i++)
 		{
 			addRobots(world, &shepherds, true);
@@ -340,6 +339,135 @@ class Shepherding
 			}
 		}
 
+		else if(mode == 6)//Heterogenous shepherds
+		{
+			CalculateFitness();
+			for(int i = 0; i < noOfShepherd; i++)
+			{
+				valarray<Color> image = shepherds[i]->camera.image;
+				valarray<Color> image2 = shepherds[i]->camera2.image;
+
+				bool sheepDetected = false;
+				bool shepherdDetected = false;
+				bool goalDetected = false;
+				bool objectDetected = false;
+
+				sheepDetected 	= image[0].components[0] == 1 ? 1 : 0;
+				shepherdDetected = image[0].components[1] == 1 ? 1 : 0;
+				goalDetected 	= image2[0].components[2] == 1 ? 1 : 0;
+				objectDetected = image[0].components[0] == 0.9 ? 1 : 0;
+				if(i < noOfShepherd/2)
+				{
+					if((objectDetected||shepherdDetected||goalDetected||sheepDetected) == false) //No objects seen			STATE 0
+					{
+						// cout << "State 0\n";
+						shepherds[i]->leftSpeed 	= x[0] * SPEED_MAX;
+						shepherds[i]->rightSpeed	= x[1] * SPEED_MAX;
+					}
+					else if((objectDetected&&goalDetected) == true) //Object + goal						STATE 5
+					{
+						// cout << "State 4\n";
+						shepherds[i]->leftSpeed 	= x[10] * SPEED_MAX;
+						shepherds[i]->rightSpeed	= x[11] * SPEED_MAX;
+					}
+					else if((shepherdDetected&&goalDetected) == true) //Shepherd + goal			STATE 6
+					{
+						// cout << "State 5\n";
+						shepherds[i]->leftSpeed 	= x[12] * SPEED_MAX;
+						shepherds[i]->rightSpeed	= x[13] * SPEED_MAX;
+					}
+					else if((sheepDetected&&goalDetected) == true) //Sheep + goal			STATE 7
+					{
+						// cout << "State 5\n";
+						shepherds[i]->leftSpeed 	= x[14] * SPEED_MAX;
+						shepherds[i]->rightSpeed	= x[15] * SPEED_MAX;
+					}
+					else if(goalDetected) //Only goal														STATE 4
+					{
+						// cout << "State 3\n";
+						shepherds[i]->leftSpeed 	= x[8] * SPEED_MAX;
+						shepherds[i]->rightSpeed	= x[9] * SPEED_MAX;
+					}
+					else if(objectDetected)// object																STATE 1
+					{
+						// cout << "State 1\n";
+						shepherds[i]->leftSpeed 	= x[2] * SPEED_MAX;
+						shepherds[i]->rightSpeed	= x[3] * SPEED_MAX;
+					}
+					else if(shepherdDetected)//shepherd														STATE 2
+					{
+						// cout << "State 2\n";
+						shepherds[i]->leftSpeed 	= x[4] * SPEED_MAX;
+						shepherds[i]->rightSpeed	= x[5] * SPEED_MAX;
+					}
+					else if(sheepDetected)//sheep														STATE 3
+					{
+						// cout << "State 2\n";
+						shepherds[i]->leftSpeed 	= x[6] * SPEED_MAX;
+						shepherds[i]->rightSpeed	= x[7] * SPEED_MAX;
+					}
+					else
+					{
+						std::cout << "Error\n";
+					}
+				}
+				else
+				{
+					if((objectDetected||shepherdDetected||goalDetected||sheepDetected) == false) //No objects seen			STATE 0
+					{
+						// cout << "State 0\n";
+						shepherds[i]->leftSpeed 	= x[16] * SPEED_MAX;
+						shepherds[i]->rightSpeed	= x[17] * SPEED_MAX;
+					}
+					else if((objectDetected&&goalDetected) == true) //Object + goal						STATE 5
+					{
+						// cout << "State 4\n";
+						shepherds[i]->leftSpeed 	= x[26] * SPEED_MAX;
+						shepherds[i]->rightSpeed	= x[27] * SPEED_MAX;
+					}
+					else if((shepherdDetected&&goalDetected) == true) //Shepherd + goal			STATE 6
+					{
+						// cout << "State 5\n";
+						shepherds[i]->leftSpeed 	= x[28] * SPEED_MAX;
+						shepherds[i]->rightSpeed	= x[29] * SPEED_MAX;
+					}
+					else if((sheepDetected&&goalDetected) == true) //Sheep + goal			STATE 7
+					{
+						// cout << "State 5\n";
+						shepherds[i]->leftSpeed 	= x[30] * SPEED_MAX;
+						shepherds[i]->rightSpeed	= x[31] * SPEED_MAX;
+					}
+					else if(goalDetected) //Only goal														STATE 4
+					{
+						// cout << "State 3\n";
+						shepherds[i]->leftSpeed 	= x[24] * SPEED_MAX;
+						shepherds[i]->rightSpeed	= x[25] * SPEED_MAX;
+					}
+					else if(objectDetected)// object																STATE 1
+					{
+						// cout << "State 1\n";
+						shepherds[i]->leftSpeed 	= x[18] * SPEED_MAX;
+						shepherds[i]->rightSpeed	= x[19] * SPEED_MAX;
+					}
+					else if(shepherdDetected)//shepherd														STATE 2
+					{
+						// cout << "State 2\n";
+						shepherds[i]->leftSpeed 	= x[20] * SPEED_MAX;
+						shepherds[i]->rightSpeed	= x[21] * SPEED_MAX;
+					}
+					else if(sheepDetected)//sheep														STATE 3
+					{
+						// cout << "State 2\n";
+						shepherds[i]->leftSpeed 	= x[22] * SPEED_MAX;
+						shepherds[i]->rightSpeed	= x[23] * SPEED_MAX;
+					}
+					else
+					{
+						std::cout << "Error\n";
+					}
+				}
+			}
+		}
 		/*************************************************************************/
 		/*********************** Sheep Speed Calculation *************************/
 		/*************************************************************************/

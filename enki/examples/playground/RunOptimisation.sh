@@ -22,7 +22,7 @@ make enkiplayground
 sed -i '/^No_Of_Threads	=/s/=.*/= 10;/' Parameters.cfg
 sed -i "/^No_Of_Trials	=/s/=.*/= 50;/" Parameters.cfg
 
-sed -i "/^noOfShepherd 	=/s/=.*/= 3;/" Parameters.cfg
+sed -i "/^noOfShepherd 	=/s/=.*/= 6;/" Parameters.cfg
 
 if [ $1 -eq 0 ]
 then
@@ -54,6 +54,14 @@ then
   sed -i '/^noOfSheep 	=/s/=.*/= 10;/' Parameters.cfg
   sed -i '/^noOfObjects 	=/s/=.*/= 0;/' Parameters.cfg
   echo "Simplified Controller"
+  ./enkiplayground
+
+elif  [ $1 -eq 6 ]
+then
+  sed -i '/^mode		=/s/=.*/= 6;/' Parameters.cfg
+  sed -i '/^noOfSheep 	=/s/=.*/= 10;/' Parameters.cfg
+  sed -i '/^noOfObjects 	=/s/=.*/= 10;/' Parameters.cfg
+  echo "Heterogenous Controller"
   ./enkiplayground
 
 fi

@@ -654,6 +654,11 @@ double x1[16] = { 11.7619,   1.19117,
         dim = 8;
         out << "Generation, Iteration, Trial, Vl_1, Vr_1, Vl_2, Vr_2, Vl_3, Vr_3, Vl_4, Vr_4, Fitness Value" << endl;
       }
+      else if(mode == 6)//Heterogenous shepherds
+      {
+        dim = 32; // problem dimensions.
+        out << "Generation, Iteration, Trial, Vl_1.1, Vr_1.1, Vl_1.2, Vr_1.2, Vl_1.3, Vr_1.3, Vl_1.4, Vr_1.4,Vl_1.5, Vr_1.5,Vl_1.6, Vr_1.6,Vl_1.7, Vr_1.7,Vl_1.8, Vr_1.8, Vl_2.1, Vr_2.1, Vl_2.2, Vr_2.2, Vl_2.3, Vr_2.3, Vl_2.4, Vr_2.4,Vl_2.5, Vr_2.5,Vl_2.6, Vr_2.6,Vl_2.7, Vr_2.7,Vl_2.8, Vr_2.8, Fitness Value" << endl;
+      }
       else
       {
         dim = 12; // problem dimensions.
