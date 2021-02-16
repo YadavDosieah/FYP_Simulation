@@ -639,9 +639,9 @@ double x1[16] = { 11.7619,   1.19117,
     omp_set_num_threads(No_Of_Threads);
     omp_set_dynamic(false);
     std::ofstream Parameters_Outfile;
-    Parameters_Outfile.open("Results/mode" + std::to_string(mode) + "/Parameters_File.csv",std::ofstream::app);
     for(int i = 0; i < NoOfEvolutions; i++)
     {
+      Parameters_Outfile.open("Results/mode" + std::to_string(mode) + "/Parameters_File.csv",std::ofstream::app);
       global_iter = 0;
       generation = 1;
       evolution++;
@@ -699,7 +699,7 @@ double x1[16] = { 11.7619,   1.19117,
       Parameters_Outfile << "optimization took " << cmasols.elapsed_time() / 1000.0 << " seconds\n";
       out.close();
       //return cmasols.run_status();
+      Parameters_Outfile.close();
     }
-    Parameters_Outfile.close();
   #endif
 }
