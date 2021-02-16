@@ -35,6 +35,7 @@ class Shepherding
 		int dim;
 		float GoalRadius;
 		float GoalDistance;
+		float Sheep_MaxSpeed_Multiplier;
     const double *y;
 		double x[32];
 		double fitness_val = 0;
@@ -45,11 +46,13 @@ class Shepherding
 	public:
 	Shepherding(World *world, int mode, int noOfSheep, int noOfShepherd, int noOfObjects,
 							int Csheep, int Cshepherd, float Ksheep, float K1,	float K2,
-							float KWall, int Goalx, int Goaly, float GoalRadius, float GoalDistance, const double *y, int dim):
+							float KWall, int Goalx, int Goaly, float GoalRadius, float GoalDistance,
+							float Sheep_MaxSpeed_Multiplier, const double *y, int dim):
 							mode(mode), noOfSheep(noOfSheep), noOfShepherd(noOfShepherd),
 							noOfObjects(noOfObjects), Csheep(Csheep), Cshepherd(Cshepherd),
 							Ksheep(Ksheep), K1(K1), K2(K2),KWall(KWall), Goalx(Goalx), Goaly(Goaly),
-							GoalRadius(GoalRadius), GoalDistance(pow(GoalDistance,2)),	y(y), dim(dim)
+							GoalRadius(GoalRadius), GoalDistance(pow(GoalDistance,2)),
+							Sheep_MaxSpeed_Multiplier(Sheep_MaxSpeed_Multiplier),	y(y), dim(dim)
 	{
 		Xbound = int(world->w);
 		Ybound = int(world->h);
@@ -558,15 +561,15 @@ class Shepherding
 			flock[i]->leftSpeed = K1*Robot_Force_x + K2*Robot_Force_y;
 			flock[i]->rightSpeed = K1*Robot_Force_x - K2*Robot_Force_y;
 
-			flock[i]->leftSpeed = flock[i]->leftSpeed > SPEED_MAX/2 ? SPEED_MAX/2 : flock[i]->leftSpeed;
-			flock[i]->rightSpeed = flock[i]->rightSpeed > SPEED_MAX/2 ? SPEED_MAX/2 : flock[i]->rightSpeed;
-			flock[i]->leftSpeed = flock[i]->leftSpeed < -SPEED_MAX/2 ? -SPEED_MAX/2 : flock[i]->leftSpeed;
-			flock[i]->rightSpeed = flock[i]->rightSpeed < -SPEED_MAX/2 ? -SPEED_MAX/2 : flock[i]->rightSpeed;
+			flock[i]->leftSpeed = flock[i]->leftSpeed > SPEED_MAX*Sheep_MaxSpeed_Multiplier ? SPEED_MAX*Sheep_MaxSpeed_Multiplier  : flock[i]->leftSpeed;
+			flock[i]->rightSpeed = flock[i]->rightSpeed > SPEED_MAX*Sheep_MaxSpeed_Multiplier  ? SPEED_MAX*Sheep_MaxSpeed_Multiplier  : flock[i]->rightSpeed;
+			flock[i]->leftSpeed = flock[i]->leftSpeed < -SPEED_MAX*Sheep_MaxSpeed_Multiplier  ? -SPEED_MAX*Sheep_MaxSpeed_Multiplier  : flock[i]->leftSpeed;
+			flock[i]->rightSpeed = flock[i]->rightSpeed < -SPEED_MAX*Sheep_MaxSpeed_Multiplier  ? -SPEED_MAX*Sheep_MaxSpeed_Multiplier  : flock[i]->rightSpeed;
 
 			if(Force_x == 0 && Force_y == 0)
 			{
-				flock[i]->leftSpeed = (rand()%int(SPEED_MAX)) - SPEED_MAX/2;
-				flock[i]->rightSpeed = (rand()%int(SPEED_MAX)) - SPEED_MAX/2;
+				flock[i]->leftSpeed = RandomFloat(-SPEED_MAX*Sheep_MaxSpeed_Multiplier,SPEED_MAX*Sheep_MaxSpeed_Multiplier);
+				flock[i]->rightSpeed = RandomFloat(-SPEED_MAX*Sheep_MaxSpeed_Multiplier,SPEED_MAX*Sheep_MaxSpeed_Multiplier);
 			}
 		}
 		return isnan(fitness_val);

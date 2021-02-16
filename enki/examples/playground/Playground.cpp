@@ -25,7 +25,7 @@ std::ofstream out;
 pthread_mutex_t mtx2=PTHREAD_MUTEX_INITIALIZER;
 
 int noOfSheep, noOfShepherd, noOfObjects, Csheep, Cshepherd, mode;
-float Ksheep, K1, K2, KWall, GoalRadius, GoalDistance;
+float Ksheep, K1, K2, KWall, GoalRadius, GoalDistance, Sheep_MaxSpeed_Multiplier;
 int Goalx, Goaly, Xbound, Ybound;
 int global_iter;
 int generation;
@@ -53,7 +53,8 @@ FitFunc fitnessfunction = [](const double *x, const int N)
     start:
     World world(Xbound,Ybound, Color(0.5,0.5,0.5));
     Shepherding simulation(&world,mode,noOfSheep,noOfShepherd,noOfObjects,Csheep,
-      Cshepherd,Ksheep,K1, K2, KWall, Goalx, Goaly,GoalRadius, GoalDistance, x, N);
+      Cshepherd,Ksheep,K1, K2, KWall, Goalx, Goaly,GoalRadius, GoalDistance,
+      Sheep_MaxSpeed_Multiplier, x, N);
 
       for (unsigned j=0; j < NoOfSteps; j++)
       {
@@ -106,6 +107,7 @@ int main(int argc, char *argv[])
 	K1 = configfile.lookup("K1");
 	K2 = configfile.lookup("K2");
   KWall = configfile.lookup("KWall");
+  Sheep_MaxSpeed_Multiplier = configfile.lookup("Sheep_MaxSpeed_Multiplier");
   //cout << KWall;
 	Goalx = configfile.lookup("Goalx");
 	Goaly = configfile.lookup("Goaly");
@@ -541,7 +543,8 @@ double x1[16] = { 11.7619,   1.19117,
           Cshepherd,Ksheep,K1, K2, KWall, Goalx, Goaly,GoalRadius, GoalDistance, x, dim,Noise_Level,Noise_Scenario);
       #else
         Shepherding simulation(&world,mode,noOfSheep,noOfShepherd,noOfObjects,Csheep,
-          Cshepherd,Ksheep,K1, K2, KWall, Goalx, Goaly,GoalRadius, GoalDistance, x, dim);
+          Cshepherd,Ksheep,K1, K2, KWall, Goalx, Goaly,GoalRadius, GoalDistance,
+          Sheep_MaxSpeed_Multiplier, x, dim);
       #endif
 
         #if !defined(Analyis_Log) && !defined(Noise_Analysis)
