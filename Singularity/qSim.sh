@@ -19,5 +19,8 @@
 # chmod +x ../enki/examples/playground/Auto_analysis.sh
 # singularity exec myimage.simg ../enki/examples/playground/Auto_analysis.sh
 
-chmod +x ../enki/examples/playground/Auto_PostEval.sh
-singularity exec myimage.simg ../enki/examples/playground/Auto_PostEval.sh
+# chmod +x ../enki/examples/playground/Auto_PostEval.sh
+# singularity exec myimage.simg ../enki/examples/playground/Auto_PostEval.sh
+
+chmod +x ../enki/examples/playground/Auto_analysis_varyingSpeed.sh
+singularity exec myimage.simg ../enki/examples/playground/Auto_analysis_varyingSpeed.sh

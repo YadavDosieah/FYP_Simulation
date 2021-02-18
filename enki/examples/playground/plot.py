@@ -50,7 +50,7 @@ with open('Output.csv','r') as csvfile:
     CylinderY = []
     i = 0
     for row in data:
-        if(i%250 == 0 or i == numlines-2):
+        if(i%10 == 0 or i == numlines-2):
             #Start:End:Step
             SheepX.append(row[0:noOfSheep*3:3])
             SheepY.append(row[1:noOfSheep*3:3])
@@ -145,45 +145,45 @@ if len(sys.argv) > 1:
 else:
     pass
 
-
+plt.show()
 ################### Mp4 animation
-with open('Output.csv','r') as csvfile:
-    data = csv.reader(csvfile, delimiter=',')
-    row1 = next(data)
-
-    SheepX = []
-    SheepY = []
-    SheepAngle = []
-    ShepherdX = []
-    ShepherdY = []
-    ShepherdAngle =[]
-
-    CylinderX = []
-    CylinderY = []
-    i = 0
-    for row in data:
-        if(i%25 == 0 or i == numlines-2):
-            #Start:End:Step
-            SheepX.append(row[0:noOfSheep*3:3])
-            SheepY.append(row[1:noOfSheep*3:3])
-            SheepAngle.append(row[2:noOfSheep*3:3])
-            ShepherdX.append(row[noOfSheep*3+noOfObjects*2:(noOfSheep+noOfShepherd)*3+noOfObjects*2:3])
-            ShepherdY.append(row[noOfSheep*3+noOfObjects*2+1::3])
-            ShepherdAngle.append(row[noOfSheep*3+noOfObjects*2+2::3])
-            CylinderX.append(row[noOfSheep*3:noOfSheep*3+noOfObjects*2:2])
-            CylinderY.append(row[noOfSheep*3+1:noOfSheep*3+noOfObjects*2:2])
-        i = i +1
-
-anim=animation.FuncAnimation(fig,animate,init_func=init,interval=1,frames=len(ShepherdY), repeat=False)
-ax.set_aspect('equal', 'box')
-fig.tight_layout()
-
-if len(sys.argv) > 1:
-    try:
-        # Create target Directory
-        os.mkdir(sys.argv[1])
-    except:
-        pass
-    anim.save(os.path.join(sys.argv[1], 'sim.mp4'),fps=20)
-else:
-    plt.show()
+# with open('Output.csv','r') as csvfile:
+#     data = csv.reader(csvfile, delimiter=',')
+#     row1 = next(data)
+#
+#     SheepX = []
+#     SheepY = []
+#     SheepAngle = []
+#     ShepherdX = []
+#     ShepherdY = []
+#     ShepherdAngle =[]
+#
+#     CylinderX = []
+#     CylinderY = []
+#     i = 0
+#     for row in data:
+#         if(i%25 == 0 or i == numlines-2):
+#             #Start:End:Step
+#             SheepX.append(row[0:noOfSheep*3:3])
+#             SheepY.append(row[1:noOfSheep*3:3])
+#             SheepAngle.append(row[2:noOfSheep*3:3])
+#             ShepherdX.append(row[noOfSheep*3+noOfObjects*2:(noOfSheep+noOfShepherd)*3+noOfObjects*2:3])
+#             ShepherdY.append(row[noOfSheep*3+noOfObjects*2+1::3])
+#             ShepherdAngle.append(row[noOfSheep*3+noOfObjects*2+2::3])
+#             CylinderX.append(row[noOfSheep*3:noOfSheep*3+noOfObjects*2:2])
+#             CylinderY.append(row[noOfSheep*3+1:noOfSheep*3+noOfObjects*2:2])
+#         i = i +1
+#
+# anim=animation.FuncAnimation(fig,animate,init_func=init,interval=1,frames=len(ShepherdY), repeat=False)
+# ax.set_aspect('equal', 'box')
+# fig.tight_layout()
+#
+# if len(sys.argv) > 1:
+#     try:
+#         # Create target Directory
+#         os.mkdir(sys.argv[1])
+#     except:
+#         pass
+#     anim.save(os.path.join(sys.argv[1], 'sim.mp4'),fps=20)
+# else:
+#     plt.show()
