@@ -23,7 +23,7 @@ def read():
             for j in range(dimension):
                 # print(Wheel_vel[j])
                 sed(['-i', '/^x{:d}	=/s/=.*/= {:f};/'.format(j,float(Wheel_vel[j])), 'Parameters.cfg'])
-            for j in range(16-dimension):
+            for j in range(32-dimension):
                 sed(['-i', '/^x{:d}	=/s/=.*/= 0.0;/'.format(j+dimension), 'Parameters.cfg'])
             print("Evolution {:d} running ...".format(idx))
             subprocess.call("./enkiplayground", shell=True)
@@ -43,4 +43,8 @@ elif(mode == "2"):
 elif(mode == "3"):
     print("mode 3 - Simplified Controller")
     dimension = 8
+    read()
+elif(mode == "6"):
+    print("mode 6 - Heterogenous Controller")
+    dimension = 32
     read()

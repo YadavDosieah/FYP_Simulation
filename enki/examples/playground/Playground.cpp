@@ -157,13 +157,12 @@ int main(int argc, char *argv[])
  //                    0,0,0,0};//Evo 2
 
 
-  double x0[16] = { 8.54883,  1.98728,
+  double x0[12] = { 8.54883,  1.98728,
                     0.613737,  6.37663,
                     0.329281, -1.10761,
                     1.05533,  2.69364,
                     0.846464,    3.117,
-                    -10.1579, 0.649279,
-                    0,0,0,0};//Evo 4
+                    -10.1579, 0.649279};//Evo 4
 
 // double x0[16] = {   1.47637276371257,   7.79745996832812,
 //                     6.42601580665163,  -1.32876317508355,
@@ -231,13 +230,12 @@ int main(int argc, char *argv[])
 //                   -1.18257,  6.30556,
 //                   0,0,0,0}; //Evo 4 v2 - ok?
 
-double x1[16] = { 11.7619,   1.19117,
+double x1[12] = { 11.7619,   1.19117,
                   2.52318,   11.9229,
                   6.28643,   1.26785,
                   -0.696947,   2.73256,
                   1.08471,  -3.25945,
-                  -10.3829,   1.37449,
-                  0,0,0,0};//Evo 4 v3
+                  -10.3829,   1.37449};//Evo 4 v3
 
 // double x1[16] = { 6.39921,    1.53387,
 //                   3.27998,     5.6971,
@@ -351,11 +349,10 @@ double x1[16] = { 11.7619,   1.19117,
   //                   -2.24078,   3.19676,
   //                     0,0,0,0,0,0,0,0}; //Re-run Evo 18
 
-  double x3[16] = { 11.5616,  1.57654,
+  double x3[8] = { 11.5616,  1.57654,
                     1.46906,  6.19461,
                     -13.4256,  2.47699,
-                    -2.07122,  5.58177,
-                    0,0,0,0,0,0,0,0};//Re-run Evo 22
+                    -2.07122,  5.58177};//Re-run Evo 22
 
 
  // double x4[16] = {  1.61232669709324,  5.11330101906351,
@@ -364,11 +361,10 @@ double x1[16] = { 11.7619,   1.19117,
  //                    1.38356423294492,  3.20571932523051,
  //                    0,0,0,0,0,0,0,0}; //Simplified trained in S.A - Evo 24
 
- double x4[16] = { 6.32578186589613,  1.60511591621045,
+ double x4[8] = { 6.32578186589613,  1.60511591621045,
                   -2.8594112055925,  1.57035966006463,
                   0.987657980752346,  3.22181985917952,
-                  1.81915276300813,  5.42701623231154,
-                  0,0,0,0,0,0,0,0}; //Simplified trained in S.A - Evo 15
+                  1.81915276300813,  5.42701623231154}; //Simplified trained in S.A - Evo 15
 
 
   // double x5[16] = { 10.565,  1.46622,
@@ -383,16 +379,12 @@ double x1[16] = { 11.7619,   1.19117,
   //                   4.98966,   3.69208,
   //                   0,0,0,0,0,0,0,0}; //Simplified trained in S.B - Evo 29
 
-  double x5[16] = { 1.56189,  8.60265,
+  double x5[8] = { 1.56189,  8.60265,
                     7.86989,  2.54455,
                     -3.78878,  6.94438,
-                    1.45707,  2.57578,
-                    0,0,0,0,0,0,0,0}; //Simplified trained in S.B - Evo 21
+                    1.45707,  2.57578}; //Simplified trained in S.B - Evo 21
 
-
-
-
-  double xn[16] = {0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0};
+  double x6[32] = {0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0};
   #endif
 
   //Run simulation with GUI
@@ -460,14 +452,27 @@ double x1[16] = { 11.7619,   1.19117,
     #endif
 
     #ifdef Post_Eval
-    double x[16] = {configfile.lookup("x0"),configfile.lookup("x1"),
+    double x[32] = {configfile.lookup("x0"),configfile.lookup("x1"),
                     configfile.lookup("x2"),configfile.lookup("x3"),
                     configfile.lookup("x4"),configfile.lookup("x5"),
                     configfile.lookup("x6"),configfile.lookup("x7"),
                     configfile.lookup("x8"),configfile.lookup("x9"),
                     configfile.lookup("x10"),configfile.lookup("x11"),
                     configfile.lookup("x12"),configfile.lookup("x13"),
-                    configfile.lookup("x14"),configfile.lookup("x15")};
+                    configfile.lookup("x14"),configfile.lookup("x15"),
+                    configfile.lookup("x16"),configfile.lookup("x17"),
+                    configfile.lookup("x18"),configfile.lookup("x19"),
+                    configfile.lookup("x20"),configfile.lookup("x21"),
+                    configfile.lookup("x22"),configfile.lookup("x23"),
+                    configfile.lookup("x24"),configfile.lookup("x25"),
+                    configfile.lookup("x26"),configfile.lookup("x27"),
+                    configfile.lookup("x28"),configfile.lookup("x29"),
+                    configfile.lookup("x30"),configfile.lookup("x31")};
+    // for(int i=0;i<32;i++)
+    // {
+    //   cout << x[i] << ",";
+    // }
+    // cout << endl << endl;
     int dim;
     switch (mode) {
       case 0:
@@ -482,20 +487,22 @@ double x1[16] = { 11.7619,   1.19117,
       case 3:
         dim = 8;
         break;
+      case 6:
+        dim = 32;
       default:
         dim = 16;
     }
     #else
-      double x[16] = {0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0};
+      double x[32] = {0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0};
       int dim;
       if(mode == 0)
       {
-        std::copy ( x0, x0+16, x);
+        std::copy ( x0, x0+12, x);
         dim = 12;
       }
       else if(mode == 1)
       {
-        std::copy ( x1, x1+16, x);
+        std::copy ( x1, x1+12, x);
         dim = 12;
       }
       else if(mode == 2)
@@ -505,26 +512,35 @@ double x1[16] = { 11.7619,   1.19117,
       }
       else if(mode == 3)
       {
-        std::copy ( x3, x3+16, x);
+        std::copy ( x3, x3+8, x);
         dim = 8;
       }
       else if(mode == 4)
       {
-        std::copy ( x4, x4+16, x);
+        std::copy ( x4, x4+8, x);
         dim = 8;
         mode = 3;
       }
       else if(mode == 5)
       {
-        std::copy ( x5, x5+16, x);
+        std::copy ( x5, x5+8, x);
         dim = 8;
         mode = 3;
       }
+      else if(mode == 6)
+      {
+        std::copy ( x6, x6+32, x);
+        dim = 32;
+      }
       else
       {
-        std::copy ( xn, xn+16, x);
-        dim = 16;
+        dim = 32;
       }
+      // for(int i=0;i<32;i++)
+      // {
+      //   cout << x[i] << ",";
+      // }
+      // cout << endl << endl;
     #endif
     int No_Of_Success = 0;
     float SuccessRate = 0;
