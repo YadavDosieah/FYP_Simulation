@@ -16,6 +16,8 @@
 *.sql
 *.sqlite
 
+*.cmake
+*.make
 CMakeCache.txt
 
 # OS generated files #
