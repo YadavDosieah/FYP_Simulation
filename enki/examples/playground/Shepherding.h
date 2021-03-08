@@ -28,7 +28,7 @@ class Shepherding
 		float GoalRadius;
 		float GoalDistance;
     const double *y;
-		double x[24];
+		vector<double> x;
 		double fitness_val = 0;
 		int TimeStep = 0;
 		std::ofstream outputFile;
@@ -47,12 +47,11 @@ class Shepherding
 		Ybound = int(world->h);
 
 		NoOfGroups = noOfShepherd.size();
-		x[NoOfGroups*12] = {0};
 
 		// cout << sizeof(y)/sizeof(*y) << endl;
 		for(int i=0; i<dim; i++)
 		{
-			x[i] = (1-exp(-y[i]))/(1+exp(-y[i]));
+			x.push_back((1-exp(-y[i]))/(1+exp(-y[i])));
 			//cout << x[i] << endl;
 		}
 		srand(time(0));
@@ -93,8 +92,9 @@ class Shepherding
 		int CumulativeNumberOfShepherds = 0;
 		for (int j=0; j< NoOfGroups; j++)
 		{
-			for(int i = 0; i < noOfShepherd[i]; i++)
+			for(int i = 0; i < noOfShepherd[j]; i++)
 			{
+				// cout << i+CumulativeNumberOfShepherds;
 				valarray<Color> image = shepherds[i+CumulativeNumberOfShepherds]->camera.image;
 				valarray<Color> image2 = shepherds[i+CumulativeNumberOfShepherds]->camera2.image;
 				bool shepherdDetected = false;

@@ -92,6 +92,8 @@ math.h
 
 /home/yadav/Documents/Final-Year-Project/FYP_Simulation/enki/examples/playground/config.h
 
+/home/yadav/Documents/Final-Year-Project/FYP_Simulation/enki/examples/playground/enkiplayground_autogen/mocs_compilation.cpp
+
 /usr/include/x86_64-linux-gnu/qt5/QtCore/QEvent
 qcoreevent.h
 /usr/include/x86_64-linux-gnu/qt5/QtCore/qcoreevent.h
@@ -650,66 +652,6 @@ QtCore/qbytearray.h
 
 /usr/include/x86_64-linux-gnu/qt5/QtCore/qcache.h
 QtCore/qhash.h
--
-
-/usr/include/x86_64-linux-gnu/qt5/QtCore/qcborarray.h
-QtCore/qcborvalue.h
--
-initializer_list
--
-
-/usr/include/x86_64-linux-gnu/qt5/QtCore/qcborcommon.h
-QtCore/qobjectdefs.h
--
-QtCore/qmetatype.h
--
-QtCore/qdebug.h
--
-
-/usr/include/x86_64-linux-gnu/qt5/QtCore/qcbormap.h
-QtCore/qcborvalue.h
--
-QtCore/qpair.h
--
-initializer_list
--
-
-/usr/include/x86_64-linux-gnu/qt5/QtCore/qcborstream.h
-QtCore/qbytearray.h
--
-QtCore/qcborcommon.h
--
-QtCore/qfloat16.h
--
-QtCore/qscopedpointer.h
--
-QtCore/qstring.h
--
-QtCore/qstringview.h
--
-
-/usr/include/x86_64-linux-gnu/qt5/QtCore/qcborvalue.h
-QtCore/qbytearray.h
--
-QtCore/qdatetime.h
--
-QtCore/qcborcommon.h
--
-QtCore/qregularexpression.h
--
-QtCore/qstring.h
--
-QtCore/qstringview.h
--
-QtCore/qurl.h
--
-QtCore/quuid.h
--
-QtCore/qvariant.h
--
-QtCore/qvector.h
--
-compare
 -
 
 /usr/include/x86_64-linux-gnu/qt5/QtCore/qchar.h
@@ -1438,14 +1380,6 @@ QtCore/qvariantanimation.h
 QtCore/qlist.h
 -
 
-/usr/include/x86_64-linux-gnu/qt5/QtCore/qrandom.h
-QtCore/qglobal.h
--
-algorithm
--
-random
--
-
 /usr/include/x86_64-linux-gnu/qt5/QtCore/qreadwritelock.h
 QtCore/qglobal.h
 -
@@ -1517,10 +1451,6 @@ stdlib.h
 -
 
 /usr/include/x86_64-linux-gnu/qt5/QtCore/qscopedvaluerollback.h
-QtCore/qglobal.h
--
-
-/usr/include/x86_64-linux-gnu/qt5/QtCore/qscopeguard.h
 QtCore/qglobal.h
 -
 
@@ -1684,10 +1614,6 @@ stdarg.h
 QtCore/qstringbuilder.h
 -
 
-/usr/include/x86_64-linux-gnu/qt5/QtCore/qstringalgorithms.h
-QtCore/qnamespace.h
--
-
 /usr/include/x86_64-linux-gnu/qt5/QtCore/qstringbuilder.h
 QtCore/qstring.h
 -
@@ -1714,24 +1640,8 @@ QtCore/qabstractitemmodel.h
 QtCore/qstringlist.h
 -
 
-/usr/include/x86_64-linux-gnu/qt5/QtCore/qstringliteral.h
-QtCore/qarraydata.h
--
-
 /usr/include/x86_64-linux-gnu/qt5/QtCore/qstringmatcher.h
 QtCore/qstring.h
--
-
-/usr/include/x86_64-linux-gnu/qt5/QtCore/qstringview.h
-QtCore/qchar.h
--
-QtCore/qbytearray.h
--
-QtCore/qstringliteral.h
--
-QtCore/qstringalgorithms.h
--
-string
 -
 
 /usr/include/x86_64-linux-gnu/qt5/QtCore/qsysinfo.h
