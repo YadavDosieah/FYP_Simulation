@@ -123,6 +123,53 @@ def read(file):
         # fig.write_image("C.C.png",width=2160,height=1440,scale=5)
         fig.write_image("C.C.png")
 
+    elif(num_param == 33):
+        Values = pd.DataFrame(data_points,columns=['v_l0','v_r0','v_l1','v_r1',
+        'v_l2','v_r2','v_l3','v_r3','v_l4','v_r4','v_l5','v_r5','v_l6','v_r6',
+        'v_l7','v_r7','v_l8','v_r8','v_l9','v_r9',
+        'v_l10','v_r10','v_l11','v_r11','v_l12','v_r12','v_l13','v_r13','v_l14','v_r14',
+        'v_l15','v_r15','Fit_Val'])
+        # print(Values)
+        fig = go.Figure(data=go.Parcoords(
+        line=dict(color = Values['Fit_Val'],showscale = True,colorscale=px.colors.diverging.Tealrose),
+        dimensions = list([
+        dict(range = [-1,1],values = Values['v_l0'],label = 'v_l0'),
+        dict(range = [-1,1],values = Values['v_r0'],label = 'v_r0'),
+        dict(range = [-1,1],values = Values['v_l1'],label = 'v_l1'),
+        dict(range = [-1,1],values = Values['v_r1'],label = 'v_r1'),
+        dict(range = [-1,1],values = Values['v_l2'],label = 'v_l2'),
+        dict(range = [-1,1],values = Values['v_r2'],label = 'v_r2'),
+        dict(range = [-1,1],values = Values['v_l3'],label = 'v_l3'),
+        dict(range = [-1,1],values = Values['v_r3'],label = 'v_r3'),
+        dict(range = [-1,1],values = Values['v_l4'],label = 'v_l4'),
+        dict(range = [-1,1],values = Values['v_r4'],label = 'v_r4'),
+        dict(range = [-1,1],values = Values['v_l5'],label = 'v_l5'),
+        dict(range = [-1,1],values = Values['v_r5'],label = 'v_r5'),
+        dict(range = [-1,1],values = Values['v_l6'],label = 'v_l6'),
+        dict(range = [-1,1],values = Values['v_r6'],label = 'v_r6'),
+        dict(range = [-1,1],values = Values['v_l7'],label = 'v_l7'),
+        dict(range = [-1,1],values = Values['v_r7'],label = 'v_r7'),
+        dict(range = [-1,1],values = Values['v_l8'],label = 'v_l8'),
+        dict(range = [-1,1],values = Values['v_r8'],label = 'v_r8'),
+        dict(range = [-1,1],values = Values['v_l9'],label = 'v_l9'),
+        dict(range = [-1,1],values = Values['v_r9'],label = 'v_r9'),
+        dict(range = [-1,1],values = Values['v_l10'],label = 'v_l10'),
+        dict(range = [-1,1],values = Values['v_r10'],label = 'v_r10'),
+        dict(range = [-1,1],values = Values['v_l11'],label = 'v_l11'),
+        dict(range = [-1,1],values = Values['v_r11'],label = 'v_r11'),
+        dict(range = [-1,1],values = Values['v_l12'],label = 'v_l12'),
+        dict(range = [-1,1],values = Values['v_r12'],label = 'v_r12'),
+        dict(range = [-1,1],values = Values['v_l13'],label = 'v_l13'),
+        dict(range = [-1,1],values = Values['v_r13'],label = 'v_r13'),
+        dict(range = [-1,1],values = Values['v_l14'],label = 'v_l14'),
+        dict(range = [-1,1],values = Values['v_r14'],label = 'v_r14'),
+        dict(range = [-1,1],values = Values['v_l15'],label = 'v_l15'),
+        dict(range = [-1,1],values = Values['v_r15'],label = 'v_r15'),
+        dict(values = Values['Fit_Val'],label = 'Fitness Value'),
+        ])))
+        fig.update_layout(title_text="Heterogenous Controller (Evolved in Combined Scenario)",title_x=0.5)
+        # fig.write_image("C.C.png",width=2160,height=1440,scale=5)
+        fig.write_image("Heterogenous.png")
 
     else:
         print("Check data")

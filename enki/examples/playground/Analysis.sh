@@ -4,7 +4,7 @@ sed -i "/^#define GUI  /s/  .*/  false/" config.h
 sed -i "/^#define Analysis  /s/  .*/  true/" config.h
 sed -i "/^#define Optimise  /s/  .*/  false/" config.h
 sed -i "/^#define logData  /s/  .*/  true/" config.h
-sed -i "/^#define Stop  /s/  .*/  true/" config.h
+sed -i "/^#define Stop  /s/  .*/  false/" config.h
 sed -i "/^#define Analyis_Log 1/s/.*/\/\/ #define Analyis_Log 1/" config.h
 sed -i "/^#define Noise_Analysis 1/s/.*/\/\/ #define Noise_Analysis 1/" config.h
 sed -i "/^#define Post_Eval 1/s/.*/\/\/ #define Post_Eval 1/" config.h
@@ -37,4 +37,11 @@ then
 fi
 
 ./enkiplayground
-./plot.py
+
+if [ $# -eq 5 ]
+then
+  echo
+  ./plot.py $5
+else
+  ./plot.py
+fi

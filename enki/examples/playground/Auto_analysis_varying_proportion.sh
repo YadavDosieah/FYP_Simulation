@@ -11,7 +11,7 @@ enable_trapping
 setup_scroll_area
 
 # This accounts as the "totalState" variable for the ProgressBar function
-_end=270 #180
+_end=36 #180
 _counter=0
 
 cd ../../
@@ -31,13 +31,11 @@ make enkiplayground
 sed -i "/^No_Of_Trials	=/s/=.*/= 100;/" Parameters.cfg
 sed -i '/^No_Of_Threads	=/s/=.*/= 20;/' Parameters.cfg
 
-
-shepherdArray=( 05 10 15 )
-sheepArray=( 10 20 30 40 50 )
-objectArray=( 10 20 30 40 50 )
-bothArray=( 5 10 15 20 25 )
+shepherd=5
+sheepArray=( 0 2 4 6 8 10 )
 modeArray=( 0 1 2 3 4 5)
 
+sed -i "/^noOfShepherd 	=/s/=.*/= $shepherd;/" Parameters.cfg
 
 echo "mode,Shepherds,Sheep,Objects, Fit Val, max SR, SR" > Analysis.csv
 
@@ -48,54 +46,14 @@ do
   echo "-----------------------mode $mode--------------------" >> Analysis.csv
   sed -i "/^mode		=/s/=.*/= $mode;/" Parameters.cfg
 
-
-  echo "-----------------------Scenario 0--------------------" >> Analysis.csv
-  for shepherd in "${shepherdArray[@]}"
+  for sheep in "${sheepArray[@]}"
   do
-    sed -i "/^noOfShepherd 	=/s/=.*/= $shepherd;/" Parameters.cfg
-    sed -i "/^noOfObjects 	=/s/=.*/= 0;/" Parameters.cfg
-
-    for sheep in "${sheepArray[@]}"
-    do
-      sed -i "/^noOfSheep 	=/s/=.*/= $sheep;/" Parameters.cfg
-      echo -ne "\rRun $mode,$shepherd,$sheep,00"
-      draw_progress_bar $(($_counter*100/$_end))
-      ./enkiplayground
-      _counter=$((${_counter}+1))
-    done
-  done
-
-  echo "-----------------------Scenario 1--------------------" >> Analysis.csv
-  for shepherd in "${shepherdArray[@]}"
-  do
-    sed -i "/^noOfShepherd 	=/s/=.*/= $shepherd;/" Parameters.cfg
-    sed -i "/^noOfSheep 	=/s/=.*/= 0;/" Parameters.cfg
-
-    for object in "${objectArray[@]}"
-    do
-      sed -i "/^noOfObjects 	=/s/=.*/= $object;/" Parameters.cfg
-      echo -ne "\rRun $mode,$shepherd,00,$object"
-      draw_progress_bar $(($_counter*100/$_end))
-      ./enkiplayground
-      _counter=$((${_counter}+1))
-    done
-  done
-
-
-  echo "-----------------------Scenario 2--------------------" >> Analysis.csv
-  for shepherd in "${shepherdArray[@]}"
-  do
-    sed -i "/^noOfShepherd 	=/s/=.*/= $shepherd;/" Parameters.cfg
-
-    for both in "${bothArray[@]}"
-    do
-      sed -i "/^noOfSheep 	=/s/=.*/= $both;/" Parameters.cfg
-      sed -i "/^noOfObjects 	=/s/=.*/= $both;/" Parameters.cfg
-      echo -ne "\rRun $mode,$shepherd,$both,$both"
-      draw_progress_bar $(($_counter*100/$_end))
-      ./enkiplayground
-      _counter=$((${_counter}+1))
-    done
+    sed -i "/^noOfSheep 	=/s/=.*/= $sheep;/" Parameters.cfg
+    sed -i "/^noOfObjects 	=/s/=.*/= $((10 - $sheep));/" Parameters.cfg
+    echo -e "\rRun $mode,$shepherd,$sheep,$((10 - $sheep))"
+    draw_progress_bar $(($_counter*100/$_end))
+    ./enkiplayground
+    _counter=$((${_counter}+1))
   done
 done
 echo -e "\nCompleted at $(date)!"
