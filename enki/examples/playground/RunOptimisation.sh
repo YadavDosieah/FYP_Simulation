@@ -22,46 +22,8 @@ make enkiplayground
 sed -i '/^No_Of_Threads	=/s/=.*/= 10;/' Parameters.cfg
 sed -i "/^No_Of_Trials	=/s/=.*/= 50;/" Parameters.cfg
 
-sed -i "/^noOfShepherd 	=/s/=.*/= 6;/" Parameters.cfg
+sed -i "/^noOfShepherd =/s/=.*/= ({Value = 4;},{Value = 4;});/" Parameters.cfg
 
-if [ $1 -eq 0 ]
-then
-  sed -i '/^mode		=/s/=.*/= 0;/' Parameters.cfg
-  sed -i '/^noOfSheep 	=/s/=.*/= 10;/' Parameters.cfg
-  sed -i '/^noOfObjects 	=/s/=.*/= 0;/' Parameters.cfg
-  echo "Shepherding"
-  ./enkiplayground
-
-elif  [ $1 -eq 1 ]
-then
-  sed -i '/^mode		=/s/=.*/= 1;/' Parameters.cfg
-  sed -i '/^noOfSheep 	=/s/=.*/= 0;/' Parameters.cfg
-  sed -i '/^noOfObjects 	=/s/=.*/= 10;/' Parameters.cfg
-  echo "Object Clustering"
-  ./enkiplayground
-
-elif  [ $1 -eq 2 ]
-then
-  sed -i '/^mode		=/s/=.*/= 2;/' Parameters.cfg
-  sed -i '/^noOfSheep 	=/s/=.*/= 5;/' Parameters.cfg
-  sed -i '/^noOfObjects 	=/s/=.*/= 5;/' Parameters.cfg
-  echo "Shepherding + Object Clustering"
-  ./enkiplayground
-
-elif  [ $1 -eq 3 ]
-then
-  sed -i '/^mode		=/s/=.*/= 3;/' Parameters.cfg
-  sed -i '/^noOfSheep 	=/s/=.*/= 10;/' Parameters.cfg
-  sed -i '/^noOfObjects 	=/s/=.*/= 0;/' Parameters.cfg
-  echo "Simplified Controller"
-  ./enkiplayground
-
-elif  [ $1 -eq 6 ]
-then
-  sed -i '/^mode		=/s/=.*/= 6;/' Parameters.cfg
-  sed -i '/^noOfSheep 	=/s/=.*/= 10;/' Parameters.cfg
-  sed -i '/^noOfObjects 	=/s/=.*/= 10;/' Parameters.cfg
-  echo "Heterogenous Controller"
-  ./enkiplayground
-
-fi
+sed -i '/^noOfObjects 	=/s/=.*/= 25;/' Parameters.cfg
+echo "2 Groups, 4 4"
+./enkiplayground

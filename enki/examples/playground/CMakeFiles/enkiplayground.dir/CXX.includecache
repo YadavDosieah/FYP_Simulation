@@ -193,6 +193,16 @@ qbytearraymatcher.h
 /usr/include/x86_64-linux-gnu/qt5/QtCore/qbytearraymatcher.h
 qcache.h
 /usr/include/x86_64-linux-gnu/qt5/QtCore/qcache.h
+qcborarray.h
+/usr/include/x86_64-linux-gnu/qt5/QtCore/qcborarray.h
+qcborcommon.h
+/usr/include/x86_64-linux-gnu/qt5/QtCore/qcborcommon.h
+qcbormap.h
+/usr/include/x86_64-linux-gnu/qt5/QtCore/qcbormap.h
+qcborstream.h
+/usr/include/x86_64-linux-gnu/qt5/QtCore/qcborstream.h
+qcborvalue.h
+/usr/include/x86_64-linux-gnu/qt5/QtCore/qcborvalue.h
 qchar.h
 /usr/include/x86_64-linux-gnu/qt5/QtCore/qchar.h
 qcollator.h
@@ -359,6 +369,8 @@ qpropertyanimation.h
 /usr/include/x86_64-linux-gnu/qt5/QtCore/qpropertyanimation.h
 qqueue.h
 /usr/include/x86_64-linux-gnu/qt5/QtCore/qqueue.h
+qrandom.h
+/usr/include/x86_64-linux-gnu/qt5/QtCore/qrandom.h
 qreadwritelock.h
 /usr/include/x86_64-linux-gnu/qt5/QtCore/qreadwritelock.h
 qrect.h
@@ -381,6 +393,8 @@ qscopedpointer.h
 /usr/include/x86_64-linux-gnu/qt5/QtCore/qscopedpointer.h
 qscopedvaluerollback.h
 /usr/include/x86_64-linux-gnu/qt5/QtCore/qscopedvaluerollback.h
+qscopeguard.h
+/usr/include/x86_64-linux-gnu/qt5/QtCore/qscopeguard.h
 qsemaphore.h
 /usr/include/x86_64-linux-gnu/qt5/QtCore/qsemaphore.h
 qsequentialanimationgroup.h
@@ -417,14 +431,20 @@ qstorageinfo.h
 /usr/include/x86_64-linux-gnu/qt5/QtCore/qstorageinfo.h
 qstring.h
 /usr/include/x86_64-linux-gnu/qt5/QtCore/qstring.h
+qstringalgorithms.h
+/usr/include/x86_64-linux-gnu/qt5/QtCore/qstringalgorithms.h
 qstringbuilder.h
 /usr/include/x86_64-linux-gnu/qt5/QtCore/qstringbuilder.h
 qstringlist.h
 /usr/include/x86_64-linux-gnu/qt5/QtCore/qstringlist.h
 qstringlistmodel.h
 /usr/include/x86_64-linux-gnu/qt5/QtCore/qstringlistmodel.h
+qstringliteral.h
+/usr/include/x86_64-linux-gnu/qt5/QtCore/qstringliteral.h
 qstringmatcher.h
 /usr/include/x86_64-linux-gnu/qt5/QtCore/qstringmatcher.h
+qstringview.h
+/usr/include/x86_64-linux-gnu/qt5/QtCore/qstringview.h
 qsysinfo.h
 /usr/include/x86_64-linux-gnu/qt5/QtCore/qsysinfo.h
 qsystemdetection.h
@@ -575,7 +595,7 @@ QtCore/qgenericatomic.h
 -
 
 /usr/include/x86_64-linux-gnu/qt5/QtCore/qbasicatomic.h
-QtCore/qatomic.h
+QtCore/qglobal.h
 -
 QtCore/qatomic_bootstrap.h
 -
@@ -617,8 +637,6 @@ string
 -
 iterator
 -
-QtCore/qstring.h
--
 
 /usr/include/x86_64-linux-gnu/qt5/QtCore/qbytearraylist.h
 QtCore/qlist.h
@@ -632,6 +650,66 @@ QtCore/qbytearray.h
 
 /usr/include/x86_64-linux-gnu/qt5/QtCore/qcache.h
 QtCore/qhash.h
+-
+
+/usr/include/x86_64-linux-gnu/qt5/QtCore/qcborarray.h
+QtCore/qcborvalue.h
+-
+initializer_list
+-
+
+/usr/include/x86_64-linux-gnu/qt5/QtCore/qcborcommon.h
+QtCore/qobjectdefs.h
+-
+QtCore/qmetatype.h
+-
+QtCore/qdebug.h
+-
+
+/usr/include/x86_64-linux-gnu/qt5/QtCore/qcbormap.h
+QtCore/qcborvalue.h
+-
+QtCore/qpair.h
+-
+initializer_list
+-
+
+/usr/include/x86_64-linux-gnu/qt5/QtCore/qcborstream.h
+QtCore/qbytearray.h
+-
+QtCore/qcborcommon.h
+-
+QtCore/qfloat16.h
+-
+QtCore/qscopedpointer.h
+-
+QtCore/qstring.h
+-
+QtCore/qstringview.h
+-
+
+/usr/include/x86_64-linux-gnu/qt5/QtCore/qcborvalue.h
+QtCore/qbytearray.h
+-
+QtCore/qdatetime.h
+-
+QtCore/qcborcommon.h
+-
+QtCore/qregularexpression.h
+-
+QtCore/qstring.h
+-
+QtCore/qstringview.h
+-
+QtCore/qurl.h
+-
+QtCore/quuid.h
+-
+QtCore/qvariant.h
+-
+QtCore/qvector.h
+-
+compare
 -
 
 /usr/include/x86_64-linux-gnu/qt5/QtCore/qchar.h
@@ -735,6 +813,8 @@ QtCore/qmetatype.h
 -
 QtCore/qnamespace.h
 -
+QtCore/qpair.h
+-
 limits
 -
 chrono
@@ -803,6 +883,8 @@ QtCore/qglobal.h
 -
 
 /usr/include/x86_64-linux-gnu/qt5/QtCore/qendian.h
+QtCore/qfloat16.h
+-
 QtCore/qglobal.h
 -
 stdlib.h
@@ -821,8 +903,6 @@ QtCore/qcoreevent.h
 -
 
 /usr/include/x86_64-linux-gnu/qt5/QtCore/qexception.h
-QtCore/qglobal.h
--
 QtCore/qatomic.h
 -
 QtCore/qshareddata.h
@@ -880,6 +960,16 @@ QtCore/qglobal.h
 initializer_list
 -
 
+/usr/include/x86_64-linux-gnu/qt5/QtCore/qfloat16.h
+QtCore/qglobal.h
+-
+QtCore/qmetatype.h
+-
+string.h
+-
+immintrin.h
+-
+
 /usr/include/x86_64-linux-gnu/qt5/QtCore/qfuture.h
 QtCore/qglobal.h
 -
@@ -920,6 +1010,8 @@ type_traits
 cstddef
 -
 utility
+-
+assert.h
 -
 stddef.h
 -
@@ -979,7 +1071,7 @@ algorithm
 -
 
 /usr/include/x86_64-linux-gnu/qt5/QtCore/qhashfunctions.h
-QtCore/qchar.h
+QtCore/qstring.h
 -
 QtCore/qpair.h
 -
@@ -1219,6 +1311,8 @@ QtCore/qstringlist.h
 /usr/include/x86_64-linux-gnu/qt5/QtCore/qmimetype.h
 QtCore/qglobal.h
 -
+QtCore/qobjectdefs.h
+-
 QtCore/qshareddata.h
 -
 QtCore/qstring.h
@@ -1344,6 +1438,14 @@ QtCore/qvariantanimation.h
 QtCore/qlist.h
 -
 
+/usr/include/x86_64-linux-gnu/qt5/QtCore/qrandom.h
+QtCore/qglobal.h
+-
+algorithm
+-
+random
+-
+
 /usr/include/x86_64-linux-gnu/qt5/QtCore/qreadwritelock.h
 QtCore/qglobal.h
 -
@@ -1391,8 +1493,6 @@ QtCore/qscopedpointer.h
 -
 
 /usr/include/x86_64-linux-gnu/qt5/QtCore/qresultstore.h
-QtCore/qglobal.h
--
 QtCore/qmap.h
 -
 QtCore/qdebug.h
@@ -1417,6 +1517,10 @@ stdlib.h
 -
 
 /usr/include/x86_64-linux-gnu/qt5/QtCore/qscopedvaluerollback.h
+QtCore/qglobal.h
+-
+
+/usr/include/x86_64-linux-gnu/qt5/QtCore/qscopeguard.h
 QtCore/qglobal.h
 -
 
@@ -1507,6 +1611,8 @@ QtCore/qabstractproxymodel.h
 -
 QtCore/qregexp.h
 -
+QtCore/qregularexpression.h
+-
 
 /usr/include/x86_64-linux-gnu/qt5/QtCore/qstack.h
 QtCore/qvector.h
@@ -1563,6 +1669,12 @@ QtCore/qrefcount.h
 -
 QtCore/qnamespace.h
 -
+QtCore/qstringliteral.h
+-
+QtCore/qstringalgorithms.h
+-
+QtCore/qstringview.h
+-
 string
 -
 iterator
@@ -1570,6 +1682,10 @@ iterator
 stdarg.h
 -
 QtCore/qstringbuilder.h
+-
+
+/usr/include/x86_64-linux-gnu/qt5/QtCore/qstringalgorithms.h
+QtCore/qnamespace.h
 -
 
 /usr/include/x86_64-linux-gnu/qt5/QtCore/qstringbuilder.h
@@ -1598,8 +1714,24 @@ QtCore/qabstractitemmodel.h
 QtCore/qstringlist.h
 -
 
+/usr/include/x86_64-linux-gnu/qt5/QtCore/qstringliteral.h
+QtCore/qarraydata.h
+-
+
 /usr/include/x86_64-linux-gnu/qt5/QtCore/qstringmatcher.h
 QtCore/qstring.h
+-
+
+/usr/include/x86_64-linux-gnu/qt5/QtCore/qstringview.h
+QtCore/qchar.h
+-
+QtCore/qbytearray.h
+-
+QtCore/qstringliteral.h
+-
+QtCore/qstringalgorithms.h
+-
+string
 -
 
 /usr/include/x86_64-linux-gnu/qt5/QtCore/qsysinfo.h
@@ -1633,7 +1765,7 @@ windows.h
 /usr/include/x86_64-linux-gnu/qt5/QtCore/qtemporarydir.h
 QtCore/qdir.h
 -
-QtCore/QScopedPointer
+QtCore/qscopedpointer.h
 -
 
 /usr/include/x86_64-linux-gnu/qt5/QtCore/qtemporaryfile.h
@@ -1671,6 +1803,10 @@ stdio.h
 /usr/include/x86_64-linux-gnu/qt5/QtCore/qthread.h
 QtCore/qobject.h
 -
+future
+-
+functional
+-
 limits.h
 -
 
@@ -1684,6 +1820,10 @@ QtCore/qrunnable.h
 
 /usr/include/x86_64-linux-gnu/qt5/QtCore/qthreadstorage.h
 QtCore/qglobal.h
+-
+QtCore/qscopedpointer.h
+-
+type_traits
 -
 
 /usr/include/x86_64-linux-gnu/qt5/QtCore/qtimeline.h
@@ -1774,6 +1914,8 @@ QtCore/qstringlist.h
 QtCore/qobject.h
 -
 QtCore/qbytearraylist.h
+-
+variant
 -
 
 /usr/include/x86_64-linux-gnu/qt5/QtCore/qvariantanimation.h
@@ -2549,6 +2691,8 @@ OpenGLES/ES2/gl.h
 -
 OpenGLES/ES2/glext.h
 -
+GLES3/gl32.h
+-
 GLES3/gl31.h
 -
 GLES3/gl3.h
@@ -2574,10 +2718,6 @@ stddef.h
 inttypes.h
 -
 inttypes.h
--
-inttypes.h
--
-stdint.h
 -
 stdint.h
 -
@@ -2644,10 +2784,6 @@ stddef.h
 inttypes.h
 -
 inttypes.h
--
-inttypes.h
--
-stdint.h
 -
 stdint.h
 -

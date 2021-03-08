@@ -47,6 +47,11 @@ examples/playground/CMakeFiles/enkiplayground.dir/Playground.cpp.o
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qbytearraylist.h
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qbytearraymatcher.h
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qcache.h
+ /usr/include/x86_64-linux-gnu/qt5/QtCore/qcborarray.h
+ /usr/include/x86_64-linux-gnu/qt5/QtCore/qcborcommon.h
+ /usr/include/x86_64-linux-gnu/qt5/QtCore/qcbormap.h
+ /usr/include/x86_64-linux-gnu/qt5/QtCore/qcborstream.h
+ /usr/include/x86_64-linux-gnu/qt5/QtCore/qcborvalue.h
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qchar.h
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qcollator.h
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qcommandlineoption.h
@@ -79,6 +84,7 @@ examples/playground/CMakeFiles/enkiplayground.dir/Playground.cpp.o
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qfilesystemwatcher.h
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qfinalstate.h
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qflags.h
+ /usr/include/x86_64-linux-gnu/qt5/QtCore/qfloat16.h
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qfuture.h
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qfutureinterface.h
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qfuturesynchronizer.h
@@ -136,6 +142,7 @@ examples/playground/CMakeFiles/enkiplayground.dir/Playground.cpp.o
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qprocessordetection.h
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qpropertyanimation.h
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qqueue.h
+ /usr/include/x86_64-linux-gnu/qt5/QtCore/qrandom.h
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qreadwritelock.h
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qrect.h
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qrefcount.h
@@ -147,6 +154,7 @@ examples/playground/CMakeFiles/enkiplayground.dir/Playground.cpp.o
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qsavefile.h
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qscopedpointer.h
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qscopedvaluerollback.h
+ /usr/include/x86_64-linux-gnu/qt5/QtCore/qscopeguard.h
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qsemaphore.h
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qsequentialanimationgroup.h
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qset.h
@@ -166,10 +174,13 @@ examples/playground/CMakeFiles/enkiplayground.dir/Playground.cpp.o
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qstatemachine.h
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qstorageinfo.h
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qstring.h
+ /usr/include/x86_64-linux-gnu/qt5/QtCore/qstringalgorithms.h
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qstringbuilder.h
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qstringlist.h
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qstringlistmodel.h
+ /usr/include/x86_64-linux-gnu/qt5/QtCore/qstringliteral.h
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qstringmatcher.h
+ /usr/include/x86_64-linux-gnu/qt5/QtCore/qstringview.h
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qsysinfo.h
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qsystemdetection.h
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qsystemsemaphore.h
