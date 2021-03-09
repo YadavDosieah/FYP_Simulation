@@ -1,5 +1,12 @@
 #!/bin/bash
 
+cd "$(dirname "$0")"
+
+#Calling ls directly using the exec command
+cd ../../
+cmake .
+cd examples/playground/
+
 sed -i "/^#define GUI  /s/  .*/  false/" config.h
 sed -i "/^#define Analysis  /s/  .*/  true/" config.h
 sed -i "/^#define Optimise  /s/  .*/  false/" config.h
@@ -13,35 +20,28 @@ sed -i "/^#define Post_Eval 1/s/.*/\/\/ #define Post_Eval 1/" config.h
 make enkiplayground
 
 sed -i "/^No_Of_Trials	=/s/=.*/= 1;/" Parameters.cfg
-sed -i "/^mode		=/s/=.*/= $1;/" Parameters.cfg
-sed -i "/^noOfShepherd 	=/s/=.*/= $2;/" Parameters.cfg
-sed -i "/^noOfSheep 	=/s/=.*/= $3;/" Parameters.cfg
-sed -i "/^noOfObjects 	=/s/=.*/= $4;/" Parameters.cfg
 
-if [ $1 -eq 0 ]
+if [ $# -eq 2 ]
 then
-  echo -e "\e[91mShepherding\e[0m"
+  sed -i "/^noOfShepherd =/s/=.*/= ({Value = $1;});/" Parameters.cfg
+  sed -i "/^noOfObjects 	=/s/=.*/= $2;/" Parameters.cfg
 
-elif  [ $1 -eq 1 ]
+elif  [ $# -eq 3 ]
 then
-  echo -e "\e[91mObject Clustering\e[0m"
+  sed -i "/^noOfShepherd =/s/=.*/= ({Value = $1;},{Value = $2;});/" Parameters.cfg
+  sed -i "/^noOfObjects 	=/s/=.*/= $3;/" Parameters.cfg
 
-elif  [ $1 -eq 2 ]
+elif  [ $# -eq 5 ]
 then
-  echo -e "\e[91mShepherding + Object Clustering\e[0m"
+  sed -i "/^noOfShepherd =/s/=.*/= ({Value = $1;},{Value = $2;},{Value = $3;},{Value = $4;});/" Parameters.cfg
+  sed -i "/^noOfObjects 	=/s/=.*/= $5;/" Parameters.cfg
 
-elif  [ $1 -eq 3 ]
+elif  [ $# -eq 9 ]
 then
-  echo -e "\e[91mSimplified Controller\e[0m"
+  sed -i "/^noOfShepherd =/s/=.*/= ({Value = $1;},{Value = $2;},{Value = $3;},{Value = $4;},{Value = $5;},{Value = $6;},{Value = $7;},{Value = $8;});/" Parameters.cfg
+  sed -i "/^noOfObjects 	=/s/=.*/= $9;/" Parameters.cfg
 
 fi
 
 ./enkiplayground
-
-if [ $# -eq 5 ]
-then
-  echo
-  ./plot.py $5
-else
-  ./plot.py
-fi
+./plot.py

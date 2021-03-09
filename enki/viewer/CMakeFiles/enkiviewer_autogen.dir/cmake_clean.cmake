@@ -1,7 +1,6 @@
 file(REMOVE_RECURSE
-  "enkiviewer_autogen"
-  "CMakeFiles/enkiviewer_autogen.dir/AutogenOldSettings.cmake"
   "CMakeFiles/enkiviewer_autogen"
+  "enkiviewer_autogen/mocs_compilation.cpp"
 )
 
 # Per-language clean rules from dependency scanning.

@@ -1,1 +1,1 @@
-/usr/bin/c++   -O3 -fopenmp  -rdynamic CMakeFiles/testGeometry.dir/testGeometry.cpp.o  -o testGeometry ../enki/libenki.a 
+/usr/bin/c++   -O3 -fopenmp  -rdynamic CMakeFiles/testGeometry.dir/testGeometry.cpp.o  -o testGeometry  ../enki/libenki.a 

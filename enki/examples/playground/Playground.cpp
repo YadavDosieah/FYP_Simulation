@@ -161,8 +161,21 @@ int main(int argc, char *argv[])
                     configfile.lookup("x22"),configfile.lookup("x23")};
     }
     #else
-      double x[NoOfGroups*12] = {0};
-      dim = NoOfGroups*12;
+      // double x[NoOfGroups*12] = {0};
+      int dim = NoOfGroups*12;
+      double x[NoOfGroups*12] = {1.44249,   7.29415,
+                                 7.51103,   1.66542,
+                                 0.875977,   2.90459,
+                                 -1.26487,   5.38036,
+                                 -3.77527, -0.821816,
+                                 -3.87073,    5.9996,
+                                  1.32106,   6.05863,
+                                  7.3696,   1.57351,
+                                 -0.262459,   2.04362,
+                                  4.93178, -0.544011,
+                                  2.08984,    3.8418,
+                                  5.26498,  -3.06115};
+
 
     #endif
     int No_Of_Success = 0;

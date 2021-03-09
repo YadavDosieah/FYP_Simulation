@@ -1,7 +1,7 @@
 file(REMOVE_RECURSE
   "CMakeFiles/enkiMinimal.dir/enkiMinimal.cpp.o"
-  "enkiMinimal.pdb"
   "enkiMinimal"
+  "enkiMinimal.pdb"
 )
 
 # Per-language clean rules from dependency scanning.
