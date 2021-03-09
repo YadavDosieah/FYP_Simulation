@@ -1,0 +1,25 @@
+-- Python version from interpreter is 2.7.17
+-- Python libs and executable found, looking for boost::python
+-- Boost version: 1.65.1
+-- Found the following Boost libraries:
+--   python
+-- boost::python found, generating python bindings
+-- SDL2 found, enabling joystick support
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/co4xgd/FYP_Simulation/enki
+[ 46%] Built target enki
+[ 48%] Automatic MOC and RCC for target enkiviewer
+[ 48%] Built target enkiviewer_autogen
+[ 89%] Built target enkiviewer
+[ 92%] Automatic MOC for target enkiplayground
+[ 92%] Built target enkiplayground_autogen
+Scanning dependencies of target enkiplayground
+[ 94%] Building CXX object examples/playground/CMakeFiles/enkiplayground.dir/Playground.cpp.o
+[ 97%] Linking CXX executable enkiplayground
+[100%] Built target enkiplayground
+2 Groups, 4 4
+Number of Shepherds: 4, 4, 
+INFO - CMA-ES / dim=24 / lambda=20 / sigma0=0.72 / mu=10 / mueff=6.19569 / c1=0.00309461 / cmu=0.0127737 / tpa=0 / threads=10
+INFO - iter=0 / evals=0 / f-value=nan / sigma=0.72 / last_iter=0
+/home/co4xgd/FYP_Simulation/enki/examples/playground/RunOptimisation.sh: line 29: 77935 Segmentation fault      ./enkiplayground
