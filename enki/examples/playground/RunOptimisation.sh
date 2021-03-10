@@ -19,7 +19,7 @@ sed -i "/^#define Noise_Analysis 1/s/.*/\/\/ #define Noise_Analysis 1/" config.h
 sed -i "/^#define Post_Eval 1/s/.*/\/\/ #define Post_Eval 1/" config.h
 make enkiplayground
 
-sed -i '/^No_Of_Threads	=/s/=.*/= 10;/' Parameters.cfg
+sed -i '/^No_Of_Threads	=/s/=.*/= 20;/' Parameters.cfg
 sed -i "/^No_Of_Trials	=/s/=.*/= 50;/" Parameters.cfg
 
 sed -i "/^noOfShepherd =/s/=.*/= ({Value = 4;},{Value = 4;});/" Parameters.cfg
