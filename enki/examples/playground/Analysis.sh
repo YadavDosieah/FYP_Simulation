@@ -4,7 +4,7 @@ cd "$(dirname "$0")"
 
 #Calling ls directly using the exec command
 cd ../../
-cmake .
+# cmake .
 cd examples/playground/
 
 sed -i "/^#define GUI  /s/  .*/  false/" config.h
@@ -17,7 +17,7 @@ sed -i "/^#define Noise_Analysis 1/s/.*/\/\/ #define Noise_Analysis 1/" config.h
 sed -i "/^#define Post_Eval 1/s/.*/\/\/ #define Post_Eval 1/" config.h
 
 #Calling ls directly using the exec command
-make enkiplayground
+# make enkiplayground
 
 sed -i "/^No_Of_Trials	=/s/=.*/= 1;/" Parameters.cfg
 

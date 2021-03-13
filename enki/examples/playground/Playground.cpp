@@ -131,10 +131,6 @@ int main(int argc, char *argv[])
     int Noise_Scenario = configfile.lookup("Noise_Scenario");
   #endif
 
-  #if (Gui || Analysis) && !defined(Post_Eval)
-
-  #endif
-
   #if(Analysis)
     #ifdef Analyis_Log
       std::ofstream Analysis_Logfile;
@@ -146,38 +142,27 @@ int main(int argc, char *argv[])
       Noise_Logfile.open("Noise.csv",std::ios_base::app);
     #endif
 
-    #ifdef Post_Eval
-    double x[24] = {configfile.lookup("x0"),configfile.lookup("x1"),
-                    configfile.lookup("x2"),configfile.lookup("x3"),
-                    configfile.lookup("x4"),configfile.lookup("x5"),
-                    configfile.lookup("x6"),configfile.lookup("x7"),
-                    configfile.lookup("x8"),configfile.lookup("x9"),
-                    configfile.lookup("x10"),configfile.lookup("x11"),
-                    configfile.lookup("x12"),configfile.lookup("x13"),
-                    configfile.lookup("x14"),configfile.lookup("x15"),
-                    configfile.lookup("x16"),configfile.lookup("x17"),
-                    configfile.lookup("x18"),configfile.lookup("x19"),
-                    configfile.lookup("x20"),configfile.lookup("x21"),
-                    configfile.lookup("x22"),configfile.lookup("x23")};
+    double x[NoOfGroups*12];
+    int dim = NoOfGroups*12;
+
+    switch (NoOfGroups) {
+      case 2:
+        static double y[24] = {configfile.lookup("x0"),configfile.lookup("x1"),
+                                          configfile.lookup("x2"),configfile.lookup("x3"),
+                                          configfile.lookup("x4"),configfile.lookup("x5"),
+                                          configfile.lookup("x6"),configfile.lookup("x7"),
+                                          configfile.lookup("x8"),configfile.lookup("x9"),
+                                          configfile.lookup("x10"),configfile.lookup("x11"),
+                                          configfile.lookup("x12"),configfile.lookup("x13"),
+                                          configfile.lookup("x14"),configfile.lookup("x15"),
+                                          configfile.lookup("x16"),configfile.lookup("x17"),
+                                          configfile.lookup("x18"),configfile.lookup("x19"),
+                                          configfile.lookup("x20"),configfile.lookup("x21"),
+                                          configfile.lookup("x22"),configfile.lookup("x23")};
+        copy(y,y+24,x);
+        break;
     }
-    #else
-      // double x[NoOfGroups*12] = {0};
-      int dim = NoOfGroups*12;
-      double x[NoOfGroups*12] = {1.44249,   7.29415,
-                                 7.51103,   1.66542,
-                                 0.875977,   2.90459,
-                                 -1.26487,   5.38036,
-                                 -3.77527, -0.821816,
-                                 -3.87073,    5.9996,
-                                  1.32106,   6.05863,
-                                  7.3696,   1.57351,
-                                 -0.262459,   2.04362,
-                                  4.93178, -0.544011,
-                                  2.08984,    3.8418,
-                                  5.26498,  -3.06115};
 
-
-    #endif
     int No_Of_Success = 0;
     float SuccessRate = 0;
     float maxSR = 0;

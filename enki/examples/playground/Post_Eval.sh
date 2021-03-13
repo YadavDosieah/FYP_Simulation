@@ -23,46 +23,16 @@ make enkiplayground
 sed -i '/^No_Of_Threads	=/s/=.*/= 20;/' Parameters.cfg
 sed -i "/^No_Of_Trials	=/s/=.*/= 100;/" Parameters.cfg
 
-sed -i "/^noOfShepherd 	=/s/=.*/= 6;/" Parameters.cfg
+sed -i "/^noOfShepherd =/s/=.*/= ({Value = 4;},{Value = 4;});/" Parameters.cfg
+sed -i '/^noOfObjects 	=/s/=.*/= 25;/' Parameters.cfg
 
-if [ $1 -eq 0 ]
-then
-  sed -i '/^mode		=/s/=.*/= 0;/' Parameters.cfg
-  sed -i '/^noOfSheep 	=/s/=.*/= 25;/' Parameters.cfg
-  sed -i '/^noOfObjects 	=/s/=.*/= 25;/' Parameters.cfg
-  echo "Shepherding"
-  ./Post_Eval.py 0
+echo "NoOfGroups,Group1,Group2,Objects, Fit Val, max SR, SR" > Analysis.csv
 
-elif  [ $1 -eq 1 ]
-then
-  sed -i '/^mode		=/s/=.*/= 1;/' Parameters.cfg
-  sed -i '/^noOfSheep 	=/s/=.*/= 25;/' Parameters.cfg
-  sed -i '/^noOfObjects 	=/s/=.*/= 25;/' Parameters.cfg
-  echo "Object Clustering"
-  ./Post_Eval.py 1
+for i in {1..30}
+do
+   echo "Post Evaluating $i evolution"
+   ./Update_Vel_Param.py Results/Division_Of_Labour/Parameters_File.csv $i
+   ./enkiplayground
+done
 
-elif  [ $1 -eq 2 ]
-then
-  sed -i '/^mode		=/s/=.*/= 2;/' Parameters.cfg
-  sed -i '/^noOfSheep 	=/s/=.*/= 25;/' Parameters.cfg
-  sed -i '/^noOfObjects 	=/s/=.*/= 25;/' Parameters.cfg
-  echo "Shepherding + Object Clustering"
-  ./Post_Eval.py 2
-
-elif  [ $1 -eq 3 ]
-then
-  sed -i '/^mode		=/s/=.*/= 3;/' Parameters.cfg
-  sed -i '/^noOfSheep 	=/s/=.*/= 50;/' Parameters.cfg
-  sed -i '/^noOfObjects 	=/s/=.*/= 0;/' Parameters.cfg
-  echo "Simplified Controller"
-  ./Post_Eval.py 3
-
-elif  [ $1 -eq 6 ]
-then
-  sed -i '/^mode		=/s/=.*/= 6;/' Parameters.cfg
-  sed -i '/^noOfSheep 	=/s/=.*/= 10;/' Parameters.cfg
-  sed -i '/^noOfObjects 	=/s/=.*/= 10;/' Parameters.cfg
-  echo "Heterogenous Controller"
-  ./Post_Eval.py 6
-
-fi
+mv Analysis.csv Post_Eval_DOL.csv
