@@ -24,7 +24,7 @@ std::mutex mtx;
 std::ofstream out;
 pthread_mutex_t mtx2=PTHREAD_MUTEX_INITIALIZER;
 
-int noOfObjects, NoOfGroups;
+int noOfObjects, NoOfGroups, mode;
 vector<int> noOfShepherd;
 float GoalRadius, GoalDistance;
 int Goalx, Goaly, Xbound, Ybound;
@@ -53,7 +53,7 @@ FitFunc fitnessfunction = [](const double *x, const int N)
   {
     start:
     World world(Xbound,Ybound, Color(0.5,0.5,0.5));
-    Shepherding simulation(&world,noOfShepherd,noOfObjects,
+    Shepherding simulation(&world,mode,noOfShepherd,noOfObjects,
       Goalx, Goaly,GoalRadius, GoalDistance, x, N);
 
       for (unsigned j=0; j < NoOfSteps; j++)
@@ -110,6 +110,7 @@ int main(int argc, char *argv[])
   cout << endl;
   NoOfGroups = noOfShepherd.size();
   noOfObjects = configfile.lookup("noOfObjects");
+  mode = configfile.lookup("mode");
 	Goalx = configfile.lookup("Goalx");
 	Goaly = configfile.lookup("Goaly");
   GoalRadius = configfile.lookup("GoalRadius");
@@ -179,7 +180,7 @@ int main(int argc, char *argv[])
         ShepherdingNoise simulation(&world,mode,noOfSheep,noOfShepherd,noOfObjects,Csheep,
           Cshepherd,Ksheep,K1, K2, KWall, Goalx, Goaly,GoalRadius, GoalDistance, x, dim,Noise_Level,Noise_Scenario);
       #else
-        Shepherding simulation(&world,noOfShepherd,noOfObjects,
+        Shepherding simulation(&world,mode,noOfShepherd,noOfObjects,
           Goalx, Goaly,GoalRadius, GoalDistance, x, dim);
       #endif
 
