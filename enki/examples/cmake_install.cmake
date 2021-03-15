@@ -1,4 +1,4 @@
-# Install script for directory: /home/yadav/Documents/Final-Year-Project/FYP_Simulation/enki/examples
+# Install script for directory: /home/co4xgd/FYP_Simulation/enki/examples
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -39,8 +39,8 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/home/yadav/Documents/Final-Year-Project/FYP_Simulation/enki/examples/minimal/cmake_install.cmake")
-  include("/home/yadav/Documents/Final-Year-Project/FYP_Simulation/enki/examples/playground/cmake_install.cmake")
+  include("/home/co4xgd/FYP_Simulation/enki/examples/minimal/cmake_install.cmake")
+  include("/home/co4xgd/FYP_Simulation/enki/examples/playground/cmake_install.cmake")
 
 endif()
 
