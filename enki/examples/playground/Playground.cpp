@@ -97,7 +97,8 @@ int main(int argc, char *argv[])
   //Read configuration file
 	Config configfile;
 	configfile.readFile("Parameters.cfg");
-
+  noOfObjects = configfile.lookup("noOfObjects");
+  mode = configfile.lookup("mode");
   Setting& settings = configfile.lookup("noOfShepherd");
   int val;
   cout << "Number of Shepherds: ";
@@ -108,9 +109,10 @@ int main(int argc, char *argv[])
     cout << val << ", ";
   }
   cout << endl;
+  cout << "Number of Objects:   " << noOfObjects << endl;
+  cout << "Mode:                " << mode << endl;
+
   NoOfGroups = noOfShepherd.size();
-  noOfObjects = configfile.lookup("noOfObjects");
-  mode = configfile.lookup("mode");
 	Goalx = configfile.lookup("Goalx");
 	Goaly = configfile.lookup("Goaly");
   GoalRadius = configfile.lookup("GoalRadius");
@@ -288,11 +290,24 @@ int main(int argc, char *argv[])
       generation = 1;
       evolution++;
       out.open("Results/Division_Of_Labour/Optimisation_Logfile" + std::to_string(evolution) + ".csv");
-      int dim = NoOfGroups*12; // problem dimensions.
       out << "Generation, Iteration, Trial,";
-      for(int j=0; j<NoOfGroups; j++)
+
+      int dim;
+      if (mode == 1)
       {
-        out << "Vl_1, Vr_1,Vl_2, Vr_2,Vl_3, Vr_3,Vl_4, Vr_4,Vl_5, Vr_5,Vl_6, Vr_6,";
+        dim = NoOfGroups*12; // problem dimensions.
+        for(int j=0; j<NoOfGroups; j++)
+        {
+          out << "Vl_1, Vr_1,Vl_2, Vr_2,Vl_3, Vr_3,Vl_4, Vr_4,Vl_5, Vr_5,Vl_6, Vr_6,";
+        }
+      }
+      else if (mode == 2)
+      {
+        dim = NoOfGroups*16; // problem dimensions.
+        for(int j=0; j<NoOfGroups; j++)
+        {
+          out << "Vl_1, Vr_1,Vl_2, Vr_2,Vl_3, Vr_3,Vl_4, Vr_4,Vl_5, Vr_5,Vl_6, Vr_6,Vl_7, Vr_7,Vl_8, Vr_8";
+        }
       }
       out << "Fitness Value" << endl;
 

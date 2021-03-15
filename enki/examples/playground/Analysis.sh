@@ -1,11 +1,21 @@
 #!/bin/bash
 
-cd "$(dirname "$0")"
 
-#Calling ls directly using the exec command
-cd ../../
-# cmake .
-cd examples/playground/
+case "$1" in
+
+-compile|-c)
+  cd ../../
+  cmake .
+  cd examples/playground/
+
+  make enkiplayground
+  shift
+  ;;
+
+esac
+
+
+cd "$(dirname "$0")"
 
 sed -i "/^#define GUI  /s/  .*/  false/" config.h
 sed -i "/^#define Analysis  /s/  .*/  true/" config.h
@@ -16,8 +26,6 @@ sed -i "/^#define Analyis_Log 1/s/.*/\/\/ #define Analyis_Log 1/" config.h
 sed -i "/^#define Noise_Analysis 1/s/.*/\/\/ #define Noise_Analysis 1/" config.h
 sed -i "/^#define Post_Eval 1/s/.*/\/\/ #define Post_Eval 1/" config.h
 
-#Calling ls directly using the exec command
-# make enkiplayground
 
 sed -i "/^No_Of_Trials	=/s/=.*/= 1;/" Parameters.cfg
 

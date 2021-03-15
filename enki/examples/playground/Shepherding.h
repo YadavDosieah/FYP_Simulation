@@ -96,10 +96,10 @@ class Shepherding
 		/********************* Shepherd Speed Calculation *************************/
 		/*************************************************************************/
 		CalculateFitness();
-		int noOfVel = 12;
 		int CumulativeNumberOfShepherds = 0;
 		if (mode == 1)
 		{
+			int noOfVel = 12;
 			for (int j=0; j< NoOfGroups; j++)
 			{
 				for(int i = 0; i < noOfShepherd[j]; i++)
@@ -113,7 +113,7 @@ class Shepherding
 
 					shepherdDetected = image[0].components[1] == 1 ? 1 : 0;
 					goalDetected 	= image2[0].components[2] == 1 ? 1 : 0;
-					objectDetected = image[0].components[0] == 0.9 ? 1 : 0;
+					objectDetected = image[0].components[0] == 0.95 ? 1 : 0;
 
 					if((objectDetected||shepherdDetected||goalDetected) == false) //No objects seen			STATE 0
 					{
@@ -163,6 +163,7 @@ class Shepherding
 		}
 		else if(mode == 2)
 		{
+			int noOfVel = 16;
 			for (int j=0; j< NoOfGroups; j++)
 			{
 				for(int i = 0; i < noOfShepherd[j]; i++)
@@ -178,7 +179,7 @@ class Shepherding
 					shepherd1Detected = image[0].components[1] == 1 ? 1 : 0;
 					shepherd2Detected = image[0].components[1] == 0.9 ? 1 : 0;
 					goalDetected 	= image2[0].components[2] == 1 ? 1 : 0;
-					objectDetected = image[0].components[0] == 0.9 ? 1 : 0;
+					objectDetected = image[0].components[0] == 0.95 ? 1 : 0;
 
 					if((objectDetected||shepherd1Detected||shepherd2Detected||goalDetected) == false) //No objects seen			STATE 0
 					{
@@ -329,7 +330,7 @@ class Shepherding
 		Obj->pos = Point(rand()%Xbound, rand()%(Goaly-50));;
 		Obj->setCylindric(3.7, 4.7, 152);
 		Obj->dryFrictionCoefficient = 2.5;
-		Obj->setColor(Color(0.9, 0.9, 0));
+		Obj->setColor(Color(0.95, 0.95, 0));
 		Obj->collisionElasticity = 0;
 		V->push_back(Obj);
 		world->addObject(Obj);

@@ -28,6 +28,7 @@ def read():
                 Wheel_vel = data[1].split('x=')
                 Wheel_vel = Wheel_vel[1].split(' ')
                 Wheel_vel = list(filter(None, Wheel_vel))
+                # print(len(Wheel_vel))
                 for j in range(len(Wheel_vel)):
                     # print(Wheel_vel[j])
                     sed(['-i', '/^x{:d}	=/s/=.*/= {:f};/'.format(j,float(Wheel_vel[j])), 'Parameters.cfg'])
