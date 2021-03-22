@@ -145,26 +145,57 @@ int main(int argc, char *argv[])
       Noise_Logfile.open("Noise.csv",std::ios_base::app);
     #endif
 
-    double x[NoOfGroups*12];
-    int dim = NoOfGroups*12;
+    int NoOfVel;
+    if(mode == 1){NoOfVel = 12;}
+    else if(mode == 2){NoOfVel = 16;}
 
-    switch (NoOfGroups) {
-      case 2:
-        static double y[24] = {configfile.lookup("x0"),configfile.lookup("x1"),
-                                          configfile.lookup("x2"),configfile.lookup("x3"),
-                                          configfile.lookup("x4"),configfile.lookup("x5"),
-                                          configfile.lookup("x6"),configfile.lookup("x7"),
-                                          configfile.lookup("x8"),configfile.lookup("x9"),
-                                          configfile.lookup("x10"),configfile.lookup("x11"),
-                                          configfile.lookup("x12"),configfile.lookup("x13"),
-                                          configfile.lookup("x14"),configfile.lookup("x15"),
-                                          configfile.lookup("x16"),configfile.lookup("x17"),
-                                          configfile.lookup("x18"),configfile.lookup("x19"),
-                                          configfile.lookup("x20"),configfile.lookup("x21"),
-                                          configfile.lookup("x22"),configfile.lookup("x23")};
-        copy(y,y+24,x);
-        break;
+    double x[NoOfGroups*NoOfVel];
+    int dim = NoOfGroups*NoOfVel;
+    if (mode == 1)
+    {
+      switch (NoOfGroups) {
+        case 2:
+          static double y[24] = { configfile.lookup("x0"),configfile.lookup("x1"),
+                                  configfile.lookup("x2"),configfile.lookup("x3"),
+                                  configfile.lookup("x4"),configfile.lookup("x5"),
+                                  configfile.lookup("x6"),configfile.lookup("x7"),
+                                  configfile.lookup("x8"),configfile.lookup("x9"),
+                                  configfile.lookup("x10"),configfile.lookup("x11"),
+                                  configfile.lookup("x12"),configfile.lookup("x13"),
+                                  configfile.lookup("x14"),configfile.lookup("x15"),
+                                  configfile.lookup("x16"),configfile.lookup("x17"),
+                                  configfile.lookup("x18"),configfile.lookup("x19"),
+                                  configfile.lookup("x20"),configfile.lookup("x21"),
+                                  configfile.lookup("x22"),configfile.lookup("x23")};
+          copy(y,y+24,x);
+          break;
+      }
     }
+    else if(mode == 2)
+    {
+      switch (NoOfGroups) {
+        case 2:
+          static double y[32] = { configfile.lookup("x0"),configfile.lookup("x1"),
+                                  configfile.lookup("x2"),configfile.lookup("x3"),
+                                  configfile.lookup("x4"),configfile.lookup("x5"),
+                                  configfile.lookup("x6"),configfile.lookup("x7"),
+                                  configfile.lookup("x8"),configfile.lookup("x9"),
+                                  configfile.lookup("x10"),configfile.lookup("x11"),
+                                  configfile.lookup("x12"),configfile.lookup("x13"),
+                                  configfile.lookup("x14"),configfile.lookup("x15"),
+                                  configfile.lookup("x16"),configfile.lookup("x17"),
+                                  configfile.lookup("x18"),configfile.lookup("x19"),
+                                  configfile.lookup("x20"),configfile.lookup("x21"),
+                                  configfile.lookup("x22"),configfile.lookup("x23"),
+                                  configfile.lookup("x24"),configfile.lookup("x25"),
+                                  configfile.lookup("x26"),configfile.lookup("x27"),
+                                  configfile.lookup("x28"),configfile.lookup("x29"),
+                                  configfile.lookup("x30"),configfile.lookup("x31")};
+          copy(y,y+32,x);
+          break;
+      }
+    }
+
 
     int No_Of_Success = 0;
     float SuccessRate = 0;

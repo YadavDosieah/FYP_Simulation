@@ -1,5 +1,15 @@
 #!/bin/bash
 
+cd "$(dirname "$0")"
+
+sed -i "/^#define GUI  /s/  .*/  false/" config.h
+sed -i "/^#define Analysis  /s/  .*/  true/" config.h
+sed -i "/^#define Optimise  /s/  .*/  false/" config.h
+sed -i "/^#define logData  /s/  .*/  true/" config.h
+sed -i "/^#define Stop  /s/  .*/  false/" config.h
+sed -i "/^#define Analyis_Log 1/s/.*/\/\/ #define Analyis_Log 1/" config.h
+sed -i "/^#define Noise_Analysis 1/s/.*/\/\/ #define Noise_Analysis 1/" config.h
+sed -i "/^#define Post_Eval 1/s/.*/\/\/ #define Post_Eval 1/" config.h
 
 case "$1" in
 
@@ -13,18 +23,6 @@ case "$1" in
   ;;
 
 esac
-
-
-cd "$(dirname "$0")"
-
-sed -i "/^#define GUI  /s/  .*/  false/" config.h
-sed -i "/^#define Analysis  /s/  .*/  true/" config.h
-sed -i "/^#define Optimise  /s/  .*/  false/" config.h
-sed -i "/^#define logData  /s/  .*/  true/" config.h
-sed -i "/^#define Stop  /s/  .*/  false/" config.h
-sed -i "/^#define Analyis_Log 1/s/.*/\/\/ #define Analyis_Log 1/" config.h
-sed -i "/^#define Noise_Analysis 1/s/.*/\/\/ #define Noise_Analysis 1/" config.h
-sed -i "/^#define Post_Eval 1/s/.*/\/\/ #define Post_Eval 1/" config.h
 
 
 sed -i "/^No_Of_Trials	=/s/=.*/= 1;/" Parameters.cfg

@@ -3,8 +3,8 @@
 // #define Post_Eval 1
 
 #define GUI  false
-#define Analysis  false
-#define Optimise  true
+#define Analysis  true
+#define Optimise  false
 
-#define logData  false
+#define logData  true
 #define Stop  false
