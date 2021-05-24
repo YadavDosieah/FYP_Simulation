@@ -24,9 +24,9 @@ std::mutex mtx;
 std::ofstream out;
 pthread_mutex_t mtx2=PTHREAD_MUTEX_INITIALIZER;
 
-int noOfObjects, NoOfGroups, mode;
+int noOfObjects, NoOfGroups, mode, noOfSheep, Csheep, Cshepherd;
 vector<int> noOfShepherd;
-float GoalRadius, GoalDistance;
+float Ksheep, K1, K2, KWall, GoalRadius, GoalDistance, Sheep_MaxSpeed_Multiplier;
 int Goalx, Goaly, Xbound, Ybound;
 int global_iter;
 int generation;
@@ -53,7 +53,8 @@ FitFunc fitnessfunction = [](const double *x, const int N)
   {
     start:
     World world(Xbound,Ybound, Color(0.5,0.5,0.5));
-    Shepherding simulation(&world,mode,noOfShepherd,noOfObjects,
+    Shepherding simulation(&world,mode,noOfShepherd,noOfSheep,noOfObjects,
+      Csheep, Cshepherd,Ksheep,K1, K2, KWall,Sheep_MaxSpeed_Multiplier,
       Goalx, Goaly,GoalRadius, GoalDistance, x, N);
 
       for (unsigned j=0; j < NoOfSteps; j++)
@@ -112,6 +113,15 @@ int main(int argc, char *argv[])
   cout << "Number of Objects:   " << noOfObjects << endl;
   cout << "Mode:                " << mode << endl;
 
+  noOfSheep = configfile.lookup("noOfSheep");
+	Csheep = configfile.lookup("Csheep");
+	Cshepherd = configfile.lookup("Cshepherd");
+	Ksheep = configfile.lookup("Ksheep");
+	K1 = configfile.lookup("K1");
+	K2 = configfile.lookup("K2");
+  KWall = configfile.lookup("KWall");
+  Sheep_MaxSpeed_Multiplier = configfile.lookup("Sheep_MaxSpeed_Multiplier");
+
   NoOfGroups = noOfShepherd.size();
 	Goalx = configfile.lookup("Goalx");
 	Goaly = configfile.lookup("Goaly");
@@ -146,12 +156,12 @@ int main(int argc, char *argv[])
     #endif
 
     int NoOfVel;
-    if(mode == 1){NoOfVel = 12;}
+    if(mode == 1 || mode == 3){NoOfVel = 12;}
     else if(mode == 2){NoOfVel = 16;}
 
     double x[NoOfGroups*NoOfVel];
     int dim = NoOfGroups*NoOfVel;
-    if (mode == 1)
+    if (mode == 1 || mode == 3)
     {
       switch (NoOfGroups) {
         case 2:
@@ -213,8 +223,10 @@ int main(int argc, char *argv[])
         ShepherdingNoise simulation(&world,mode,noOfSheep,noOfShepherd,noOfObjects,Csheep,
           Cshepherd,Ksheep,K1, K2, KWall, Goalx, Goaly,GoalRadius, GoalDistance, x, dim,Noise_Level,Noise_Scenario);
       #else
-        Shepherding simulation(&world,mode,noOfShepherd,noOfObjects,
+        Shepherding simulation(&world,mode,noOfShepherd,noOfSheep,noOfObjects,
+          Csheep, Cshepherd,Ksheep,K1, K2, KWall,Sheep_MaxSpeed_Multiplier,
           Goalx, Goaly,GoalRadius, GoalDistance, x, dim);
+
       #endif
 
         #if !defined(Analyis_Log) && !defined(Noise_Analysis)
@@ -324,7 +336,7 @@ int main(int argc, char *argv[])
       out << "Generation, Iteration, Trial,";
 
       int dim;
-      if (mode == 1)
+      if (mode == 1 || mode == 3)
       {
         dim = NoOfGroups*12; // problem dimensions.
         for(int j=0; j<NoOfGroups; j++)
