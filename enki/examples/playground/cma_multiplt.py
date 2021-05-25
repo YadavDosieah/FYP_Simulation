@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+#!/usr/bin/env python3
 """In a OS shell::
 
     python cma_multiplt.py data_file_name
@@ -29,7 +29,7 @@ or in a python shell::
 # along with libcmaes.  If not, see <http://www.gnu.org/licenses/>.
 ##
 
-import sys, pylab, csv
+import sys, matplotlib.pylab as pylab, csv
 import numpy as np
 from matplotlib.pylab import subplot, semilogy, grid, title
 # from matplotlib.pylab import figure, subplot, semilogy, hold, grid, axis, title, text, xlabel, isinteractive, draw, gcf
@@ -66,7 +66,7 @@ def plot(filename):
         xmean = dat[:,xmeanc]
 
     # plot data.
-    pylab.rcParams['font.size'] = 10
+    # pylab.rcParams['font.size'] = 10
     xlab = "function evaluations"
 
     # plot fvalue, sigma, kappa

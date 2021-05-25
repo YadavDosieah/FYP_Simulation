@@ -4,23 +4,26 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/co4xgd/FYP_Simulation/enki/python/enki.cpp" "/home/co4xgd/FYP_Simulation/enki/python/CMakeFiles/pyenki.dir/enki.cpp.o"
+  "/home/yadav/Documents/Final-Year-Project/FYP_Simulation/enki/python/enki.cpp" "/home/yadav/Documents/Final-Year-Project/FYP_Simulation/enki/python/CMakeFiles/pyenki.dir/enki.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 
 # Preprocessor definitions for this target.
 set(CMAKE_TARGET_DEFINITIONS_CXX
+  "BOOST_ALL_NO_LIB"
+  "BOOST_PYTHON_DYN_LINK"
   "QT_CORE_LIB"
   "QT_GUI_LIB"
   "QT_NO_DEBUG"
   "QT_OPENGL_LIB"
   "QT_WIDGETS_LIB"
+  "pyenki_EXPORTS"
   )
 
 # The include file search paths:
 set(CMAKE_CXX_TARGET_INCLUDE_PATH
   "."
-  "/usr/include/python2.7"
+  "/usr/include/python3.8"
   "/usr/include/x86_64-linux-gnu/qt5"
   "/usr/include/x86_64-linux-gnu/qt5/QtWidgets"
   "/usr/include/x86_64-linux-gnu/qt5/QtGui"
@@ -31,8 +34,8 @@ set(CMAKE_CXX_TARGET_INCLUDE_PATH
 
 # Targets to which this target links.
 set(CMAKE_TARGET_LINKED_INFO_FILES
-  "/home/co4xgd/FYP_Simulation/enki/enki/CMakeFiles/enki.dir/DependInfo.cmake"
-  "/home/co4xgd/FYP_Simulation/enki/viewer/CMakeFiles/enkiviewer.dir/DependInfo.cmake"
+  "/home/yadav/Documents/Final-Year-Project/FYP_Simulation/enki/enki/CMakeFiles/enki.dir/DependInfo.cmake"
+  "/home/yadav/Documents/Final-Year-Project/FYP_Simulation/enki/viewer/CMakeFiles/enkiviewer.dir/DependInfo.cmake"
   )
 
 # Fortran module output directory.

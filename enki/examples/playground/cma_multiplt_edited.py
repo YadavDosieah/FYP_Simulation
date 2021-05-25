@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+#!/usr/bin/env python3
 """In a OS shell::
 
     python cma_multiplt.py data_file_name
