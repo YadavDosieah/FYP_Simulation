@@ -1,6 +1,7 @@
 file(REMOVE_RECURSE
+  "enkiplayground_autogen"
+  "CMakeFiles/enkiplayground_autogen.dir/AutogenOldSettings.cmake"
   "CMakeFiles/enkiplayground_autogen"
-  "enkiplayground_autogen/mocs_compilation.cpp"
 )
 
 # Per-language clean rules from dependency scanning.
