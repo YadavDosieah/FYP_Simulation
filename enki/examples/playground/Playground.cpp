@@ -157,7 +157,7 @@ int main(int argc, char *argv[])
 
     int NoOfVel;
     if(mode == 1 || mode == 3){NoOfVel = 12;}
-    else if(mode == 2){NoOfVel = 16;}
+    else if(mode == 2 || mode == 4){NoOfVel = 16;}
 
     double x[NoOfGroups*NoOfVel];
     int dim = NoOfGroups*NoOfVel;
@@ -181,7 +181,7 @@ int main(int argc, char *argv[])
           break;
       }
     }
-    else if(mode == 2)
+    else if(mode == 2 || mode == 4)
     {
       switch (NoOfGroups) {
         case 2:
@@ -344,7 +344,7 @@ int main(int argc, char *argv[])
           out << "Vl_1, Vr_1,Vl_2, Vr_2,Vl_3, Vr_3,Vl_4, Vr_4,Vl_5, Vr_5,Vl_6, Vr_6,";
         }
       }
-      else if (mode == 2)
+      else if (mode == 2 || mode == 4)
       {
         dim = NoOfGroups*16; // problem dimensions.
         for(int j=0; j<NoOfGroups; j++)

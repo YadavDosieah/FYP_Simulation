@@ -79,7 +79,7 @@ class Shepherding
 			// cout << noOfShepherd[i] << endl;
 			for(int j=0; j< noOfShepherd[i]; j++)
 			{
-				if(mode == 2)
+				if(mode == 2 || mode == 4)
 				{
 					addRobots(world, &shepherds, i);
 				}
@@ -260,7 +260,7 @@ class Shepherding
 			}
 
 		}
-		else if(mode == 3)
+		else if(mode == 3)//Only sheep & No Differentiation between shepherds
 		{
 			int noOfVel = 12;
 			for (int j=0; j< NoOfGroups; j++)
@@ -322,6 +322,84 @@ class Shepherding
 
 				CumulativeNumberOfShepherds += noOfShepherd[j];
 			}
+		}
+		else if(mode == 4)//Only sheep & Differentiation between shepherds
+		{
+			int noOfVel = 16;
+			for (int j=0; j< NoOfGroups; j++)
+			{
+				for(int i = 0; i < noOfShepherd[j]; i++)
+				{
+					// cout << i+CumulativeNumberOfShepherds;
+					valarray<Color> image = shepherds[i+CumulativeNumberOfShepherds]->camera.image;
+					valarray<Color> image2 = shepherds[i+CumulativeNumberOfShepherds]->camera2.image;
+					bool shepherd1Detected = false;
+					bool shepherd2Detected = false;
+					bool goalDetected = false;
+					bool sheepDetected = false;
+
+					shepherd1Detected = image[0].components[1] == 1 ? 1 : 0;
+					shepherd2Detected = image[0].components[1] == 0.9 ? 1 : 0;
+					goalDetected 	= image2[0].components[2] == 1 ? 1 : 0;
+					sheepDetected 	= image[0].components[0] == 1 ? 1 : 0;
+
+					if((sheepDetected||shepherd1Detected||shepherd2Detected||goalDetected) == false) //No objects seen			STATE 0
+					{
+						// cout << "State 0\n";
+						shepherds[i+CumulativeNumberOfShepherds]->leftSpeed 	= x[0+(j*noOfVel)] * SPEED_MAX;
+						shepherds[i+CumulativeNumberOfShepherds]->rightSpeed	= x[1+(j*noOfVel)] * SPEED_MAX;
+					}
+					else if((sheepDetected&&goalDetected) == true) //Sheep + goal						STATE 4
+					{
+						// cout << "State 4\n";
+						shepherds[i+CumulativeNumberOfShepherds]->leftSpeed 	= x[10+(j*noOfVel)] * SPEED_MAX;
+						shepherds[i+CumulativeNumberOfShepherds]->rightSpeed	= x[11+(j*noOfVel)] * SPEED_MAX;
+					}
+					else if((shepherd1Detected&&goalDetected) == true) //Shepherd + goal			STATE 5
+					{
+						// cout << "State 5\n";
+						shepherds[i+CumulativeNumberOfShepherds]->leftSpeed 	= x[12+(j*noOfVel)] * SPEED_MAX;
+						shepherds[i+CumulativeNumberOfShepherds]->rightSpeed	= x[13+(j*noOfVel)] * SPEED_MAX;
+					}
+					else if((shepherd2Detected&&goalDetected) == true) //Shepherd + goal			STATE 5
+					{
+						// cout << "State 5\n";
+						shepherds[i+CumulativeNumberOfShepherds]->leftSpeed 	= x[14+(j*noOfVel)] * SPEED_MAX;
+						shepherds[i+CumulativeNumberOfShepherds]->rightSpeed	= x[15+(j*noOfVel)] * SPEED_MAX;
+					}
+					else if(goalDetected) //Only goal														STATE 3
+					{
+						// cout << "State 3\n";
+						shepherds[i+CumulativeNumberOfShepherds]->leftSpeed 	= x[8+(j*noOfVel)] * SPEED_MAX;
+						shepherds[i+CumulativeNumberOfShepherds]->rightSpeed	= x[9+(j*noOfVel)] * SPEED_MAX;
+					}
+					else if(sheepDetected)// sheep																STATE 1
+					{
+						// cout << "State 1\n";
+						shepherds[i+CumulativeNumberOfShepherds]->leftSpeed 	= x[2+(j*noOfVel)] * SPEED_MAX;
+						shepherds[i+CumulativeNumberOfShepherds]->rightSpeed	= x[3+(j*noOfVel)] * SPEED_MAX;
+					}
+					else if(shepherd1Detected)//shepherd														STATE 2
+					{
+						// cout << "State 2\n";
+						shepherds[i+CumulativeNumberOfShepherds]->leftSpeed 	= x[4+(j*noOfVel)] * SPEED_MAX;
+						shepherds[i+CumulativeNumberOfShepherds]->rightSpeed	= x[5+(j*noOfVel)] * SPEED_MAX;
+					}
+					else if(shepherd2Detected)//shepherd														STATE 2
+					{
+						// cout << "State 2\n";
+						shepherds[i+CumulativeNumberOfShepherds]->leftSpeed 	= x[6+(j*noOfVel)] * SPEED_MAX;
+						shepherds[i+CumulativeNumberOfShepherds]->rightSpeed	= x[7+(j*noOfVel)] * SPEED_MAX;
+					}
+					else
+					{
+						std::cout << "Error\n";
+					}
+				}
+
+				CumulativeNumberOfShepherds += noOfShepherd[j];
+			}
+
 		}
 
 		/*************************************************************************/

@@ -22,7 +22,7 @@ make enkiplayground
 sed -i '/^No_Of_Threads	=/s/=.*/= 20;/' Parameters.cfg
 sed -i "/^No_Of_Trials	=/s/=.*/= 50;/" Parameters.cfg
 
-sed -i '/^mode  =/s/=.*/= 3;/' Parameters.cfg
+sed -i '/^mode  =/s/=.*/= 4;/' Parameters.cfg
 
 sed -i "/^noOfShepherd =/s/=.*/= ({Value = 4;},{Value = 4;});/" Parameters.cfg
 sed -i '/^noOfSheep 	=/s/=.*/= 25;/' Parameters.cfg

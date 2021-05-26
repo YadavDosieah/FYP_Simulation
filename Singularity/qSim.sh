@@ -2,7 +2,7 @@
 #$ -P acsehpc
 #$ -q acsehpc.q
 #$ -l rmem=1G
-#$ -l h_rt=19:00:00
+#$ -l h_rt=24:00:00
 #$ -pe smp 20
 #$ -m bea
 #$ -M co4xgd@sheffield.ac.uk
