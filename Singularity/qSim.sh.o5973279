@@ -1,0 +1,218 @@
+-- Python version from interpreter is 2.7.17
+-- Python libs and executable found, looking for boost::python
+-- Boost version: 1.65.1
+-- Found the following Boost libraries:
+--   python
+-- boost::python found, generating python bindings
+-- SDL2 found, enabling joystick support
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/coa16gyd/simulation/FYP_Simulation/enki
+[ 46%] Built target enki
+[ 48%] Automatic MOC and RCC for target enkiviewer
+[ 48%] Built target enkiviewer_autogen
+[ 89%] Built target enkiviewer
+[ 92%] Automatic MOC for target enkiplayground
+[ 92%] Built target enkiplayground_autogen
+[100%] Built target enkiplayground
+Shepherding + Object Clustering
+INFO - CMA-ES / dim=16 / lambda=20 / sigma0=0.72 / mu=10 / mueff=6.19569 / c1=0.00654695 / cmu=0.0263909 / tpa=0 / threads=10
+INFO - iter=0 / evals=0 / f-value=nan / sigma=0.72 / last_iter=0
+INFO - iter=1 / evals=20 / f-value=30678929946689.4 / sigma=0.704389075528408 / last_iter=982240
+Trial restarting
+Trial restarting
+INFO - iter=2 / evals=40 / f-value=10046251782087.8 / sigma=0.684764295087489 / last_iter=978070
+Trial restarting
+Trial restarting
+INFO - iter=3 / evals=60 / f-value=28098599193803.4 / sigma=0.707161887601216 / last_iter=974604
+Trial restarting
+Trial restarting
+Trial restarting
+INFO - iter=4 / evals=80 / f-value=8686621712082.69 / sigma=0.800142567106037 / last_iter=973950
+INFO - iter=5 / evals=100 / f-value=14028613647046.7 / sigma=0.872547143964276 / last_iter=964066
+Trial restarting
+Trial restarting
+INFO - iter=6 / evals=120 / f-value=6013593188043.51 / sigma=0.945249434785427 / last_iter=950968
+Trial restarting
+Trial restarting
+INFO - iter=7 / evals=140 / f-value=5483785007867.67 / sigma=1.04792061746737 / last_iter=948976
+Trial restarting
+Trial restarting
+Trial restarting
+INFO - iter=8 / evals=160 / f-value=6353848014342.73 / sigma=1.0457199891884 / last_iter=965197
+Trial restarting
+Trial restarting
+Trial restarting
+Trial restarting
+INFO - iter=9 / evals=180 / f-value=4876604443436.17 / sigma=1.12896886099719 / last_iter=949439
+Trial restarting
+Trial restarting
+Trial restarting
+Trial restarting
+Trial restarting
+INFO - iter=10 / evals=200 / f-value=3721568702894.2 / sigma=1.16511203782255 / last_iter=963125
+Trial restarting
+Trial restarting
+INFO - iter=11 / evals=220 / f-value=5324414207156.29 / sigma=1.23450234223472 / last_iter=956535
+Trial restarting
+INFO - iter=12 / evals=240 / f-value=4516470365058.58 / sigma=1.3515844885483 / last_iter=942628
+Trial restarting
+Trial restarting
+INFO - iter=13 / evals=260 / f-value=3038930032875.59 / sigma=1.4202824753792 / last_iter=953881
+Trial restarting
+INFO - iter=14 / evals=280 / f-value=2448551702596.31 / sigma=1.57668080473755 / last_iter=948850
+Trial restarting
+INFO - iter=15 / evals=300 / f-value=2477826788090.74 / sigma=1.75404495862105 / last_iter=939029
+Trial restarting
+INFO - iter=16 / evals=320 / f-value=2516725715241.85 / sigma=1.86480824141912 / last_iter=949631
+INFO - iter=17 / evals=340 / f-value=4360084466985.52 / sigma=1.88531034253556 / last_iter=950759
+Trial restarting
+INFO - iter=18 / evals=360 / f-value=2910636896781.15 / sigma=1.90924514399249 / last_iter=944863
+Trial restarting
+INFO - iter=19 / evals=380 / f-value=2427304021604.05 / sigma=1.87615732346198 / last_iter=939272
+Trial restarting
+INFO - iter=20 / evals=400 / f-value=2270906797330.38 / sigma=1.86628390934427 / last_iter=947417
+INFO - iter=21 / evals=420 / f-value=2555016466783.95 / sigma=1.75023901095323 / last_iter=946336
+Trial restarting
+INFO - iter=22 / evals=440 / f-value=2804554854700.78 / sigma=1.63159257308688 / last_iter=950287
+Trial restarting
+Trial restarting
+Trial restarting
+INFO - iter=23 / evals=460 / f-value=2308404488284.98 / sigma=1.55625951115944 / last_iter=942127
+Trial restarting
+INFO - iter=24 / evals=480 / f-value=3550384403842.33 / sigma=1.58582849527091 / last_iter=940302
+Trial restarting
+INFO - iter=25 / evals=500 / f-value=1910748355677.52 / sigma=1.50440470008621 / last_iter=939855
+Trial restarting
+Trial restarting
+INFO - iter=26 / evals=520 / f-value=2622516727764.78 / sigma=1.58735558472344 / last_iter=940059
+Trial restarting
+Trial restarting
+INFO - iter=27 / evals=540 / f-value=2627818773245.3 / sigma=1.61910176323162 / last_iter=942736
+Trial restarting
+INFO - iter=28 / evals=560 / f-value=2382808617490.01 / sigma=1.69309842772097 / last_iter=941478
+Trial restarting
+Trial restarting
+INFO - iter=29 / evals=580 / f-value=2047685428109.27 / sigma=1.69827045060924 / last_iter=942908
+INFO - iter=30 / evals=600 / f-value=2176022735166.88 / sigma=1.69342733972071 / last_iter=939488
+Trial restarting
+INFO - iter=31 / evals=620 / f-value=2047346721775.08 / sigma=1.62721428988842 / last_iter=943705
+INFO - iter=32 / evals=640 / f-value=3206323023028.7 / sigma=1.6271998971979 / last_iter=938245
+Trial restarting
+Trial restarting
+INFO - iter=33 / evals=660 / f-value=2043803565700.09 / sigma=1.5831927720904 / last_iter=934523
+Trial restarting
+INFO - iter=34 / evals=680 / f-value=2345287485069.91 / sigma=1.52912810288488 / last_iter=939282
+Trial restarting
+INFO - iter=35 / evals=700 / f-value=1926423433941.54 / sigma=1.44579861097006 / last_iter=935009
+Trial restarting
+Trial restarting
+Trial restarting
+INFO - iter=36 / evals=720 / f-value=2700651164108.4 / sigma=1.32278285693249 / last_iter=940664
+Trial restarting
+Trial restarting
+INFO - iter=37 / evals=740 / f-value=2209785939679.08 / sigma=1.19660333165339 / last_iter=936823
+Trial restarting
+Trial restarting
+Trial restarting
+Trial restarting
+INFO - iter=38 / evals=760 / f-value=1701598233491.65 / sigma=1.09479143364829 / last_iter=933558
+Trial restarting
+INFO - iter=39 / evals=780 / f-value=1696576849319.82 / sigma=1.03141833667741 / last_iter=930848
+Trial restarting
+INFO - iter=40 / evals=800 / f-value=1574844475887.97 / sigma=1.02069537628706 / last_iter=927834
+Trial restarting
+INFO - iter=41 / evals=820 / f-value=1647919644562.64 / sigma=1.03914013335476 / last_iter=932630
+Trial restarting
+Trial restarting
+INFO - iter=42 / evals=840 / f-value=1526762162180.57 / sigma=1.0125624382864 / last_iter=934089
+Trial restarting
+INFO - iter=43 / evals=860 / f-value=1633356208484.75 / sigma=0.992178479127358 / last_iter=930797
+Trial restarting
+Trial restarting
+Trial restarting
+INFO - iter=44 / evals=880 / f-value=1846099900476.46 / sigma=1.03021939349881 / last_iter=928926
+Trial restarting
+Trial restarting
+Trial restarting
+INFO - iter=45 / evals=900 / f-value=1910808187488.62 / sigma=1.02641616200974 / last_iter=929018
+Trial restarting
+INFO - iter=46 / evals=920 / f-value=1826357012629.17 / sigma=1.0385746065772 / last_iter=932002
+INFO - iter=47 / evals=940 / f-value=1764115666122.69 / sigma=1.01284127936812 / last_iter=928163
+Trial restarting
+INFO - iter=48 / evals=960 / f-value=1483219177774.07 / sigma=1.01463872156469 / last_iter=931197
+INFO - iter=49 / evals=980 / f-value=1825947803122.66 / sigma=0.991776168910937 / last_iter=929737
+Trial restarting
+INFO - iter=50 / evals=1000 / f-value=1536000978525.3 / sigma=0.990156431354347 / last_iter=929269
+Trial restarting
+Trial restarting
+INFO - iter=51 / evals=1020 / f-value=1536347615661 / sigma=1.05575074953332 / last_iter=928570
+Trial restarting
+INFO - iter=52 / evals=1040 / f-value=1616487490232.86 / sigma=1.17989365231402 / last_iter=929761
+Trial restarting
+INFO - iter=53 / evals=1060 / f-value=1815824555623.08 / sigma=1.28693862511666 / last_iter=934895
+Trial restarting
+Trial restarting
+INFO - iter=54 / evals=1080 / f-value=1849912577238.68 / sigma=1.33341500124551 / last_iter=926028
+Trial restarting
+INFO - iter=55 / evals=1100 / f-value=1656397682531.39 / sigma=1.39929913342028 / last_iter=931050
+INFO - iter=56 / evals=1120 / f-value=1626058225668.57 / sigma=1.38435258875013 / last_iter=930642
+Trial restarting
+INFO - iter=57 / evals=1140 / f-value=1528264611921.26 / sigma=1.29798878994615 / last_iter=931545
+Trial restarting
+Trial restarting
+INFO - iter=58 / evals=1160 / f-value=1934053465707.97 / sigma=1.20640311261981 / last_iter=930945
+Trial restarting
+Trial restarting
+Trial restarting
+INFO - iter=59 / evals=1180 / f-value=1696716016730.24 / sigma=1.15345798706967 / last_iter=930934
+INFO - iter=60 / evals=1200 / f-value=1571099680064.53 / sigma=1.04966058298106 / last_iter=928501
+Trial restarting
+INFO - iter=61 / evals=1220 / f-value=1616268155013.35 / sigma=1.02287398814373 / last_iter=928171
+Trial restarting
+INFO - iter=62 / evals=1240 / f-value=1385059907542.68 / sigma=1.00294603159431 / last_iter=927109
+Trial restarting
+Trial restarting
+Trial restarting
+Trial restarting
+INFO - iter=63 / evals=1260 / f-value=1683946359501.3 / sigma=0.997006923543941 / last_iter=927698
+Trial restarting
+Trial restarting
+INFO - iter=64 / evals=1280 / f-value=1586616524723.76 / sigma=0.934859899100843 / last_iter=929601
+Trial restarting
+INFO - iter=65 / evals=1300 / f-value=1618916797564.45 / sigma=0.950446839857435 / last_iter=929975
+Trial restarting
+INFO - iter=66 / evals=1320 / f-value=1494760724623.52 / sigma=0.936294870228831 / last_iter=927311
+Trial restarting
+INFO - iter=67 / evals=1340 / f-value=1342048846662.11 / sigma=0.86618053079822 / last_iter=926146
+INFO - iter=68 / evals=1360 / f-value=1421625490192.37 / sigma=0.855718147431801 / last_iter=928035
+Trial restarting
+Trial restarting
+Trial restarting
+Trial restarting
+INFO - iter=69 / evals=1380 / f-value=1489778503881.15 / sigma=0.8300389795402 / last_iter=927408
+Trial restarting
+INFO - iter=70 / evals=1400 / f-value=1475290548193.29 / sigma=0.838052299908588 / last_iter=925965
+INFO - iter=71 / evals=1420 / f-value=1458176014883.21 / sigma=0.86164271107659 / last_iter=926109
+Trial restarting
+INFO - iter=72 / evals=1440 / f-value=1590321331890.38 / sigma=0.828850586724981 / last_iter=926332
+INFO - iter=73 / evals=1460 / f-value=1347153106838.8 / sigma=0.864777541028557 / last_iter=925769
+INFO - iter=74 / evals=1480 / f-value=1333419154857.9 / sigma=0.831523770265506 / last_iter=925119
+Trial restarting
+Trial restarting
+Trial restarting
+INFO - iter=75 / evals=1500 / f-value=1482222848906.97 / sigma=0.844960654187936 / last_iter=928736
+Trial restarting
+INFO - iter=76 / evals=1520 / f-value=1482600476753.42 / sigma=0.863074830912795 / last_iter=927592
+INFO - iter=77 / evals=1540 / f-value=1395158645008.08 / sigma=0.893665181187469 / last_iter=926192
+Trial restarting
+Trial restarting
+INFO - iter=78 / evals=1560 / f-value=1457841439952.89 / sigma=0.986686216464529 / last_iter=928048
+Trial restarting
+Trial restarting
+INFO - iter=79 / evals=1580 / f-value=1450582386439.61 / sigma=1.0153970568745 / last_iter=927740
+Trial restarting
+Trial restarting
+INFO - iter=80 / evals=1600 / f-value=1560566364907.31 / sigma=1.03667028389983 / last_iter=927136
+best solution: best solution => f-value=1560566364907.31 / fevals=1600 / sigma=1.03667028389983 / iter=80 / elaps=75064505ms / x=   1.438335483337  6.42920179745626  11.8238090149806  3.73025977210857 -5.80781576862924 -3.11597286206416  4.06643940795138 -12.4497539365492 0.773770646717643  2.95280077218874 0.875329178996675  8.82298861368313  2.47296433928577  6.18368733626898  7.10878466752633 -10.0912510240598
+optimization took 75064.505 seconds

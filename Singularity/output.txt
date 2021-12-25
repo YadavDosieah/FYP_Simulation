@@ -1,0 +1,209 @@
+/home/coa16gyd/simulation/FYP_Simulation/Singularity
+-- The C compiler identification is GNU 7.5.0
+-- The CXX compiler identification is GNU 7.5.0
+-- Check for working C compiler: /usr/bin/cc
+-- Check for working C compiler: /usr/bin/cc -- works
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Check for working CXX compiler: /usr/bin/c++
+-- Check for working CXX compiler: /usr/bin/c++ -- works
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Found OpenGL: /usr/lib/x86_64-linux-gnu/libOpenGL.so   
+-- Looking for pthread.h
+-- Looking for pthread.h - found
+-- Looking for pthread_create
+-- Looking for pthread_create - not found
+-- Looking for pthread_create in pthreads
+-- Looking for pthread_create in pthreads - not found
+-- Looking for pthread_create in pthread
+-- Looking for pthread_create in pthread - found
+-- Found Threads: TRUE  
+-- Found SDL2: /usr/lib/x86_64-linux-gnu/libSDL2main.a;/usr/lib/x86_64-linux-gnu/libSDL2.so;-lpthread  
+-- Found PythonInterp: /usr/bin/python (found version "2.7.17") 
+-- Python version from interpreter is 2.7.17
+-- Found PythonLibs: /usr/lib/x86_64-linux-gnu/libpython2.7.so (found version "2.7.17") 
+-- Python libs and executable found, looking for boost::python
+-- Boost version: 1.65.1
+-- Found the following Boost libraries:
+--   python
+-- boost::python found, generating python bindings
+-- SDL2 found, enabling joystick support
+-- Found Doxygen: /usr/bin/doxygen (found version "1.8.13") found components:  doxygen missing components:  dot
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/coa16gyd/simulation/FYP_Simulation/enki
+Scanning dependencies of target enki
+[  2%] Building CXX object enki/CMakeFiles/enki.dir/Geometry.cpp.o
+[  5%] Building CXX object enki/CMakeFiles/enki.dir/Types.cpp.o
+[  7%] Building CXX object enki/CMakeFiles/enki.dir/PhysicalEngine.cpp.o
+[ 10%] Building CXX object enki/CMakeFiles/enki.dir/BluetoothBase.cpp.o
+[ 12%] Building CXX object enki/CMakeFiles/enki.dir/interactions/IRSensor.cpp.o
+[ 15%] Building CXX object enki/CMakeFiles/enki.dir/interactions/GroundSensor.cpp.o
+[ 17%] Building CXX object enki/CMakeFiles/enki.dir/interactions/CircularCam.cpp.o
+[ 20%] Building CXX object enki/CMakeFiles/enki.dir/interactions/Bluetooth.cpp.o
+[ 23%] Building CXX object enki/CMakeFiles/enki.dir/interactions/ActiveSoundSource.cpp.o
+[ 25%] Building CXX object enki/CMakeFiles/enki.dir/interactions/Microphone.cpp.o
+[ 28%] Building CXX object enki/CMakeFiles/enki.dir/robots/DifferentialWheeled.cpp.o
+[ 30%] Building CXX object enki/CMakeFiles/enki.dir/robots/khepera/Khepera.cpp.o
+[ 33%] Building CXX object enki/CMakeFiles/enki.dir/robots/e-puck/EPuck.cpp.o
+[ 35%] Building CXX object enki/CMakeFiles/enki.dir/robots/s-bot/Sbot.cpp.o
+[ 38%] Building CXX object enki/CMakeFiles/enki.dir/robots/s-bot/SbotObject.cpp.o
+[ 41%] Building CXX object enki/CMakeFiles/enki.dir/robots/marxbot/Marxbot.cpp.o
+[ 43%] Building CXX object enki/CMakeFiles/enki.dir/robots/thymio2/Thymio2.cpp.o
+[ 46%] Linking CXX static library libenki.a
+[ 46%] Built target enki
+Scanning dependencies of target enkiviewer_autogen
+[ 48%] Automatic MOC and RCC for target enkiviewer
+[ 48%] Built target enkiviewer_autogen
+Scanning dependencies of target enkiviewer
+[ 51%] Building CXX object viewer/CMakeFiles/enkiviewer.dir/Viewer.cpp.o
+[ 53%] Building CXX object viewer/CMakeFiles/enkiviewer.dir/EPuckModel.cpp.o
+[ 56%] Building CXX object viewer/CMakeFiles/enkiviewer.dir/objects/EPuckBody.cpp.o
+[ 58%] Building CXX object viewer/CMakeFiles/enkiviewer.dir/objects/EPuckRest.cpp.o
+[ 61%] Building CXX object viewer/CMakeFiles/enkiviewer.dir/objects/EPuckRing.cpp.o
+[ 64%] Building CXX object viewer/CMakeFiles/enkiviewer.dir/objects/EPuckWheelLeft.cpp.o
+[ 66%] Building CXX object viewer/CMakeFiles/enkiviewer.dir/objects/EPuckWheelRight.cpp.o
+[ 69%] Building CXX object viewer/CMakeFiles/enkiviewer.dir/MarxbotModel.cpp.o
+[ 71%] Building CXX object viewer/CMakeFiles/enkiviewer.dir/objects/MarxbotBase.cpp.o
+[ 74%] Building CXX object viewer/CMakeFiles/enkiviewer.dir/objects/MarxbotWheel.cpp.o
+[ 76%] Building CXX object viewer/CMakeFiles/enkiviewer.dir/Thymio2Model.cpp.o
+[ 79%] Building CXX object viewer/CMakeFiles/enkiviewer.dir/objects/Thymio2Body.cpp.o
+[ 82%] Building CXX object viewer/CMakeFiles/enkiviewer.dir/objects/Thymio2Wheel.cpp.o
+[ 84%] Building CXX object viewer/CMakeFiles/enkiviewer.dir/enkiviewer_autogen/mocs_compilation.cpp.o
+[ 87%] Building CXX object viewer/CMakeFiles/enkiviewer.dir/enkiviewer_autogen/EWIEGA46WW/qrc_enki-viewer-textures.cpp.o
+[ 89%] Linking CXX static library libenkiviewer.a
+[ 89%] Built target enkiviewer
+Scanning dependencies of target enkiplayground_autogen
+[ 92%] Automatic MOC for target enkiplayground
+[ 92%] Built target enkiplayground_autogen
+Scanning dependencies of target enkiplayground
+[ 94%] Building CXX object examples/playground/CMakeFiles/enkiplayground.dir/Playground.cpp.o
+[ 97%] Building CXX object examples/playground/CMakeFiles/enkiplayground.dir/enkiplayground_autogen/mocs_compilation.cpp.o
+[100%] Linking CXX executable enkiplayground
+[100%] Built target enkiplayground
+INFO - CMA-ES / dim=12 / lambda=20 / sigma0=0.72 / mu=10 / mueff=6.19569 / c1=0.0109238 / cmu=0.0430977 / tpa=0 / threads=20
+INFO - iter=0 / evals=0 / f-value=nan / sigma=0.72 / last_iter=0
+INFO - iter=1 / evals=20 / f-value=25869695847644.3 / sigma=0.647435937440717 / last_iter=1479241
+INFO - iter=2 / evals=40 / f-value=19529635695421.5 / sigma=0.634281421839109 / last_iter=1457854
+INFO - iter=3 / evals=60 / f-value=17205333438937.4 / sigma=0.614999301834506 / last_iter=1481299
+INFO - iter=4 / evals=80 / f-value=22646027464488.1 / sigma=0.596086841703551 / last_iter=1475156
+INFO - iter=5 / evals=100 / f-value=23633595945643.7 / sigma=0.604636871338018 / last_iter=1455875
+INFO - iter=6 / evals=120 / f-value=25212552513725.1 / sigma=0.564108328711109 / last_iter=1456374
+INFO - iter=7 / evals=140 / f-value=22898136557006.2 / sigma=0.48376213509278 / last_iter=1456856
+INFO - iter=8 / evals=160 / f-value=28602752201172.1 / sigma=0.468845283049 / last_iter=1462655
+INFO - iter=9 / evals=180 / f-value=-nan / sigma=0.458979975896693 / last_iter=1479350
+INFO - iter=10 / evals=200 / f-value=19110417854758 / sigma=0.468511059303993 / last_iter=1469775
+INFO - iter=11 / evals=220 / f-value=17311830579853.9 / sigma=0.527429109783216 / last_iter=1453284
+INFO - iter=12 / evals=240 / f-value=19514870314555.2 / sigma=0.564663241212792 / last_iter=1447788
+INFO - iter=13 / evals=260 / f-value=16882160913415.6 / sigma=0.596919010596113 / last_iter=1444877
+INFO - iter=14 / evals=280 / f-value=6586658279107.38 / sigma=0.656163328102061 / last_iter=1434758
+INFO - iter=15 / evals=300 / f-value=3347898607556.22 / sigma=0.746130021072831 / last_iter=1454719
+INFO - iter=16 / evals=320 / f-value=2364522637608.3 / sigma=0.930080411686135 / last_iter=1434216
+INFO - iter=17 / evals=340 / f-value=2240153230289.97 / sigma=1.18078314093485 / last_iter=1435061
+INFO - iter=18 / evals=360 / f-value=2296183003896.54 / sigma=1.37672715525499 / last_iter=1427994
+INFO - iter=19 / evals=380 / f-value=1381975350843.17 / sigma=1.48214276115458 / last_iter=1430500
+INFO - iter=20 / evals=400 / f-value=1751897071746.6 / sigma=1.7818534418984 / last_iter=1439467
+INFO - iter=21 / evals=420 / f-value=-nan / sigma=1.86070816987522 / last_iter=1404098
+INFO - iter=22 / evals=440 / f-value=1844029371463.32 / sigma=1.9613956173948 / last_iter=1427579
+INFO - iter=23 / evals=460 / f-value=2330384404632.84 / sigma=1.97681104860308 / last_iter=1435850
+INFO - iter=24 / evals=480 / f-value=1902973800857.36 / sigma=1.93434600418659 / last_iter=1444544
+INFO - iter=25 / evals=500 / f-value=1596902082485.69 / sigma=1.98549041009683 / last_iter=1421211
+INFO - iter=26 / evals=520 / f-value=1225824734976.43 / sigma=2.08931253823624 / last_iter=1393733
+INFO - iter=27 / evals=540 / f-value=-nan / sigma=2.12848332156383 / last_iter=1411985
+INFO - iter=28 / evals=560 / f-value=1169184216217.38 / sigma=2.29082953914799 / last_iter=1435830
+INFO - iter=29 / evals=580 / f-value=1886505440041.17 / sigma=2.07441050008279 / last_iter=1437823
+INFO - iter=30 / evals=600 / f-value=1717656471320.37 / sigma=2.21298489645997 / last_iter=1424505
+INFO - iter=31 / evals=620 / f-value=1386063577403.28 / sigma=2.28700846208742 / last_iter=1406765
+INFO - iter=32 / evals=640 / f-value=1717933141033.49 / sigma=2.20406868961621 / last_iter=1411766
+INFO - iter=33 / evals=660 / f-value=-nan / sigma=2.06342415556938 / last_iter=1420851
+INFO - iter=34 / evals=680 / f-value=1578981145580.89 / sigma=2.01196012282633 / last_iter=1416988
+INFO - iter=35 / evals=700 / f-value=1261303942074.94 / sigma=2.00864776361417 / last_iter=1407948
+INFO - iter=36 / evals=720 / f-value=-nan / sigma=1.96592105818493 / last_iter=1418219
+INFO - iter=37 / evals=740 / f-value=-nan / sigma=1.87454413676008 / last_iter=1405760
+INFO - iter=38 / evals=760 / f-value=1659342072396.61 / sigma=1.77349406755041 / last_iter=1393774
+INFO - iter=39 / evals=780 / f-value=1265709649388.65 / sigma=1.75435102804919 / last_iter=1395178
+INFO - iter=40 / evals=800 / f-value=1176028672733.52 / sigma=1.71427127045136 / last_iter=1408393
+INFO - iter=41 / evals=820 / f-value=1539291188025.21 / sigma=1.61547831372984 / last_iter=1395962
+INFO - iter=42 / evals=840 / f-value=1791947716484.84 / sigma=1.54294852300518 / last_iter=1389733
+INFO - iter=43 / evals=860 / f-value=1264341459645.06 / sigma=1.56008936804214 / last_iter=1387132
+INFO - iter=44 / evals=880 / f-value=1268402782578.79 / sigma=1.58309398141069 / last_iter=1371162
+INFO - iter=45 / evals=900 / f-value=1205030232239.66 / sigma=1.62798028085343 / last_iter=1387492
+INFO - iter=46 / evals=920 / f-value=1550217264531.93 / sigma=1.56789251585559 / last_iter=1403067
+INFO - iter=47 / evals=940 / f-value=1147226973025.04 / sigma=1.49699349155356 / last_iter=1414522
+INFO - iter=48 / evals=960 / f-value=1741176752871.88 / sigma=1.5587283677281 / last_iter=1393941
+INFO - iter=49 / evals=980 / f-value=1723798203810.77 / sigma=1.6013105122049 / last_iter=1402390
+INFO - iter=50 / evals=1000 / f-value=1088156862469.74 / sigma=1.71160328395862 / last_iter=1434486
+INFO - iter=51 / evals=1020 / f-value=946990102438.464 / sigma=1.82748791868958 / last_iter=1404621
+INFO - iter=52 / evals=1040 / f-value=1316290901169.16 / sigma=1.88440525691479 / last_iter=1396611
+INFO - iter=53 / evals=1060 / f-value=1139111836807.33 / sigma=1.82541739421091 / last_iter=1407218
+INFO - iter=54 / evals=1080 / f-value=1071213337212.42 / sigma=1.85600470226803 / last_iter=1400763
+INFO - iter=55 / evals=1100 / f-value=1092664612537.6 / sigma=1.8750141317779 / last_iter=1406588
+INFO - iter=56 / evals=1120 / f-value=1314803645918.69 / sigma=1.80409691774598 / last_iter=1384789
+INFO - iter=57 / evals=1140 / f-value=1394724836640.04 / sigma=1.68680462330161 / last_iter=1367329
+INFO - iter=58 / evals=1160 / f-value=-nan / sigma=1.47268886509883 / last_iter=1388519
+INFO - iter=59 / evals=1180 / f-value=1127017848481.03 / sigma=1.3974418120896 / last_iter=1390964
+INFO - iter=60 / evals=1200 / f-value=1200446466402.02 / sigma=1.37750572051426 / last_iter=1379978
+INFO - iter=61 / evals=1220 / f-value=1115078868300.89 / sigma=1.32944473048509 / last_iter=1369153
+INFO - iter=62 / evals=1240 / f-value=1181253259076.77 / sigma=1.38370248043335 / last_iter=1374233
+INFO - iter=63 / evals=1260 / f-value=998930087074.537 / sigma=1.49315223882813 / last_iter=1370521
+INFO - iter=64 / evals=1280 / f-value=1186991895196.85 / sigma=1.42386975588545 / last_iter=1366031
+INFO - iter=65 / evals=1300 / f-value=918562624223.053 / sigma=1.32869891075113 / last_iter=1390929
+INFO - iter=66 / evals=1320 / f-value=970944444176.237 / sigma=1.18741194037045 / last_iter=1392177
+INFO - iter=67 / evals=1340 / f-value=917289244385.322 / sigma=1.16797517048802 / last_iter=1372581
+INFO - iter=68 / evals=1360 / f-value=1124568495674.41 / sigma=1.09761321755334 / last_iter=1370905
+INFO - iter=69 / evals=1380 / f-value=886573878027.889 / sigma=1.05001170623132 / last_iter=1365988
+INFO - iter=70 / evals=1400 / f-value=1072356231739.42 / sigma=0.998850190392607 / last_iter=1376189
+INFO - iter=71 / evals=1420 / f-value=975084350417.989 / sigma=0.956917838479039 / last_iter=1372620
+INFO - iter=72 / evals=1440 / f-value=808280348677.553 / sigma=0.957679001747809 / last_iter=1388769
+INFO - iter=73 / evals=1460 / f-value=952396908268.214 / sigma=0.938016654955062 / last_iter=1364995
+INFO - iter=74 / evals=1480 / f-value=906535902184.775 / sigma=1.00175499293573 / last_iter=1383184
+INFO - iter=75 / evals=1500 / f-value=940253860630.798 / sigma=1.0540296400626 / last_iter=1398005
+INFO - iter=76 / evals=1520 / f-value=932949344395.488 / sigma=1.09980998966406 / last_iter=1408693
+INFO - iter=77 / evals=1540 / f-value=1111095916125.6 / sigma=1.13059143433507 / last_iter=1350257
+INFO - iter=78 / evals=1560 / f-value=1031043440251.68 / sigma=1.15797337219257 / last_iter=1370763
+INFO - iter=79 / evals=1580 / f-value=1063439596071.7 / sigma=1.10999136952831 / last_iter=1373440
+INFO - iter=80 / evals=1600 / f-value=854743701586.745 / sigma=1.11187455475921 / last_iter=1364110
+best solution: best solution => f-value=854743701586.745 / fevals=1600 / sigma=1.11187455475921 / iter=80 / elaps=112830770ms / x=  7.62906068108428   2.12051969128925 -0.208290954991709   4.76392227060744     -12.4397799307   2.20089921666622   8.03278389222871   8.97639451218892   10.9182263720185   6.82778597539601   9.40439189249688   2.39981401072443
+optimization took 112830.77 seconds
+INFO - CMA-ES / dim=12 / lambda=20 / sigma0=0.72 / mu=10 / mueff=6.19569 / c1=0.0109238 / cmu=0.0430977 / tpa=0 / threads=20
+INFO - iter=0 / evals=0 / f-value=nan / sigma=0.72 / last_iter=0
+INFO - iter=1 / evals=20 / f-value=20906592584244 / sigma=0.667003814044259 / last_iter=1471197
+INFO - iter=2 / evals=40 / f-value=16877687754984 / sigma=0.688452655281201 / last_iter=1458223
+INFO - iter=3 / evals=60 / f-value=11354197420965.5 / sigma=0.670068042390559 / last_iter=1460361
+INFO - iter=4 / evals=80 / f-value=5523133962230.37 / sigma=0.740511396800393 / last_iter=1448233
+INFO - iter=5 / evals=100 / f-value=2390617239710.94 / sigma=0.837835988869892 / last_iter=1465912
+INFO - iter=6 / evals=120 / f-value=2526864603129.29 / sigma=0.879911750024567 / last_iter=1490558
+INFO - iter=7 / evals=140 / f-value=1791243834876.36 / sigma=0.936743322777532 / last_iter=1469450
+INFO - iter=8 / evals=160 / f-value=2483791640624.71 / sigma=0.977868507438791 / last_iter=1454049
+INFO - iter=9 / evals=180 / f-value=-nan / sigma=1.04972123139222 / last_iter=1453231
+INFO - iter=10 / evals=200 / f-value=3131474479253.09 / sigma=1.04190109608566 / last_iter=1451561
+INFO - iter=11 / evals=220 / f-value=3803934604211.39 / sigma=0.96837850201932 / last_iter=1454329
+INFO - iter=12 / evals=240 / f-value=2262512049358.27 / sigma=0.912140950170561 / last_iter=1472791
+INFO - iter=13 / evals=260 / f-value=1460330024116.23 / sigma=0.888433838245179 / last_iter=1461642
+INFO - iter=14 / evals=280 / f-value=2524476217197 / sigma=0.897425529677119 / last_iter=1464986
+INFO - iter=15 / evals=300 / f-value=1644987253916.57 / sigma=0.942645038444461 / last_iter=1474000
+INFO - iter=16 / evals=320 / f-value=1556913508319.56 / sigma=1.04007491298067 / last_iter=1482689
+INFO - iter=17 / evals=340 / f-value=1330335899932.55 / sigma=1.1156745128623 / last_iter=1471034
+INFO - iter=18 / evals=360 / f-value=1513276821057.48 / sigma=1.09129825065606 / last_iter=1486064
+INFO - iter=19 / evals=380 / f-value=1643325848063.83 / sigma=0.960738472801132 / last_iter=1449283
+INFO - iter=20 / evals=400 / f-value=1174701176720.88 / sigma=0.904415281988812 / last_iter=1462052
+INFO - iter=21 / evals=420 / f-value=1194184129078.99 / sigma=0.881170265253437 / last_iter=1472540
+INFO - iter=22 / evals=440 / f-value=1212064222386.38 / sigma=0.903167981142612 / last_iter=1472181
+INFO - iter=23 / evals=460 / f-value=-nan / sigma=0.86201755681345 / last_iter=1475177
+INFO - iter=24 / evals=480 / f-value=795777459088.473 / sigma=0.808295230529465 / last_iter=1486854
+INFO - iter=25 / evals=500 / f-value=901361353739.383 / sigma=0.767827511933849 / last_iter=1479687
+INFO - iter=26 / evals=520 / f-value=796244028089.427 / sigma=0.711632010813567 / last_iter=1489822
+INFO - iter=27 / evals=540 / f-value=919208170756.882 / sigma=0.666703916484394 / last_iter=1478768
+-- Python version from interpreter is 2.7.17
+-- Python libs and executable found, looking for boost::python
+-- Boost version: 1.65.1
+-- Found the following Boost libraries:
+--   python
+-- boost::python found, generating python bindings
+-- SDL2 found, enabling joystick support
+-- Configuring done

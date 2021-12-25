@@ -1,0 +1,30 @@
+-- Python version from interpreter is 2.7.17
+-- Python libs and executable found, looking for boost::python
+-- Boost version: 1.65.1
+-- Found the following Boost libraries:
+--   python
+-- boost::python found, generating python bindings
+-- SDL2 found, enabling joystick support
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/co4xgd/FYP_Simulation/enki
+[ 46%] Built target enki
+[ 48%] Automatic MOC and RCC for target enkiviewer
+[ 48%] Built target enkiviewer_autogen
+[ 92%] Built target enkiviewer
+[ 92%] Automatic MOC for target enkiplayground
+[ 92%] Built target enkiplayground_autogen
+[ 94%] Building CXX object examples/playground/CMakeFiles/enkiplayground.dir/Playground.cpp.o
+[ 97%] Linking CXX executable enkiplayground
+/usr/bin/ld: final link failed: Stale file handle
+collect2: error: ld returned 1 exit status
+examples/playground/CMakeFiles/enkiplayground.dir/build.make:130: recipe for target 'examples/playground/enkiplayground' failed
+make[3]: *** [examples/playground/enkiplayground] Error 1
+CMakeFiles/Makefile2:451: recipe for target 'examples/playground/CMakeFiles/enkiplayground.dir/all' failed
+make[2]: *** [examples/playground/CMakeFiles/enkiplayground.dir/all] Error 2
+CMakeFiles/Makefile2:463: recipe for target 'examples/playground/CMakeFiles/enkiplayground.dir/rule' failed
+make[1]: *** [examples/playground/CMakeFiles/enkiplayground.dir/rule] Error 2
+Makefile:172: recipe for target 'examples/playground/CMakeFiles/enkiplayground.dir/rule' failed
+make: *** [examples/playground/CMakeFiles/enkiplayground.dir/rule] Error 2
+Shepherding + Object Clustering
+/home/co4xgd/FYP_Simulation/enki/examples/playground/RunOptimisation.sh: line 49: ./enkiplayground: No such file or directory

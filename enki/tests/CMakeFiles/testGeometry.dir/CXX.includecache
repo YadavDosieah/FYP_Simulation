@@ -1,0 +1,28 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/yadav/Documents/Final-Year-Project/FYP_Simulation/enki/enki/Geometry.h
+math.h
+-
+cmath
+-
+vector
+-
+limits
+-
+ostream
+-
+algorithm
+-
+
+/home/yadav/Documents/Final-Year-Project/FYP_Simulation/enki/tests/testGeometry.cpp
+../enki/Geometry.h
+/home/yadav/Documents/Final-Year-Project/FYP_Simulation/enki/enki/Geometry.h
+iostream
+-
+

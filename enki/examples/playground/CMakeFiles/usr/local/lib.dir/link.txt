@@ -1,0 +1,2 @@
+/usr/bin/ar qc lib/usr/local/lib.a  CMakeFiles//usr/local/lib.dir/usr/local/lib_autogen/mocs_compilation.cpp.o
+/usr/bin/ranlib lib/usr/local/lib.a
