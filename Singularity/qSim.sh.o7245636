@@ -1,1312 +1,0 @@
-tput: No value for $TERM and no -T specified
-
-[s[0;-1r[u[1Atput: No value for $TERM and no -T specified
-./progress_bar.sh: line 79: let: lines=: syntax error: operand expected (error token is "=")
-[s[;0ftput: No value for $TERM and no -T specified
-tput: No value for $TERM and no -T specified
- Progress 0% [[30m[42m#[39m[49m.................][u-- Python version from interpreter is 2.7.17
--- Python libs and executable found, looking for boost::python
--- Boost version: 1.65.1
--- Found the following Boost libraries:
---   python
--- boost::python found, generating python bindings
--- SDL2 found, enabling joystick support
--- Configuring done
--- Generating done
--- Build files have been written to: /home/co4xgd/FYP_Simulation/enki
-[ 46%] Built target enki
-[ 48%] Automatic MOC and RCC for target enkiviewer
-[ 48%] Built target enkiviewer_autogen
-[ 89%] Built target enkiviewer
-[ 92%] Automatic MOC for target enkiplayground
-[ 92%] Built target enkiplayground_autogen
-Scanning dependencies of target enkiplayground
-[ 94%] Building CXX object examples/playground/CMakeFiles/enkiplayground.dir/Playground.cpp.o
-[ 97%] Linking CXX executable enkiplayground
-[100%] Built target enkiplayground
-\Started at Thu Jan 21 05:42:46 GMT 2021!
-Run 0,05,10,00tput: No value for $TERM and no -T specified
-./progress_bar.sh: line 79: let: lines=: syntax error: operand expected (error token is "=")
-[s[;0ftput: No value for $TERM and no -T specified
-tput: No value for $TERM and no -T specified
- Progress 0% [[30m[42m#[39m[49m.................][uRun 0,05,20,00tput: No value for $TERM and no -T specified
-./progress_bar.sh: line 79: let: lines=: syntax error: operand expected (error token is "=")
-[s[;0ftput: No value for $TERM and no -T specified
-tput: No value for $TERM and no -T specified
- Progress 0% [[30m[42m#[39m[49m.................][uRun 0,05,30,00tput: No value for $TERM and no -T specified
-./progress_bar.sh: line 79: let: lines=: syntax error: operand expected (error token is "=")
-[s[;0ftput: No value for $TERM and no -T specified
-tput: No value for $TERM and no -T specified
- Progress 0% [[30m[42m#[39m[49m.................][uRun 0,05,40,00tput: No value for $TERM and no -T specified
-./progress_bar.sh: line 79: let: lines=: syntax error: operand expected (error token is "=")
-[s[;0ftput: No value for $TERM and no -T specified
-tput: No value for $TERM and no -T specified
- Progress 1% [[30m[42m#[39m[49m.................][uRun 0,05,50,00tput: No value for $TERM and no -T specified
-./progress_bar.sh: line 79: let: lines=: syntax error: operand expected (error token is "=")
-[s[;0ftput: No value for $TERM and no -T specified
-tput: No value for $TERM and no -T specified
- Progress 1% [[30m[42m#[39m[49m.................][uRun 0,10,10,00tput: No value for $TERM and no -T specified
-./progress_bar.sh: line 79: let: lines=: syntax error: operand expected (error token is "=")
-[s[;0ftput: No value for $TERM and no -T specified
-tput: No value for $TERM and no -T specified
- Progress 1% [[30m[42m#[39m[49m.................][uRun 0,10,20,00tput: No value for $TERM and no -T specified
-./progress_bar.sh: line 79: let: lines=: syntax error: operand expected (error token is "=")
-[s[;0ftput: No value for $TERM and no -T specified
-tput: No value for $TERM and no -T specified
- Progress 2% [[30m[42m#[39m[49m.................][uRun 0,10,30,00tput: No value for $TERM and no -T specified
-./progress_bar.sh: line 79: let: lines=: syntax error: operand expected (error token is "=")
-[s[;0ftput: No value for $TERM and no -T specified
-tput: No value for $TERM and no -T specified
- Progress 2% [[30m[42m#[39m[49m.................][uRun 0,10,40,00tput: No value for $TERM and no -T specified
-./progress_bar.sh: line 79: let: lines=: syntax error: operand expected (error token is "=")
-[s[;0ftput: No value for $TERM and no -T specified
-tput: No value for $TERM and no -T specified
- Progress 2% [[30m[42m#[39m[49m.................][uRun 0,10,50,00tput: No value for $TERM and no -T specified
-./progress_bar.sh: line 79: let: lines=: syntax error: operand expected (error token is "=")
-[s[;0ftput: No value for $TERM and no -T specified
-tput: No value for $TERM and no -T specified
- Progress 3% [[30m[42m#[39m[49m.................][uRun 0,15,10,00tput: No value for $TERM and no -T specified
-./progress_bar.sh: line 79: let: lines=: syntax error: operand expected (error token is "=")
-[s[;0ftput: No value for $TERM and no -T specified
-tput: No value for $TERM and no -T specified
- Progress 3% [[30m[42m#[39m[49m.................][uRun 0,15,20,00tput: No value for $TERM and no -T specified
-./progress_bar.sh: line 79: let: lines=: syntax error: operand expected (error token is "=")
-[s[;0ftput: No value for $TERM and no -T specified
-tput: No value for $TERM and no -T specified
- Progress 4% [[30m[42m#[39m[49m.................][uRun 0,15,30,00tput: No value for $TERM and no -T specified
-./progress_bar.sh: line 79: let: lines=: syntax error: operand expected (error token is "=")
-[s[;0ftput: No value for $TERM and no -T specified
-tput: No value for $TERM and no -T specified
- Progress 4% [[30m[42m#[39m[49m.................][uRun 0,15,40,00tput: No value for $TERM and no -T specified
-./progress_bar.sh: line 79: let: lines=: syntax error: operand expected (error token is "=")
-[s[;0ftput: No value for $TERM and no -T specified
-tput: No value for $TERM and no -T specified
- Progress 4% [[30m[42m#[39m[49m.................][uRun 0,15,50,00tput: No value for $TERM and no -T specified
-./progress_bar.sh: line 79: let: lines=: syntax error: operand expected (error token is "=")
-[s[;0ftput: No value for $TERM and no -T specified
-tput: No value for $TERM and no -T specified
- Progress 5% [[30m[42m#[39m[49m.................][uRun 0,05,00,10tput: No value for $TERM and no -T specified
-./progress_bar.sh: line 79: let: lines=: syntax error: operand expected (error token is "=")
-[s[;0ftput: No value for $TERM and no -T specified
-tput: No value for $TERM and no -T specified
- Progress 5% [[30m[42m#[39m[49m.................][uRun 0,05,00,20tput: No value for $TERM and no -T specified
-./progress_bar.sh: line 79: let: lines=: syntax error: operand expected (error token is "=")
-[s[;0ftput: No value for $TERM and no -T specified
-tput: No value for $TERM and no -T specified
- Progress 5% [[30m[42m#[39m[49m.................][uRun 0,05,00,30tput: No value for $TERM and no -T specified
-./progress_bar.sh: line 79: let: lines=: syntax error: operand expected (error token is "=")
-[s[;0ftput: No value for $TERM and no -T specified
-tput: No value for $TERM and no -T specified
- Progress 6% [[30m[42m#[39m[49m................][uRun 0,05,00,40tput: No value for $TERM and no -T specified
-./progress_bar.sh: line 79: let: lines=: syntax error: operand expected (error token is "=")
-[s[;0ftput: No value for $TERM and no -T specified
-tput: No value for $TERM and no -T specified
- Progress 6% [[30m[42m#[39m[49m................][uRun 0,05,00,50tput: No value for $TERM and no -T specified
-./progress_bar.sh: line 79: let: lines=: syntax error: operand expected (error token is "=")
-[s[;0ftput: No value for $TERM and no -T specified
-tput: No value for $TERM and no -T specified
- Progress 7% [[30m[42m#[39m[49m................][uRun 0,10,00,10tput: No value for $TERM and no -T specified
-./progress_bar.sh: line 79: let: lines=: syntax error: operand expected (error token is "=")
-[s[;0ftput: No value for $TERM and no -T specified
-tput: No value for $TERM and no -T specified
- Progress 7% [[30m[42m#[39m[49m................][uRun 0,10,00,20tput: No value for $TERM and no -T specified
-./progress_bar.sh: line 79: let: lines=: syntax error: operand expected (error token is "=")
-[s[;0ftput: No value for $TERM and no -T specified
-tput: No value for $TERM and no -T specified
- Progress 7% [[30m[42m#[39m[49m................][uRun 0,10,00,30tput: No value for $TERM and no -T specified
-./progress_bar.sh: line 79: let: lines=: syntax error: operand expected (error token is "=")
-[s[;0ftput: No value for $TERM and no -T specified
-tput: No value for $TERM and no -T specified
- Progress 8% [[30m[42m#[39m[49m................][uRun 0,10,00,40tput: No value for $TERM and no -T specified
-./progress_bar.sh: line 79: let: lines=: syntax error: operand expected (error token is "=")
-[s[;0ftput: No value for $TERM and no -T specified
-tput: No value for $TERM and no -T specified
- Progress 8% [[30m[42m#[39m[49m................][uRun 0,10,00,50tput: No value for $TERM and no -T specified
-./progress_bar.sh: line 79: let: lines=: syntax error: operand expected (error token is "=")
-[s[;0ftput: No value for $TERM and no -T specified
-tput: No value for $TERM and no -T specified
- Progress 8% [[30m[42m#[39m[49m................][uRun 0,15,00,10tput: No value for $TERM and no -T specified
-./progress_bar.sh: line 79: let: lines=: syntax error: operand expected (error token is "=")
-[s[;0ftput: No value for $TERM and no -T specified
-tput: No value for $TERM and no -T specified
- Progress 9% [[30m[42m#[39m[49m................][uRun 0,15,00,20tput: No value for $TERM and no -T specified
-./progress_bar.sh: line 79: let: lines=: syntax error: operand expected (error token is "=")
-[s[;0ftput: No value for $TERM and no -T specified
-tput: No value for $TERM and no -T specified
- Progress 9% [[30m[42m#[39m[49m................][uRun 0,15,00,30tput: No value for $TERM and no -T specified
-./progress_bar.sh: line 79: let: lines=: syntax error: operand expected (error token is "=")
-[s[;0ftput: No value for $TERM and no -T specified
-tput: No value for $TERM and no -T specified
- Progress 10% [[30m[42m#[39m[49m................][uRun 0,15,00,40tput: No value for $TERM and no -T specified
-./progress_bar.sh: line 79: let: lines=: syntax error: operand expected (error token is "=")
-[s[;0ftput: No value for $TERM and no -T specified
-tput: No value for $TERM and no -T specified
- Progress 10% [[30m[42m#[39m[49m................][uRun 0,15,00,50tput: No value for $TERM and no -T specified
-./progress_bar.sh: line 79: let: lines=: syntax error: operand expected (error token is "=")
-[s[;0ftput: No value for $TERM and no -T specified
-tput: No value for $TERM and no -T specified
- Progress 10% [[30m[42m#[39m[49m................][uRun 0,05,5,5tput: No value for $TERM and no -T specified
-./progress_bar.sh: line 79: let: lines=: syntax error: operand expected (error token is "=")
-[s[;0ftput: No value for $TERM and no -T specified
-tput: No value for $TERM and no -T specified
- Progress 11% [[30m[42m#[39m[49m................][uRun 0,05,10,10tput: No value for $TERM and no -T specified
-./progress_bar.sh: line 79: let: lines=: syntax error: operand expected (error token is "=")
-[s[;0ftput: No value for $TERM and no -T specified
-tput: No value for $TERM and no -T specified
- Progress 11% [[30m[42m#[39m[49m................][uRun 0,05,15,15tput: No value for $TERM and no -T specified
-./progress_bar.sh: line 79: let: lines=: syntax error: operand expected (error token is "=")
-[s[;0ftput: No value for $TERM and no -T specified
-tput: No value for $TERM and no -T specified
- Progress 11% [[30m[42m#[39m[49m................][uRun 0,05,20,20tput: No value for $TERM and no -T specified
-./progress_bar.sh: line 79: let: lines=: syntax error: operand expected (error token is "=")
-[s[;0ftput: No value for $TERM and no -T specified
-tput: No value for $TERM and no -T specified
- Progress 12% [[30m[42m##[39m[49m...............][uRun 0,05,25,25tput: No value for $TERM and no -T specified
-./progress_bar.sh: line 79: let: lines=: syntax error: operand expected (error token is "=")
-[s[;0ftput: No value for $TERM and no -T specified
-tput: No value for $TERM and no -T specified
- Progress 12% [[30m[42m##[39m[49m...............][uRun 0,10,5,5tput: No value for $TERM and no -T specified
-./progress_bar.sh: line 79: let: lines=: syntax error: operand expected (error token is "=")
-[s[;0ftput: No value for $TERM and no -T specified
-tput: No value for $TERM and no -T specified
- Progress 12% [[30m[42m##[39m[49m...............][uRun 0,10,10,10tput: No value for $TERM and no -T specified
-./progress_bar.sh: line 79: let: lines=: syntax error: operand expected (error token is "=")
-[s[;0ftput: No value for $TERM and no -T specified
-tput: No value for $TERM and no -T specified
- Progress 13% [[30m[42m##[39m[49m...............][uRun 0,10,15,15tput: No value for $TERM and no -T specified
-./progress_bar.sh: line 79: let: lines=: syntax error: operand expected (error token is "=")
-[s[;0ftput: No value for $TERM and no -T specified
-tput: No value for $TERM and no -T specified
- Progress 13% [[30m[42m##[39m[49m...............][uRun 0,10,20,20tput: No value for $TERM and no -T specified
-./progress_bar.sh: line 79: let: lines=: syntax error: operand expected (error token is "=")
-[s[;0ftput: No value for $TERM and no -T specified
-tput: No value for $TERM and no -T specified
- Progress 14% [[30m[42m##[39m[49m...............][uRun 0,10,25,25tput: No value for $TERM and no -T specified
-./progress_bar.sh: line 79: let: lines=: syntax error: operand expected (error token is "=")
-[s[;0ftput: No value for $TERM and no -T specified
-tput: No value for $TERM and no -T specified
- Progress 14% [[30m[42m##[39m[49m...............][uRun 0,15,5,5tput: No value for $TERM and no -T specified
-./progress_bar.sh: line 79: let: lines=: syntax error: operand expected (error token is "=")
-[s[;0ftput: No value for $TERM and no -T specified
-tput: No value for $TERM and no -T specified
- Progress 14% [[30m[42m##[39m[49m...............][uRun 0,15,10,10tput: No value for $TERM and no -T specified
-./progress_bar.sh: line 79: let: lines=: syntax error: operand expected (error token is "=")
-[s[;0ftput: No value for $TERM and no -T specified
-tput: No value for $TERM and no -T specified
- Progress 15% [[30m[42m##[39m[49m...............][uRun 0,15,15,15tput: No value for $TERM and no -T specified
-./progress_bar.sh: line 79: let: lines=: syntax error: operand expected (error token is "=")
-[s[;0ftput: No value for $TERM and no -T specified
-tput: No value for $TERM and no -T specified
- Progress 15% [[30m[42m##[39m[49m...............][uRun 0,15,20,20tput: No value for $TERM and no -T specified
-./progress_bar.sh: line 79: let: lines=: syntax error: operand expected (error token is "=")
-[s[;0ftput: No value for $TERM and no -T specified
-tput: No value for $TERM and no -T specified
- Progress 15% [[30m[42m##[39m[49m...............][uRun 0,15,25,25tput: No value for $TERM and no -T specified
-./progress_bar.sh: line 79: let: lines=: syntax error: operand expected (error token is "=")
-[s[;0ftput: No value for $TERM and no -T specified
-tput: No value for $TERM and no -T specified
- Progress 16% [[30m[42m##[39m[49m...............][uRun 1,05,10,00tput: No value for $TERM and no -T specified
-./progress_bar.sh: line 79: let: lines=: syntax error: operand expected (error token is "=")
-[s[;0ftput: No value for $TERM and no -T specified
-tput: No value for $TERM and no -T specified
- Progress 16% [[30m[42m##[39m[49m...............][uRun 1,05,20,00tput: No value for $TERM and no -T specified
-./progress_bar.sh: line 79: let: lines=: syntax error: operand expected (error token is "=")
-[s[;0ftput: No value for $TERM and no -T specified
-tput: No value for $TERM and no -T specified
- Progress 17% [[30m[42m##[39m[49m...............][uRun 1,05,30,00tput: No value for $TERM and no -T specified
-./progress_bar.sh: line 79: let: lines=: syntax error: operand expected (error token is "=")
-[s[;0ftput: No value for $TERM and no -T specified
-tput: No value for $TERM and no -T specified
- Progress 17% [[30m[42m##[39m[49m...............][uRun 1,05,40,00tput: No value for $TERM and no -T specified
-./progress_bar.sh: line 79: let: lines=: syntax error: operand expected (error token is "=")
-[s[;0ftput: No value for $TERM and no -T specified
-tput: No value for $TERM and no -T specified
- Progress 17% [[30m[42m##[39m[49m...............][uRun 1,05,50,00tput: No value for $TERM and no -T specified
-./progress_bar.sh: line 79: let: lines=: syntax error: operand expected (error token is "=")
-[s[;0ftput: No value for $TERM and no -T specified
-tput: No value for $TERM and no -T specified
- Progress 18% [[30m[42m###[39m[49m..............][uRun 1,10,10,00tput: No value for $TERM and no -T specified
-./progress_bar.sh: line 79: let: lines=: syntax error: operand expected (error token is "=")
-[s[;0ftput: No value for $TERM and no -T specified
-tput: No value for $TERM and no -T specified
- Progress 18% [[30m[42m###[39m[49m..............][uRun 1,10,20,00tput: No value for $TERM and no -T specified
-./progress_bar.sh: line 79: let: lines=: syntax error: operand expected (error token is "=")
-[s[;0ftput: No value for $TERM and no -T specified
-tput: No value for $TERM and no -T specified
- Progress 18% [[30m[42m###[39m[49m..............][uRun 1,10,30,00tput: No value for $TERM and no -T specified
-./progress_bar.sh: line 79: let: lines=: syntax error: operand expected (error token is "=")
-[s[;0ftput: No value for $TERM and no -T specified
-tput: No value for $TERM and no -T specified
- Progress 19% [[30m[42m###[39m[49m..............][uRun 1,10,40,00tput: No value for $TERM and no -T specified
-./progress_bar.sh: line 79: let: lines=: syntax error: operand expected (error token is "=")
-[s[;0ftput: No value for $TERM and no -T specified
-tput: No value for $TERM and no -T specified
- Progress 19% [[30m[42m###[39m[49m..............][uRun 1,10,50,00tput: No value for $TERM and no -T specified
-./progress_bar.sh: line 79: let: lines=: syntax error: operand expected (error token is "=")
-[s[;0ftput: No value for $TERM and no -T specified
-tput: No value for $TERM and no -T specified
- Progress 20% [[30m[42m###[39m[49m..............][uRun 1,15,10,00tput: No value for $TERM and no -T specified
-./progress_bar.sh: line 79: let: lines=: syntax error: operand expected (error token is "=")
-[s[;0ftput: No value for $TERM and no -T specified
-tput: No value for $TERM and no -T specified
- Progress 20% [[30m[42m###[39m[49m..............][uRun 1,15,20,00tput: No value for $TERM and no -T specified
-./progress_bar.sh: line 79: let: lines=: syntax error: operand expected (error token is "=")
-[s[;0ftput: No value for $TERM and no -T specified
-tput: No value for $TERM and no -T specified
- Progress 20% [[30m[42m###[39m[49m..............][uRun 1,15,30,00tput: No value for $TERM and no -T specified
-./progress_bar.sh: line 79: let: lines=: syntax error: operand expected (error token is "=")
-[s[;0ftput: No value for $TERM and no -T specified
-tput: No value for $TERM and no -T specified
- Progress 21% [[30m[42m###[39m[49m..............][uRun 1,15,40,00tput: No value for $TERM and no -T specified
-./progress_bar.sh: line 79: let: lines=: syntax error: operand expected (error token is "=")
-[s[;0ftput: No value for $TERM and no -T specified
-tput: No value for $TERM and no -T specified
- Progress 21% [[30m[42m###[39m[49m..............][uRun 1,15,50,00tput: No value for $TERM and no -T specified
-./progress_bar.sh: line 79: let: lines=: syntax error: operand expected (error token is "=")
-[s[;0ftput: No value for $TERM and no -T specified
-tput: No value for $TERM and no -T specified
- Progress 21% [[30m[42m###[39m[49m..............][uRun 1,05,00,10tput: No value for $TERM and no -T specified
-./progress_bar.sh: line 79: let: lines=: syntax error: operand expected (error token is "=")
-[s[;0ftput: No value for $TERM and no -T specified
-tput: No value for $TERM and no -T specified
- Progress 22% [[30m[42m###[39m[49m..............][uRun 1,05,00,20tput: No value for $TERM and no -T specified
-./progress_bar.sh: line 79: let: lines=: syntax error: operand expected (error token is "=")
-[s[;0ftput: No value for $TERM and no -T specified
-tput: No value for $TERM and no -T specified
- Progress 22% [[30m[42m###[39m[49m..............][uRun 1,05,00,30tput: No value for $TERM and no -T specified
-./progress_bar.sh: line 79: let: lines=: syntax error: operand expected (error token is "=")
-[s[;0ftput: No value for $TERM and no -T specified
-tput: No value for $TERM and no -T specified
- Progress 22% [[30m[42m###[39m[49m..............][uRun 1,05,00,40tput: No value for $TERM and no -T specified
-./progress_bar.sh: line 79: let: lines=: syntax error: operand expected (error token is "=")
-[s[;0ftput: No value for $TERM and no -T specified
-tput: No value for $TERM and no -T specified
- Progress 23% [[30m[42m###[39m[49m..............][uRun 1,05,00,50tput: No value for $TERM and no -T specified
-./progress_bar.sh: line 79: let: lines=: syntax error: operand expected (error token is "=")
-[s[;0ftput: No value for $TERM and no -T specified
-tput: No value for $TERM and no -T specified
- Progress 23% [[30m[42m###[39m[49m..............][uRun 1,10,00,10tput: No value for $TERM and no -T specified
-./progress_bar.sh: line 79: let: lines=: syntax error: operand expected (error token is "=")
-[s[;0ftput: No value for $TERM and no -T specified
-tput: No value for $TERM and no -T specified
- Progress 24% [[30m[42m####[39m[49m.............][uRun 1,10,00,20tput: No value for $TERM and no -T specified
-./progress_bar.sh: line 79: let: lines=: syntax error: operand expected (error token is "=")
-[s[;0ftput: No value for $TERM and no -T specified
-tput: No value for $TERM and no -T specified
- Progress 24% [[30m[42m####[39m[49m.............][uRun 1,10,00,30tput: No value for $TERM and no -T specified
-./progress_bar.sh: line 79: let: lines=: syntax error: operand expected (error token is "=")
-[s[;0ftput: No value for $TERM and no -T specified
-tput: No value for $TERM and no -T specified
- Progress 24% [[30m[42m####[39m[49m.............][uRun 1,10,00,40tput: No value for $TERM and no -T specified
-./progress_bar.sh: line 79: let: lines=: syntax error: operand expected (error token is "=")
-[s[;0ftput: No value for $TERM and no -T specified
-tput: No value for $TERM and no -T specified
- Progress 25% [[30m[42m####[39m[49m.............][uRun 1,10,00,50tput: No value for $TERM and no -T specified
-./progress_bar.sh: line 79: let: lines=: syntax error: operand expected (error token is "=")
-[s[;0ftput: No value for $TERM and no -T specified
-tput: No value for $TERM and no -T specified
- Progress 25% [[30m[42m####[39m[49m.............][uRun 1,15,00,10tput: No value for $TERM and no -T specified
-./progress_bar.sh: line 79: let: lines=: syntax error: operand expected (error token is "=")
-[s[;0ftput: No value for $TERM and no -T specified
-tput: No value for $TERM and no -T specified
- Progress 25% [[30m[42m####[39m[49m.............][uRun 1,15,00,20tput: No value for $TERM and no -T specified
-./progress_bar.sh: line 79: let: lines=: syntax error: operand expected (error token is "=")
-[s[;0ftput: No value for $TERM and no -T specified
-tput: No value for $TERM and no -T specified
- Progress 26% [[30m[42m####[39m[49m.............][uRun 1,15,00,30tput: No value for $TERM and no -T specified
-./progress_bar.sh: line 79: let: lines=: syntax error: operand expected (error token is "=")
-[s[;0ftput: No value for $TERM and no -T specified
-tput: No value for $TERM and no -T specified
- Progress 26% [[30m[42m####[39m[49m.............][uRun 1,15,00,40tput: No value for $TERM and no -T specified
-./progress_bar.sh: line 79: let: lines=: syntax error: operand expected (error token is "=")
-[s[;0ftput: No value for $TERM and no -T specified
-tput: No value for $TERM and no -T specified
- Progress 27% [[30m[42m####[39m[49m.............][uRun 1,15,00,50tput: No value for $TERM and no -T specified
-./progress_bar.sh: line 79: let: lines=: syntax error: operand expected (error token is "=")
-[s[;0ftput: No value for $TERM and no -T specified
-tput: No value for $TERM and no -T specified
- Progress 27% [[30m[42m####[39m[49m.............][uRun 1,05,5,5tput: No value for $TERM and no -T specified
-./progress_bar.sh: line 79: let: lines=: syntax error: operand expected (error token is "=")
-[s[;0ftput: No value for $TERM and no -T specified
-tput: No value for $TERM and no -T specified
- Progress 27% [[30m[42m####[39m[49m.............][uRun 1,05,10,10tput: No value for $TERM and no -T specified
-./progress_bar.sh: line 79: let: lines=: syntax error: operand expected (error token is "=")
-[s[;0ftput: No value for $TERM and no -T specified
-tput: No value for $TERM and no -T specified
- Progress 28% [[30m[42m####[39m[49m.............][uRun 1,05,15,15tput: No value for $TERM and no -T specified
-./progress_bar.sh: line 79: let: lines=: syntax error: operand expected (error token is "=")
-[s[;0ftput: No value for $TERM and no -T specified
-tput: No value for $TERM and no -T specified
- Progress 28% [[30m[42m####[39m[49m.............][uRun 1,05,20,20tput: No value for $TERM and no -T specified
-./progress_bar.sh: line 79: let: lines=: syntax error: operand expected (error token is "=")
-[s[;0ftput: No value for $TERM and no -T specified
-tput: No value for $TERM and no -T specified
- Progress 28% [[30m[42m####[39m[49m.............][uRun 1,05,25,25tput: No value for $TERM and no -T specified
-./progress_bar.sh: line 79: let: lines=: syntax error: operand expected (error token is "=")
-[s[;0ftput: No value for $TERM and no -T specified
-tput: No value for $TERM and no -T specified
- Progress 29% [[30m[42m####[39m[49m.............][uRun 1,10,5,5tput: No value for $TERM and no -T specified
-./progress_bar.sh: line 79: let: lines=: syntax error: operand expected (error token is "=")
-[s[;0ftput: No value for $TERM and no -T specified
-tput: No value for $TERM and no -T specified
- Progress 29% [[30m[42m####[39m[49m.............][uRun 1,10,10,10tput: No value for $TERM and no -T specified
-./progress_bar.sh: line 79: let: lines=: syntax error: operand expected (error token is "=")
-[s[;0ftput: No value for $TERM and no -T specified
-tput: No value for $TERM and no -T specified
- Progress 30% [[30m[42m#####[39m[49m............][uRun 1,10,15,15tput: No value for $TERM and no -T specified
-./progress_bar.sh: line 79: let: lines=: syntax error: operand expected (error token is "=")
-[s[;0ftput: No value for $TERM and no -T specified
-tput: No value for $TERM and no -T specified
- Progress 30% [[30m[42m#####[39m[49m............][uRun 1,10,20,20tput: No value for $TERM and no -T specified
-./progress_bar.sh: line 79: let: lines=: syntax error: operand expected (error token is "=")
-[s[;0ftput: No value for $TERM and no -T specified
-tput: No value for $TERM and no -T specified
- Progress 30% [[30m[42m#####[39m[49m............][uRun 1,10,25,25tput: No value for $TERM and no -T specified
-./progress_bar.sh: line 79: let: lines=: syntax error: operand expected (error token is "=")
-[s[;0ftput: No value for $TERM and no -T specified
-tput: No value for $TERM and no -T specified
- Progress 31% [[30m[42m#####[39m[49m............][uRun 1,15,5,5tput: No value for $TERM and no -T specified
-./progress_bar.sh: line 79: let: lines=: syntax error: operand expected (error token is "=")
-[s[;0ftput: No value for $TERM and no -T specified
-tput: No value for $TERM and no -T specified
- Progress 31% [[30m[42m#####[39m[49m............][uRun 1,15,10,10tput: No value for $TERM and no -T specified
-./progress_bar.sh: line 79: let: lines=: syntax error: operand expected (error token is "=")
-[s[;0ftput: No value for $TERM and no -T specified
-tput: No value for $TERM and no -T specified
- Progress 31% [[30m[42m#####[39m[49m............][uRun 1,15,15,15tput: No value for $TERM and no -T specified
-./progress_bar.sh: line 79: let: lines=: syntax error: operand expected (error token is "=")
-[s[;0ftput: No value for $TERM and no -T specified
-tput: No value for $TERM and no -T specified
- Progress 32% [[30m[42m#####[39m[49m............][uRun 1,15,20,20tput: No value for $TERM and no -T specified
-./progress_bar.sh: line 79: let: lines=: syntax error: operand expected (error token is "=")
-[s[;0ftput: No value for $TERM and no -T specified
-tput: No value for $TERM and no -T specified
- Progress 32% [[30m[42m#####[39m[49m............][uRun 1,15,25,25tput: No value for $TERM and no -T specified
-./progress_bar.sh: line 79: let: lines=: syntax error: operand expected (error token is "=")
-[s[;0ftput: No value for $TERM and no -T specified
-tput: No value for $TERM and no -T specified
- Progress 32% [[30m[42m#####[39m[49m............][uRun 2,05,10,00tput: No value for $TERM and no -T specified
-./progress_bar.sh: line 79: let: lines=: syntax error: operand expected (error token is "=")
-[s[;0ftput: No value for $TERM and no -T specified
-tput: No value for $TERM and no -T specified
- Progress 33% [[30m[42m#####[39m[49m............][uRun 2,05,20,00tput: No value for $TERM and no -T specified
-./progress_bar.sh: line 79: let: lines=: syntax error: operand expected (error token is "=")
-[s[;0ftput: No value for $TERM and no -T specified
-tput: No value for $TERM and no -T specified
- Progress 33% [[30m[42m#####[39m[49m............][uRun 2,05,30,00tput: No value for $TERM and no -T specified
-./progress_bar.sh: line 79: let: lines=: syntax error: operand expected (error token is "=")
-[s[;0ftput: No value for $TERM and no -T specified
-tput: No value for $TERM and no -T specified
- Progress 34% [[30m[42m#####[39m[49m............][uRun 2,05,40,00tput: No value for $TERM and no -T specified
-./progress_bar.sh: line 79: let: lines=: syntax error: operand expected (error token is "=")
-[s[;0ftput: No value for $TERM and no -T specified
-tput: No value for $TERM and no -T specified
- Progress 34% [[30m[42m#####[39m[49m............][uRun 2,05,50,00tput: No value for $TERM and no -T specified
-./progress_bar.sh: line 79: let: lines=: syntax error: operand expected (error token is "=")
-[s[;0ftput: No value for $TERM and no -T specified
-tput: No value for $TERM and no -T specified
- Progress 34% [[30m[42m#####[39m[49m............][uRun 2,10,10,00tput: No value for $TERM and no -T specified
-./progress_bar.sh: line 79: let: lines=: syntax error: operand expected (error token is "=")
-[s[;0ftput: No value for $TERM and no -T specified
-tput: No value for $TERM and no -T specified
- Progress 35% [[30m[42m#####[39m[49m............][uRun 2,10,20,00tput: No value for $TERM and no -T specified
-./progress_bar.sh: line 79: let: lines=: syntax error: operand expected (error token is "=")
-[s[;0ftput: No value for $TERM and no -T specified
-tput: No value for $TERM and no -T specified
- Progress 35% [[30m[42m#####[39m[49m............][uRun 2,10,30,00tput: No value for $TERM and no -T specified
-./progress_bar.sh: line 79: let: lines=: syntax error: operand expected (error token is "=")
-[s[;0ftput: No value for $TERM and no -T specified
-tput: No value for $TERM and no -T specified
- Progress 35% [[30m[42m#####[39m[49m............][uRun 2,10,40,00tput: No value for $TERM and no -T specified
-./progress_bar.sh: line 79: let: lines=: syntax error: operand expected (error token is "=")
-[s[;0ftput: No value for $TERM and no -T specified
-tput: No value for $TERM and no -T specified
- Progress 36% [[30m[42m######[39m[49m...........][uRun 2,10,50,00tput: No value for $TERM and no -T specified
-./progress_bar.sh: line 79: let: lines=: syntax error: operand expected (error token is "=")
-[s[;0ftput: No value for $TERM and no -T specified
-tput: No value for $TERM and no -T specified
- Progress 36% [[30m[42m######[39m[49m...........][uRun 2,15,10,00tput: No value for $TERM and no -T specified
-./progress_bar.sh: line 79: let: lines=: syntax error: operand expected (error token is "=")
-[s[;0ftput: No value for $TERM and no -T specified
-tput: No value for $TERM and no -T specified
- Progress 37% [[30m[42m######[39m[49m...........][uRun 2,15,20,00tput: No value for $TERM and no -T specified
-./progress_bar.sh: line 79: let: lines=: syntax error: operand expected (error token is "=")
-[s[;0ftput: No value for $TERM and no -T specified
-tput: No value for $TERM and no -T specified
- Progress 37% [[30m[42m######[39m[49m...........][uRun 2,15,30,00tput: No value for $TERM and no -T specified
-./progress_bar.sh: line 79: let: lines=: syntax error: operand expected (error token is "=")
-[s[;0ftput: No value for $TERM and no -T specified
-tput: No value for $TERM and no -T specified
- Progress 37% [[30m[42m######[39m[49m...........][uRun 2,15,40,00tput: No value for $TERM and no -T specified
-./progress_bar.sh: line 79: let: lines=: syntax error: operand expected (error token is "=")
-[s[;0ftput: No value for $TERM and no -T specified
-tput: No value for $TERM and no -T specified
- Progress 38% [[30m[42m######[39m[49m...........][uRun 2,15,50,00tput: No value for $TERM and no -T specified
-./progress_bar.sh: line 79: let: lines=: syntax error: operand expected (error token is "=")
-[s[;0ftput: No value for $TERM and no -T specified
-tput: No value for $TERM and no -T specified
- Progress 38% [[30m[42m######[39m[49m...........][uRun 2,05,00,10tput: No value for $TERM and no -T specified
-./progress_bar.sh: line 79: let: lines=: syntax error: operand expected (error token is "=")
-[s[;0ftput: No value for $TERM and no -T specified
-tput: No value for $TERM and no -T specified
- Progress 38% [[30m[42m######[39m[49m...........][uRun 2,05,00,20tput: No value for $TERM and no -T specified
-./progress_bar.sh: line 79: let: lines=: syntax error: operand expected (error token is "=")
-[s[;0ftput: No value for $TERM and no -T specified
-tput: No value for $TERM and no -T specified
- Progress 39% [[30m[42m######[39m[49m...........][uRun 2,05,00,30tput: No value for $TERM and no -T specified
-./progress_bar.sh: line 79: let: lines=: syntax error: operand expected (error token is "=")
-[s[;0ftput: No value for $TERM and no -T specified
-tput: No value for $TERM and no -T specified
- Progress 39% [[30m[42m######[39m[49m...........][uRun 2,05,00,40tput: No value for $TERM and no -T specified
-./progress_bar.sh: line 79: let: lines=: syntax error: operand expected (error token is "=")
-[s[;0ftput: No value for $TERM and no -T specified
-tput: No value for $TERM and no -T specified
- Progress 40% [[30m[42m######[39m[49m...........][uRun 2,05,00,50tput: No value for $TERM and no -T specified
-./progress_bar.sh: line 79: let: lines=: syntax error: operand expected (error token is "=")
-[s[;0ftput: No value for $TERM and no -T specified
-tput: No value for $TERM and no -T specified
- Progress 40% [[30m[42m######[39m[49m...........][uRun 2,10,00,10tput: No value for $TERM and no -T specified
-./progress_bar.sh: line 79: let: lines=: syntax error: operand expected (error token is "=")
-[s[;0ftput: No value for $TERM and no -T specified
-tput: No value for $TERM and no -T specified
- Progress 40% [[30m[42m######[39m[49m...........][uRun 2,10,00,20tput: No value for $TERM and no -T specified
-./progress_bar.sh: line 79: let: lines=: syntax error: operand expected (error token is "=")
-[s[;0ftput: No value for $TERM and no -T specified
-tput: No value for $TERM and no -T specified
- Progress 41% [[30m[42m######[39m[49m...........][uRun 2,10,00,30tput: No value for $TERM and no -T specified
-./progress_bar.sh: line 79: let: lines=: syntax error: operand expected (error token is "=")
-[s[;0ftput: No value for $TERM and no -T specified
-tput: No value for $TERM and no -T specified
- Progress 41% [[30m[42m######[39m[49m...........][uRun 2,10,00,40tput: No value for $TERM and no -T specified
-./progress_bar.sh: line 79: let: lines=: syntax error: operand expected (error token is "=")
-[s[;0ftput: No value for $TERM and no -T specified
-tput: No value for $TERM and no -T specified
- Progress 41% [[30m[42m######[39m[49m...........][uRun 2,10,00,50tput: No value for $TERM and no -T specified
-./progress_bar.sh: line 79: let: lines=: syntax error: operand expected (error token is "=")
-[s[;0ftput: No value for $TERM and no -T specified
-tput: No value for $TERM and no -T specified
- Progress 42% [[30m[42m#######[39m[49m..........][uRun 2,15,00,10tput: No value for $TERM and no -T specified
-./progress_bar.sh: line 79: let: lines=: syntax error: operand expected (error token is "=")
-[s[;0ftput: No value for $TERM and no -T specified
-tput: No value for $TERM and no -T specified
- Progress 42% [[30m[42m#######[39m[49m..........][uRun 2,15,00,20tput: No value for $TERM and no -T specified
-./progress_bar.sh: line 79: let: lines=: syntax error: operand expected (error token is "=")
-[s[;0ftput: No value for $TERM and no -T specified
-tput: No value for $TERM and no -T specified
- Progress 42% [[30m[42m#######[39m[49m..........][uRun 2,15,00,30tput: No value for $TERM and no -T specified
-./progress_bar.sh: line 79: let: lines=: syntax error: operand expected (error token is "=")
-[s[;0ftput: No value for $TERM and no -T specified
-tput: No value for $TERM and no -T specified
- Progress 43% [[30m[42m#######[39m[49m..........][uRun 2,15,00,40tput: No value for $TERM and no -T specified
-./progress_bar.sh: line 79: let: lines=: syntax error: operand expected (error token is "=")
-[s[;0ftput: No value for $TERM and no -T specified
-tput: No value for $TERM and no -T specified
- Progress 43% [[30m[42m#######[39m[49m..........][uRun 2,15,00,50tput: No value for $TERM and no -T specified
-./progress_bar.sh: line 79: let: lines=: syntax error: operand expected (error token is "=")
-[s[;0ftput: No value for $TERM and no -T specified
-tput: No value for $TERM and no -T specified
- Progress 44% [[30m[42m#######[39m[49m..........][uRun 2,05,5,5tput: No value for $TERM and no -T specified
-./progress_bar.sh: line 79: let: lines=: syntax error: operand expected (error token is "=")
-[s[;0ftput: No value for $TERM and no -T specified
-tput: No value for $TERM and no -T specified
- Progress 44% [[30m[42m#######[39m[49m..........][uRun 2,05,10,10tput: No value for $TERM and no -T specified
-./progress_bar.sh: line 79: let: lines=: syntax error: operand expected (error token is "=")
-[s[;0ftput: No value for $TERM and no -T specified
-tput: No value for $TERM and no -T specified
- Progress 44% [[30m[42m#######[39m[49m..........][uRun 2,05,15,15tput: No value for $TERM and no -T specified
-./progress_bar.sh: line 79: let: lines=: syntax error: operand expected (error token is "=")
-[s[;0ftput: No value for $TERM and no -T specified
-tput: No value for $TERM and no -T specified
- Progress 45% [[30m[42m#######[39m[49m..........][uRun 2,05,20,20tput: No value for $TERM and no -T specified
-./progress_bar.sh: line 79: let: lines=: syntax error: operand expected (error token is "=")
-[s[;0ftput: No value for $TERM and no -T specified
-tput: No value for $TERM and no -T specified
- Progress 45% [[30m[42m#######[39m[49m..........][uRun 2,05,25,25tput: No value for $TERM and no -T specified
-./progress_bar.sh: line 79: let: lines=: syntax error: operand expected (error token is "=")
-[s[;0ftput: No value for $TERM and no -T specified
-tput: No value for $TERM and no -T specified
- Progress 45% [[30m[42m#######[39m[49m..........][uRun 2,10,5,5tput: No value for $TERM and no -T specified
-./progress_bar.sh: line 79: let: lines=: syntax error: operand expected (error token is "=")
-[s[;0ftput: No value for $TERM and no -T specified
-tput: No value for $TERM and no -T specified
- Progress 46% [[30m[42m#######[39m[49m..........][uRun 2,10,10,10tput: No value for $TERM and no -T specified
-./progress_bar.sh: line 79: let: lines=: syntax error: operand expected (error token is "=")
-[s[;0ftput: No value for $TERM and no -T specified
-tput: No value for $TERM and no -T specified
- Progress 46% [[30m[42m#######[39m[49m..........][uRun 2,10,15,15tput: No value for $TERM and no -T specified
-./progress_bar.sh: line 79: let: lines=: syntax error: operand expected (error token is "=")
-[s[;0ftput: No value for $TERM and no -T specified
-tput: No value for $TERM and no -T specified
- Progress 47% [[30m[42m#######[39m[49m..........][uRun 2,10,20,20tput: No value for $TERM and no -T specified
-./progress_bar.sh: line 79: let: lines=: syntax error: operand expected (error token is "=")
-[s[;0ftput: No value for $TERM and no -T specified
-tput: No value for $TERM and no -T specified
- Progress 47% [[30m[42m#######[39m[49m..........][uRun 2,10,25,25tput: No value for $TERM and no -T specified
-./progress_bar.sh: line 79: let: lines=: syntax error: operand expected (error token is "=")
-[s[;0ftput: No value for $TERM and no -T specified
-tput: No value for $TERM and no -T specified
- Progress 47% [[30m[42m#######[39m[49m..........][uRun 2,15,5,5tput: No value for $TERM and no -T specified
-./progress_bar.sh: line 79: let: lines=: syntax error: operand expected (error token is "=")
-[s[;0ftput: No value for $TERM and no -T specified
-tput: No value for $TERM and no -T specified
- Progress 48% [[30m[42m########[39m[49m.........][uRun 2,15,10,10tput: No value for $TERM and no -T specified
-./progress_bar.sh: line 79: let: lines=: syntax error: operand expected (error token is "=")
-[s[;0ftput: No value for $TERM and no -T specified
-tput: No value for $TERM and no -T specified
- Progress 48% [[30m[42m########[39m[49m.........][uRun 2,15,15,15tput: No value for $TERM and no -T specified
-./progress_bar.sh: line 79: let: lines=: syntax error: operand expected (error token is "=")
-[s[;0ftput: No value for $TERM and no -T specified
-tput: No value for $TERM and no -T specified
- Progress 48% [[30m[42m########[39m[49m.........][uRun 2,15,20,20tput: No value for $TERM and no -T specified
-./progress_bar.sh: line 79: let: lines=: syntax error: operand expected (error token is "=")
-[s[;0ftput: No value for $TERM and no -T specified
-tput: No value for $TERM and no -T specified
- Progress 49% [[30m[42m########[39m[49m.........][uRun 2,15,25,25tput: No value for $TERM and no -T specified
-./progress_bar.sh: line 79: let: lines=: syntax error: operand expected (error token is "=")
-[s[;0ftput: No value for $TERM and no -T specified
-tput: No value for $TERM and no -T specified
- Progress 49% [[30m[42m########[39m[49m.........][uRun 3,05,10,00tput: No value for $TERM and no -T specified
-./progress_bar.sh: line 79: let: lines=: syntax error: operand expected (error token is "=")
-[s[;0ftput: No value for $TERM and no -T specified
-tput: No value for $TERM and no -T specified
- Progress 50% [[30m[42m########[39m[49m.........][uRun 3,05,20,00tput: No value for $TERM and no -T specified
-./progress_bar.sh: line 79: let: lines=: syntax error: operand expected (error token is "=")
-[s[;0ftput: No value for $TERM and no -T specified
-tput: No value for $TERM and no -T specified
- Progress 50% [[30m[42m########[39m[49m.........][uRun 3,05,30,00tput: No value for $TERM and no -T specified
-./progress_bar.sh: line 79: let: lines=: syntax error: operand expected (error token is "=")
-[s[;0ftput: No value for $TERM and no -T specified
-tput: No value for $TERM and no -T specified
- Progress 50% [[30m[42m########[39m[49m.........][uRun 3,05,40,00tput: No value for $TERM and no -T specified
-./progress_bar.sh: line 79: let: lines=: syntax error: operand expected (error token is "=")
-[s[;0ftput: No value for $TERM and no -T specified
-tput: No value for $TERM and no -T specified
- Progress 51% [[30m[42m########[39m[49m.........][uRun 3,05,50,00tput: No value for $TERM and no -T specified
-./progress_bar.sh: line 79: let: lines=: syntax error: operand expected (error token is "=")
-[s[;0ftput: No value for $TERM and no -T specified
-tput: No value for $TERM and no -T specified
- Progress 51% [[30m[42m########[39m[49m.........][uRun 3,10,10,00tput: No value for $TERM and no -T specified
-./progress_bar.sh: line 79: let: lines=: syntax error: operand expected (error token is "=")
-[s[;0ftput: No value for $TERM and no -T specified
-tput: No value for $TERM and no -T specified
- Progress 51% [[30m[42m########[39m[49m.........][uRun 3,10,20,00tput: No value for $TERM and no -T specified
-./progress_bar.sh: line 79: let: lines=: syntax error: operand expected (error token is "=")
-[s[;0ftput: No value for $TERM and no -T specified
-tput: No value for $TERM and no -T specified
- Progress 52% [[30m[42m########[39m[49m.........][uRun 3,10,30,00tput: No value for $TERM and no -T specified
-./progress_bar.sh: line 79: let: lines=: syntax error: operand expected (error token is "=")
-[s[;0ftput: No value for $TERM and no -T specified
-tput: No value for $TERM and no -T specified
- Progress 52% [[30m[42m########[39m[49m.........][uRun 3,10,40,00tput: No value for $TERM and no -T specified
-./progress_bar.sh: line 79: let: lines=: syntax error: operand expected (error token is "=")
-[s[;0ftput: No value for $TERM and no -T specified
-tput: No value for $TERM and no -T specified
- Progress 52% [[30m[42m########[39m[49m.........][uRun 3,10,50,00tput: No value for $TERM and no -T specified
-./progress_bar.sh: line 79: let: lines=: syntax error: operand expected (error token is "=")
-[s[;0ftput: No value for $TERM and no -T specified
-tput: No value for $TERM and no -T specified
- Progress 53% [[30m[42m#########[39m[49m........][uRun 3,15,10,00tput: No value for $TERM and no -T specified
-./progress_bar.sh: line 79: let: lines=: syntax error: operand expected (error token is "=")
-[s[;0ftput: No value for $TERM and no -T specified
-tput: No value for $TERM and no -T specified
- Progress 53% [[30m[42m#########[39m[49m........][uRun 3,15,20,00tput: No value for $TERM and no -T specified
-./progress_bar.sh: line 79: let: lines=: syntax error: operand expected (error token is "=")
-[s[;0ftput: No value for $TERM and no -T specified
-tput: No value for $TERM and no -T specified
- Progress 54% [[30m[42m#########[39m[49m........][uRun 3,15,30,00tput: No value for $TERM and no -T specified
-./progress_bar.sh: line 79: let: lines=: syntax error: operand expected (error token is "=")
-[s[;0ftput: No value for $TERM and no -T specified
-tput: No value for $TERM and no -T specified
- Progress 54% [[30m[42m#########[39m[49m........][uRun 3,15,40,00tput: No value for $TERM and no -T specified
-./progress_bar.sh: line 79: let: lines=: syntax error: operand expected (error token is "=")
-[s[;0ftput: No value for $TERM and no -T specified
-tput: No value for $TERM and no -T specified
- Progress 54% [[30m[42m#########[39m[49m........][uRun 3,15,50,00tput: No value for $TERM and no -T specified
-./progress_bar.sh: line 79: let: lines=: syntax error: operand expected (error token is "=")
-[s[;0ftput: No value for $TERM and no -T specified
-tput: No value for $TERM and no -T specified
- Progress 55% [[30m[42m#########[39m[49m........][uRun 3,05,00,10tput: No value for $TERM and no -T specified
-./progress_bar.sh: line 79: let: lines=: syntax error: operand expected (error token is "=")
-[s[;0ftput: No value for $TERM and no -T specified
-tput: No value for $TERM and no -T specified
- Progress 55% [[30m[42m#########[39m[49m........][uRun 3,05,00,20tput: No value for $TERM and no -T specified
-./progress_bar.sh: line 79: let: lines=: syntax error: operand expected (error token is "=")
-[s[;0ftput: No value for $TERM and no -T specified
-tput: No value for $TERM and no -T specified
- Progress 55% [[30m[42m#########[39m[49m........][uRun 3,05,00,30tput: No value for $TERM and no -T specified
-./progress_bar.sh: line 79: let: lines=: syntax error: operand expected (error token is "=")
-[s[;0ftput: No value for $TERM and no -T specified
-tput: No value for $TERM and no -T specified
- Progress 56% [[30m[42m#########[39m[49m........][uRun 3,05,00,40tput: No value for $TERM and no -T specified
-./progress_bar.sh: line 79: let: lines=: syntax error: operand expected (error token is "=")
-[s[;0ftput: No value for $TERM and no -T specified
-tput: No value for $TERM and no -T specified
- Progress 56% [[30m[42m#########[39m[49m........][uRun 3,05,00,50tput: No value for $TERM and no -T specified
-./progress_bar.sh: line 79: let: lines=: syntax error: operand expected (error token is "=")
-[s[;0ftput: No value for $TERM and no -T specified
-tput: No value for $TERM and no -T specified
- Progress 57% [[30m[42m#########[39m[49m........][uRun 3,10,00,10tput: No value for $TERM and no -T specified
-./progress_bar.sh: line 79: let: lines=: syntax error: operand expected (error token is "=")
-[s[;0ftput: No value for $TERM and no -T specified
-tput: No value for $TERM and no -T specified
- Progress 57% [[30m[42m#########[39m[49m........][uRun 3,10,00,20tput: No value for $TERM and no -T specified
-./progress_bar.sh: line 79: let: lines=: syntax error: operand expected (error token is "=")
-[s[;0ftput: No value for $TERM and no -T specified
-tput: No value for $TERM and no -T specified
- Progress 57% [[30m[42m#########[39m[49m........][uRun 3,10,00,30tput: No value for $TERM and no -T specified
-./progress_bar.sh: line 79: let: lines=: syntax error: operand expected (error token is "=")
-[s[;0ftput: No value for $TERM and no -T specified
-tput: No value for $TERM and no -T specified
- Progress 58% [[30m[42m#########[39m[49m........][uRun 3,10,00,40tput: No value for $TERM and no -T specified
-./progress_bar.sh: line 79: let: lines=: syntax error: operand expected (error token is "=")
-[s[;0ftput: No value for $TERM and no -T specified
-tput: No value for $TERM and no -T specified
- Progress 58% [[30m[42m#########[39m[49m........][uRun 3,10,00,50tput: No value for $TERM and no -T specified
-./progress_bar.sh: line 79: let: lines=: syntax error: operand expected (error token is "=")
-[s[;0ftput: No value for $TERM and no -T specified
-tput: No value for $TERM and no -T specified
- Progress 58% [[30m[42m#########[39m[49m........][uRun 3,15,00,10tput: No value for $TERM and no -T specified
-./progress_bar.sh: line 79: let: lines=: syntax error: operand expected (error token is "=")
-[s[;0ftput: No value for $TERM and no -T specified
-tput: No value for $TERM and no -T specified
- Progress 59% [[30m[42m##########[39m[49m.......][uRun 3,15,00,20tput: No value for $TERM and no -T specified
-./progress_bar.sh: line 79: let: lines=: syntax error: operand expected (error token is "=")
-[s[;0ftput: No value for $TERM and no -T specified
-tput: No value for $TERM and no -T specified
- Progress 59% [[30m[42m##########[39m[49m.......][uRun 3,15,00,30tput: No value for $TERM and no -T specified
-./progress_bar.sh: line 79: let: lines=: syntax error: operand expected (error token is "=")
-[s[;0ftput: No value for $TERM and no -T specified
-tput: No value for $TERM and no -T specified
- Progress 60% [[30m[42m##########[39m[49m.......][uRun 3,15,00,40tput: No value for $TERM and no -T specified
-./progress_bar.sh: line 79: let: lines=: syntax error: operand expected (error token is "=")
-[s[;0ftput: No value for $TERM and no -T specified
-tput: No value for $TERM and no -T specified
- Progress 60% [[30m[42m##########[39m[49m.......][uRun 3,15,00,50tput: No value for $TERM and no -T specified
-./progress_bar.sh: line 79: let: lines=: syntax error: operand expected (error token is "=")
-[s[;0ftput: No value for $TERM and no -T specified
-tput: No value for $TERM and no -T specified
- Progress 60% [[30m[42m##########[39m[49m.......][uRun 3,05,5,5tput: No value for $TERM and no -T specified
-./progress_bar.sh: line 79: let: lines=: syntax error: operand expected (error token is "=")
-[s[;0ftput: No value for $TERM and no -T specified
-tput: No value for $TERM and no -T specified
- Progress 61% [[30m[42m##########[39m[49m.......][uRun 3,05,10,10tput: No value for $TERM and no -T specified
-./progress_bar.sh: line 79: let: lines=: syntax error: operand expected (error token is "=")
-[s[;0ftput: No value for $TERM and no -T specified
-tput: No value for $TERM and no -T specified
- Progress 61% [[30m[42m##########[39m[49m.......][uRun 3,05,15,15tput: No value for $TERM and no -T specified
-./progress_bar.sh: line 79: let: lines=: syntax error: operand expected (error token is "=")
-[s[;0ftput: No value for $TERM and no -T specified
-tput: No value for $TERM and no -T specified
- Progress 61% [[30m[42m##########[39m[49m.......][uRun 3,05,20,20tput: No value for $TERM and no -T specified
-./progress_bar.sh: line 79: let: lines=: syntax error: operand expected (error token is "=")
-[s[;0ftput: No value for $TERM and no -T specified
-tput: No value for $TERM and no -T specified
- Progress 62% [[30m[42m##########[39m[49m.......][uRun 3,05,25,25tput: No value for $TERM and no -T specified
-./progress_bar.sh: line 79: let: lines=: syntax error: operand expected (error token is "=")
-[s[;0ftput: No value for $TERM and no -T specified
-tput: No value for $TERM and no -T specified
- Progress 62% [[30m[42m##########[39m[49m.......][uRun 3,10,5,5tput: No value for $TERM and no -T specified
-./progress_bar.sh: line 79: let: lines=: syntax error: operand expected (error token is "=")
-[s[;0ftput: No value for $TERM and no -T specified
-tput: No value for $TERM and no -T specified
- Progress 62% [[30m[42m##########[39m[49m.......][uRun 3,10,10,10tput: No value for $TERM and no -T specified
-./progress_bar.sh: line 79: let: lines=: syntax error: operand expected (error token is "=")
-[s[;0ftput: No value for $TERM and no -T specified
-tput: No value for $TERM and no -T specified
- Progress 63% [[30m[42m##########[39m[49m.......][uRun 3,10,15,15tput: No value for $TERM and no -T specified
-./progress_bar.sh: line 79: let: lines=: syntax error: operand expected (error token is "=")
-[s[;0ftput: No value for $TERM and no -T specified
-tput: No value for $TERM and no -T specified
- Progress 63% [[30m[42m##########[39m[49m.......][uRun 3,10,20,20tput: No value for $TERM and no -T specified
-./progress_bar.sh: line 79: let: lines=: syntax error: operand expected (error token is "=")
-[s[;0ftput: No value for $TERM and no -T specified
-tput: No value for $TERM and no -T specified
- Progress 64% [[30m[42m##########[39m[49m.......][uRun 3,10,25,25tput: No value for $TERM and no -T specified
-./progress_bar.sh: line 79: let: lines=: syntax error: operand expected (error token is "=")
-[s[;0ftput: No value for $TERM and no -T specified
-tput: No value for $TERM and no -T specified
- Progress 64% [[30m[42m##########[39m[49m.......][uRun 3,15,5,5tput: No value for $TERM and no -T specified
-./progress_bar.sh: line 79: let: lines=: syntax error: operand expected (error token is "=")
-[s[;0ftput: No value for $TERM and no -T specified
-tput: No value for $TERM and no -T specified
- Progress 64% [[30m[42m##########[39m[49m.......][uRun 3,15,10,10tput: No value for $TERM and no -T specified
-./progress_bar.sh: line 79: let: lines=: syntax error: operand expected (error token is "=")
-[s[;0ftput: No value for $TERM and no -T specified
-tput: No value for $TERM and no -T specified
- Progress 65% [[30m[42m###########[39m[49m......][uRun 3,15,15,15tput: No value for $TERM and no -T specified
-./progress_bar.sh: line 79: let: lines=: syntax error: operand expected (error token is "=")
-[s[;0ftput: No value for $TERM and no -T specified
-tput: No value for $TERM and no -T specified
- Progress 65% [[30m[42m###########[39m[49m......][uRun 3,15,20,20tput: No value for $TERM and no -T specified
-./progress_bar.sh: line 79: let: lines=: syntax error: operand expected (error token is "=")
-[s[;0ftput: No value for $TERM and no -T specified
-tput: No value for $TERM and no -T specified
- Progress 65% [[30m[42m###########[39m[49m......][uRun 3,15,25,25tput: No value for $TERM and no -T specified
-./progress_bar.sh: line 79: let: lines=: syntax error: operand expected (error token is "=")
-[s[;0ftput: No value for $TERM and no -T specified
-tput: No value for $TERM and no -T specified
- Progress 66% [[30m[42m###########[39m[49m......][uRun 4,05,10,00tput: No value for $TERM and no -T specified
-./progress_bar.sh: line 79: let: lines=: syntax error: operand expected (error token is "=")
-[s[;0ftput: No value for $TERM and no -T specified
-tput: No value for $TERM and no -T specified
- Progress 66% [[30m[42m###########[39m[49m......][uRun 4,05,20,00tput: No value for $TERM and no -T specified
-./progress_bar.sh: line 79: let: lines=: syntax error: operand expected (error token is "=")
-[s[;0ftput: No value for $TERM and no -T specified
-tput: No value for $TERM and no -T specified
- Progress 67% [[30m[42m###########[39m[49m......][uRun 4,05,30,00tput: No value for $TERM and no -T specified
-./progress_bar.sh: line 79: let: lines=: syntax error: operand expected (error token is "=")
-[s[;0ftput: No value for $TERM and no -T specified
-tput: No value for $TERM and no -T specified
- Progress 67% [[30m[42m###########[39m[49m......][uRun 4,05,40,00tput: No value for $TERM and no -T specified
-./progress_bar.sh: line 79: let: lines=: syntax error: operand expected (error token is "=")
-[s[;0ftput: No value for $TERM and no -T specified
-tput: No value for $TERM and no -T specified
- Progress 67% [[30m[42m###########[39m[49m......][uRun 4,05,50,00tput: No value for $TERM and no -T specified
-./progress_bar.sh: line 79: let: lines=: syntax error: operand expected (error token is "=")
-[s[;0ftput: No value for $TERM and no -T specified
-tput: No value for $TERM and no -T specified
- Progress 68% [[30m[42m###########[39m[49m......][uRun 4,10,10,00tput: No value for $TERM and no -T specified
-./progress_bar.sh: line 79: let: lines=: syntax error: operand expected (error token is "=")
-[s[;0ftput: No value for $TERM and no -T specified
-tput: No value for $TERM and no -T specified
- Progress 68% [[30m[42m###########[39m[49m......][uRun 4,10,20,00tput: No value for $TERM and no -T specified
-./progress_bar.sh: line 79: let: lines=: syntax error: operand expected (error token is "=")
-[s[;0ftput: No value for $TERM and no -T specified
-tput: No value for $TERM and no -T specified
- Progress 68% [[30m[42m###########[39m[49m......][uRun 4,10,30,00tput: No value for $TERM and no -T specified
-./progress_bar.sh: line 79: let: lines=: syntax error: operand expected (error token is "=")
-[s[;0ftput: No value for $TERM and no -T specified
-tput: No value for $TERM and no -T specified
- Progress 69% [[30m[42m###########[39m[49m......][uRun 4,10,40,00tput: No value for $TERM and no -T specified
-./progress_bar.sh: line 79: let: lines=: syntax error: operand expected (error token is "=")
-[s[;0ftput: No value for $TERM and no -T specified
-tput: No value for $TERM and no -T specified
- Progress 69% [[30m[42m###########[39m[49m......][uRun 4,10,50,00tput: No value for $TERM and no -T specified
-./progress_bar.sh: line 79: let: lines=: syntax error: operand expected (error token is "=")
-[s[;0ftput: No value for $TERM and no -T specified
-tput: No value for $TERM and no -T specified
- Progress 70% [[30m[42m###########[39m[49m......][uRun 4,15,10,00tput: No value for $TERM and no -T specified
-./progress_bar.sh: line 79: let: lines=: syntax error: operand expected (error token is "=")
-[s[;0ftput: No value for $TERM and no -T specified
-tput: No value for $TERM and no -T specified
- Progress 70% [[30m[42m###########[39m[49m......][uRun 4,15,20,00tput: No value for $TERM and no -T specified
-./progress_bar.sh: line 79: let: lines=: syntax error: operand expected (error token is "=")
-[s[;0ftput: No value for $TERM and no -T specified
-tput: No value for $TERM and no -T specified
- Progress 70% [[30m[42m###########[39m[49m......][uRun 4,15,30,00tput: No value for $TERM and no -T specified
-./progress_bar.sh: line 79: let: lines=: syntax error: operand expected (error token is "=")
-[s[;0ftput: No value for $TERM and no -T specified
-tput: No value for $TERM and no -T specified
- Progress 71% [[30m[42m############[39m[49m.....][uRun 4,15,40,00tput: No value for $TERM and no -T specified
-./progress_bar.sh: line 79: let: lines=: syntax error: operand expected (error token is "=")
-[s[;0ftput: No value for $TERM and no -T specified
-tput: No value for $TERM and no -T specified
- Progress 71% [[30m[42m############[39m[49m.....][uRun 4,15,50,00tput: No value for $TERM and no -T specified
-./progress_bar.sh: line 79: let: lines=: syntax error: operand expected (error token is "=")
-[s[;0ftput: No value for $TERM and no -T specified
-tput: No value for $TERM and no -T specified
- Progress 71% [[30m[42m############[39m[49m.....][uRun 4,05,00,10tput: No value for $TERM and no -T specified
-./progress_bar.sh: line 79: let: lines=: syntax error: operand expected (error token is "=")
-[s[;0ftput: No value for $TERM and no -T specified
-tput: No value for $TERM and no -T specified
- Progress 72% [[30m[42m############[39m[49m.....][uRun 4,05,00,20tput: No value for $TERM and no -T specified
-./progress_bar.sh: line 79: let: lines=: syntax error: operand expected (error token is "=")
-[s[;0ftput: No value for $TERM and no -T specified
-tput: No value for $TERM and no -T specified
- Progress 72% [[30m[42m############[39m[49m.....][uRun 4,05,00,30tput: No value for $TERM and no -T specified
-./progress_bar.sh: line 79: let: lines=: syntax error: operand expected (error token is "=")
-[s[;0ftput: No value for $TERM and no -T specified
-tput: No value for $TERM and no -T specified
- Progress 72% [[30m[42m############[39m[49m.....][uRun 4,05,00,40tput: No value for $TERM and no -T specified
-./progress_bar.sh: line 79: let: lines=: syntax error: operand expected (error token is "=")
-[s[;0ftput: No value for $TERM and no -T specified
-tput: No value for $TERM and no -T specified
- Progress 73% [[30m[42m############[39m[49m.....][uRun 4,05,00,50tput: No value for $TERM and no -T specified
-./progress_bar.sh: line 79: let: lines=: syntax error: operand expected (error token is "=")
-[s[;0ftput: No value for $TERM and no -T specified
-tput: No value for $TERM and no -T specified
- Progress 73% [[30m[42m############[39m[49m.....][uRun 4,10,00,10tput: No value for $TERM and no -T specified
-./progress_bar.sh: line 79: let: lines=: syntax error: operand expected (error token is "=")
-[s[;0ftput: No value for $TERM and no -T specified
-tput: No value for $TERM and no -T specified
- Progress 74% [[30m[42m############[39m[49m.....][uRun 4,10,00,20tput: No value for $TERM and no -T specified
-./progress_bar.sh: line 79: let: lines=: syntax error: operand expected (error token is "=")
-[s[;0ftput: No value for $TERM and no -T specified
-tput: No value for $TERM and no -T specified
- Progress 74% [[30m[42m############[39m[49m.....][uRun 4,10,00,30tput: No value for $TERM and no -T specified
-./progress_bar.sh: line 79: let: lines=: syntax error: operand expected (error token is "=")
-[s[;0ftput: No value for $TERM and no -T specified
-tput: No value for $TERM and no -T specified
- Progress 74% [[30m[42m############[39m[49m.....][uRun 4,10,00,40tput: No value for $TERM and no -T specified
-./progress_bar.sh: line 79: let: lines=: syntax error: operand expected (error token is "=")
-[s[;0ftput: No value for $TERM and no -T specified
-tput: No value for $TERM and no -T specified
- Progress 75% [[30m[42m############[39m[49m.....][uRun 4,10,00,50tput: No value for $TERM and no -T specified
-./progress_bar.sh: line 79: let: lines=: syntax error: operand expected (error token is "=")
-[s[;0ftput: No value for $TERM and no -T specified
-tput: No value for $TERM and no -T specified
- Progress 75% [[30m[42m############[39m[49m.....][uRun 4,15,00,10tput: No value for $TERM and no -T specified
-./progress_bar.sh: line 79: let: lines=: syntax error: operand expected (error token is "=")
-[s[;0ftput: No value for $TERM and no -T specified
-tput: No value for $TERM and no -T specified
- Progress 75% [[30m[42m############[39m[49m.....][uRun 4,15,00,20tput: No value for $TERM and no -T specified
-./progress_bar.sh: line 79: let: lines=: syntax error: operand expected (error token is "=")
-[s[;0ftput: No value for $TERM and no -T specified
-tput: No value for $TERM and no -T specified
- Progress 76% [[30m[42m############[39m[49m.....][uRun 4,15,00,30tput: No value for $TERM and no -T specified
-./progress_bar.sh: line 79: let: lines=: syntax error: operand expected (error token is "=")
-[s[;0ftput: No value for $TERM and no -T specified
-tput: No value for $TERM and no -T specified
- Progress 76% [[30m[42m############[39m[49m.....][uRun 4,15,00,40tput: No value for $TERM and no -T specified
-./progress_bar.sh: line 79: let: lines=: syntax error: operand expected (error token is "=")
-[s[;0ftput: No value for $TERM and no -T specified
-tput: No value for $TERM and no -T specified
- Progress 77% [[30m[42m#############[39m[49m....][uRun 4,15,00,50tput: No value for $TERM and no -T specified
-./progress_bar.sh: line 79: let: lines=: syntax error: operand expected (error token is "=")
-[s[;0ftput: No value for $TERM and no -T specified
-tput: No value for $TERM and no -T specified
- Progress 77% [[30m[42m#############[39m[49m....][uRun 4,05,5,5tput: No value for $TERM and no -T specified
-./progress_bar.sh: line 79: let: lines=: syntax error: operand expected (error token is "=")
-[s[;0ftput: No value for $TERM and no -T specified
-tput: No value for $TERM and no -T specified
- Progress 77% [[30m[42m#############[39m[49m....][uRun 4,05,10,10tput: No value for $TERM and no -T specified
-./progress_bar.sh: line 79: let: lines=: syntax error: operand expected (error token is "=")
-[s[;0ftput: No value for $TERM and no -T specified
-tput: No value for $TERM and no -T specified
- Progress 78% [[30m[42m#############[39m[49m....][uRun 4,05,15,15tput: No value for $TERM and no -T specified
-./progress_bar.sh: line 79: let: lines=: syntax error: operand expected (error token is "=")
-[s[;0ftput: No value for $TERM and no -T specified
-tput: No value for $TERM and no -T specified
- Progress 78% [[30m[42m#############[39m[49m....][uRun 4,05,20,20tput: No value for $TERM and no -T specified
-./progress_bar.sh: line 79: let: lines=: syntax error: operand expected (error token is "=")
-[s[;0ftput: No value for $TERM and no -T specified
-tput: No value for $TERM and no -T specified
- Progress 78% [[30m[42m#############[39m[49m....][uRun 4,05,25,25tput: No value for $TERM and no -T specified
-./progress_bar.sh: line 79: let: lines=: syntax error: operand expected (error token is "=")
-[s[;0ftput: No value for $TERM and no -T specified
-tput: No value for $TERM and no -T specified
- Progress 79% [[30m[42m#############[39m[49m....][uRun 4,10,5,5tput: No value for $TERM and no -T specified
-./progress_bar.sh: line 79: let: lines=: syntax error: operand expected (error token is "=")
-[s[;0ftput: No value for $TERM and no -T specified
-tput: No value for $TERM and no -T specified
- Progress 79% [[30m[42m#############[39m[49m....][uRun 4,10,10,10tput: No value for $TERM and no -T specified
-./progress_bar.sh: line 79: let: lines=: syntax error: operand expected (error token is "=")
-[s[;0ftput: No value for $TERM and no -T specified
-tput: No value for $TERM and no -T specified
- Progress 80% [[30m[42m#############[39m[49m....][uRun 4,10,15,15tput: No value for $TERM and no -T specified
-./progress_bar.sh: line 79: let: lines=: syntax error: operand expected (error token is "=")
-[s[;0ftput: No value for $TERM and no -T specified
-tput: No value for $TERM and no -T specified
- Progress 80% [[30m[42m#############[39m[49m....][uRun 4,10,20,20tput: No value for $TERM and no -T specified
-./progress_bar.sh: line 79: let: lines=: syntax error: operand expected (error token is "=")
-[s[;0ftput: No value for $TERM and no -T specified
-tput: No value for $TERM and no -T specified
- Progress 80% [[30m[42m#############[39m[49m....][uRun 4,10,25,25tput: No value for $TERM and no -T specified
-./progress_bar.sh: line 79: let: lines=: syntax error: operand expected (error token is "=")
-[s[;0ftput: No value for $TERM and no -T specified
-tput: No value for $TERM and no -T specified
- Progress 81% [[30m[42m#############[39m[49m....][uRun 4,15,5,5tput: No value for $TERM and no -T specified
-./progress_bar.sh: line 79: let: lines=: syntax error: operand expected (error token is "=")
-[s[;0ftput: No value for $TERM and no -T specified
-tput: No value for $TERM and no -T specified
- Progress 81% [[30m[42m#############[39m[49m....][uRun 4,15,10,10tput: No value for $TERM and no -T specified
-./progress_bar.sh: line 79: let: lines=: syntax error: operand expected (error token is "=")
-[s[;0ftput: No value for $TERM and no -T specified
-tput: No value for $TERM and no -T specified
- Progress 81% [[30m[42m#############[39m[49m....][uRun 4,15,15,15tput: No value for $TERM and no -T specified
-./progress_bar.sh: line 79: let: lines=: syntax error: operand expected (error token is "=")
-[s[;0ftput: No value for $TERM and no -T specified
-tput: No value for $TERM and no -T specified
- Progress 82% [[30m[42m#############[39m[49m....][uRun 4,15,20,20tput: No value for $TERM and no -T specified
-./progress_bar.sh: line 79: let: lines=: syntax error: operand expected (error token is "=")
-[s[;0ftput: No value for $TERM and no -T specified
-tput: No value for $TERM and no -T specified
- Progress 82% [[30m[42m#############[39m[49m....][uRun 4,15,25,25tput: No value for $TERM and no -T specified
-./progress_bar.sh: line 79: let: lines=: syntax error: operand expected (error token is "=")
-[s[;0ftput: No value for $TERM and no -T specified
-tput: No value for $TERM and no -T specified
- Progress 82% [[30m[42m#############[39m[49m....][uRun 5,05,10,00tput: No value for $TERM and no -T specified
-./progress_bar.sh: line 79: let: lines=: syntax error: operand expected (error token is "=")
-[s[;0ftput: No value for $TERM and no -T specified
-tput: No value for $TERM and no -T specified
- Progress 83% [[30m[42m##############[39m[49m...][uRun 5,05,20,00tput: No value for $TERM and no -T specified
-./progress_bar.sh: line 79: let: lines=: syntax error: operand expected (error token is "=")
-[s[;0ftput: No value for $TERM and no -T specified
-tput: No value for $TERM and no -T specified
- Progress 83% [[30m[42m##############[39m[49m...][uRun 5,05,30,00tput: No value for $TERM and no -T specified
-./progress_bar.sh: line 79: let: lines=: syntax error: operand expected (error token is "=")
-[s[;0ftput: No value for $TERM and no -T specified
-tput: No value for $TERM and no -T specified
- Progress 84% [[30m[42m##############[39m[49m...][uRun 5,05,40,00tput: No value for $TERM and no -T specified
-./progress_bar.sh: line 79: let: lines=: syntax error: operand expected (error token is "=")
-[s[;0ftput: No value for $TERM and no -T specified
-tput: No value for $TERM and no -T specified
- Progress 84% [[30m[42m##############[39m[49m...][uRun 5,05,50,00tput: No value for $TERM and no -T specified
-./progress_bar.sh: line 79: let: lines=: syntax error: operand expected (error token is "=")
-[s[;0ftput: No value for $TERM and no -T specified
-tput: No value for $TERM and no -T specified
- Progress 84% [[30m[42m##############[39m[49m...][uRun 5,10,10,00tput: No value for $TERM and no -T specified
-./progress_bar.sh: line 79: let: lines=: syntax error: operand expected (error token is "=")
-[s[;0ftput: No value for $TERM and no -T specified
-tput: No value for $TERM and no -T specified
- Progress 85% [[30m[42m##############[39m[49m...][uRun 5,10,20,00tput: No value for $TERM and no -T specified
-./progress_bar.sh: line 79: let: lines=: syntax error: operand expected (error token is "=")
-[s[;0ftput: No value for $TERM and no -T specified
-tput: No value for $TERM and no -T specified
- Progress 85% [[30m[42m##############[39m[49m...][uRun 5,10,30,00tput: No value for $TERM and no -T specified
-./progress_bar.sh: line 79: let: lines=: syntax error: operand expected (error token is "=")
-[s[;0ftput: No value for $TERM and no -T specified
-tput: No value for $TERM and no -T specified
- Progress 85% [[30m[42m##############[39m[49m...][uRun 5,10,40,00tput: No value for $TERM and no -T specified
-./progress_bar.sh: line 79: let: lines=: syntax error: operand expected (error token is "=")
-[s[;0ftput: No value for $TERM and no -T specified
-tput: No value for $TERM and no -T specified
- Progress 86% [[30m[42m##############[39m[49m...][uRun 5,10,50,00tput: No value for $TERM and no -T specified
-./progress_bar.sh: line 79: let: lines=: syntax error: operand expected (error token is "=")
-[s[;0ftput: No value for $TERM and no -T specified
-tput: No value for $TERM and no -T specified
- Progress 86% [[30m[42m##############[39m[49m...][uRun 5,15,10,00tput: No value for $TERM and no -T specified
-./progress_bar.sh: line 79: let: lines=: syntax error: operand expected (error token is "=")
-[s[;0ftput: No value for $TERM and no -T specified
-tput: No value for $TERM and no -T specified
- Progress 87% [[30m[42m##############[39m[49m...][uRun 5,15,20,00tput: No value for $TERM and no -T specified
-./progress_bar.sh: line 79: let: lines=: syntax error: operand expected (error token is "=")
-[s[;0ftput: No value for $TERM and no -T specified
-tput: No value for $TERM and no -T specified
- Progress 87% [[30m[42m##############[39m[49m...][uRun 5,15,30,00tput: No value for $TERM and no -T specified
-./progress_bar.sh: line 79: let: lines=: syntax error: operand expected (error token is "=")
-[s[;0ftput: No value for $TERM and no -T specified
-tput: No value for $TERM and no -T specified
- Progress 87% [[30m[42m##############[39m[49m...][uRun 5,15,40,00tput: No value for $TERM and no -T specified
-./progress_bar.sh: line 79: let: lines=: syntax error: operand expected (error token is "=")
-[s[;0ftput: No value for $TERM and no -T specified
-tput: No value for $TERM and no -T specified
- Progress 88% [[30m[42m##############[39m[49m...][uRun 5,15,50,00tput: No value for $TERM and no -T specified
-./progress_bar.sh: line 79: let: lines=: syntax error: operand expected (error token is "=")
-[s[;0ftput: No value for $TERM and no -T specified
-tput: No value for $TERM and no -T specified
- Progress 88% [[30m[42m##############[39m[49m...][uRun 5,05,00,10tput: No value for $TERM and no -T specified
-./progress_bar.sh: line 79: let: lines=: syntax error: operand expected (error token is "=")
-[s[;0ftput: No value for $TERM and no -T specified
-tput: No value for $TERM and no -T specified
- Progress 88% [[30m[42m##############[39m[49m...][uRun 5,05,00,20tput: No value for $TERM and no -T specified
-./progress_bar.sh: line 79: let: lines=: syntax error: operand expected (error token is "=")
-[s[;0ftput: No value for $TERM and no -T specified
-tput: No value for $TERM and no -T specified
- Progress 89% [[30m[42m###############[39m[49m..][uRun 5,05,00,30tput: No value for $TERM and no -T specified
-./progress_bar.sh: line 79: let: lines=: syntax error: operand expected (error token is "=")
-[s[;0ftput: No value for $TERM and no -T specified
-tput: No value for $TERM and no -T specified
- Progress 89% [[30m[42m###############[39m[49m..][uRun 5,05,00,40tput: No value for $TERM and no -T specified
-./progress_bar.sh: line 79: let: lines=: syntax error: operand expected (error token is "=")
-[s[;0ftput: No value for $TERM and no -T specified
-tput: No value for $TERM and no -T specified
- Progress 90% [[30m[42m###############[39m[49m..][uRun 5,05,00,50tput: No value for $TERM and no -T specified
-./progress_bar.sh: line 79: let: lines=: syntax error: operand expected (error token is "=")
-[s[;0ftput: No value for $TERM and no -T specified
-tput: No value for $TERM and no -T specified
- Progress 90% [[30m[42m###############[39m[49m..][uRun 5,10,00,10tput: No value for $TERM and no -T specified
-./progress_bar.sh: line 79: let: lines=: syntax error: operand expected (error token is "=")
-[s[;0ftput: No value for $TERM and no -T specified
-tput: No value for $TERM and no -T specified
- Progress 90% [[30m[42m###############[39m[49m..][uRun 5,10,00,20tput: No value for $TERM and no -T specified
-./progress_bar.sh: line 79: let: lines=: syntax error: operand expected (error token is "=")
-[s[;0ftput: No value for $TERM and no -T specified
-tput: No value for $TERM and no -T specified
- Progress 91% [[30m[42m###############[39m[49m..][uRun 5,10,00,30tput: No value for $TERM and no -T specified
-./progress_bar.sh: line 79: let: lines=: syntax error: operand expected (error token is "=")
-[s[;0ftput: No value for $TERM and no -T specified
-tput: No value for $TERM and no -T specified
- Progress 91% [[30m[42m###############[39m[49m..][uRun 5,10,00,40tput: No value for $TERM and no -T specified
-./progress_bar.sh: line 79: let: lines=: syntax error: operand expected (error token is "=")
-[s[;0ftput: No value for $TERM and no -T specified
-tput: No value for $TERM and no -T specified
- Progress 91% [[30m[42m###############[39m[49m..][uRun 5,10,00,50tput: No value for $TERM and no -T specified
-./progress_bar.sh: line 79: let: lines=: syntax error: operand expected (error token is "=")
-[s[;0ftput: No value for $TERM and no -T specified
-tput: No value for $TERM and no -T specified
- Progress 92% [[30m[42m###############[39m[49m..][uRun 5,15,00,10tput: No value for $TERM and no -T specified
-./progress_bar.sh: line 79: let: lines=: syntax error: operand expected (error token is "=")
-[s[;0ftput: No value for $TERM and no -T specified
-tput: No value for $TERM and no -T specified
- Progress 92% [[30m[42m###############[39m[49m..][uRun 5,15,00,20tput: No value for $TERM and no -T specified
-./progress_bar.sh: line 79: let: lines=: syntax error: operand expected (error token is "=")
-[s[;0ftput: No value for $TERM and no -T specified
-tput: No value for $TERM and no -T specified
- Progress 92% [[30m[42m###############[39m[49m..][uRun 5,15,00,30tput: No value for $TERM and no -T specified
-./progress_bar.sh: line 79: let: lines=: syntax error: operand expected (error token is "=")
-[s[;0ftput: No value for $TERM and no -T specified
-tput: No value for $TERM and no -T specified
- Progress 93% [[30m[42m###############[39m[49m..][uRun 5,15,00,40tput: No value for $TERM and no -T specified
-./progress_bar.sh: line 79: let: lines=: syntax error: operand expected (error token is "=")
-[s[;0ftput: No value for $TERM and no -T specified
-tput: No value for $TERM and no -T specified
- Progress 93% [[30m[42m###############[39m[49m..][uRun 5,15,00,50tput: No value for $TERM and no -T specified
-./progress_bar.sh: line 79: let: lines=: syntax error: operand expected (error token is "=")
-[s[;0ftput: No value for $TERM and no -T specified
-tput: No value for $TERM and no -T specified
- Progress 94% [[30m[42m###############[39m[49m..][uRun 5,05,5,5tput: No value for $TERM and no -T specified
-./progress_bar.sh: line 79: let: lines=: syntax error: operand expected (error token is "=")
-[s[;0ftput: No value for $TERM and no -T specified
-tput: No value for $TERM and no -T specified
- Progress 94% [[30m[42m###############[39m[49m..][uRun 5,05,10,10tput: No value for $TERM and no -T specified
-./progress_bar.sh: line 79: let: lines=: syntax error: operand expected (error token is "=")
-[s[;0ftput: No value for $TERM and no -T specified
-tput: No value for $TERM and no -T specified
- Progress 94% [[30m[42m###############[39m[49m..][uRun 5,05,15,15tput: No value for $TERM and no -T specified
-./progress_bar.sh: line 79: let: lines=: syntax error: operand expected (error token is "=")
-[s[;0ftput: No value for $TERM and no -T specified
-tput: No value for $TERM and no -T specified
- Progress 95% [[30m[42m################[39m[49m.][uRun 5,05,20,20tput: No value for $TERM and no -T specified
-./progress_bar.sh: line 79: let: lines=: syntax error: operand expected (error token is "=")
-[s[;0ftput: No value for $TERM and no -T specified
-tput: No value for $TERM and no -T specified
- Progress 95% [[30m[42m################[39m[49m.][uRun 5,05,25,25tput: No value for $TERM and no -T specified
-./progress_bar.sh: line 79: let: lines=: syntax error: operand expected (error token is "=")
-[s[;0ftput: No value for $TERM and no -T specified
-tput: No value for $TERM and no -T specified
- Progress 95% [[30m[42m################[39m[49m.][uRun 5,10,5,5tput: No value for $TERM and no -T specified
-./progress_bar.sh: line 79: let: lines=: syntax error: operand expected (error token is "=")
-[s[;0ftput: No value for $TERM and no -T specified
-tput: No value for $TERM and no -T specified
- Progress 96% [[30m[42m################[39m[49m.][uRun 5,10,10,10tput: No value for $TERM and no -T specified
-./progress_bar.sh: line 79: let: lines=: syntax error: operand expected (error token is "=")
-[s[;0ftput: No value for $TERM and no -T specified
-tput: No value for $TERM and no -T specified
- Progress 96% [[30m[42m################[39m[49m.][uRun 5,10,15,15tput: No value for $TERM and no -T specified
-./progress_bar.sh: line 79: let: lines=: syntax error: operand expected (error token is "=")
-[s[;0ftput: No value for $TERM and no -T specified
-tput: No value for $TERM and no -T specified
- Progress 97% [[30m[42m################[39m[49m.][uRun 5,10,20,20tput: No value for $TERM and no -T specified
-./progress_bar.sh: line 79: let: lines=: syntax error: operand expected (error token is "=")
-[s[;0ftput: No value for $TERM and no -T specified
-tput: No value for $TERM and no -T specified
- Progress 97% [[30m[42m################[39m[49m.][uRun 5,10,25,25tput: No value for $TERM and no -T specified
-./progress_bar.sh: line 79: let: lines=: syntax error: operand expected (error token is "=")
-[s[;0ftput: No value for $TERM and no -T specified
-tput: No value for $TERM and no -T specified
- Progress 97% [[30m[42m################[39m[49m.][uRun 5,15,5,5tput: No value for $TERM and no -T specified
-./progress_bar.sh: line 79: let: lines=: syntax error: operand expected (error token is "=")
-[s[;0ftput: No value for $TERM and no -T specified
-tput: No value for $TERM and no -T specified
- Progress 98% [[30m[42m################[39m[49m.][uRun 5,15,10,10tput: No value for $TERM and no -T specified
-./progress_bar.sh: line 79: let: lines=: syntax error: operand expected (error token is "=")
-[s[;0ftput: No value for $TERM and no -T specified
-tput: No value for $TERM and no -T specified
- Progress 98% [[30m[42m################[39m[49m.][uRun 5,15,15,15tput: No value for $TERM and no -T specified
-./progress_bar.sh: line 79: let: lines=: syntax error: operand expected (error token is "=")
-[s[;0ftput: No value for $TERM and no -T specified
-tput: No value for $TERM and no -T specified
- Progress 98% [[30m[42m################[39m[49m.][uRun 5,15,20,20tput: No value for $TERM and no -T specified
-./progress_bar.sh: line 79: let: lines=: syntax error: operand expected (error token is "=")
-[s[;0ftput: No value for $TERM and no -T specified
-tput: No value for $TERM and no -T specified
- Progress 99% [[30m[42m################[39m[49m.][uRun 5,15,25,25tput: No value for $TERM and no -T specified
-./progress_bar.sh: line 79: let: lines=: syntax error: operand expected (error token is "=")
-[s[;0ftput: No value for $TERM and no -T specified
-tput: No value for $TERM and no -T specified
- Progress 99% [[30m[42m################[39m[49m.][u
-Completed at Thu Jan 21 06:56:17 GMT 2021!
-tput: No value for $TERM and no -T specified
-[s[0;r[u[1Atput: No value for $TERM and no -T specified
-./progress_bar.sh: line 120: let: lines=: syntax error: operand expected (error token is "=")
-[s[;0ftput: No value for $TERM and no -T specified
-[u
-
-tput: No value for $TERM and no -T specified
-
-[s[0;-1r[u[1Atput: No value for $TERM and no -T specified
-./progress_bar.sh: line 79: let: lines=: syntax error: operand expected (error token is "=")
-[s[;0ftput: No value for $TERM and no -T specified
-tput: No value for $TERM and no -T specified
- Progress 0% [[30m[42m#[39m[49m.................][u-- Python version from interpreter is 2.7.17
--- Python libs and executable found, looking for boost::python
--- Boost version: 1.65.1
--- Found the following Boost libraries:
---   python
--- boost::python found, generating python bindings
--- SDL2 found, enabling joystick support
--- Configuring done
--- Generating done
--- Build files have been written to: /home/co4xgd/FYP_Simulation/enki
-[ 46%] Built target enki
-[ 48%] Automatic MOC and RCC for target enkiviewer
-[ 48%] Built target enkiviewer_autogen
-[ 89%] Built target enkiviewer
-[ 92%] Automatic MOC for target enkiplayground
-[ 92%] Built target enkiplayground_autogen
-Scanning dependencies of target enkiplayground
-[ 94%] Building CXX object examples/playground/CMakeFiles/enkiplayground.dir/Playground.cpp.o
-[ 97%] Linking CXX executable enkiplayground
-[100%] Built target enkiplayground
-Started at Thu Jan 21 06:56:25 GMT 2021!
-tput: No value for $TERM and no -T specified
-./progress_bar.sh: line 79: let: lines=: syntax error: operand expected (error token is "=")
-[s[;0ftput: No value for $TERM and no -T specified
-tput: No value for $TERM and no -T specified
- Progress 0% [[30m[42m#[39m[49m.................][uSuccess rate = 1
-Traceback (most recent call last):
-  File "./plot.py", line 3, in <module>
-    import numpy as np
-ModuleNotFoundError: No module named 'numpy'
-tput: No value for $TERM and no -T specified
-./progress_bar.sh: line 79: let: lines=: syntax error: operand expected (error token is "=")
-[s[;0ftput: No value for $TERM and no -T specified
-tput: No value for $TERM and no -T specified
- Progress 8% [[30m[42m#[39m[49m................][uSuccess rate = 0.633333
-Traceback (most recent call last):
-  File "./plot.py", line 3, in <module>
-    import numpy as np
-ModuleNotFoundError: No module named 'numpy'
-tput: No value for $TERM and no -T specified
-./progress_bar.sh: line 79: let: lines=: syntax error: operand expected (error token is "=")
-[s[;0ftput: No value for $TERM and no -T specified
-tput: No value for $TERM and no -T specified
- Progress 16% [[30m[42m##[39m[49m...............][uSuccess rate = 1
-Traceback (most recent call last):
-  File "./plot.py", line 3, in <module>
-    import numpy as np
-ModuleNotFoundError: No module named 'numpy'
-tput: No value for $TERM and no -T specified
-./progress_bar.sh: line 79: let: lines=: syntax error: operand expected (error token is "=")
-[s[;0ftput: No value for $TERM and no -T specified
-tput: No value for $TERM and no -T specified
- Progress 25% [[30m[42m####[39m[49m.............][uSuccess rate = 0.933333
-Traceback (most recent call last):
-  File "./plot.py", line 3, in <module>
-    import numpy as np
-ModuleNotFoundError: No module named 'numpy'
-tput: No value for $TERM and no -T specified
-./progress_bar.sh: line 79: let: lines=: syntax error: operand expected (error token is "=")
-[s[;0ftput: No value for $TERM and no -T specified
-tput: No value for $TERM and no -T specified
- Progress 33% [[30m[42m#####[39m[49m............][uSuccess rate = 1
-Traceback (most recent call last):
-  File "./plot.py", line 3, in <module>
-    import numpy as np
-ModuleNotFoundError: No module named 'numpy'
-tput: No value for $TERM and no -T specified
-./progress_bar.sh: line 79: let: lines=: syntax error: operand expected (error token is "=")
-[s[;0ftput: No value for $TERM and no -T specified
-tput: No value for $TERM and no -T specified
- Progress 41% [[30m[42m######[39m[49m...........][uSuccess rate = 1
-Traceback (most recent call last):
-  File "./plot.py", line 3, in <module>
-    import numpy as np
-ModuleNotFoundError: No module named 'numpy'
-tput: No value for $TERM and no -T specified
-./progress_bar.sh: line 79: let: lines=: syntax error: operand expected (error token is "=")
-[s[;0ftput: No value for $TERM and no -T specified
-tput: No value for $TERM and no -T specified
- Progress 50% [[30m[42m########[39m[49m.........][uSuccess rate = 1
-Traceback (most recent call last):
-  File "./plot.py", line 3, in <module>
-    import numpy as np
-ModuleNotFoundError: No module named 'numpy'
-tput: No value for $TERM and no -T specified
-./progress_bar.sh: line 79: let: lines=: syntax error: operand expected (error token is "=")
-[s[;0ftput: No value for $TERM and no -T specified
-tput: No value for $TERM and no -T specified
- Progress 58% [[30m[42m#########[39m[49m........][uSuccess rate = 0.966667
-Traceback (most recent call last):
-  File "./plot.py", line 3, in <module>
-    import numpy as np
-ModuleNotFoundError: No module named 'numpy'
-tput: No value for $TERM and no -T specified
-./progress_bar.sh: line 79: let: lines=: syntax error: operand expected (error token is "=")
-[s[;0ftput: No value for $TERM and no -T specified
-tput: No value for $TERM and no -T specified
- Progress 66% [[30m[42m###########[39m[49m......][uSuccess rate = 0.933333
-Traceback (most recent call last):
-  File "./plot.py", line 3, in <module>
-    import numpy as np
-ModuleNotFoundError: No module named 'numpy'
-tput: No value for $TERM and no -T specified
-./progress_bar.sh: line 79: let: lines=: syntax error: operand expected (error token is "=")
-[s[;0ftput: No value for $TERM and no -T specified
-tput: No value for $TERM and no -T specified
- Progress 75% [[30m[42m############[39m[49m.....][uSuccess rate = 1
-Traceback (most recent call last):
-  File "./plot.py", line 3, in <module>
-    import numpy as np
-ModuleNotFoundError: No module named 'numpy'
-tput: No value for $TERM and no -T specified
-./progress_bar.sh: line 79: let: lines=: syntax error: operand expected (error token is "=")
-[s[;0ftput: No value for $TERM and no -T specified
-tput: No value for $TERM and no -T specified
- Progress 83% [[30m[42m##############[39m[49m...][uSuccess rate = 1
-Traceback (most recent call last):
-  File "./plot.py", line 3, in <module>
-    import numpy as np
-ModuleNotFoundError: No module named 'numpy'
-tput: No value for $TERM and no -T specified
-./progress_bar.sh: line 79: let: lines=: syntax error: operand expected (error token is "=")
-[s[;0ftput: No value for $TERM and no -T specified
-tput: No value for $TERM and no -T specified
- Progress 91% [[30m[42m###############[39m[49m..][uSuccess rate = 1
-Traceback (most recent call last):
-  File "./plot.py", line 3, in <module>
-    import numpy as np
-ModuleNotFoundError: No module named 'numpy'
-tput: No value for $TERM and no -T specified
-./progress_bar.sh: line 79: let: lines=: syntax error: operand expected (error token is "=")
-[s[;0ftput: No value for $TERM and no -T specified
-tput: No value for $TERM and no -T specified
- Progress 100% [[30m[42m#################[39m[49m.][uSuccess rate = 1
-Traceback (most recent call last):
-  File "./plot.py", line 3, in <module>
-    import numpy as np
-ModuleNotFoundError: No module named 'numpy'
-tput: No value for $TERM and no -T specified
-./progress_bar.sh: line 79: let: lines=: syntax error: operand expected (error token is "=")
-[s[;0ftput: No value for $TERM and no -T specified
-tput: No value for $TERM and no -T specified
- Progress 108% [[30m[42m##################[39m[49m.][uSuccess rate = 0
-Traceback (most recent call last):
-  File "./plot.py", line 3, in <module>
-    import numpy as np
-ModuleNotFoundError: No module named 'numpy'
-tput: No value for $TERM and no -T specified
-./progress_bar.sh: line 79: let: lines=: syntax error: operand expected (error token is "=")
-[s[;0ftput: No value for $TERM and no -T specified
-tput: No value for $TERM and no -T specified
- Progress 116% [[30m[42m###################[39m[49m..][uSuccess rate = 0.0333333
-Traceback (most recent call last):
-  File "./plot.py", line 3, in <module>
-    import numpy as np
-ModuleNotFoundError: No module named 'numpy'
-tput: No value for $TERM and no -T specified
-./progress_bar.sh: line 79: let: lines=: syntax error: operand expected (error token is "=")
-[s[;0ftput: No value for $TERM and no -T specified
-tput: No value for $TERM and no -T specified
- Progress 125% [[30m[42m#####################[39m[49m....][uSuccess rate = 0.933333
-Traceback (most recent call last):
-  File "./plot.py", line 3, in <module>
-    import numpy as np
-ModuleNotFoundError: No module named 'numpy'
-tput: No value for $TERM and no -T specified
-./progress_bar.sh: line 79: let: lines=: syntax error: operand expected (error token is "=")
-[s[;0ftput: No value for $TERM and no -T specified
-tput: No value for $TERM and no -T specified
- Progress 133% [[30m[42m######################[39m[49m.....][uSuccess rate = 1
-Traceback (most recent call last):
-  File "./plot.py", line 3, in <module>
-    import numpy as np
-ModuleNotFoundError: No module named 'numpy'
-tput: No value for $TERM and no -T specified
-./progress_bar.sh: line 79: let: lines=: syntax error: operand expected (error token is "=")
-[s[;0ftput: No value for $TERM and no -T specified
-tput: No value for $TERM and no -T specified
- Progress 141% [[30m[42m#######################[39m[49m......][uSuccess rate = 0.8
-Traceback (most recent call last):
-  File "./plot.py", line 3, in <module>
-    import numpy as np
-ModuleNotFoundError: No module named 'numpy'
-
-Completed at Thu Jan 21 06:57:30 GMT 2021!
-tput: No value for $TERM and no -T specified
-[s[0;r[u[1Atput: No value for $TERM and no -T specified
-./progress_bar.sh: line 120: let: lines=: syntax error: operand expected (error token is "=")
-[s[;0ftput: No value for $TERM and no -T specified
-[u
-

@@ -1,0 +1,3 @@
+[submodule "third_party/enki"]
+	path = third_party/enki
+	url = https://github.com/enki-community/enki.git
